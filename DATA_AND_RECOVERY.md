@@ -1,6 +1,6 @@
 # World history, backups, import and Trash
 
-Status: active discovery. This document supersedes earlier fixed-count rolling-backup proposals and standalone campaign portability requirements. No implementation is authorized.
+Status: A01 historical-state/prefix behavior approved October 27, 2026. Implementation is authorized; C03/C04 still own archive validation, collision handling and recovery presentation. This document supersedes earlier fixed-count rolling-backup proposals and standalone campaign portability requirements.
 
 ## 1. Confirmed scope
 
@@ -16,6 +16,14 @@ Status: active discovery. This document supersedes earlier fixed-count rolling-b
 - The proposed latest-20-recovery-points plus seven-daily-backups policy was not approved. Do not implement that as a confirmed requirement.
 - Autosave remains required: preparation edits save as typed, completed gameplay actions save together, staged map setup remains isolated until Start.
 
+### A01 historical restore contract — approved October 27, 2026
+
+Restore the exact durable historical state and only the history prefix through the selected point into the separate world. Recover session states, membership and reservations as they existed then. If session A was In Progress at the target but later completed in the source, A is In Progress with its historical reservations in the restored copy. Later source actions and completion do not appear in the restored prefix; the source and all its later history remain unchanged. Keep the required pre-restore backup.
+
+The architecture's new world-instance ID qualifies the copied internal record/session IDs, preserving links without letting commands or reservations address the source world. Recover historical drafts as private drafts, not implicit live reservations. A restoration point must identify an acknowledged durable revision; pending choices cannot be mistaken for committed outcomes. Interrupted multi-phase actions retain their recorded committed phases and recovery context rather than rerolling or inventing a final outcome.
+
+Acceptance: restore before a source session's completion and verify it is In Progress with the then-current party/NPC reservations; restore after completion and verify it is Complete with reservations released. Neither operation changes the source. Replay/restore never imports the source's later suffix into the recovered world.
+
 ## 2. Distinct operations
 
 | Operation | Confirmed purpose | Pending detail |
@@ -23,7 +31,7 @@ Status: active discovery. This document supersedes earlier fixed-count rolling-b
 | Session undo | Reverse actions inside current session, with cross-session conflict protection | Exact dependency checks |
 | Session replay | Inspect historical outcomes and visibility without changing live state | Playback timing/layout |
 | Continue completed session | New linked session in present state | Low-priority UI detail |
-| Restore world to history point | Back up current world, create separate restored world at older point; original/later history unchanged | New-world naming/identity, historical prefix and restore handoff UI |
+| Restore world to history point | Back up current world; separate world with exact historical state/prefix and then-current session reservations; original/later history unchanged | Naming/collision presentation and restore handoff UI |
 | Start session backup | Preserve world before session changes; failure blocks New Session with Retry/Choose Backup Folder | Naming and backup browsing |
 | Import world | Create separate imported world preserving internal links/history | Identity remapping/asset validation and display names |
 | Delete world | Move world and associated backups to application Trash, retain indefinitely | Packaging, recovery metadata and name/path conflicts |
@@ -37,7 +45,7 @@ World restoration is a recovery action distinct from normal session continuation
 - World Manager edits, preparation, notes, assets, game state and setup drafts are included in durable history coverage. Record sufficient session status/reservation state to recover a coherent world. Session combat events alone do not reconstruct a world.
 - Retain the revisions/assets and cross-record ordering necessary for approved restoration scope. Choosing an event-log/storage technology is later architecture work.
 - Transient hover/inspector/tab-focus state is excluded from restoration. Distinguish game-relevant saved staging/player-camera framing from a transient inspection camera; do not discard durable staged setup under this exclusion.
-- Preserve original finalized session histories and later original-world history when creating a restored copy. Specify historical-prefix boundaries, recovered session reservations, player-window handoff and atomic restored-world creation before implementation. A failed restore cannot partially alter the source world.
+- Preserve original finalized session histories and later original-world history when creating a restored copy. Apply the approved A01 historical prefix and reservation contract above. Specify player-window handoff and atomic restored-world creation in C03. A failed restore cannot partially alter the source world.
 
 ## 4. Required acceptance cases after decisions
 
@@ -47,4 +55,4 @@ World restoration is a recovery action distinct from normal session continuation
 4. Delete a world: it appears in Trash rather than disappearing permanently. Restore it from Trash using the agreed conflict policy.
 5. Leave a world in Trash over time: no automatic expiry. Empty Trash shows affected worlds/backups and requires confirmation; ordinary delete/import/restore never implicitly empties it.
 
-Restore destination, durable-history coverage, Trash retention and failed-backup policy are confirmed. Backup/history pruning is not authorized. Remaining details include identity/asset mapping, historical-prefix/session status recovery, and naming/path collisions. Do not add automatic pruning or irreversible history compaction without an approved policy.
+Restore destination, exact historical prefix/status/reservations, separate world-instance identity, durable-history coverage, Trash retention and failed-backup policy are confirmed. Backup/history pruning is not authorized. C03/C04 still own archive/asset validation, naming/path collisions and handoff screens, subject to no source overwrite or partial mutation. Do not add automatic pruning or irreversible history compaction without an approved policy.

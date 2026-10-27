@@ -2,6 +2,8 @@
 
 Status: Open5e adopted as the planned acquisition source by the user on October 27, 2026. No dataset has been downloaded or audited by this planning task. This is build-time bundled content work, not approval to add a general rules-import UI or runtime network dependency.
 
+Scheduling clarification, October 27: the user considered moving S01 after MVP, then allowed acquisition/data-dependent work to remain in MVP after its catalog/editor/progression/automation dependencies were explained. Retain S01 → A02/S02 → S03 and the existing downstream gates; no source-independent MVP split was applied. S01 may follow independent foundation planning, but must finish before the source-dependent catalog milestones. This note does not authorize downloading data during A05 functional planning.
+
 ## Source and boundaries
 
 - Acquire published machine-readable JSON from the [Open5e repository's 2024 SRD directory](https://github.com/open5e/open5e-api/tree/staging/data/v2/wizards-of-the-coast/srd-2024). Use Git or a published repository archive; do not scrape reference webpages or parse site HTML to acquire records.
@@ -33,6 +35,8 @@ docs/content/CONTENT_COVERAGE.md        # per-entry data/mechanics/acceptance/ex
 ```
 
 Exact schema fields and output filenames follow A01/A05/B01; these paths establish ownership boundaries rather than prematurely defining data models. Add content dependency/correction provenance to the archive/replay format so future updates cannot rewrite historical behavior.
+
+A05 valuation boundary: product item/shop valuations use nonnegative integer gold and may explicitly price bundles. Preserve upstream price/unit metadata and provenance unchanged in raw data. A normalized source value that needs fractional gold cannot silently round or create an inferred bundle; record a diagnostic and obtain an explicit whole-gold single/bundle valuation for generator use. Keep source price metadata distinct from the authored stock valuation and per-campaign override. Source audit remains MVP work; this is a mapping requirement, not acquisition evidence.
 
 ## Completion evidence
 

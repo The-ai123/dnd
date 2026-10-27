@@ -97,15 +97,15 @@ Use opaque IDs, qualified by a world instance at IPC/UI boundaries. Names never 
 | Campaign | One party roster, independent clock, campaign definitions/settings, sessions, prepared encounter references |
 | Session | Ordered action groups, status, membership, continuation reference, resolution/checkpoint metadata |
 | Entity | Persistent HP/resources/inventory/features/effects and private/public identity fields, as approved by field schema |
-| Location / area template | World location data and versioned authored map/drawing/wall/terrain configuration; exact location-to-area cardinality remains a product/schema decision |
-| Encounter | Instance geometry/placements, initiative, round/turn, spent movement/action state, encounter-scoped effects |
+| Location / area template | Location holds shared world facts and may have multiple reusable starting map/drawing/wall/terrain templates. Template edits affect future encounters |
+| Encounter | Instance positions, doors, terrain, geometry/placements, initiative, round/turn and combat state; does not copy canonical NPC HP/inventory/effects |
 | Placement | References canonical entity; position/footprint/elevation and encounter presentation, never an independent hidden copy of its HP |
 | Staging draft | Base revisions, intended record changes, destination setup, generated entity drafts, player-camera preview; no live mutation before Start |
 | Content definition | Immutable version of preset/profile/item/spell/class/species/etc.; explicit source/version references |
 | Asset | Immutable original bytes, hash/metadata; historical usage references and regenerable derived caches |
 | Shop / loot table | Authored tier/chance/price entries, persistent finalized stock, separate autosaved generation draft |
 
-Canonical world entities differ from global reusable templates: copying a template generates a new entity identity; placing a world NPC references the existing identity. Prevent unintended duplicate live placement of one canonical creature through a policy check, whose final allowed cases require specification.
+Canonical world entities differ from global reusable templates: copying a preset generates a new entity identity; placing a world NPC references the existing identity. Approved October 27, 2026: at most one current encounter placement per canonical creature; moves between encounters are explicit and retain reservation enforcement. A location may have multiple reusable area templates. Private setup previews and historical replay do not create additional current placements.
 
 ## 5. Physical storage
 
@@ -159,6 +159,8 @@ The internal ordered revision establishes causality for shared records and resto
 
 **World restore:** at a selected durable revision, create a new world from a compatible checkpoint plus recorded changes through that revision. Preserve the source and all later history unchanged. Restore includes notes/templates/shops/images/setup drafts, not hover/tab-focus/inspector presentation. Include state sufficient for restored incomplete sessions/reservations to be internally consistent. Newly assigned world-instance identity prevents source/restored record cross-talk.
 
+Approved A01 prefix rule: the separate copy contains exact durable state/history only through the target revision, including then-current session statuses/reservations. A session completed later in the source is In Progress in the restored copy if it was incomplete at the target. Do not import the later source suffix. See DATA_AND_RECOVERY.md's A01 historical restore contract.
+
 Checkpoints are derived acceleration structures, never authorization to prune required history. Creating separate restored worlds is recovery, not an in-app timeline branching feature.
 
 ## 8. Long actions, reactions, randomness, and clocks
@@ -171,7 +173,7 @@ Movement can legitimately commit a traveled segment before a reaction/check halt
 
 Use a host-provided RNG adapter, injecting fixed rolls/seeds in tests. Record actual results, decisions, content versions and order; a seed alone is insufficient for cross-version replay. Include shop shuffles/rolls and generation provenance, with actual draft output saved.
 
-Campaign time is explicit simulation time, not Date.now(). Effects reference their origin campaign clock or turn trigger and source entity/session. Wall-clock time exists only for metadata. **Product decision still open:** what happens to an unexpired campaign-clock effect when its canonical entity later participates in another campaign with a different clock. Store origin/remaining/trigger fields now, but do not silently choose rebasing or duplicate clocks.
+Campaign time is explicit simulation time, not Date.now(). Preserve effect origin/provenance separately from its current timer owner and source entity/session. Wall-clock time exists only for metadata. **Approved October 27, 2026:** timed effects on a shared NPC follow the campaign of the most recent committed gameplay interaction; B controls preserved remaining duration after the A-to-B example. Viewing, browsing and private drafts do not switch ownership. Do not synchronize campaign dates or count down under both clocks. A transfer changing a turn-relative effect's context requires an explicit storyteller trigger-handoff choice before commit; preserve remaining duration, never invent turns or silently remove effects, and enforce reservations. See WORLDS_AND_SESSIONS.md's A01 contract.
 
 ## 9. Two windows and public projection
 
@@ -257,19 +259,36 @@ Tests must establish outcomes, not merely mirror implementation:
 
 Instrument frame time, geometry-request latency, commit latency, memory/texture cache, backup/archive time and history size. Initial engineering targets, to validate on documented baseline hardware: smooth direct manipulation at 1080p/4K, no unbounded main-thread job, newest valid drag result wins, bounded tile/geometry working sets. Set numeric release budgets only after representative hardware/fixtures are agreed; these are not universal performance guarantees.
 
-## 14. Known decisions needing product clarification
+## 14. A01 decisions and downstream specification boundaries
 
-Architecture can accommodate these without silently deciding them:
+User decisions recorded October 27, 2026. The authoritative consolidated contract and acceptance cases are in WORLDS_AND_SESSIONS.md's A01 section, with historical recovery in DATA_AND_RECOVERY.md.
 
-1. Exact session state table and staged-resource reservation timing. Recommendation: durable Draft/In Progress/Complete plus ephemeral focused-recording state; completion releases reservations. Acquisition during draft setup needs approval.
-2. Ownership/transfer/expiry of effects across independent campaign clocks.
-3. Exact preset modifier arithmetic/dice rounding, manual roll inputs, resource overspend representation and simultaneous-trigger choice ordering.
-4. Which persisted location/area changes are canonical world changes versus campaign/template/encounter state; record identity versus generated duplicate rules.
-5. Restored history prefix when target is inside a finalized session, recovered reservation status, and user-facing naming of restored/imported worlds.
+1. **Resolved:** session states are In Progress and Complete; pause/switch are focus changes, and Resume uses current saved state. Reserve party at creation, other shared records on committed inclusion, and new draft reservations only at successful Start. Reservations last until completion. Every completed-session field is frozen; Continue creates a new linked session. A draft is not a third session status.
+2. **Resolved:** shared-NPC timed effects follow the most recent committed gameplay interaction, preserving remaining duration; viewing/browsing/private drafts do not switch ownership. A transfer changing turn-relative context requires an explicit storyteller handoff choice before commit; no invented turns, lost effects or reservation bypass.
+3. **Resolved listed choices October 27, 2026:** labeled raw-dice/final-total input with missing natural-roll/critical prompts; action/consequence undo grouping; separate excess-spending record with usable balance zero; storyteller order for ambiguous simultaneous triggers. Presets use base × multiplier + flat, integer floor/clamps, override last; rolled damage components transform after critical dice and before defenses, and save DC has its own modifier. See the A01 contract for acceptance cases; this does not approve all neighboring proposals.
+4. **Resolved ownership choices October 27, 2026:** locations hold shared facts, may have multiple templates, and encounters own positions/doors/terrain/combat state. NPC HP/inventory/effects stay canonical with at most one current placement and explicit moves; fresh generation has a new identity. Template edits affect future encounters. Exact fields remain A05.
+5. **Resolved history boundary October 27, 2026:** restored world contains exact historical state/prefix and then-current session statuses/reservations, even if the source session completed later. Naming/collision presentation and handoff remain C03/C04 details; no source overwrite is permitted.
 6. Quantified routing optimality tolerance and performance baseline; supported image formats and handling of decoder limits.
 7. Remaining exact editor fields/content catalog, character progression behavior and visual screen contracts.
 
-These are product specification gaps, not permission to choose arbitrary behavior while implementing. Technical implementation choices such as SQL indexes and tile-cache eviction need not become user-facing approval questions.
+The remaining task-specific criteria below are not permission to choose arbitrary behavior while implementing. Technical choices such as SQL indexes and tile-cache eviction need not become user-facing approval questions. Numeric routing guarantees, format support and exact user-facing field contracts still need their named task's evidence/review.
+
+### A01 reconciliation and downstream exclusion register
+
+Updated October 27, 2026 by the A01 product-contract chat. Approved behavior above and in the dedicated specifications takes precedence over legacy review notes. Remaining scope is explicitly excluded from A01 and assigned below; proposals are not approvals.
+
+| Contract boundary | Settled input | Remaining decision / excluded behavior | Consumers |
+| --- | --- | --- | --- |
+| Session lifecycle and staging | In Progress / Complete; focus-only pause; present-state Resume; party reserved at creation; other shared records on committed inclusion; new draft reservations at successful Start; every completed field frozen | Concrete command/storage schemas in B01–B08 and UI in A05; no metadata edit/reopen, draft acquisition or durable Paused status | B01, B05, B06, D04 |
+| Shared effects and clocks | Latest committed gameplay interaction owns preserved remaining duration; browse/drafts do not transfer; independent dates, no double countdown; explicit turn-relative handoff choice before transfer commit | Concrete supported trigger/effect schemas and resolution machinery in F02/F03; no silent handoff | B01, B05, F02 |
+| Rules input and grouping | Labeled raw-dice/final-total input; prompt for missing natural-roll/critical data; whole-action consequence grouping; excess spending separate from zero usable balance; storyteller orders ambiguous simultaneous triggers | Exact field/UI schemas in A05, nested resolution mechanics in F03; unsupported neighboring proposals remain unapproved | B01, B06, F01–F03 |
+| Presets and variants | Base × multiplier + flat; integer floor, max HP ≥1 and speed ≥0; override last; component damage after critical dice/before defenses; separate save-DC modifier; calculation preview | Exact field schemas and other field-specific validation in A05; no blanket approval of section 3 | A05, D01, F05 |
+| Canonical and encounter ownership | Shared location facts; multiple reusable templates per location; encounter map/combat state; canonical NPC HP/inventory/effects; single current placement with explicit moves; distinct generated IDs | Exact field schemas in A05; transfer mechanics enforce these invariants in D02 | A05, B01, B05, D02 |
+| Recovery identity and history | Separate world-instance ID, internal links preserved; exact target state/history prefix/status/reservations; backup required; original/later history untouched | Names/path collisions and handoff presentation in C03/C04; never overwrite an existing world | B01, B08, C03, C04 |
+| Geometry and assets | Approved movement section 1, fractional feet, 0.1-ft display, footprint clearance, distinct cost/distance optimization | Numeric optimality tolerance, baseline hardware/budgets, supported decode formats/limits; no invented acceptance numbers | A04, B03, E02 |
+| Exact editors and content | Approved navigation/visual direction and enabled SRD automation scope | Field/schema and visual approval stays A05; actual pinned catalog/coverage stays S01/A02; no wholesale approval of proposals 2–7 | A02, A05, D01, F04 |
+
+A01's state/ownership/behavior choices are resolved with direct user approvals and acceptance cases in the consolidated contract. Remaining rows are exclusions for the named tasks: do not certify A04 optimality/performance, A05 fields/UI, B03/E02 formats or source/mechanics completeness without their required review/evidence. A01 completion permits dependency-ready work, not completion of those tasks or blanket approval of proposals.
 
 ## 15. Primary technical references
 

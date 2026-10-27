@@ -14,8 +14,9 @@ Packaged compatibility fixes: preserve external native dependencies through Vite
 
 ## Scope and next gates
 
-- A01 remains open: session/reservation semantics, effect clock ownership and other product gaps are not decided by the scaffold.
-- B01 remains open: production command/query envelopes, expected-record-version conflicts and world binding require A01 and A03. Current schemas are a narrow A03 fixture contract.
+- A01 is now Complete through subsequent user decisions in the product-contract chat: session/reservation, clock/transfer and recovery boundaries are recorded in WORLDS_AND_SESSIONS.md and DATA_AND_RECOVERY.md. They were specified after A03, not implemented by its scaffold.
+- A05 is Active: approved visual/input baseline and pending final functional review live in UI_EDITOR_CONTRACT.md; the saved mock and portable checks are under docs/design. Whole-number gold/bundle valuation is required. No product editor/persistence implementation is claimed.
+- B01 remains open and is now prerequisite-ready after A01/A03: production command/query envelopes, expected-record-version conflicts and world binding still need implementation. Current schemas are a narrow A03 fixture contract.
 - A04 remains open: no continuous pathfinding, fog, optimality claim or performance benchmark is implemented.
 - SQLite probe backup is not the C01/C02 product backup/recovery gate. Fixture records are not production world entities or durable history.
 - The Home shell is a development screen, not A05-approved application/editor design.

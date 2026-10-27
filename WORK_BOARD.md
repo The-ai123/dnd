@@ -1,6 +1,6 @@
 # Agent work board — task status and scheduling authority
 
-Updated: October 27, 2026. The user authorized implementation, starting with architecture. A03 is complete with packaged Windows compatibility evidence in [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md). Remaining tasks and product decisions are tracked below; fixture code does not complete dependent production tasks.
+Updated: October 27, 2026. A01's user-approved state/ownership/behavior contract and downstream exclusions are complete; evidence below. The user authorized implementation, starting with architecture. A03 is complete with packaged Windows compatibility evidence in [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md). Remaining tasks and task-specific decisions are tracked below; fixture code does not complete dependent production tasks.
 
 ## 1. Status rules
 
@@ -31,12 +31,12 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 | P01 | Architecture baseline and detailed build-plan documents | Complete | Planning chat | — | Planning |
 | P02 | Adopt Open5e source and define no-scrape ingestion plan | Complete | Planning chat | P01 | Planning |
 | P03 | Dependency/status board and agent handoff organization | Complete | Planning chat | P01, P02 | Planning |
-| A01 | Close product-state/ownership gaps and reconcile legacy notes | To Do | — | — | Planning |
+| A01 | Close product-state/ownership gaps and reconcile legacy notes | Complete | Codex — A01 product-contract chat (this chat) | — | Planning |
 | S01 | Pin/audit published Open5e snapshot and 5.2.1 parity | To Do | — | — | Acquisition |
 | A02 | Actual SRD inventory, exclusions and automation coverage fixtures | To Do | — | A01, S01 | Planning |
 | A03 | Stack review and packaged Windows compatibility proof | Complete | Architecture implementation chat | — | Build |
 | A04 | Continuous geometry feasibility and optimality/performance proof | To Do | — | A01, A03 | Build |
-| A05 | Approve exact UI/editor schemas and validation behavior | To Do | — | A01 | Planning |
+| A05 | Approve exact UI/editor schemas and validation behavior | Active | Codex — A01/A05 product-contract chat (this chat) | A01 | Planning |
 | B01 | Strict domain/IPC contracts and role-scoped envelopes | To Do | — | A01, A03 | Build |
 | B02 | World/catalog storage, migrations, writer repositories | To Do | — | B01 | Build |
 | B03 | Immutable original-asset ingestion/references | To Do | — | B02 | Build |
@@ -81,10 +81,23 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 
 ### To Do / Active / Complete snapshot
 
-- **To Do:** all A–G and S tasks except A03. Production IPC, storage/history, recovery, gameplay, content and release work remain unfinished.
-- **Active:** none in this board at handoff.
-- **Complete:** P01, P02, P03 (planning artifacts), A03 (tested architecture foundation).
-- **Next:** A01 product-contract resolution and S01 source pin/audit have no task prerequisites. S01 still requires a recorded acquisition claim and provenance/license audit. A01 unlocks A04, A05 and B01; A02 additionally needs S01. No dependent production task is currently eligible solely because A03 is complete.
+- **To Do:** all A–G and S tasks except completed A01/A03 and Active A05. Production IPC, storage/history, recovery, gameplay, content and release work remain unfinished.
+- **Active:** A05 — Codex — A01/A05 product-contract chat (this chat).
+- **Complete:** P01, P02, P03 (planning artifacts), A01 (approved product contract with explicit downstream exclusions), A03 (tested architecture foundation).
+- **Next:** A05 is claimed for UI/editor specification and visual review. A04 and B01 have completed task prerequisites and open build gates, and remain unclaimed. A04 must agree/prove routing and performance criteria. S01 remains prerequisite-free but needs its acquisition claim/authorization and provenance audit. A02 still waits for S01. No production task is marked complete by specification work.
+
+### Ready parallel work — October 27 handoff
+
+The following lanes have completed task prerequisites. They are opportunities, not new claims. The assigned owner must record exact paths before writing and satisfy the task's own evidence/gate. A05 remains owned by this chat; no unapproved functional details are frozen merely to enable another task.
+
+| Lane | Ready work / scope boundary | Coordination and next unlock |
+| --- | --- | --- |
+| A04 | Geometry feasibility spike; proposed isolated writes `packages/geometry/**`, `tests/geometry/**`, `docs/geometry/**` | Agree numeric optimality/performance criteria and representative cases before claiming proof. Proposed geometry API reviewed with B01; cannot co-edit shared contracts or map-input code. Other E03 prerequisites still apply |
+| B01 | Strict domain/IPC envelopes, identities, roles, binding and validation; claim exact `packages/contracts/**`, `packages/domain/**` and required desktop IPC/test files | One owner for shared runtime contracts; use approved A01/A05 decisions and keep pending editor details explicit. Unblocks B02 |
+| S01 | Pin/audit published Open5e snapshot/provenance/parity; isolated `data/upstream/**`, `docs/content/**` | Separate acquisition claim required; remains MVP after user's clarification. Record raw source evidence, not normalized/editor schemas. Unblocks A02; source JSON does not complete mechanics |
+| A05 | Finish final library/progression and broader functional-contract review, including remaining shop lifecycle decisions | This chat owns root planning documents and `docs/design/**`. New lanes send evidence/contract proposals to the coordinator instead of editing the board/root plans concurrently. B07 and downstream UI/content gates remain blocked until A05 Complete |
+
+All four may progress concurrently with those boundaries. A02 is not yet ready (S01 incomplete); B02 is not yet ready (B01 incomplete). Do not start B07/C05/D01 from the accepted visual baseline alone. Keep package manifests/lockfiles under one integrator; these lanes do not require independent dependency churn.
 
 ## 4. Sequential spine and parallel lanes
 
@@ -134,6 +147,42 @@ Paths are intended boundaries, not evidence those modules exist. Exact claimed p
 
 ### Active claim / blocker log
 
+**A05 — claimed by Codex — A01/A05 product-contract chat (this chat), October 27, 2026.**
+
+- Exact repository write paths: `WORK_BOARD.md`, `UI_EDITOR_CONTRACT.md` (new review contract), `GRAPHICAL_DESIGN.md`, `APP_NAVIGATION.md`, `PLANNING_INDEX.md`, `PROJECT_PLAN.md`, `IMPLEMENTATION_PLAN.md`. Review previews: thread-owned visualization directory `C:/Users/adafo/.codex/visualizations/2026/10/27/01a17dbf-3873-7e01-82a5-774ea25be09e/`.
+- Prerequisites / authorization: A01 Complete; planning gate open; user requested A05. No competing Active claim recorded. Preserve existing uncommitted A01 document edits.
+- Inputs / consumers: A01 contract, approved navigation and graphical decisions; B07/C05–C07/D01–D06/E04–E05 and content schemas consume reviewed field/interaction contracts.
+- Intended evidence: reviewable Home/manager/Play/inspector/editor layouts; exact field/validation/save/recovery contracts and explicit user approvals. Raw form drafts must remain separate from valid gameplay values. Visual previews do not implement production behavior.
+- Current scope: drafting and review; no approval of new fields/layouts inferred from this claim. A05 remains Active until required review and reconciliation finish.
+- Initial deliverables: `UI_EDITOR_CONTRACT.md` drafts R01–R05 (save/validation, shell/visuals, management/recovery, content fields, preparation/progression/shop workflows). Thread preview `a05-interface-review.html` includes Home, Play, World Manager, entity input states, appearance controls and player-window presentation. Local headless Edge checks and inspected light/dark/invalid-input screenshots pass; no page overflow at 320/736/1024/1920px. These verify the mock only. Direct user review, complete content field schemas and remaining screen approval are outstanding; no A05 completion claimed.
+- First user review: save only on leaving a field or Enter, rejecting timer/debounce saves. Keep the general arrangement but replace floating retained/pinned inspection with a bottom dock visible without scrolling the workspace. Contract/source revisions recorded; revising the preview. Multiline key handling and internal long-content navigation asked separately; no broad approval of unreviewed fields/palette/dimensions.
+- Revised preview/QA: bottom inspector dock with section and pin/selection tabs; fixed active header and independent sheet content scroll. Desktop preview fits without document scrolling, dock position unchanged during sheet scroll, timer does not save, Enter/blur commit, invalid HP and error/retry behavior checked. Remaining responsive/local checks pass. A05 stays Active pending remaining review; exact dock dimensions/tabs and fields are still proposals.
+- Further approvals: multiline Ctrl+Enter/field-departure commits, Enter newline; long dock content scrolls internally with fixed header/workspace. Failure/conflict retains text and warns before world exit unless resolved or explicitly abandoned; document fields/editable quest statuses and name/tag limits approved. Updating preview demonstrations and continuing R01–R05 review; A05 remains Active.
+- Dock approval and latest QA: full-width dock, creature/pin and five section tabs, 230px default/180–420px adjustable height, fixed header/internal scrolling approved. Local multiline newline/commit checks and long-inventory scroll checks pass. Creature-field list and HP validation questions still pending; no broad R04 approval.
+- Latest requested changes: HP beside creature name (placement scope being clarified); player initiative becomes horizontally scrollable turn queue, with projecting arrow tab for up/down collapse (top/bottom anchoring being clarified). Unknown visible identities show `unknown`; hidden entities remain absent. Replacing obsolete public left-list preview/spec; storyteller initiative unchanged, enemy exact HP remains private.
+- Queue preview QA: expanded/collapsed states and arrow accessibility, contained horizontal scroll at 320/736/1024px, unknown-name/initials replacement and absence of enemy numeric HP checked; dark screenshots inspected. Header HP independently follows inspected/active creatures. Full existing mock checks pass. Top anchor and header-versus-initiative HP scope remain provisional pending user answers.
+- Clarification approved: top-mounted player turn queue, arrow tab below, collapse upward/expand downward; HP beside creature-sheet/inspector header names only, not initiative entries. Updating standalone sheet header to match. Creature-sheet field inventory and HP validation remain outstanding.
+- Header follow-through: standalone entity-sheet title now also shows HP, and mock valid HP commits update sheet/inspection/public-party headers while invalid drafts retain the previous value. Local checks pass; existing queue/dock/multiline/error checks remain green. General numeric syntax joined the pending creature-field/HP review; no additional approvals inferred.
+- Visual baseline accepted: user approves current preview as a good baseline and likes its minimal color scheme. A05 remains Active for non-graphical editor/schema/validation and functional workflow review. Remaining functional scope is consolidated in UI_EDITOR_CONTRACT.md; no blanket field or HP/numeric approval inferred. Continue functional planning without requiring more aesthetic rounds.
+- Scope extension authorized October 27: user requests finishing functional A05 and moving S01 outside MVP, likely first afterward. Additional exact documentation write paths: `CONTENT_DATA_PLAN.md`, `ARCHITECTURE.md`, `README.md`, `IMPLEMENTATION_STATUS.md` (scope note only; preserve A03 evidence). Audit downstream catalog/automation dependencies so S01 is not merely relabeled while still gating MVP. Source-specific dependent scope is being clarified; no acquisition or production edits authorized by this planning change.
+- Scope clarification after dependency explanation: user permits acquisition/data-dependent work to remain in MVP because the planned product uses it. Retain S01/A02/S02/S03 and existing downstream dependencies; no post-MVP split was applied. Schedule S01 after independent foundation planning if desired, but before catalog-dependent milestones. Creature/input baseline approved. Shop denomination must be gold, not copper; revising valuation fields accordingly. No acquisition performed in this A05 task.
+- Currency precision decision: user requires integer gold; explicitly priced item bundles may compensate for lower per-item values. Removed two-decimal gold proposal. Defined bundle count, units per priced bundle, physical quantity and whole-gold stock arithmetic; generator additions remain one priced unit/bundle with existing probability semantics. Source prices needing mapping retain provenance and must not be silently rounded or bundled. Final library/progression and broader functional-contract review questions remain open; A05 stays Active.
+- Repository handoff authorized by user: preserve review source and portable local QA in `docs/design/a05-interface-review.html`, `docs/design/check-a05-preview.cjs`, and `docs/design/README.md`; these additional exact write paths are design evidence, not production app files. Commit planning decisions and review artifacts. A05 remains Active in this chat for the explicitly pending final workflow/contract reviews.
+- Handoff verification: saved mock checks pass using `node docs/design/check-a05-preview.cjs` in headless Edge (sandboxed browser-profile launch failed; rerun outside the sandbox passed). Outputs stay in ignored `test-results/a05-review/`. Reconciled stale A01 status in implementation handoff/reporting, retained S01 MVP dependencies, and added the ready parallel-work table above. No production runtime change or new task claim.
+
+**A01 — completed by Codex — A01 product-contract chat (this chat), October 27, 2026.**
+
+- Exact write paths: `WORK_BOARD.md`, `ARCHITECTURE.md`, `PROJECT_PLAN.md`, `WORLDS_AND_SESSIONS.md`, `DATA_AND_RECOVERY.md`, `APP_NAVIGATION.md`, `GRAPHICAL_DESIGN.md`, `PROPOSED_DETAILS.md`, `PLANNING_INDEX.md`, `IMPLEMENTATION_PLAN.md`.
+- Completed dependencies / authorization: no task prerequisites; planning gate open; user explicitly requested the next To Do task be claimed. A03 is Complete; no competing Active claim is recorded. Working tree was clean at claim time.
+- Interface inputs and consumers: ARCHITECTURE.md section 14 and current product specifications; A04, A05, B01 and (with S01) A02 consume the resolved contract.
+- Intended evidence: one explicit state/ownership/behavior contract, reconciled legacy notes, and clearly excluded unresolved items as required by A01's acceptance row.
+- Current blocker / question: none within A01's approved state/ownership/behavior scope. Remaining task-specific criteria are explicitly excluded/assigned in the contract and ARCHITECTURE.md section 14. The dated review entries below record the decision sequence; their former pending questions are resolved by the final approval entry.
+- Partial-work handoff (October 27, 2026): work begun. User approved In Progress / Complete, focus-only pause/switch, present-state Resume, and new shared-record reservation acquisition only at successful Start. Recorded state/action contract and acceptance cases in WORLDS_AND_SESSIONS.md; decision register in ARCHITECTURE.md section 14; corrected stale movement, world hierarchy, retention and implementation-authorization wording. No production code changed.
+- Further decisions (October 27, 2026): shared-NPC timed effects follow the campaign of most recent interaction; locations hold shared facts, templates reusable layouts, encounters their own map/combat state, and NPC HP/inventory/effects stay canonical. Recorded approved boundaries and remaining questions in WORLDS_AND_SESSIONS.md and ARCHITECTURE.md; clock-interaction definition, rules input/grouping and preset arithmetic are awaiting user review.
+- Subsequent approvals (October 27, 2026): clock handoff requires a committed gameplay interaction and preserves remaining duration; view/browse/drafts do not transfer. User approved labeled manual input/missing critical prompts, whole-action undo, separate overspend, storyteller trigger ordering, and preset calculation/rounding/clamps/damage/save-DC rules. Contract and acceptance cases recorded in WORLDS_AND_SESSIONS.md; proposal status and architecture register updated. Session creation membership, placement/cardinality, restore prefix and turn-relative handoff remain unresolved.
+- Final approvals/integration (October 27, 2026): reserve party at creation; one current encounter placement per creature with explicit moves; multiple templates per location; exact historical prefix/state/status/reservation restoration in a separate world; freeze all completed-session fields; explicit storyteller turn-trigger handoff before transfer commit. Reviewed/reconciled current contract, architecture, recovery, navigation, project and proposal wording. Completion evidence and downstream exclusions are recorded below; no production code changed.
+- Board verification: 50 unique task IDs, valid statuses/dependency references and no dependency cycles. Prerequisite-ready To Do IDs: S01, A04, A05, B01; S01's acquisition gate still applies. Documentation diff whitespace check passes.
+
 **A03 — completed by Architecture implementation chat, October 27, 2026.** User explicitly instructed implementation in this chat. Paths: `apps/desktop/**`, `packages/{contracts,domain,engine,persistence,assets,map-view}/**`, `tests/**`, root npm/TypeScript/Vite/Forge/Playwright/Vitest configuration, `README.md`, `IMPLEMENTATION_STATUS.md`, and this A03 status/evidence entry. Existing scaffold belongs to this chat. No A01-dependent gameplay behavior was implemented. Typecheck, five architecture tests, Windows package and packaged two-window/native/WebGL/privacy/reopen smoke test pass. Details and limitations are recorded in `IMPLEMENTATION_STATUS.md`. Other task statuses remain unchanged.
 
 Append additional entries using:
@@ -150,6 +199,8 @@ Partial-work handoff (if any):
 ```
 
 ### Completion evidence log
+
+- **A01 | Codex — A01 product-contract chat (this chat) | October 27, 2026:** direct user approvals recorded in this chat; consolidated state/action table, ownership/timer/rules/preset contract and acceptance cases in `WORLDS_AND_SESSIONS.md`; exact recovery prefix/status/reservations in `DATA_AND_RECOVERY.md`; downstream exclusions and consumers in `ARCHITECTURE.md` section 14. Reconciled `PROJECT_PLAN.md`, `APP_NAVIGATION.md`, `PROPOSED_DETAILS.md`, `PLANNING_INDEX.md` and this board. Manual consistency review and `git diff --check` pass. No runtime tests needed for documentation-only changes; acceptance examples specify future behavioral tests, not executed production evidence. A04/A05/B01 become prerequisite-ready, A02 still needs S01. A04 numeric/hardware criteria, A05 fields/UI, B03/E02 format limits, C03/C04 recovery presentation/archive checks and actual catalog/mechanics coverage remain explicitly excluded and must be resolved/validated by their task owners.
 
 - **A03 | Architecture implementation chat | October 27, 2026:** exact files and evidence in `IMPLEMENTATION_STATUS.md`; pinned Electron 45/Forge 8/Vite 8/React 19/Pixi 8/native SQLite and sharp workspace; `npm run check`, `npm run package`, `npm run test:e2e` pass. Packaged native backups/tiles, WebGL and isolated windows verified. No product-state/geometry/editor approval inferred. A04 and B01 still require A01 before they are eligible; no dependent task claimed.
 

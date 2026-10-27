@@ -2,6 +2,18 @@
 
 Status: discovery. Foundational layout and appearance behavior are confirmed below; exact dimensions, components, and screen drafts remain under review. This document will become the interface contract for a future implementation agent.
 
+**Visual baseline accepted, October 27, 2026:** the user accepts the current A05 preview as a good baseline and its minimal color scheme. Preserve that direction and the approved bottom inspector/top player queue/header HP changes. Continue with non-graphical contract work; this does not approve unreviewed functional fields or replace later accessibility/scaling/runtime validation. Older provisional visual notes below must be read against this latest baseline acceptance.
+
+A05 review draft (October 27, 2026): UI_EDITOR_CONTRACT.md sections 3–5 propose exact shell/Play/player/inspector dimensions, densities, palettes and input details. Interactive review preview and local mock QA are recorded there. These proposals do not supersede confirmed decisions below until approved. A01's selected rules/preset/ownership approvals also apply; the old movement-only approval boundary in section 5 is historical, not a reversal of A01.
+
+**Latest direct user revision — October 27, 2026:** keep the Play/Home/manager/editor arrangement, but place retained/pinned inspection in a bottom dock like a Blender panel, visible without scrolling the workspace. This supersedes floating inspector placement and the older rejection of a bottom panel below. Hover remains a distinct read-only transient preview; active-turn sheet remains distinct. Exact dock height, multiple-pin presentation and internal long-content handling are under review in UI_EDITOR_CONTRACT.md. Editors save only on leaving a field or pressing Enter, not after a typing pause.
+
+Follow-up approval: long inspector content may scroll inside the fixed dock while header/workspace stay fixed. Multiline Enter is newline; Ctrl+Enter or field departure commits. Exact dock heights and multi-pin tab details remain proposed.
+
+Dock design approved in the next review: full-width bottom dock with creature/pin tabs and Stats/Actions/Spells/Inventory/Effects tabs; default 230 logical pixels high, resizable 180–420; fixed header and scrolling content. This supersedes pending height/tab wording above. Remaining hover/pin-number/appearance details are still under review.
+
+Latest player revision, now clarified: initiative is a horizontally scrollable turn queue at the top with an arrow tab below, collapsing upward/reopening downward. It replaces the old player left-list design; storyteller initiative is unchanged. Unknown visible identities display `unknown`, including public labels/accessibility; private initials/names are not fallbacks, and hidden entities remain absent. HP is beside names in creature-sheet and inspector headers, not initiative entries; enemy HP stays private.
+
 ## 1. Confirmed design constraints
 
 - Lightweight, practical information display for running a tabletop game.
@@ -42,14 +54,14 @@ Status: discovery. Foundational layout and appearance behavior are confirmed bel
 | G10 | Active turn: solid outer frame + TURN; inspection: dashed corner brackets; targets: numbered corner badges; red movement path + Over speed label | Confirmed; geometry, precedence, and simultaneous-state spacing pending |
 | G11 | Click-through stack selection: repeated clicks at the same overlap select the next eligible entity and wrap; initial storage order is acceptable | Confirmed; click/drag threshold and cycle-reset behavior pending |
 | G12 | Active creature panel: scrollable collapsible Stats, Actions, Spells, Inventory, Effects; all initially open, remember expansion/scroll per creature; only name/current turn and Next Turn stay fixed, stats scroll | Confirmed; exact section contents and scroll handling after edits pending |
-| G13 | Player initiative is a collapsible vertical list on the left | Confirmed; width, row fields, collapse affordance, and camera viewport effects pending |
+| G13 | Player initiative is a horizontally scrollable turn queue with projecting arrow tab for vertical collapse/reopen | Latest user revision; replaces left list. Anchor/remaining details under review |
 | G14 | Bare Alt release in focused storyteller window toggles detail; ignore Alt chords/text entry. Low-detail keeps mechanical geometry translucent and hides ALL map numbers, including distances/target numbers; panel values remain visible | Confirmed; draft opacity values awaiting visual review |
 | G15 | Player fog: unexplored opaque; explored unseen terrain dim; hide wall-editing geometry, show public doors and terrain effects | Confirmed; exact fills/opacities and public-overlay visibility rules pending |
 | G16 | Grid uses uniform thin neutral lines without major lines; hide when too dense at distant zoom; scale bar remains visible | Confirmed; zoom threshold, line contrast, and scale-bar layout pending |
 
 ### Initial wireframe under review
 
-- First draft used a stacked secondary inspector with a bottom-strip alternative. Both are superseded by the approved movable floating inspector. Keep the three-column arrangement; do not implement those inspector placements from the old preview.
+- Placement revision history: an earlier review selected floating inspectors; the latest October 27 A05 instruction replaces that with a bottom dock. Keep the three-column arrangement above it; use the current revised preview rather than the old floating or stacked designs.
 - Draft examples are illustrative encounter data, not approved sheet schemas, token styling, or combat rules.
 - Initiative/entity selection changes only the secondary inspector; it does not advance the turn or replace the active-creature panel.
 - Current turn and inspected selection require distinct simultaneous markers. Map room/token styling and panel sizes are provisional.
@@ -58,7 +70,7 @@ Status: discovery. Foundational layout and appearance behavior are confirmed bel
 
 ### Confirmed direction after first draft
 
-- Floating inspectors: hover opens a separate read-only preview near the pointer and it disappears on unhover. Existing retained/pinned panels stay in place. Hovering an already inspected creature emphasizes its existing panel instead of duplicating it. Single click retains an inspector until another entity is clicked. Space toggles the hovered creature's pin; it does not remove a different newer pin. This supersedes the earlier LIFO pin-undo wording. Q closes the oldest pin (FIFO), Alt+Q closes all, Shift+Q restores the last closure, including Close All as a batch. A collapsible recent-pins list includes closed pins. Remember panel positions; private full inspectors never appear in the player window.
+- Inspection lifetimes: retained/pinned inspection now lives in the bottom dock under the latest A05 revision. Hover opens a separate read-only preview near the pointer and disappears on unhover; it never closes retained/pinned inspection. Hovering an already inspected creature emphasizes its existing dock content. Single click retains inspection until another entity is clicked. Space toggles that creature's pin. Q closes the oldest pin (FIFO), Alt+Q closes all, Shift+Q restores the last closure/batch. Exact dock record tabs and persistence are under review. Private full inspection never appears in the player window.
 - Comfortable and Dense are explicit display modes, not a single mixed typography treatment. Define and review both before implementation.
 - Tokens use square portrait crops sized to their creature footprints, with initials when no portrait is assigned. Circular token rendering in the first draft is superseded. Token overlays and simultaneous state markers are the next design review.
 
@@ -95,7 +107,7 @@ Status: discovery. Foundational layout and appearance behavior are confirmed bel
 
 ### Map overlays and player-window layout
 
-- Player initiative occupies a collapsible vertical list at left. No enemy exact HP appears there. Reveal/fog policies must filter entries, names, current-turn indicators, and selection behavior; private enemies must not leak through list structure.
+- Player initiative is a horizontally scrollable turn queue with arrow-tab collapse/reopen, superseding the old left list. No enemy exact HP appears there. Unknown visible identities use `unknown`; hidden enemies remain absent without placeholder slots. Filter names, initials/portraits, accessibility, current-turn indicators and selection behavior to avoid disclosure through list structure.
 - Storyteller mechanical wall/door/terrain overlays have full-detail and transparent low-detail states. Bare Alt release toggles states only if no other key participated, the storyteller window is focused, and no text field is being edited. Alt+Q and other chords never toggle detail. Geometry remains translucent rather than disappearing; mechanics remain active.
 - Low-detail hides ALL numbers drawn over the map, including movement distances, target badge numbers, obstacle heights, terrain costs, numeric scale labels, and any numeric token-label content. Preserve nonnumeric marker shapes/labels. Inspector/sidebar/panel values remain visible. The scale bar remains drawn but its numeric annotation is suppressed in this mode. This overrides the earlier narrower mechanical-overlay-number interpretation.
 - Approved starting points for the next draft, not final visual sign-off: mechanical overlays 20% opacity in low-detail mode; other tokens 30% opacity during hover emphasis; dead portraits 35% opacity; explored terrain dimmed by 60%. Keep zero-HP-but-not-dead portraits opaque. Apply hover/death state distinctly and preserve a legible health outline. Review actual combined states in light and dark modes.
