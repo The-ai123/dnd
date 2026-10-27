@@ -1,0 +1,10 @@
+{
+  "version": "0.1.0",
+  "private": true,
+  "name": "@dnd/contracts",
+  "dependencies": {
+    "zod": "4.6.7"
+  },
+  "exports": "./src/index.ts",
+  "type": "module"
+}

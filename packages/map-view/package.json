@@ -1,0 +1,11 @@
+{
+  "version": "0.1.0",
+  "private": true,
+  "name": "@dnd/map-view",
+  "dependencies": {
+    "pixi.js": "8.22.0",
+    "@dnd/contracts": "0.1.0"
+  },
+  "exports": "./src/index.ts",
+  "type": "module"
+}

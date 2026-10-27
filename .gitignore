@@ -1,0 +1,33 @@
+# Dependencies and generated builds
+node_modules/
+.vite/
+out/
+dist/
+*.tsbuildinfo
+
+# Test output and coverage
+coverage/
+test-results/
+playwright-report/
+blob-report/
+
+# Local state, credentials and diagnostics
+*.log
+.local/
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.local
+.npm-cache/
+.cache/
+
+# Editor and OS artifacts
+.idea/
+.vs/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini

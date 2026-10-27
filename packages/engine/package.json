@@ -1,0 +1,11 @@
+{
+  "version": "0.1.0",
+  "private": true,
+  "name": "@dnd/engine",
+  "dependencies": {
+    "@dnd/contracts": "0.1.0",
+    "@dnd/domain": "0.1.0"
+  },
+  "exports": "./src/index.ts",
+  "type": "module"
+}

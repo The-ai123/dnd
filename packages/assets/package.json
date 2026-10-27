@@ -1,0 +1,10 @@
+{
+  "version": "0.1.0",
+  "private": true,
+  "name": "@dnd/assets",
+  "dependencies": {
+    "sharp": "0.35.5"
+  },
+  "exports": "./src/index.ts",
+  "type": "module"
+}

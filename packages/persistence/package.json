@@ -1,0 +1,10 @@
+{
+  "version": "0.1.0",
+  "private": true,
+  "name": "@dnd/persistence",
+  "dependencies": {
+    "better-sqlite3": "13.0.3"
+  },
+  "exports": "./src/index.ts",
+  "type": "module"
+}
