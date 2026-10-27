@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-10-27T18:49:42.528Z",
+  "node": "v24.21.0",
+  "hardware": {
+    "cpu": "13th Gen Intel(R) Core(TM) i7-13700H",
+    "logicalProcessors": 20,
+    "memoryGiB": 15.700675964355469,
+    "platform": "win32",
+    "release": "10.0.26200",
+    "arch": "x64"
+  },
+  "fixture": {
+    "extentFeet": 5280,
+    "tokens": 100,
+    "blockingEdges": 200,
+    "terrainRegions": 50,
+    "samplesPerTerrainEdge": 4
+  },
+  "measurement": {
+    "prepareMs": 1822.1400999999998,
+    "p95Ms": 50.021999999999935,
+    "maxMs": 74.89959999999974,
+    "warmQueries": 100,
+    "graphNodes": 1004,
+    "undirectedEdges": 82372,
+    "heapDeltaBytes": 43206688,
+    "rssDeltaBytes": 60452864,
+    "exploredCells": 100,
+    "costsChecksum": 48863.21555053985
+  },
+  "acceptedTargets": {
+    "p95Ms": 100,
+    "maxMs": 250
+  },
+  "passes": true,
+  "limits": "Local warm CPU-query feasibility only; cold preparation must run off the UI thread. No GPU, packaged-worker, mixed-DPI or universal weighted optimality claim."
+}
