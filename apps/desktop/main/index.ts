@@ -1,8 +1,9 @@
-import { app, BrowserWindow, ipcMain, dialog, type IpcMainInvokeEvent } from 'electron';
+import { app, BrowserWindow, ipcMain, dialog } from 'electron';
 import { join } from 'node:path';
-import { channels, privateSnapshotSchema, publicSceneSchema, playerSelectionSchema } from '@dnd/contracts';
+import { channels, privateSnapshotSchema, type IpcResponse } from '@dnd/contracts';
 import type { WindowRole } from '@dnd/domain';
 import { WorkerClient } from './worker-client';
+import { handleIpcRequest } from './ipc-boundary';
 
 declare const STORYTELLER_WINDOW_VITE_DEV_SERVER_URL: string | undefined;
 declare const PLAYER_WINDOW_VITE_DEV_SERVER_URL: string | undefined;
@@ -14,12 +15,6 @@ let engine: WorkerClient;
 let assets: WorkerClient;
 let playerWindow: BrowserWindow | undefined;
 let imageTilesVerified = false;
-
-function authorize(event: IpcMainInvokeEvent, role: WindowRole): void {
-  if (roles.get(event.sender.id) !== role || event.senderFrame !== event.sender.mainFrame) {
-    throw new Error('Unauthorized IPC sender');
-  }
-}
 
 async function createWindow(role: WindowRole): Promise<BrowserWindow> {
   const window = new BrowserWindow({
@@ -56,20 +51,21 @@ void app.whenReady().then(async () => {
   const probePath = join(process.env['DND_SMOKE_DATA'] ?? app.getPath('userData'), 'compatibility');
   await engine.call('initialize', probePath);
   imageTilesVerified = await assets.call('probe', join(probePath, 'tiles')) === true;
-  ipcMain.handle(channels.storytellerSnapshot, async event => {
-    authorize(event, 'storyteller');
-    const snapshot = privateSnapshotSchema.parse(await engine.call('privateSnapshot'));
-    return { ...snapshot, diagnostics: { ...snapshot.diagnostics, imageTilesVerified } };
-  });
-  ipcMain.handle(channels.playerSnapshot, async event => {
-    authorize(event, 'player');
-    return publicSceneSchema.parse(await engine.call('publicSnapshot'));
-  });
-  ipcMain.handle(channels.playerSelect, async (event, input: unknown) => {
-    authorize(event, 'player');
-    await engine.call('select', playerSelectionSchema.parse(input));
-  });
-  ipcMain.handle(channels.openPlayer, async event => { authorize(event, 'storyteller'); await openPlayer(); });
+  for (const role of ['storyteller', 'player'] as const) {
+    ipcMain.handle(role === 'storyteller' ? channels.storytellerRequest : channels.playerRequest, async (event, input: unknown) =>
+      handleIpcRequest({ registeredRole: roles.get(event.sender.id), isMainFrame: event.senderFrame !== null && event.senderFrame === event.sender.mainFrame }, role, input, async request => {
+        if (request.operation === 'host.open-player') {
+          await openPlayer();
+          return { protocolVersion: 1, requestId: request.requestId, ok: true, result: { type: 'acknowledged' } };
+        }
+        const response = await engine.call('request', request) as IpcResponse;
+        if (response.ok && response.result.type === 'private-snapshot') {
+          const snapshot = privateSnapshotSchema.parse(response.result.snapshot);
+          return { ...response, result: { type: 'private-snapshot', snapshot: { ...snapshot, diagnostics: { ...snapshot.diagnostics, imageTilesVerified } } } };
+        }
+        return response;
+      }));
+  }
   await createWindow('storyteller');
   await openPlayer();
 }).catch(error => {

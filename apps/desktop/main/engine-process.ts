@@ -2,7 +2,8 @@ import { mkdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { buildPublicScene, SerialQueue, validatePlayerSelection } from '@dnd/engine';
-import { playerSelectionSchema, type PrivateSnapshot } from '@dnd/contracts';
+import { type PrivateSnapshot, type IpcResponse } from '@dnd/contracts';
+import { failure, validateWorldRequest } from './ipc-boundary';
 import { proveSqliteBackup } from '@dnd/persistence';
 
 const queue = new SerialQueue();
@@ -28,10 +29,22 @@ process.parentPort?.on('message', ({ data }: { data: { id: number; method: strin
         result = snapshot;
       } else {
         if (!snapshot) throw new Error('Engine is not ready');
-        if (data.method === 'privateSnapshot') result = snapshot;
-        else if (data.method === 'publicSnapshot') result = snapshot.publicScene;
-        else if (data.method === 'select') validatePlayerSelection(snapshot.publicScene, playerSelectionSchema.parse(data.input));
-        else throw new Error('Unknown engine method');
+        if (data.method !== 'request') throw new Error('Unknown engine method');
+        const request = validateWorldRequest(data.input, snapshot.publicScene.identity.worldInstanceId);
+        if ('ok' in request) result = request;
+        else {
+          let response: IpcResponse;
+          if (request.operation === 'host.snapshot' || request.operation === 'world.snapshot') {
+            response = { protocolVersion: 1, requestId: request.requestId, ok: true, result: request.actorWindowRole === 'storyteller'
+              ? { type: 'private-snapshot', snapshot } : { type: 'public-snapshot', snapshot: snapshot.publicScene } };
+          } else if (request.operation === 'scene.select') {
+            try {
+              validatePlayerSelection(snapshot.publicScene, request.payload);
+              response = { protocolVersion: 1, requestId: request.requestId, ok: true, result: { type: 'acknowledged' } };
+            } catch { response = failure(request.requestId, 'INVALID_SELECTION', 'Selection does not belong to the current public scene'); }
+          } else response = failure(request.requestId, 'UNSUPPORTED_OPERATION', 'Command handler is not installed');
+          result = response;
+        }
       }
       process.parentPort?.postMessage({ id: data.id, result });
     } catch (error) {
