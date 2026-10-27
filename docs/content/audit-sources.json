@@ -1,0 +1,30 @@
+{
+  "retrieved_date": "2026-10-27",
+  "sources": [
+    {
+      "version": "5.2",
+      "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.pdf",
+      "sha256": "cf18e1f88a360646940b6fada63fd1bd04c1c02581ca668a9115c2f4577bf8aa",
+      "bytes": 5953304,
+      "pages": 361
+    },
+    {
+      "version": "5.2.1",
+      "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sha256": "8974902d109d6e63672d7c490bde9ccf052410503d9cfa768237154fbc5e3d87",
+      "bytes": 6031375,
+      "pages": 364
+    }
+  ],
+  "patch_notes": {
+    "url": "https://www.dndbeyond.com/community-update",
+    "section": "SRD 5.2.1 Now Available",
+    "published_date": "2025-05-01",
+    "use": "Version-delta audit only; records acquired from repository JSON, never webpage HTML"
+  },
+  "legal_sources": [
+    "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+    "https://media.dndbeyond.com/compendium-images/srd/5.1/SRD_CC_v5.1.pdf"
+  ],
+  "pdf_method": "pypdf 6.10.0 extraction; pypdfium2 rendered legal and creature pages for visual review; audit copies remain ignored under .cache/s01"
+}

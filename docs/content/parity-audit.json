@@ -1,0 +1,122 @@
+{
+  "baseline": "SRD 5.2.1",
+  "scope": "All May 1, 2025 published patch changes plus explicit stat-block spot checks; not exhaustive transcription certification",
+  "patch_notes_url": "https://www.dndbeyond.com/community-update",
+  "added_magic_items": [
+    {
+      "name": "Bead of Nourishment",
+      "matching_records": []
+    },
+    {
+      "name": "Cloak of Invisibility",
+      "matching_records": []
+    },
+    {
+      "name": "Elixir of Health",
+      "matching_records": []
+    },
+    {
+      "name": "Energy Bow",
+      "matching_records": []
+    },
+    {
+      "name": "Gloves of Thievery",
+      "matching_records": []
+    },
+    {
+      "name": "Hat of Many Spells",
+      "matching_records": []
+    },
+    {
+      "name": "Potion of Invulnerability",
+      "matching_records": []
+    },
+    {
+      "name": "Potion of Longevity",
+      "matching_records": []
+    },
+    {
+      "name": "Potion of Vitality",
+      "matching_records": []
+    },
+    {
+      "name": "Quarterstaff of the Acrobat",
+      "matching_records": []
+    },
+    {
+      "name": "Rod of Resurrection",
+      "matching_records": []
+    },
+    {
+      "name": "Sending Stones",
+      "matching_records": []
+    },
+    {
+      "name": "Sentinel Shield",
+      "matching_records": []
+    },
+    {
+      "name": "Shield of the Cavalier",
+      "matching_records": []
+    },
+    {
+      "name": "Thunderous Greatclub",
+      "matching_records": []
+    }
+  ],
+  "creature_patch_presence": {
+    "Knight": 1,
+    "Octopus": 1,
+    "Iron Golem": 1
+  },
+  "stat_block_checks": [
+    {
+      "model": "api_v2.creature",
+      "pk": "srd-2024_octopus",
+      "field": "ability_score_constitution",
+      "actual": 0,
+      "expected_5_2_1": 11,
+      "pdf_page": 358,
+      "status": "correction-required"
+    },
+    {
+      "model": "api_v2.creature",
+      "pk": "srd-2024_octopus",
+      "field": "ability_score_charisma",
+      "actual": -3,
+      "expected_5_2_1": 4,
+      "pdf_page": 358,
+      "status": "correction-required"
+    },
+    {
+      "model": "api_v2.creature",
+      "pk": "srd-2024_octopus",
+      "field": "saving_throw_constitution",
+      "actual": 30,
+      "expected_5_2_1": 0,
+      "pdf_page": 358,
+      "status": "correction-required"
+    },
+    {
+      "model": "api_v2.creature",
+      "pk": "srd-2024_knight",
+      "field": "condition_immunities",
+      "actual": [],
+      "expected_5_2_1": [
+        "frightened"
+      ],
+      "pdf_page": 302,
+      "status": "correction-required"
+    },
+    {
+      "model": "api_v2.creature",
+      "pk": "srd-2024_iron-golem",
+      "field": "ability_score_strength",
+      "actual": 24,
+      "expected_5_2_1": 24,
+      "pdf_page": 302,
+      "status": "matches"
+    }
+  ],
+  "parity_claim": false
+}
