@@ -1,6 +1,6 @@
 # Agent work board — task status and scheduling authority
 
-Updated: October 27, 2026. A01's user-approved state/ownership/behavior contract and downstream exclusions are complete; evidence below. The user authorized implementation, starting with architecture. A03 is complete with packaged Windows compatibility evidence in [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md). Remaining tasks and task-specific decisions are tracked below; fixture code does not complete dependent production tasks.
+Updated: November 6, 2026. A01's user-approved state, ownership and behavior contract is complete. A03 has packaged Windows compatibility evidence in [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md). A04 has completed the agreed [geometry feasibility cases](docs/geometry/A04.md) on its task branch. Remaining production work and its prerequisites are tracked below.
 
 ## 1. Status rules
 
@@ -35,7 +35,7 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 | S01 | Pin/audit published Open5e snapshot and 5.2.1 parity | To Do | — | — | Acquisition |
 | A02 | Actual SRD inventory, exclusions and automation coverage fixtures | To Do | — | A01, S01 | Planning |
 | A03 | Stack review and packaged Windows compatibility proof | Complete | Architecture implementation chat | — | Build |
-| A04 | Continuous geometry feasibility and optimality/performance proof | To Do | — | A01, A03 | Build |
+| A04 | Continuous geometry feasibility and optimality/performance proof | Complete | Codex — A04 geometry chat | A01, A03 | Build |
 | A05 | Approve exact UI/editor schemas and validation behavior | Active | Codex — A01/A05 product-contract chat (this chat) | A01 | Planning |
 | B01 | Strict domain/IPC contracts and role-scoped envelopes | To Do | — | A01, A03 | Build |
 | B02 | World/catalog storage, migrations, writer repositories | To Do | — | B01 | Build |
@@ -81,10 +81,10 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 
 ### To Do / Active / Complete snapshot
 
-- **To Do:** all A–G and S tasks except completed A01/A03 and Active A05. Production IPC, storage/history, recovery, gameplay, content and release work remain unfinished.
+- **To Do:** all A–G and S tasks except completed A01/A03/A04 and Active A05. Production IPC, storage/history, recovery, gameplay, content and release work remain unfinished.
 - **Active:** A05 — Codex — A01/A05 product-contract chat (this chat).
-- **Complete:** P01, P02, P03 (planning artifacts), A01 (approved product contract with explicit downstream exclusions), A03 (tested architecture foundation).
-- **Next:** A05 is claimed for UI/editor specification and visual review. A04 and B01 have completed task prerequisites and open build gates, and remain unclaimed. A04 must agree/prove routing and performance criteria. S01 remains prerequisite-free but needs its acquisition claim/authorization and provenance audit. A02 still waits for S01. No production task is marked complete by specification work.
+- **Complete:** P01, P02, P03 (planning artifacts), A01 (approved product contract with explicit downstream exclusions), A03 (tested architecture foundation), A04 (geometry feasibility against the agreed cases).
+- **Next:** A05 is claimed for UI/editor specification and visual review. B01 has completed task prerequisites and an open build gate. E03 and E06 still have other prerequisites. S01 remains prerequisite-free but needs its acquisition claim/authorization and provenance audit. A02 still waits for S01.
 
 ### Ready parallel work — October 27 handoff
 
@@ -92,12 +92,11 @@ The following lanes have completed task prerequisites. They are opportunities, n
 
 | Lane | Ready work / scope boundary | Coordination and next unlock |
 | --- | --- | --- |
-| A04 | Geometry feasibility spike; proposed isolated writes `packages/geometry/**`, `tests/geometry/**`, `docs/geometry/**` | Agree numeric optimality/performance criteria and representative cases before claiming proof. Proposed geometry API reviewed with B01; cannot co-edit shared contracts or map-input code. Other E03 prerequisites still apply |
 | B01 | Strict domain/IPC envelopes, identities, roles, binding and validation; claim exact `packages/contracts/**`, `packages/domain/**` and required desktop IPC/test files | One owner for shared runtime contracts; use approved A01/A05 decisions and keep pending editor details explicit. Unblocks B02 |
 | S01 | Pin/audit published Open5e snapshot/provenance/parity; isolated `data/upstream/**`, `docs/content/**` | Separate acquisition claim required; remains MVP after user's clarification. Record raw source evidence, not normalized/editor schemas. Unblocks A02; source JSON does not complete mechanics |
 | A05 | Finish final library/progression and broader functional-contract review, including remaining shop lifecycle decisions | This chat owns root planning documents and `docs/design/**`. New lanes send evidence/contract proposals to the coordinator instead of editing the board/root plans concurrently. B07 and downstream UI/content gates remain blocked until A05 Complete |
 
-All four may progress concurrently with those boundaries. A02 is not yet ready (S01 incomplete); B02 is not yet ready (B01 incomplete). Do not start B07/C05/D01 from the accepted visual baseline alone. Keep package manifests/lockfiles under one integrator; these lanes do not require independent dependency churn.
+The remaining lanes may progress concurrently within those boundaries. A02 waits for S01, and B02 waits for B01. B07, C05 and D01 retain their listed prerequisites. Keep package manifests and lockfiles under one integrator.
 
 ## 4. Sequential spine and parallel lanes
 
@@ -146,6 +145,8 @@ Paths are intended boundaries, not evidence those modules exist. Exact claimed p
 6. If abandoned/interrupted, write partial-work handoff and return To Do (or transfer owner explicitly). Preserve uncommitted files. Reopen a Complete task to To Do if a later change invalidates its evidence; audit descendants before proceeding.
 
 ### Active claim / blocker log
+
+**A04 — November 6, 2026 completion.** On `codex/a04-geometry-feasibility`, adaptive rectangle transit bounds certify all 50 weighted queries on the agreed fixture. The 100 warm queries measure p95 39.33 ms and maximum 90.57 ms, with weighted p95 46.53 ms. Typecheck and 24 tests pass. [A04 proof and handoff](docs/geometry/A04.md) and [raw benchmark evidence](docs/geometry/benchmark.json) record the acceptance cases and production limits. E03 and E06 retain their other dependencies.
 
 **A04 — November 6, 2026 continuation.** The branch adds geometric, sampling, strip and isolated-rectangle bounds. Typecheck and 23 tests pass. The recorded warm fixture meets latency at p95 54.73 ms and maximum 122.79 ms. It certifies 19 of 50 weighted queries, so A04 stays To Do and its dependent gates stay closed. The proof, unsuccessful experiments and sparse subdivision follow-up are recorded in `docs/geometry/A04.md` and `docs/geometry/benchmark.json`.
 

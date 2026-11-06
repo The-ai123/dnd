@@ -110,6 +110,16 @@ describe('weighted continuous movement', () => {
     within(result.cost, optimum);
     expect(result.lowerBound).toBeLessThanOrEqual(optimum + EPSILON);
   });
+  it('certifies a cheaper boundary route with both endpoints inside difficult terrain', () => {
+    const router = new Router(scene({ difficult: [box(30, 30, 70, 70)] }), { width: 0, height: 0 });
+    const result = route(router.route({ x: 31, y: 31 }, { x: 69, y: 31 }, 'cost'));
+    // Each one-foot approach to the near edge has horizontal displacement
+    // 1/sqrt(3), where the weighted tangential slopes match.
+    const optimum = 38 + 2 * Math.sqrt(3);
+    within(result.cost, optimum);
+    expect(result.lowerBound).toBeLessThanOrEqual(optimum + EPSILON);
+    expect(result.withinTolerance).toBe(true);
+  });
   it('keeps terrain costs for explicit Through and ordered waypoint composition', () => {
     const terrain = [box(5, 0, 15, 20)];
     const first = measure([{ x: 0, y: 10 }, { x: 10, y: 10 }], terrain);

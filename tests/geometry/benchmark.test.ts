@@ -1,7 +1,7 @@
 import { writeFileSync } from 'node:fs';
 import os from 'node:os';
 import { expect, it } from 'vitest';
-import { corners, Exploration, Router, visible, type Barrier, type Box, type Scene } from '../../packages/geometry/src/index';
+import { corners, EPSILON, Exploration, Router, visible, type Barrier, type Box, type Scene } from '../../packages/geometry/src/index';
 
 const box = (minX: number, minY: number, maxX: number, maxY: number): Box => ({ minX, minY, maxX, maxY });
 it('measures the agreed maximum-extent workload with 100 tokens, 200 blocking edges and 50 terrain regions', () => {
@@ -26,13 +26,17 @@ it('measures the agreed maximum-extent workload with 100 tokens, 200 blocking ed
   let weightedQueries = 0;
   const weightedGaps: number[] = [];
   const weightedSamples: number[] = [];
+  const uncertifiedCases: { start: typeof tokens[number]; end: typeof tokens[number]; cost: number; lowerBound: number }[] = [];
   for (let i = 0; i < 120; i++) {
     const start = tokens[i % tokens.length]!, end = { x: 510, y: 20 + i % 10 * 40 };
     const begin = performance.now();
     const result = router.route(start, end, i % 2 ? 'cost' : 'distance');
     const elapsed = performance.now() - begin;
     expect(result.status).toBe('route');
-    if (result.status === 'route') costs.push(result.cost);
+    if (result.status === 'route') {
+      costs.push(result.cost);
+      expect(result.lowerBound).toBeLessThanOrEqual((i % 2 ? result.cost : result.distance) + EPSILON);
+    }
     if (i >= 20) {
       samples.push(elapsed);
       if (i % 2) {
@@ -40,6 +44,9 @@ it('measures the agreed maximum-extent workload with 100 tokens, 200 blocking ed
         weightedSamples.push(elapsed);
         if (result.status === 'route' && result.withinTolerance) certifiedWeighted++;
         if (result.status === 'route') weightedGaps.push(result.cost - result.lowerBound);
+        if (result.status === 'route' && !result.withinTolerance) {
+          uncertifiedCases.push({ start, end, cost: result.cost, lowerBound: result.lowerBound });
+        }
       }
     }
     if (visible(scene, start, start, 60)) fog.reveal(start);
@@ -48,7 +55,7 @@ it('measures the agreed maximum-extent workload with 100 tokens, 200 blocking ed
   weightedSamples.sort((a, b) => a - b);
   const p95Ms = samples[Math.ceil(samples.length * 0.95) - 1]!, maxMs = samples.at(-1)!;
   const weightedP95Ms = weightedSamples[Math.ceil(weightedSamples.length * 0.95) - 1]!;
-  const latencyPasses = p95Ms <= 100 && maxMs <= 250;
+  const latencyPasses = p95Ms <= 100 && weightedP95Ms <= 100 && maxMs <= 250;
   const accuracyPasses = certifiedWeighted === weightedQueries;
   const report = {
     timestamp: new Date().toISOString(), node: process.version,
@@ -57,18 +64,24 @@ it('measures the agreed maximum-extent workload with 100 tokens, 200 blocking ed
     measurement: {
       prepareMs, p95Ms, maxMs, warmQueries: samples.length, weightedP95Ms, certifiedWeighted, weightedQueries,
       maximumWeightedGap: Math.max(...weightedGaps), graphNodes: router.nodes.length, undirectedEdges: router.edgeCount,
+      transitFeatures: router.transitFeatures,
+      transitMatrixBytes: router.transitFeatures ** 2 * Float32Array.BYTES_PER_ELEMENT,
       heapDeltaBytes: after.heapUsed - before.heapUsed, rssDeltaBytes: after.rss - before.rss, exploredCells: fog.size,
       costsChecksum: costs.reduce((a, b) => a + b, 0),
     },
     acceptedTargets: { p95Ms: 100, maxMs: 250 },
     latencyPasses,
     accuracyPasses,
+    uncertifiedCases,
     passes: latencyPasses && accuracyPasses,
     limits: 'Local warm CPU queries include weighted certification attempts. Accuracy passes when every weighted query meets the agreed bound.',
   };
   if (process.env.A04_RECORD_REPORT) writeFileSync(process.env.A04_RECORD_REPORT, `${JSON.stringify(report, null, 2)}\n`);
   console.log(JSON.stringify(report));
-  expect(p95Ms).toBeLessThanOrEqual(100); expect(maxMs).toBeLessThanOrEqual(250);
+  expect(uncertifiedCases).toEqual([]);
+  expect(p95Ms).toBeLessThanOrEqual(100);
+  expect(weightedP95Ms).toBeLessThanOrEqual(100);
+  expect(maxMs).toBeLessThanOrEqual(250);
   expect(fog.size).toBeLessThanOrEqual(100);
   // Storage depends on mechanical geometry, not 0.1-foot area cells (2.79 billion).
   expect(router.nodes.length).toBeLessThanOrEqual(1100);

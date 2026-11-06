@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-06T14:30:38.453Z",
+  "timestamp": "2026-11-06T14:50:32.656Z",
   "node": "v24.21.0",
   "hardware": {
     "cpu": "13th Gen Intel(R) Core(TM) i7-13700H",
@@ -17,27 +17,30 @@
     "samplesPerTerrainEdge": 4
   },
   "measurement": {
-    "prepareMs": 1805.6032000000002,
-    "p95Ms": 54.73400000000038,
-    "maxMs": 122.79439999999977,
+    "prepareMs": 2037.7475999999997,
+    "p95Ms": 39.33210000000008,
+    "maxMs": 90.56600000000026,
     "warmQueries": 100,
-    "weightedP95Ms": 97.27289999999994,
-    "certifiedWeighted": 19,
+    "weightedP95Ms": 46.533100000000104,
+    "certifiedWeighted": 50,
     "weightedQueries": 50,
-    "maximumWeightedGap": 39.014000204654735,
+    "maximumWeightedGap": 3.023410403258481,
     "graphNodes": 1004,
     "undirectedEdges": 82372,
-    "heapDeltaBytes": 40896144,
-    "rssDeltaBytes": 58617856,
+    "transitFeatures": 3604,
+    "transitMatrixBytes": 51955264,
+    "heapDeltaBytes": 21552600,
+    "rssDeltaBytes": 143437824,
     "exploredCells": 100,
-    "costsChecksum": 48863.21555053985
+    "costsChecksum": 48827.78722675138
   },
   "acceptedTargets": {
     "p95Ms": 100,
     "maxMs": 250
   },
   "latencyPasses": true,
-  "accuracyPasses": false,
-  "passes": false,
+  "accuracyPasses": true,
+  "uncertifiedCases": [],
+  "passes": true,
   "limits": "Local warm CPU queries include weighted certification attempts. Accuracy passes when every weighted query meets the agreed bound."
 }
