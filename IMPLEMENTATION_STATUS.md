@@ -1,6 +1,6 @@
 # Architecture implementation handoff
 
-Updated October 27, 2026. The user authorized implementation in the architecture chat. Planning-only wording in older documents records prior scope; unresolved product decisions remain unresolved.
+Updated November 6, 2026. The user authorized implementation in the architecture chat. Planning-only wording in older documents records prior scope; unresolved product decisions remain unresolved.
 
 ## A03 — desktop architecture and compatibility
 
@@ -16,7 +16,8 @@ Packaged compatibility fixes: preserve external native dependencies through Vite
 
 - A01 is now Complete through subsequent user decisions in the product-contract chat: session/reservation, clock/transfer and recovery boundaries are recorded in WORLDS_AND_SESSIONS.md and DATA_AND_RECOVERY.md. They were specified after A03, not implemented by its scaffold.
 - A05 is Complete. UI_EDITOR_CONTRACT.md records the approved visual baseline, functional editor requirements and whole-gold valuation rules. The saved mock and portable preview checks are under docs/design. Product editor and persistence work remain implementation tasks.
-- B01 is complete on `codex/b01-domain-ipc-contracts`: strict domain/IPC envelopes, role and sender validation, world binding and record-version conflict contracts are implemented. See the B01 evidence below. The shell still uses a synthetic world; production repositories and durable command execution remain B02–B06.
+- B01 is integrated and defines strict domain and IPC envelopes, role and sender validation, world binding and record-version conflicts.
+- B02 is complete on `codex/b02-world-storage`. The engine opens the catalog at startup and the shell still displays the development scene. B03 follows B02 integration, and B04 owns durable command execution.
 - A04 remains open: no continuous pathfinding, fog, optimality claim or performance benchmark is implemented.
 - SQLite probe backup is not the C01/C02 product backup/recovery gate. Fixture records are not production world entities or durable history.
 - The Home shell is a development screen, not A05-approved application/editor design.
@@ -31,3 +32,9 @@ Completed October 27, 2026 in the isolated worktree `C:/Users/adafo/.codex/workt
 Verification: `npm run check` passes TypeScript and 12 tests. `npm run package` and `npm run test:e2e` pass against the worktree's packaged Windows application. The expanded smoke test covers current/foreign world queries, unavailable lifecycle handlers, malformed request rejection, valid/stale scene selection, unregistered IPC sender rejection, public privacy, native probes, WebGL and player-window reopening. Electron launch and worktree-local test cache access required running checks outside the sandbox. Dependencies were copied locally for worktree isolation; package manifests and lockfile are unchanged.
 
 Consumer contract and exact scope: [docs/contracts/B01.md](docs/contracts/B01.md). Session create/complete envelopes intentionally return `UNSUPPORTED_OPERATION`; B02 owns repositories/migrations and B04–B06 own transactions, idempotency, lifecycle/reservations/history and enforcement of all approved gameplay policies. Version-conflict helpers are tested contracts for those future handlers, not evidence of durable command execution. B02 becomes prerequisite-ready when this branch is integrated.
+
+## B02 — world and catalog storage
+
+Commit `5257b25` adds the application catalog, one SQLite writer per world, a versioned world identity manifest, transactional migrations and local storage diagnostics in the storyteller window. The repositories validate database identity, schema versions and foreign keys before returning a writer.
+
+`npm run check` passed TypeScript and 16 tests, including two isolated worlds with matching internal record IDs, writer contention and abrupt process exit during migration. `npm run package` and `npm run test:e2e` passed for the Windows x64 package. The smoke test verified catalog startup and storyteller-only diagnostics. [Storage contract](docs/contracts/B02.md)
