@@ -35,6 +35,7 @@ export const privateSnapshotSchema = z.object({
     sqlite: z.string(),
     backupVerified: z.boolean(),
     imageTilesVerified: z.boolean(),
+    catalogSchemaVersion: revisionSchema.min(1),
   }).strict(),
   privateNotes: z.string(),
 }).strict();

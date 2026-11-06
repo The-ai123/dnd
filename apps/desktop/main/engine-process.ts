@@ -4,18 +4,29 @@ import { randomUUID } from 'node:crypto';
 import { buildPublicScene, SerialQueue, validatePlayerSelection } from '@dnd/engine';
 import { type PrivateSnapshot, type IpcResponse } from '@dnd/contracts';
 import { failure, validateWorldRequest } from './ipc-boundary';
-import { proveSqliteBackup } from '@dnd/persistence';
+import { CatalogRepository, proveSqliteBackup } from '@dnd/persistence';
 
 const queue = new SerialQueue();
 let snapshot: PrivateSnapshot | undefined;
+let catalog: CatalogRepository | undefined;
 process.parentPort?.on('message', ({ data }: { data: { id: number; method: string; input?: unknown } }) => {
   void queue.run(async () => {
     try {
       let result: unknown;
       if (data.method === 'initialize') {
-        if (typeof data.input !== 'string') throw new Error('Missing probe directory');
-        await mkdir(data.input, { recursive: true });
-        const sqlite = await proveSqliteBackup(join(data.input, 'probe.sqlite'), join(data.input, 'backup.sqlite'));
+        if (catalog) throw new Error('Engine is already initialized');
+        if (typeof data.input !== 'string') throw new Error('Missing application data directory');
+        const storage = CatalogRepository.open(data.input);
+        const probe = join(storage.folder, 'compatibility');
+        let sqlite: string;
+        try {
+          await mkdir(probe, { recursive: true });
+          sqlite = await proveSqliteBackup(join(probe, 'probe.sqlite'), join(probe, 'backup.sqlite'));
+        } catch (error) {
+          storage.close();
+          throw error;
+        }
+        catalog = storage;
         const identity = { worldInstanceId: randomUUID(), sceneEpoch: 1, revision: 0, context: 'live' as const };
         snapshot = {
           publicScene: buildPublicScene(identity, [
@@ -23,7 +34,7 @@ process.parentPort?.on('message', ({ data }: { data: { id: number; method: strin
             { id: randomUUID(), publicName: 'Visible creature', visible: true, party: false, hp: 9, maxHp: 12, x: 350, y: 240, privateNotes: 'Secret tactics' },
             { id: randomUUID(), publicName: 'Hidden creature', visible: false, party: false, hp: 30, maxHp: 30, x: 450, y: 350, privateNotes: 'Never transmitted to players' },
           ]),
-          diagnostics: { engine: 'ready', sqlite, backupVerified: true, imageTilesVerified: false },
+          diagnostics: { engine: 'ready', sqlite, backupVerified: true, imageTilesVerified: false, catalogSchemaVersion: catalog.schemaVersion },
           privateNotes: 'Development fixture. No campaign is open.',
         };
         result = snapshot;

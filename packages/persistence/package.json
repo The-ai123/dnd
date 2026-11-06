@@ -3,6 +3,7 @@
   "private": true,
   "name": "@dnd/persistence",
   "dependencies": {
+    "@dnd/contracts": "0.1.0",
     "better-sqlite3": "13.0.3"
   },
   "exports": "./src/index.ts",

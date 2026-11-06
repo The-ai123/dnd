@@ -13,6 +13,7 @@ test('packaged offline windows, native probes and public authority boundary', as
     const storyteller = windows.find(window => window.url().includes('storyteller_window'))!;
     const player = windows.find(window => window.url().includes('player_window'))!;
     await expect(storyteller.getByText('Backup verified', { exact: true })).toBeVisible();
+    await expect(storyteller.getByText('Catalog schema 1 ready', { exact: true })).toBeVisible();
     await expect(storyteller.getByText('Tile generation verified', { exact: true })).toBeVisible();
     await expect(player.locator('[data-renderer="webgl"] canvas')).toBeVisible();
     await expect(player.getByRole('alert')).toHaveCount(0);
@@ -26,7 +27,7 @@ test('packaged offline windows, native probes and public authority boundary', as
     expect(security.hasNode).toBe(false);
     expect(security.hasPrivateBridge).toBe(false);
     expect(security.staleRejected).toBe(true);
-    expect(JSON.stringify(security.scene)).not.toMatch(/Hidden creature|Secret tactics|privateNotes|maxHp/);
+    expect(JSON.stringify(security.scene)).not.toMatch(/Hidden creature|Secret tactics|privateNotes|maxHp|catalogSchemaVersion/);
     expect(security.scene.tokens).toHaveLength(2);
     const contracts = await storyteller.evaluate(async () => {
       const snapshot = await window.storyteller.snapshot();
