@@ -126,5 +126,210 @@
     "setup": "Character with access to Push for a valid weapon and targets at the eligible and ineligible size boundaries.",
     "act": "Resolve a hit against each with valid and obstructed paths.",
     "expect": "Present the choice only on qualifying hits, cap displacement at the printed distance, respect legal movement geometry and leave unrelated movement budgets untouched."
+  },
+  {
+    "id": "property-ammunition-wp",
+    "entries": [
+      "srd-2024_ammunition-wp"
+    ],
+    "setup": "Load a one-handed ammunition weapon with a free hand and 5 matching rounds.",
+    "act": "Make three shots including a miss, then recover after the fight. Retry separately with no free hand.",
+    "expect": "Three rounds are spent regardless of hits. Recover one of the spent rounds after one minute. The blocked reload spends no ammunition."
+  },
+  {
+    "id": "property-cleave-mastery",
+    "entries": [
+      "srd-2024_cleave-mastery"
+    ],
+    "setup": "A hit leaves a secondary target within reach and 5 ft of the first. Weapon die is 5 and ability +3.",
+    "act": "Accept Cleave, hit the secondary target, then try Cleave again on that turn.",
+    "expect": "Secondary takes 5 base damage before defenses. Second Cleave is unavailable. A negative ability modifier would still apply."
+  },
+  {
+    "id": "property-finesse-wp",
+    "entries": [
+      "srd-2024_finesse-wp"
+    ],
+    "setup": "Finesse user has Strength +1 and Dexterity +4. Weapon die 5.",
+    "act": "Choose Dexterity and resolve a scripted hit.",
+    "expect": "Both attack and damage use +4, for 9 base damage. Mixed ability choices are ineligible."
+  },
+  {
+    "id": "property-graze-mastery",
+    "entries": [
+      "srd-2024_graze-mastery"
+    ],
+    "setup": "A qualifying attack misses and uses Strength +4. Weapon deals Slashing.",
+    "act": "Accept Graze with a separate positive damage modifier present.",
+    "expect": "Apply 4 Slashing before defenses. Do not add the unrelated modifier or roll the weapon die."
+  },
+  {
+    "id": "property-heavy-wp",
+    "entries": [
+      "srd-2024_heavy-wp"
+    ],
+    "setup": "A character has Strength 12 and Dexterity 13.",
+    "act": "Attack with a Heavy melee weapon and a Heavy ranged weapon.",
+    "expect": "Apply Disadvantage for the melee weapon's Strength requirement only. The ranged Dexterity requirement is met."
+  },
+  {
+    "id": "property-light-wp",
+    "entries": [
+      "srd-2024_light-wp"
+    ],
+    "setup": "Two distinct Light weapons and a free Bonus Action. Ability +3 and secondary die 4.",
+    "act": "Use the Attack action and then take the extra attack with the other weapon.",
+    "expect": "Consume one Bonus Action. Secondary hit deals 4 base damage without the positive modifier. The original weapon is ineligible for the extra attack."
+  },
+  {
+    "id": "property-loading-wp",
+    "entries": [
+      "srd-2024_loading-wp"
+    ],
+    "setup": "A Loading weapon and Extra Attack, with multiple rounds available.",
+    "act": "Fire from the weapon during a single Attack action, then try to fire it again as part of that action.",
+    "expect": "Only one shot from the Loading weapon is available in that action. A second shot does not spend another round."
+  },
+  {
+    "id": "property-nick-mastery",
+    "entries": [
+      "srd-2024_nick-mastery"
+    ],
+    "setup": "A legal Light extra attack qualifies for Nick. Bonus Action remains available.",
+    "act": "Resolve the extra attack within the Attack action. Try another extra attack on the same turn.",
+    "expect": "No Bonus Action is spent. The repeat extra attack is unavailable."
+  },
+  {
+    "id": "property-push-mastery",
+    "entries": [
+      "srd-2024_push-mastery"
+    ],
+    "setup": "One Large and one Huge target are each hit. The Large target has a clear path straight away.",
+    "act": "Choose maximum Push on each hit.",
+    "expect": "The Large target moves 10 ft directly away. The Huge target does not qualify."
+  },
+  {
+    "id": "property-reach-wp",
+    "entries": [
+      "srd-2024_reach-wp"
+    ],
+    "setup": "Base reach 5 ft. One target is 10 ft away and another leaves that weapon reach.",
+    "act": "Attack and test Opportunity Attack eligibility with the Reach weapon.",
+    "expect": "Use 10-ft reach both for its attack and for its Opportunity Attack boundary."
+  },
+  {
+    "id": "property-sap-mastery",
+    "entries": [
+      "srd-2024_sap-mastery"
+    ],
+    "setup": "Hit a target with an eligible Sap attack.",
+    "act": "Resolve two attacks by that target before the sapper's next turn.",
+    "expect": "Only the first attack has Disadvantage from Sap. If unused, it expires at the start of the sapper's next turn."
+  },
+  {
+    "id": "property-slow-mastery",
+    "entries": [
+      "srd-2024_slow-mastery"
+    ],
+    "setup": "A creature with 30-ft Speed takes damage from two eligible Slow hits.",
+    "act": "Accept each rider and advance to the start of the applier's next turn.",
+    "expect": "Speed becomes 20 ft and never becomes 10 ft from stacking. The applied reduction expires at the stated boundary."
+  },
+  {
+    "id": "property-thrown-wp",
+    "entries": [
+      "srd-2024_thrown-wp"
+    ],
+    "setup": "A melee Thrown weapon is stowed and uses Strength +3 for melee. Dexterity is +1.",
+    "act": "Draw and throw it as a ranged attack.",
+    "expect": "Drawing is part of the attack. Use Strength +3 for the attack and damage."
+  },
+  {
+    "id": "property-topple-mastery",
+    "entries": [
+      "srd-2024_topple-mastery"
+    ],
+    "setup": "Eligible hit with attack ability +4 and proficiency +3.",
+    "act": "Offer Topple and test Constitution totals 14 and 15 separately.",
+    "expect": "DC is 15. Total 14 applies Prone and total 15 does not."
+  },
+  {
+    "id": "property-two-handed-wp",
+    "entries": [
+      "srd-2024_two-handed-wp"
+    ],
+    "setup": "A Two-Handed weapon is held with one hand and the other is occupied.",
+    "act": "Try to attack, free the other hand, and attack with both.",
+    "expect": "One-handed use is ineligible. Two-handed use meets the property requirement."
+  },
+  {
+    "id": "property-versatile-wp",
+    "entries": [
+      "srd-2024_versatile-wp"
+    ],
+    "setup": "Weapon damage is d8 with one hand and d10 with two.",
+    "act": "Make a melee hit in each grip.",
+    "expect": "Select the d8 for one hand and d10 for two hands without changing the weapon identity."
+  },
+  {
+    "id": "property-vex-mastery",
+    "entries": [
+      "srd-2024_vex-mastery"
+    ],
+    "setup": "Eligible attack damages target A. Target B is also within reach.",
+    "act": "Attack B, then attack A twice before the end of the applier's next turn.",
+    "expect": "B receives no modifier. First subsequent attack on A gains Advantage. The next attack on A has no bonus from the original Vex grant."
+  },
+  {
+    "id": "background-acolyte",
+    "entries": [
+      "srd-2024_acolyte_ability-scores",
+      "srd-2024_acolyte_skill-proficiencies",
+      "srd-2024_acolyte_tool-proficiencies",
+      "srd-2024_acolyte_equipment",
+      "srd-2024_acolyte_feat"
+    ],
+    "setup": "A level-1 character selects the acolyte background with no overlapping proficiencies.",
+    "act": "Apply +1 to each legal ability and choose kit A. Repeat independently with option B, and try choosing an ability outside the list.",
+    "expect": "Increase only Intelligence, Wisdom, Charisma. Grant Insight and Religion, proficiency with Calligrapher's Supplies, and Magic Initiate (Cleric). Kit A gives Calligrapher's Supplies, prayer book, Holy Symbol, 10 sheets of Parchment, Robe, 8 GP. Option B gives 50 GP with no kit. Reject a boost outside the listed abilities."
+  },
+  {
+    "id": "background-criminal",
+    "entries": [
+      "srd-2024_criminal_ability-scores",
+      "srd-2024_criminal_skill-proficiencies",
+      "srd-2024_criminal_tool-proficiencies",
+      "srd-2024_criminal_equipment",
+      "srd-2024_criminal_feat"
+    ],
+    "setup": "A level-1 character selects the criminal background with no overlapping proficiencies.",
+    "act": "Apply +1 to each legal ability and choose kit A. Repeat independently with option B, and try choosing an ability outside the list.",
+    "expect": "Increase only Dexterity, Constitution, Intelligence. Grant Sleight of Hand and Stealth, proficiency with Thieves' Tools, and Alert. Kit A gives 2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP. Option B gives 50 GP with no kit. Reject a boost outside the listed abilities."
+  },
+  {
+    "id": "background-sage",
+    "entries": [
+      "srd-2024_sage_ability-scores",
+      "srd-2024_sage_skill-proficiencies",
+      "srd-2024_sage_tool-proficiencies",
+      "srd-2024_sage_equipment",
+      "srd-2024_sage_feat"
+    ],
+    "setup": "A level-1 character selects the sage background with no overlapping proficiencies.",
+    "act": "Apply +1 to each legal ability and choose kit A. Repeat independently with option B, and try choosing an ability outside the list.",
+    "expect": "Increase only Constitution, Intelligence, Wisdom. Grant Arcana and History, proficiency with Calligrapher's Supplies, and Magic Initiate (Wizard). Kit A gives Quarterstaff, Calligrapher's Supplies, history book, 8 sheets of Parchment, Robe, 8 GP. Option B gives 50 GP with no kit. Reject a boost outside the listed abilities."
+  },
+  {
+    "id": "background-soldier",
+    "entries": [
+      "srd-2024_soldier_ability-scores",
+      "srd-2024_soldier_skill-proficiencies",
+      "srd-2024_soldier_tool-proficiencies",
+      "srd-2024_soldier_equipment",
+      "srd-2024_soldier_feat"
+    ],
+    "setup": "A level-1 character selects the soldier background with no overlapping proficiencies.",
+    "act": "Apply +1 to each legal ability and choose kit A. Repeat independently with option B, and try choosing an ability outside the list.",
+    "expect": "Increase only Strength, Dexterity, Constitution. Grant Athletics and Intimidation, proficiency with the chosen Gaming Set, and Savage Attacker. Kit A gives Spear, Shortbow, 20 Arrows, the same Gaming Set, Healer's Kit, Quiver, Traveler's Clothes, 14 GP. Option B gives 50 GP with no kit. Reject a boost outside the listed abilities."
   }
 ]

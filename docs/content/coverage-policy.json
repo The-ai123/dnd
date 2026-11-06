@@ -43,6 +43,18 @@
     },
     "srd-2024_tiefling_fiendish-legacy": {
       "Infernal Darkness grant": "lighting"
+    },
+    "srd-2024_druidcraft": {
+      "Fire Play illumination changes": "lighting"
+    },
+    "srd-2024_elementalism": {
+      "Beckon Fire illumination changes": "lighting"
+    },
+    "srd-2024_prestidigitation": {
+      "Fire Play illumination changes": "lighting"
+    },
+    "srd-2024_create-or-destroy-water": {
+      "Rain illumination changes": "lighting"
     }
   }
 }

@@ -43,5 +43,7 @@
     "deferred": 41,
     "enabled": 773
   },
-  "upstreamManifestVersion": 1
+  "upstreamManifestVersion": 1,
+  "concreteFixtures": 202,
+  "entriesWithConcreteFixtures": 209
 }

@@ -1,6 +1,7 @@
 """Generate or verify the A02 planning catalog from the pinned S01 evidence."""
 import argparse
 from collections import Counter, defaultdict
+import csv
 import json
 import re
 from pathlib import Path
@@ -33,6 +34,22 @@ def read(path):
 
 def row_key(record):
     return record["model"], record["pk"]
+
+
+def spell_fixtures(entries, filename, level):
+    with (HERE / filename).open(encoding="utf-8", newline="") as source:
+        fixtures = list(csv.DictReader(source, delimiter="|"))
+    expected = {
+        entry["id"] for entry in entries
+        if entry["source"] == "Spell.json" and entry["scope"] == "enabled"
+        and entry["sourceInputs"]["level"] == level
+    }
+    actual = Counter("srd-2024_" + case["id"] for case in fixtures)
+    if actual != Counter(expected):
+        raise ValueError(f"{filename} must cover each enabled level-{level} spell once")
+    for case in fixtures:
+        entry_id = "srd-2024_" + case["id"]
+        yield {**case, "id": "spell-" + case["id"], "entries": [entry_id]}
 
 
 def build():
@@ -134,6 +151,10 @@ def build():
         "upstreamManifestVersion": manifest["format"],
     }
     fixtures = read(HERE / "coverage-fixtures.json")
+    fixtures.extend(spell_fixtures(output, "cantrip-fixtures.txt", 0))
+    fixtures.extend(spell_fixtures(output, "level-one-spell-fixtures.txt", 1))
+    fixtures.extend(spell_fixtures(output, "level-two-spell-fixtures.txt", 2))
+    fixtures.extend(spell_fixtures(output, "level-three-spell-fixtures.txt", 3))
     known_entries = {entry["id"]: entry for entry in output}
     fixture_ids = set()
     for fixture in fixtures:
@@ -146,6 +167,8 @@ def build():
             known_entries[entry_id].setdefault("concreteFixtureIds", []).append(fixture["id"])
         if not all(fixture.get(field) for field in ("setup", "act", "expect")):
             raise ValueError(f"Incomplete fixture: {fixture['id']}")
+    indexed["concreteFixtures"] = len(fixtures)
+    indexed["entriesWithConcreteFixtures"] = sum("concreteFixtureIds" in row for row in output)
     return indexed, output
 
 

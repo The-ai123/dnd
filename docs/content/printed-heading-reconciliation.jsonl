@@ -1,0 +1,1184 @@
+{"category": "spell", "kind": "heading", "heading": "Acid Arrow", "page": 107, "match": "name", "candidateIds": ["srd-2024_acid-arrow"]}
+{"category": "spell", "kind": "heading", "heading": "Acid SplASh", "page": 107, "match": "name", "candidateIds": ["srd-2024_acid-splash"]}
+{"category": "spell", "kind": "heading", "heading": "Aid", "page": 107, "match": "name", "candidateIds": ["srd-2024_aid"]}
+{"category": "spell", "kind": "heading", "heading": "Alarm", "page": 107, "match": "name", "candidateIds": ["srd-2024_alarm"]}
+{"category": "spell", "kind": "heading", "heading": "Alter Self", "page": 107, "match": "name", "candidateIds": ["srd-2024_alter-self"]}
+{"category": "spell", "kind": "heading", "heading": "Animal Friendship", "page": 107, "match": "name", "candidateIds": ["srd-2024_animal-friendship"]}
+{"category": "spell", "kind": "heading", "heading": "Animal Messenger", "page": 108, "match": "name", "candidateIds": ["srd-2024_animal-messenger"]}
+{"category": "spell", "kind": "heading", "heading": "Animal Shapes", "page": 108, "match": "name", "candidateIds": ["srd-2024_animal-shapes"]}
+{"category": "spell", "kind": "heading", "heading": "Animate Dead", "page": 108, "match": "name", "candidateIds": ["srd-2024_animate-dead"]}
+{"category": "spell", "kind": "heading", "heading": "Animate Objects", "page": 108, "match": "name", "candidateIds": ["srd-2024_animate-objects"]}
+{"category": "spell", "kind": "heading", "heading": "Antimagic Field", "page": 109, "match": "name", "candidateIds": ["srd-2024_antimagic-field"]}
+{"category": "spell", "kind": "heading", "heading": "Antipathy/Sympathy", "page": 109, "match": "name", "candidateIds": ["srd-2024_antipathysympathy"]}
+{"category": "spell", "kind": "heading", "heading": "Antilife Shell", "page": 109, "match": "name", "candidateIds": ["srd-2024_antilife-shell"]}
+{"category": "spell", "kind": "heading", "heading": "Arcane Eye", "page": 110, "match": "name", "candidateIds": ["srd-2024_arcane-eye"]}
+{"category": "spell", "kind": "heading", "heading": "Arcane Hand", "page": 110, "match": "name", "candidateIds": ["srd-2024_arcane-hand"]}
+{"category": "spell", "kind": "heading", "heading": "Arcane Lock", "page": 110, "match": "name", "candidateIds": ["srd-2024_arcane-lock"]}
+{"category": "spell", "kind": "heading", "heading": "Arcane Sword", "page": 110, "match": "name", "candidateIds": ["srd-2024_arcane-sword"]}
+{"category": "spell", "kind": "heading", "heading": "Arcanist’s Magic Aura", "page": 110, "match": "name", "candidateIds": ["srd-2024_arcanists-magic-aura"]}
+{"category": "spell", "kind": "heading", "heading": "Astral Projection", "page": 111, "match": "name", "candidateIds": ["srd-2024_astral-projection"]}
+{"category": "spell", "kind": "heading", "heading": "Augury", "page": 111, "match": "name", "candidateIds": ["srd-2024_augury"]}
+{"category": "spell", "kind": "heading", "heading": "Aura of Life", "page": 111, "match": "name", "candidateIds": ["srd-2024_aura-of-life"]}
+{"category": "spell", "kind": "heading", "heading": "Awaken", "page": 111, "match": "name", "candidateIds": ["srd-2024_awaken"]}
+{"category": "spell", "kind": "heading", "heading": "Bane", "page": 112, "match": "name", "candidateIds": ["srd-2024_bane"]}
+{"category": "spell", "kind": "heading", "heading": "Banishment", "page": 112, "match": "name", "candidateIds": ["srd-2024_banishment"]}
+{"category": "spell", "kind": "heading", "heading": "Barkskin", "page": 112, "match": "name", "candidateIds": ["srd-2024_barkskin"]}
+{"category": "spell", "kind": "heading", "heading": "Beacon of Hope", "page": 112, "match": "name", "candidateIds": ["srd-2024_beacon-of-hope"]}
+{"category": "spell", "kind": "heading", "heading": "Befuddlement", "page": 112, "match": "name", "candidateIds": ["srd-2024_befuddlement"]}
+{"category": "spell", "kind": "heading", "heading": "Bestow Curse", "page": 112, "match": "name", "candidateIds": ["srd-2024_bestow-curse"]}
+{"category": "spell", "kind": "heading", "heading": "Black Tentacles", "page": 113, "match": "name", "candidateIds": ["srd-2024_black-tentacles"]}
+{"category": "spell", "kind": "heading", "heading": "Blade Barrier", "page": 113, "match": "name", "candidateIds": ["srd-2024_blade-barrier"]}
+{"category": "spell", "kind": "heading", "heading": "Bless", "page": 113, "match": "name", "candidateIds": ["srd-2024_bless"]}
+{"category": "spell", "kind": "heading", "heading": "Blight", "page": 113, "match": "name", "candidateIds": ["srd-2024_blight"]}
+{"category": "spell", "kind": "heading", "heading": "Blindness/Deafness", "page": 113, "match": "name", "candidateIds": ["srd-2024_blindnessdeafness"]}
+{"category": "spell", "kind": "heading", "heading": "Blink", "page": 113, "match": "name", "candidateIds": ["srd-2024_blink"]}
+{"category": "spell", "kind": "heading", "heading": "Blur", "page": 114, "match": "name", "candidateIds": ["srd-2024_blur"]}
+{"category": "spell", "kind": "heading", "heading": "Burning Hands", "page": 114, "match": "name", "candidateIds": ["srd-2024_burning-hands"]}
+{"category": "spell", "kind": "heading", "heading": "Call Lightning", "page": 114, "match": "name", "candidateIds": ["srd-2024_call-lightning"]}
+{"category": "spell", "kind": "heading", "heading": "Calm Emotions", "page": 114, "match": "name", "candidateIds": ["srd-2024_calm-emotions"]}
+{"category": "spell", "kind": "heading", "heading": "Chain Lightning", "page": 114, "match": "name", "candidateIds": ["srd-2024_chain-lightning"]}
+{"category": "spell", "kind": "heading", "heading": "Charm Monster", "page": 114, "match": "name", "candidateIds": ["srd-2024_charm-monster"]}
+{"category": "spell", "kind": "heading", "heading": "Charm Person", "page": 115, "match": "name", "candidateIds": ["srd-2024_charm-person"]}
+{"category": "spell", "kind": "heading", "heading": "Chill Touch", "page": 115, "match": "name", "candidateIds": ["srd-2024_chill-touch"]}
+{"category": "spell", "kind": "heading", "heading": "Chromatic Orb", "page": 115, "match": "name", "candidateIds": ["srd-2024_chromatic-orb"]}
+{"category": "spell", "kind": "heading", "heading": "Circle of Death", "page": 115, "match": "name", "candidateIds": ["srd-2024_circle-of-death"]}
+{"category": "spell", "kind": "heading", "heading": "Clairvoyance", "page": 115, "match": "name", "candidateIds": ["srd-2024_clairvoyance"]}
+{"category": "spell", "kind": "heading", "heading": "Clone", "page": 115, "match": "name", "candidateIds": ["srd-2024_clone"]}
+{"category": "spell", "kind": "heading", "heading": "Cloudkill", "page": 116, "match": "name", "candidateIds": ["srd-2024_cloudkill"]}
+{"category": "spell", "kind": "heading", "heading": "Color Spray", "page": 116, "match": "name", "candidateIds": ["srd-2024_color-spray"]}
+{"category": "spell", "kind": "heading", "heading": "Command", "page": 116, "match": "name", "candidateIds": ["srd-2024_command"]}
+{"category": "spell", "kind": "heading", "heading": "Commune", "page": 116, "match": "name", "candidateIds": ["srd-2024_commune"]}
+{"category": "spell", "kind": "heading", "heading": "Commune with Nature", "page": 116, "match": "name", "candidateIds": ["srd-2024_commune-with-nature"]}
+{"category": "spell", "kind": "heading", "heading": "Comprehend Languages", "page": 117, "match": "name", "candidateIds": ["srd-2024_comprehend-languages"]}
+{"category": "spell", "kind": "heading", "heading": "Compulsion", "page": 117, "match": "name", "candidateIds": ["srd-2024_compulsion"]}
+{"category": "spell", "kind": "heading", "heading": "Cone of Cold", "page": 117, "match": "name", "candidateIds": ["srd-2024_cone-of-cold"]}
+{"category": "spell", "kind": "heading", "heading": "Confusion", "page": 117, "match": "name", "candidateIds": ["srd-2024_confusion"]}
+{"category": "spell", "kind": "heading", "heading": "Conjure Animals", "page": 117, "match": "name", "candidateIds": ["srd-2024_conjure-animals"]}
+{"category": "spell", "kind": "heading", "heading": "Conjure Celestial", "page": 118, "match": "name", "candidateIds": ["srd-2024_conjure-celestial"]}
+{"category": "spell", "kind": "heading", "heading": "Conjure Elemental", "page": 118, "match": "name", "candidateIds": ["srd-2024_conjure-elemental"]}
+{"category": "spell", "kind": "heading", "heading": "Conjure Fey", "page": 118, "match": "name", "candidateIds": ["srd-2024_conjure-fey"]}
+{"category": "spell", "kind": "heading", "heading": "Conjure Minor Elementals", "page": 118, "match": "name", "candidateIds": ["srd-2024_conjure-minor-elementals"]}
+{"category": "spell", "kind": "heading", "heading": "Conjure Woodland Beings", "page": 118, "match": "name", "candidateIds": ["srd-2024_conjure-woodland-beings"]}
+{"category": "spell", "kind": "heading", "heading": "Contact Other Plane", "page": 119, "match": "name", "candidateIds": ["srd-2024_contact-other-plane"]}
+{"category": "spell", "kind": "heading", "heading": "Contagion", "page": 119, "match": "name", "candidateIds": ["srd-2024_contagion"]}
+{"category": "spell", "kind": "heading", "heading": "Contingency", "page": 119, "match": "name", "candidateIds": ["srd-2024_contingency"]}
+{"category": "spell", "kind": "heading", "heading": "Continual Flame", "page": 119, "match": "name", "candidateIds": ["srd-2024_continual-flame"]}
+{"category": "spell", "kind": "heading", "heading": "Control Water", "page": 119, "match": "name", "candidateIds": ["srd-2024_control-water"]}
+{"category": "spell", "kind": "heading", "heading": "Control Weather", "page": 120, "match": "name", "candidateIds": ["srd-2024_control-weather"]}
+{"category": "spell", "kind": "heading", "heading": "Counterspell", "page": 120, "match": "name", "candidateIds": ["srd-2024_counterspell"]}
+{"category": "spell", "kind": "heading", "heading": "Create Food and Water", "page": 120, "match": "name", "candidateIds": ["srd-2024_create-food-and-water"]}
+{"category": "spell", "kind": "heading", "heading": "Create or Destroy Water", "page": 121, "match": "name", "candidateIds": ["srd-2024_create-or-destroy-water"]}
+{"category": "spell", "kind": "heading", "heading": "Create Undead", "page": 121, "match": "name", "candidateIds": ["srd-2024_create-undead"]}
+{"category": "spell", "kind": "heading", "heading": "Creation", "page": 121, "match": "name", "candidateIds": ["srd-2024_creation"]}
+{"category": "spell", "kind": "heading", "heading": "Cure Wounds", "page": 121, "match": "name", "candidateIds": ["srd-2024_cure-wounds"]}
+{"category": "spell", "kind": "heading", "heading": "Dancing Lights", "page": 121, "match": "name", "candidateIds": ["srd-2024_dancing-lights"]}
+{"category": "spell", "kind": "heading", "heading": "Darkness", "page": 122, "match": "name", "candidateIds": ["srd-2024_darkness"]}
+{"category": "spell", "kind": "heading", "heading": "Darkvision", "page": 122, "match": "name", "candidateIds": ["srd-2024_darkvision"]}
+{"category": "spell", "kind": "heading", "heading": "Daylight", "page": 122, "match": "name", "candidateIds": ["srd-2024_daylight"]}
+{"category": "spell", "kind": "heading", "heading": "Death Ward", "page": 122, "match": "name", "candidateIds": ["srd-2024_death-ward"]}
+{"category": "spell", "kind": "heading", "heading": "Delayed Blast Fireball", "page": 122, "match": "name", "candidateIds": ["srd-2024_delayed-blast-fireball"]}
+{"category": "spell", "kind": "heading", "heading": "Demiplane", "page": 122, "match": "name", "candidateIds": ["srd-2024_demiplane"]}
+{"category": "spell", "kind": "heading", "heading": "Detect Evil and Good", "page": 123, "match": "name", "candidateIds": ["srd-2024_detect-evil-and-good"]}
+{"category": "spell", "kind": "heading", "heading": "Detect Magic", "page": 123, "match": "name", "candidateIds": ["srd-2024_detect-magic"]}
+{"category": "spell", "kind": "heading", "heading": "Detect Poison and Disease", "page": 123, "match": "name", "candidateIds": ["srd-2024_detect-poison-and-disease"]}
+{"category": "spell", "kind": "heading", "heading": "Detect Thoughts", "page": 123, "match": "name", "candidateIds": ["srd-2024_detect-thoughts"]}
+{"category": "spell", "kind": "heading", "heading": "Dimension Door", "page": 123, "match": "name", "candidateIds": ["srd-2024_dimension-door"]}
+{"category": "spell", "kind": "heading", "heading": "Disguise Self", "page": 124, "match": "name", "candidateIds": ["srd-2024_disguise-self"]}
+{"category": "spell", "kind": "heading", "heading": "Disintegrate", "page": 124, "match": "name", "candidateIds": ["srd-2024_disintegrate"]}
+{"category": "spell", "kind": "heading", "heading": "Dispel Evil and Good", "page": 124, "match": "name", "candidateIds": ["srd-2024_dispel-evil-and-good"]}
+{"category": "spell", "kind": "heading", "heading": "Dispel Magic", "page": 124, "match": "name", "candidateIds": ["srd-2024_dispel-magic"]}
+{"category": "spell", "kind": "heading", "heading": "Dissonant Whispers", "page": 124, "match": "name", "candidateIds": ["srd-2024_dissonant-whispers"]}
+{"category": "spell", "kind": "heading", "heading": "Divination", "page": 125, "match": "name", "candidateIds": ["srd-2024_divination"]}
+{"category": "spell", "kind": "heading", "heading": "Divine Favor", "page": 125, "match": "name", "candidateIds": ["srd-2024_divine-favor"]}
+{"category": "spell", "kind": "heading", "heading": "Divine Smite", "page": 125, "match": "name", "candidateIds": ["srd-2024_divine-smite"]}
+{"category": "spell", "kind": "heading", "heading": "Divine Word", "page": 125, "match": "name", "candidateIds": ["srd-2024_divine-word"]}
+{"category": "spell", "kind": "heading", "heading": "Dominate Beast", "page": 125, "match": "name", "candidateIds": ["srd-2024_dominate-beast"]}
+{"category": "spell", "kind": "heading", "heading": "Dominate Monster", "page": 125, "match": "name", "candidateIds": ["srd-2024_dominate-monster"]}
+{"category": "spell", "kind": "heading", "heading": "Dominate Person", "page": 126, "match": "name", "candidateIds": ["srd-2024_dominate-person"]}
+{"category": "spell", "kind": "heading", "heading": "Dragon’s Breath", "page": 126, "match": "name", "candidateIds": ["srd-2024_dragons-breath"]}
+{"category": "spell", "kind": "heading", "heading": "Dream", "page": 126, "match": "name", "candidateIds": ["srd-2024_dream"]}
+{"category": "spell", "kind": "heading", "heading": "Druidcraft", "page": 126, "match": "name", "candidateIds": ["srd-2024_druidcraft"]}
+{"category": "spell", "kind": "heading", "heading": "Earthquake", "page": 127, "match": "name", "candidateIds": ["srd-2024_earthquake"]}
+{"category": "spell", "kind": "heading", "heading": "Eldritch Blast", "page": 127, "match": "name", "candidateIds": ["srd-2024_eldritch-blast"]}
+{"category": "spell", "kind": "heading", "heading": "Elementalism", "page": 127, "match": "name", "candidateIds": ["srd-2024_elementalism"]}
+{"category": "spell", "kind": "heading", "heading": "Enhance Ability", "page": 127, "match": "name", "candidateIds": ["srd-2024_enhance-ability"]}
+{"category": "spell", "kind": "heading", "heading": "Enlarge/Reduce", "page": 127, "match": "name", "candidateIds": ["srd-2024_enlargereduce"]}
+{"category": "spell", "kind": "heading", "heading": "Ensnaring Strike", "page": 128, "match": "name", "candidateIds": ["srd-2024_ensnaring-strike"]}
+{"category": "spell", "kind": "heading", "heading": "Entangle", "page": 128, "match": "name", "candidateIds": ["srd-2024_entangle"]}
+{"category": "spell", "kind": "heading", "heading": "Enthrall", "page": 128, "match": "name", "candidateIds": ["srd-2024_enthrall"]}
+{"category": "spell", "kind": "heading", "heading": "Etherealness", "page": 128, "match": "name", "candidateIds": ["srd-2024_etherealness"]}
+{"category": "spell", "kind": "heading", "heading": "Expeditious Retreat", "page": 129, "match": "name", "candidateIds": ["srd-2024_expeditious-retreat"]}
+{"category": "spell", "kind": "heading", "heading": "Eyebite", "page": 129, "match": "name", "candidateIds": ["srd-2024_eyebite"]}
+{"category": "spell", "kind": "heading", "heading": "Fabricate", "page": 129, "match": "name", "candidateIds": ["srd-2024_fabricate"]}
+{"category": "spell", "kind": "heading", "heading": "Faerie Fire", "page": 129, "match": "name", "candidateIds": ["srd-2024_faerie-fire"]}
+{"category": "spell", "kind": "heading", "heading": "Faithful Hound", "page": 129, "match": "name", "candidateIds": ["srd-2024_faithful-hound"]}
+{"category": "spell", "kind": "heading", "heading": "False Life", "page": 129, "match": "name", "candidateIds": ["srd-2024_false-life"]}
+{"category": "spell", "kind": "heading", "heading": "Fear", "page": 130, "match": "name", "candidateIds": ["srd-2024_fear"]}
+{"category": "spell", "kind": "heading", "heading": "Feather Fall", "page": 130, "match": "name", "candidateIds": ["srd-2024_feather-fall"]}
+{"category": "spell", "kind": "heading", "heading": "Find Familiar", "page": 130, "match": "name", "candidateIds": ["srd-2024_find-familiar"]}
+{"category": "spell", "kind": "heading", "heading": "Find Steed", "page": 130, "match": "name", "candidateIds": ["srd-2024_find-steed"]}
+{"category": "spell", "kind": "heading", "heading": "Find Traps", "page": 131, "match": "name", "candidateIds": ["srd-2024_find-traps"]}
+{"category": "spell", "kind": "heading", "heading": "Finger of Death", "page": 131, "match": "name", "candidateIds": ["srd-2024_finger-of-death"]}
+{"category": "spell", "kind": "heading", "heading": "Fireball", "page": 131, "match": "name", "candidateIds": ["srd-2024_fireball"]}
+{"category": "spell", "kind": "heading", "heading": "Find the Path", "page": 131, "match": "name", "candidateIds": ["srd-2024_find-the-path"]}
+{"category": "spell", "kind": "heading", "heading": "Fire Bolt", "page": 132, "match": "name", "candidateIds": ["srd-2024_fire-bolt"]}
+{"category": "spell", "kind": "heading", "heading": "Fire Shield", "page": 132, "match": "name", "candidateIds": ["srd-2024_fire-shield"]}
+{"category": "spell", "kind": "heading", "heading": "Fire Storm", "page": 132, "match": "name", "candidateIds": ["srd-2024_fire-storm"]}
+{"category": "spell", "kind": "heading", "heading": "Flame Blade", "page": 132, "match": "name", "candidateIds": ["srd-2024_flame-blade"]}
+{"category": "spell", "kind": "heading", "heading": "Flame Strike", "page": 132, "match": "name", "candidateIds": ["srd-2024_flame-strike"]}
+{"category": "spell", "kind": "heading", "heading": "Flaming Sphere", "page": 132, "match": "name", "candidateIds": ["srd-2024_flaming-sphere"]}
+{"category": "spell", "kind": "heading", "heading": "Flesh to Stone", "page": 133, "match": "name", "candidateIds": ["srd-2024_flesh-to-stone"]}
+{"category": "spell", "kind": "heading", "heading": "Floating Disk", "page": 133, "match": "name", "candidateIds": ["srd-2024_floating-disk"]}
+{"category": "spell", "kind": "heading", "heading": "Fly", "page": 133, "match": "name", "candidateIds": ["srd-2024_fly"]}
+{"category": "spell", "kind": "heading", "heading": "Fog Cloud", "page": 133, "match": "name", "candidateIds": ["srd-2024_fog-cloud"]}
+{"category": "spell", "kind": "heading", "heading": "Forbiddance", "page": 133, "match": "name", "candidateIds": ["srd-2024_forbiddance"]}
+{"category": "spell", "kind": "heading", "heading": "Forcecage", "page": 134, "match": "name", "candidateIds": ["srd-2024_forcecage"]}
+{"category": "spell", "kind": "heading", "heading": "Foresight", "page": 134, "match": "name", "candidateIds": ["srd-2024_foresight"]}
+{"category": "spell", "kind": "heading", "heading": "Freedom of Movement", "page": 134, "match": "name", "candidateIds": ["srd-2024_freedom-of-movement"]}
+{"category": "spell", "kind": "heading", "heading": "Freezing Sphere", "page": 134, "match": "name", "candidateIds": ["srd-2024_freezing-sphere"]}
+{"category": "spell", "kind": "heading", "heading": "Gaseous Form", "page": 134, "match": "name", "candidateIds": ["srd-2024_gaseous-form"]}
+{"category": "spell", "kind": "heading", "heading": "Gate", "page": 135, "match": "name", "candidateIds": ["srd-2024_gate"]}
+{"category": "spell", "kind": "heading", "heading": "Geas", "page": 135, "match": "name", "candidateIds": ["srd-2024_geas"]}
+{"category": "spell", "kind": "heading", "heading": "Gentle Repose", "page": 135, "match": "name", "candidateIds": ["srd-2024_gentle-repose"]}
+{"category": "spell", "kind": "heading", "heading": "Giant Insect", "page": 135, "match": "name", "candidateIds": ["srd-2024_giant-insect"]}
+{"category": "spell", "kind": "heading", "heading": "Glibness", "page": 136, "match": "name", "candidateIds": ["srd-2024_glibness"]}
+{"category": "spell", "kind": "heading", "heading": "Globe of Invulnerability", "page": 136, "match": "name", "candidateIds": ["srd-2024_globe-of-invulnerability"]}
+{"category": "spell", "kind": "heading", "heading": "Glyph of Warding", "page": 136, "match": "name", "candidateIds": ["srd-2024_glyph-of-warding"]}
+{"category": "spell", "kind": "heading", "heading": "Goodberry", "page": 137, "match": "name", "candidateIds": ["srd-2024_goodberry"]}
+{"category": "spell", "kind": "heading", "heading": "Grease", "page": 137, "match": "name", "candidateIds": ["srd-2024_grease"]}
+{"category": "spell", "kind": "heading", "heading": "Greater Invisibility", "page": 137, "match": "name", "candidateIds": ["srd-2024_greater-invisibility"]}
+{"category": "spell", "kind": "heading", "heading": "Greater Restoration", "page": 137, "match": "name", "candidateIds": ["srd-2024_greater-restoration"]}
+{"category": "spell", "kind": "heading", "heading": "Guardian of Faith", "page": 137, "match": "name", "candidateIds": ["srd-2024_guardian-of-faith"]}
+{"category": "spell", "kind": "heading", "heading": "Guards and Wards", "page": 137, "match": "name", "candidateIds": ["srd-2024_guards-and-wards"]}
+{"category": "spell", "kind": "heading", "heading": "Guidance", "page": 138, "match": "name", "candidateIds": ["srd-2024_guidance"]}
+{"category": "spell", "kind": "heading", "heading": "Guiding Bolt", "page": 138, "match": "name", "candidateIds": ["srd-2024_guiding-bolt"]}
+{"category": "spell", "kind": "heading", "heading": "Gust of Wind", "page": 138, "match": "name", "candidateIds": ["srd-2024_gust-of-wind"]}
+{"category": "spell", "kind": "heading", "heading": "Hallow", "page": 138, "match": "name", "candidateIds": ["srd-2024_hallow"]}
+{"category": "spell", "kind": "heading", "heading": "Hallucinatory Terrain", "page": 139, "match": "name", "candidateIds": ["srd-2024_hallucinatory-terrain"]}
+{"category": "spell", "kind": "heading", "heading": "Harm", "page": 139, "match": "name", "candidateIds": ["srd-2024_harm"]}
+{"category": "spell", "kind": "heading", "heading": "Haste", "page": 139, "match": "name", "candidateIds": ["srd-2024_haste"]}
+{"category": "spell", "kind": "heading", "heading": "Heal", "page": 139, "match": "name", "candidateIds": ["srd-2024_heal"]}
+{"category": "spell", "kind": "heading", "heading": "Healing Word", "page": 139, "match": "name", "candidateIds": ["srd-2024_healing-word"]}
+{"category": "spell", "kind": "heading", "heading": "Heat Metal", "page": 139, "match": "name", "candidateIds": ["srd-2024_heat-metal"]}
+{"category": "spell", "kind": "heading", "heading": "Hellish Rebuke", "page": 140, "match": "name", "candidateIds": ["srd-2024_hellish-rebuke"]}
+{"category": "spell", "kind": "heading", "heading": "Heroes’ Feast", "page": 140, "match": "name", "candidateIds": ["srd-2024_heroes-feast"]}
+{"category": "spell", "kind": "heading", "heading": "Heroism", "page": 140, "match": "name", "candidateIds": ["srd-2024_heroism"]}
+{"category": "spell", "kind": "heading", "heading": "Hex", "page": 140, "match": "name", "candidateIds": ["srd-2024_hex"]}
+{"category": "spell", "kind": "heading", "heading": "Hideous Laughter", "page": 140, "match": "name", "candidateIds": ["srd-2024_hideous-laughter"]}
+{"category": "spell", "kind": "heading", "heading": "Hold Monster", "page": 140, "match": "name", "candidateIds": ["srd-2024_hold-monster"]}
+{"category": "spell", "kind": "heading", "heading": "Hold Person", "page": 141, "match": "name", "candidateIds": ["srd-2024_hold-person"]}
+{"category": "spell", "kind": "heading", "heading": "Holy Aura", "page": 141, "match": "name", "candidateIds": ["srd-2024_holy-aura"]}
+{"category": "spell", "kind": "heading", "heading": "Hunter’s Mark", "page": 141, "match": "name", "candidateIds": ["srd-2024_hunters-mark"]}
+{"category": "spell", "kind": "heading", "heading": "Hypnotic Pattern", "page": 141, "match": "name", "candidateIds": ["srd-2024_hypnotic-pattern"]}
+{"category": "spell", "kind": "heading", "heading": "Ice Knife", "page": 141, "match": "name", "candidateIds": ["srd-2024_ice-knife"]}
+{"category": "spell", "kind": "heading", "heading": "Ice Storm", "page": 141, "match": "name", "candidateIds": ["srd-2024_ice-storm"]}
+{"category": "spell", "kind": "heading", "heading": "Identify", "page": 142, "match": "name", "candidateIds": ["srd-2024_identify"]}
+{"category": "spell", "kind": "heading", "heading": "Illusory Script", "page": 142, "match": "name", "candidateIds": ["srd-2024_illusory-script"]}
+{"category": "spell", "kind": "heading", "heading": "Imprisonment", "page": 142, "match": "name", "candidateIds": ["srd-2024_imprisonment"]}
+{"category": "spell", "kind": "heading", "heading": "Incendiary Cloud", "page": 142, "match": "name", "candidateIds": ["srd-2024_incendiary-cloud"]}
+{"category": "spell", "kind": "heading", "heading": "Inflict Wounds", "page": 143, "match": "name", "candidateIds": ["srd-2024_inflict-wounds"]}
+{"category": "spell", "kind": "heading", "heading": "Insect Plague", "page": 143, "match": "name", "candidateIds": ["srd-2024_insect-plague"]}
+{"category": "spell", "kind": "heading", "heading": "Instant Summons", "page": 143, "match": "name", "candidateIds": ["srd-2024_instant-summons"]}
+{"category": "spell", "kind": "heading", "heading": "Irresistible Dance", "page": 143, "match": "name", "candidateIds": ["srd-2024_irresistible-dance"]}
+{"category": "spell", "kind": "heading", "heading": "Invisibility", "page": 143, "match": "name", "candidateIds": ["srd-2024_invisibility"]}
+{"category": "spell", "kind": "heading", "heading": "Jump", "page": 143, "match": "name", "candidateIds": ["srd-2024_jump"]}
+{"category": "spell", "kind": "heading", "heading": "Knock", "page": 143, "match": "name", "candidateIds": ["srd-2024_knock"]}
+{"category": "spell", "kind": "heading", "heading": "Legend Lore", "page": 144, "match": "name", "candidateIds": ["srd-2024_legend-lore"]}
+{"category": "spell", "kind": "heading", "heading": "Lesser Restoration", "page": 144, "match": "name", "candidateIds": ["srd-2024_lesser-restoration"]}
+{"category": "spell", "kind": "heading", "heading": "Levitate", "page": 144, "match": "name", "candidateIds": ["srd-2024_levitate"]}
+{"category": "spell", "kind": "heading", "heading": "Light", "page": 144, "match": "name", "candidateIds": ["srd-2024_light"]}
+{"category": "spell", "kind": "heading", "heading": "Lightning Bolt", "page": 144, "match": "name", "candidateIds": ["srd-2024_lightning-bolt"]}
+{"category": "spell", "kind": "heading", "heading": "Locate Animals or Plants", "page": 144, "match": "name", "candidateIds": ["srd-2024_locate-animals-or-plants"]}
+{"category": "spell", "kind": "heading", "heading": "Locate Creature", "page": 145, "match": "name", "candidateIds": ["srd-2024_locate-creature"]}
+{"category": "spell", "kind": "heading", "heading": "Locate Object", "page": 145, "match": "name", "candidateIds": ["srd-2024_locate-object"]}
+{"category": "spell", "kind": "heading", "heading": "Longstrider", "page": 145, "match": "name", "candidateIds": ["srd-2024_longstrider"]}
+{"category": "spell", "kind": "heading", "heading": "Mage Armor", "page": 145, "match": "name", "candidateIds": ["srd-2024_mage-armor"]}
+{"category": "spell", "kind": "heading", "heading": "Mage Hand", "page": 145, "match": "name", "candidateIds": ["srd-2024_mage-hand"]}
+{"category": "spell", "kind": "heading", "heading": "Magic Circle", "page": 145, "match": "name", "candidateIds": ["srd-2024_magic-circle"]}
+{"category": "spell", "kind": "heading", "heading": "Magic Jar", "page": 146, "match": "name", "candidateIds": ["srd-2024_magic-jar"]}
+{"category": "spell", "kind": "heading", "heading": "Magic Missile", "page": 146, "match": "name", "candidateIds": ["srd-2024_magic-missile"]}
+{"category": "spell", "kind": "heading", "heading": "Magic Mouth", "page": 146, "match": "name", "candidateIds": ["srd-2024_magic-mouth"]}
+{"category": "spell", "kind": "heading", "heading": "Magic Weapon", "page": 146, "match": "name", "candidateIds": ["srd-2024_magic-weapon"]}
+{"category": "spell", "kind": "heading", "heading": "Magnificent Mansion", "page": 147, "match": "name", "candidateIds": ["srd-2024_magnificent-mansion"]}
+{"category": "spell", "kind": "heading", "heading": "Major Image", "page": 147, "match": "name", "candidateIds": ["srd-2024_major-image"]}
+{"category": "spell", "kind": "heading", "heading": "Mass Cure Wounds", "page": 147, "match": "name", "candidateIds": ["srd-2024_mass-cure-wounds"]}
+{"category": "spell", "kind": "heading", "heading": "Mass Heal", "page": 147, "match": "name", "candidateIds": ["srd-2024_mass-heal"]}
+{"category": "spell", "kind": "heading", "heading": "Mass Healing Word", "page": 148, "match": "name", "candidateIds": ["srd-2024_mass-healing-word"]}
+{"category": "spell", "kind": "heading", "heading": "Mass Suggestion", "page": 148, "match": "name", "candidateIds": ["srd-2024_mass-suggestion"]}
+{"category": "spell", "kind": "heading", "heading": "Maze", "page": 148, "match": "name", "candidateIds": ["srd-2024_maze"]}
+{"category": "spell", "kind": "heading", "heading": "Meld into Stone", "page": 148, "match": "name", "candidateIds": ["srd-2024_meld-into-stone"]}
+{"category": "spell", "kind": "heading", "heading": "Mending", "page": 148, "match": "name", "candidateIds": ["srd-2024_mending"]}
+{"category": "spell", "kind": "heading", "heading": "Message", "page": 148, "match": "name", "candidateIds": ["srd-2024_message"]}
+{"category": "spell", "kind": "heading", "heading": "Meteor Swarm", "page": 149, "match": "name", "candidateIds": ["srd-2024_meteor-swarm"]}
+{"category": "spell", "kind": "heading", "heading": "Mind Blank", "page": 149, "match": "name", "candidateIds": ["srd-2024_mind-blank"]}
+{"category": "spell", "kind": "heading", "heading": "Mind Spike", "page": 149, "match": "name", "candidateIds": ["srd-2024_mind-spike"]}
+{"category": "spell", "kind": "heading", "heading": "Minor Illusion", "page": 149, "match": "name", "candidateIds": ["srd-2024_minor-illusion"]}
+{"category": "spell", "kind": "heading", "heading": "Mirage Arcane", "page": 149, "match": "name", "candidateIds": ["srd-2024_mirage-arcane"]}
+{"category": "spell", "kind": "heading", "heading": "Mirror Image", "page": 150, "match": "name", "candidateIds": ["srd-2024_mirror-image"]}
+{"category": "spell", "kind": "heading", "heading": "Mislead", "page": 150, "match": "name", "candidateIds": ["srd-2024_mislead"]}
+{"category": "spell", "kind": "heading", "heading": "Misty Step", "page": 150, "match": "name", "candidateIds": ["srd-2024_misty-step"]}
+{"category": "spell", "kind": "heading", "heading": "Modify Memory", "page": 150, "match": "name", "candidateIds": ["srd-2024_modify-memory"]}
+{"category": "spell", "kind": "heading", "heading": "Moonbeam", "page": 150, "match": "name", "candidateIds": ["srd-2024_moonbeam"]}
+{"category": "spell", "kind": "heading", "heading": "Move Earth", "page": 151, "match": "name", "candidateIds": ["srd-2024_move-earth"]}
+{"category": "spell", "kind": "heading", "heading": "Nondetection", "page": 151, "match": "name", "candidateIds": ["srd-2024_nondetection"]}
+{"category": "spell", "kind": "heading", "heading": "Passwall", "page": 151, "match": "name", "candidateIds": ["srd-2024_passwall"]}
+{"category": "spell", "kind": "heading", "heading": "Pass without Trace", "page": 151, "match": "name", "candidateIds": ["srd-2024_pass-without-trace"]}
+{"category": "spell", "kind": "heading", "heading": "Phantasmal Force", "page": 151, "match": "name", "candidateIds": ["srd-2024_phantasmal-force"]}
+{"category": "spell", "kind": "heading", "heading": "Phantasmal Killer", "page": 152, "match": "name", "candidateIds": ["srd-2024_phantasmal-killer"]}
+{"category": "spell", "kind": "heading", "heading": "Phantom Steed", "page": 152, "match": "name", "candidateIds": ["srd-2024_phantom-steed"]}
+{"category": "spell", "kind": "heading", "heading": "Planar Ally", "page": 152, "match": "name", "candidateIds": ["srd-2024_planar-ally"]}
+{"category": "spell", "kind": "heading", "heading": "Planar Binding", "page": 152, "match": "name", "candidateIds": ["srd-2024_planar-binding"]}
+{"category": "spell", "kind": "heading", "heading": "Plane Shift", "page": 153, "match": "name", "candidateIds": ["srd-2024_plane-shift"]}
+{"category": "spell", "kind": "heading", "heading": "Plant Growth", "page": 153, "match": "name", "candidateIds": ["srd-2024_plant-growth"]}
+{"category": "spell", "kind": "heading", "heading": "Poison Spray", "page": 153, "match": "name", "candidateIds": ["srd-2024_poison-spray"]}
+{"category": "spell", "kind": "heading", "heading": "Polymorph", "page": 153, "match": "name", "candidateIds": ["srd-2024_polymorph"]}
+{"category": "spell", "kind": "heading", "heading": "Power Word Heal", "page": 154, "match": "name", "candidateIds": ["srd-2024_power-word-heal"]}
+{"category": "spell", "kind": "heading", "heading": "Power Word Kill", "page": 154, "match": "name", "candidateIds": ["srd-2024_power-word-kill"]}
+{"category": "spell", "kind": "heading", "heading": "Power Word Stun", "page": 154, "match": "name", "candidateIds": ["srd-2024_power-word-stun"]}
+{"category": "spell", "kind": "heading", "heading": "Prayer of Healing", "page": 154, "match": "name", "candidateIds": ["srd-2024_prayer-of-healing"]}
+{"category": "spell", "kind": "heading", "heading": "Prestidigitation", "page": 154, "match": "name", "candidateIds": ["srd-2024_prestidigitation"]}
+{"category": "spell", "kind": "heading", "heading": "Prismatic Spray", "page": 154, "match": "name", "candidateIds": ["srd-2024_prismatic-spray"]}
+{"category": "spell", "kind": "heading", "heading": "Prismatic Wall", "page": 155, "match": "name", "candidateIds": ["srd-2024_prismatic-wall"]}
+{"category": "spell", "kind": "heading", "heading": "Private Sanctum", "page": 156, "match": "name", "candidateIds": ["srd-2024_private-sanctum"]}
+{"category": "spell", "kind": "heading", "heading": "Produce Flame", "page": 156, "match": "name", "candidateIds": ["srd-2024_produce-flame"]}
+{"category": "spell", "kind": "heading", "heading": "Programmed Illusion", "page": 156, "match": "name", "candidateIds": ["srd-2024_programmed-illusion"]}
+{"category": "spell", "kind": "heading", "heading": "Project Image", "page": 156, "match": "name", "candidateIds": ["srd-2024_project-image"]}
+{"category": "spell", "kind": "heading", "heading": "Protection from Energy", "page": 157, "match": "name", "candidateIds": ["srd-2024_protection-from-energy"]}
+{"category": "spell", "kind": "heading", "heading": "Protection from Evil and Good", "page": 157, "match": "name", "candidateIds": ["srd-2024_protection-from-evil-and-good"]}
+{"category": "spell", "kind": "heading", "heading": "Protection from Poison", "page": 157, "match": "name", "candidateIds": ["srd-2024_protection-from-poison"]}
+{"category": "spell", "kind": "heading", "heading": "Purify Food and Drink", "page": 157, "match": "name", "candidateIds": ["srd-2024_purify-food-and-drink"]}
+{"category": "spell", "kind": "heading", "heading": "Raise Dead", "page": 157, "match": "name", "candidateIds": ["srd-2024_raise-dead"]}
+{"category": "spell", "kind": "heading", "heading": "Ray of Enfeeblement", "page": 157, "match": "name", "candidateIds": ["srd-2024_ray-of-enfeeblement"]}
+{"category": "spell", "kind": "heading", "heading": "Ray of Frost", "page": 157, "match": "name", "candidateIds": ["srd-2024_ray-of-frost"]}
+{"category": "spell", "kind": "heading", "heading": "Regenerate", "page": 158, "match": "name", "candidateIds": ["srd-2024_regenerate"]}
+{"category": "spell", "kind": "heading", "heading": "Ray of Sickness", "page": 158, "match": "name", "candidateIds": ["srd-2024_ray-of-sickness"]}
+{"category": "spell", "kind": "heading", "heading": "Reincarnate", "page": 158, "match": "name", "candidateIds": ["srd-2024_reincarnate"]}
+{"category": "spell", "kind": "heading", "heading": "Remove Curse", "page": 158, "match": "name", "candidateIds": ["srd-2024_remove-curse"]}
+{"category": "spell", "kind": "heading", "heading": "Resilient Sphere", "page": 158, "match": "name", "candidateIds": ["srd-2024_resilient-sphere"]}
+{"category": "spell", "kind": "heading", "heading": "Resistance", "page": 158, "match": "name", "candidateIds": ["srd-2024_resistance"]}
+{"category": "spell", "kind": "heading", "heading": "Resurrection", "page": 158, "match": "name", "candidateIds": ["srd-2024_resurrection"]}
+{"category": "spell", "kind": "heading", "heading": "Reverse Gravity", "page": 159, "match": "name", "candidateIds": ["srd-2024_reverse-gravity"]}
+{"category": "spell", "kind": "heading", "heading": "Revivify", "page": 159, "match": "name", "candidateIds": ["srd-2024_revivify"]}
+{"category": "spell", "kind": "heading", "heading": "Rope Trick", "page": 159, "match": "name", "candidateIds": ["srd-2024_rope-trick"]}
+{"category": "spell", "kind": "heading", "heading": "Sacred Flame", "page": 159, "match": "name", "candidateIds": ["srd-2024_sacred-flame"]}
+{"category": "spell", "kind": "heading", "heading": "Sanctuary", "page": 159, "match": "name", "candidateIds": ["srd-2024_sanctuary"]}
+{"category": "spell", "kind": "heading", "heading": "Scorching Ray", "page": 159, "match": "name", "candidateIds": ["srd-2024_scorching-ray"]}
+{"category": "spell", "kind": "heading", "heading": "Scrying", "page": 160, "match": "name", "candidateIds": ["srd-2024_scrying"]}
+{"category": "spell", "kind": "heading", "heading": "Searing Smite", "page": 160, "match": "name", "candidateIds": ["srd-2024_searing-smite"]}
+{"category": "spell", "kind": "heading", "heading": "Secret Chest", "page": 160, "match": "name", "candidateIds": ["srd-2024_secret-chest"]}
+{"category": "spell", "kind": "heading", "heading": "See Invisibility", "page": 160, "match": "name", "candidateIds": ["srd-2024_see-invisibility"]}
+{"category": "spell", "kind": "heading", "heading": "Seeming", "page": 160, "match": "name", "candidateIds": ["srd-2024_seeming"]}
+{"category": "spell", "kind": "heading", "heading": "Sending", "page": 161, "match": "name", "candidateIds": ["srd-2024_sending"]}
+{"category": "spell", "kind": "heading", "heading": "Sequester", "page": 161, "match": "name", "candidateIds": ["srd-2024_sequester"]}
+{"category": "spell", "kind": "heading", "heading": "Shapechange", "page": 161, "match": "name", "candidateIds": ["srd-2024_shapechange"]}
+{"category": "spell", "kind": "heading", "heading": "Shatter", "page": 161, "match": "name", "candidateIds": ["srd-2024_shatter"]}
+{"category": "spell", "kind": "heading", "heading": "Shield", "page": 161, "match": "name", "candidateIds": ["srd-2024_shield"]}
+{"category": "spell", "kind": "heading", "heading": "Shield of Faith", "page": 162, "match": "name", "candidateIds": ["srd-2024_shield-of-faith"]}
+{"category": "spell", "kind": "heading", "heading": "Shillelagh", "page": 162, "match": "name", "candidateIds": ["srd-2024_shillelagh"]}
+{"category": "spell", "kind": "heading", "heading": "Shining Smite", "page": 162, "match": "name", "candidateIds": ["srd-2024_shining-smite"]}
+{"category": "spell", "kind": "heading", "heading": "Shocking Grasp", "page": 162, "match": "name", "candidateIds": ["srd-2024_shocking-grasp"]}
+{"category": "spell", "kind": "heading", "heading": "Silence", "page": 162, "match": "name", "candidateIds": ["srd-2024_silence"]}
+{"category": "spell", "kind": "heading", "heading": "Silent Image", "page": 162, "match": "name", "candidateIds": ["srd-2024_silent-image"]}
+{"category": "spell", "kind": "heading", "heading": "Simulacrum", "page": 162, "match": "name", "candidateIds": ["srd-2024_simulacrum"]}
+{"category": "spell", "kind": "heading", "heading": "Sleep", "page": 163, "match": "name", "candidateIds": ["srd-2024_sleep"]}
+{"category": "spell", "kind": "heading", "heading": "Sleet Storm", "page": 163, "match": "name", "candidateIds": ["srd-2024_sleet-storm"]}
+{"category": "spell", "kind": "heading", "heading": "Slow", "page": 163, "match": "name", "candidateIds": ["srd-2024_slow"]}
+{"category": "spell", "kind": "heading", "heading": "Sorcerous Burst", "page": 163, "match": "name", "candidateIds": ["srd-2024_sorcerous-burst"]}
+{"category": "spell", "kind": "heading", "heading": "Spare the Dying", "page": 163, "match": "name", "candidateIds": ["srd-2024_spare-the-dying"]}
+{"category": "spell", "kind": "heading", "heading": "Speak with Animals", "page": 164, "match": "name", "candidateIds": ["srd-2024_speak-with-animals"]}
+{"category": "spell", "kind": "heading", "heading": "Speak with Dead", "page": 164, "match": "name", "candidateIds": ["srd-2024_speak-with-dead"]}
+{"category": "spell", "kind": "heading", "heading": "Speak with Plants", "page": 164, "match": "name", "candidateIds": ["srd-2024_speak-with-plants"]}
+{"category": "spell", "kind": "heading", "heading": "Spider Climb", "page": 164, "match": "name", "candidateIds": ["srd-2024_spider-climb"]}
+{"category": "spell", "kind": "heading", "heading": "Spike Growth", "page": 164, "match": "name", "candidateIds": ["srd-2024_spike-growth"]}
+{"category": "spell", "kind": "heading", "heading": "Spirit Guardians", "page": 164, "match": "name", "candidateIds": ["srd-2024_spirit-guardians"]}
+{"category": "spell", "kind": "heading", "heading": "Spiritual Weapon", "page": 165, "match": "name", "candidateIds": ["srd-2024_spiritual-weapon"]}
+{"category": "spell", "kind": "heading", "heading": "Starry Wisp", "page": 165, "match": "name", "candidateIds": ["srd-2024_starry-wisp"]}
+{"category": "spell", "kind": "heading", "heading": "Stinking Cloud", "page": 165, "match": "name", "candidateIds": ["srd-2024_stinking-cloud"]}
+{"category": "spell", "kind": "heading", "heading": "Stone Shape", "page": 165, "match": "name", "candidateIds": ["srd-2024_stone-shape"]}
+{"category": "spell", "kind": "heading", "heading": "Stoneskin", "page": 165, "match": "name", "candidateIds": ["srd-2024_stoneskin"]}
+{"category": "spell", "kind": "heading", "heading": "Storm of Vengeance", "page": 165, "match": "name", "candidateIds": ["srd-2024_storm-of-vengeance"]}
+{"category": "spell", "kind": "heading", "heading": "Suggestion", "page": 166, "match": "name", "candidateIds": ["srd-2024_suggestion"]}
+{"category": "spell", "kind": "heading", "heading": "Summon Dragon", "page": 166, "match": "name", "candidateIds": ["srd-2024_summon-dragon"]}
+{"category": "spell", "kind": "heading", "heading": "Sunbeam", "page": 166, "match": "name", "candidateIds": ["srd-2024_sunbeam"]}
+{"category": "spell", "kind": "heading", "heading": "Sunburst", "page": 167, "match": "name", "candidateIds": ["srd-2024_sunburst"]}
+{"category": "spell", "kind": "heading", "heading": "Symbol", "page": 167, "match": "name", "candidateIds": ["srd-2024_symbol"]}
+{"category": "spell", "kind": "heading", "heading": "Telekinesis", "page": 167, "match": "name", "candidateIds": ["srd-2024_telekinesis"]}
+{"category": "spell", "kind": "heading", "heading": "Telepathic Bond", "page": 168, "match": "name", "candidateIds": ["srd-2024_telepathic-bond"]}
+{"category": "spell", "kind": "heading", "heading": "Teleport", "page": 168, "match": "name", "candidateIds": ["srd-2024_teleport"]}
+{"category": "spell", "kind": "heading", "heading": "Teleportation Circle", "page": 168, "match": "name", "candidateIds": ["srd-2024_teleportation-circle"]}
+{"category": "spell", "kind": "heading", "heading": "Thaumaturgy", "page": 169, "match": "name", "candidateIds": ["srd-2024_thaumaturgy"]}
+{"category": "spell", "kind": "heading", "heading": "Thunderwave", "page": 169, "match": "name", "candidateIds": ["srd-2024_thunderwave"]}
+{"category": "spell", "kind": "heading", "heading": "Time Stop", "page": 169, "match": "name", "candidateIds": ["srd-2024_time-stop"]}
+{"category": "spell", "kind": "heading", "heading": "Tiny Hut", "page": 169, "match": "name", "candidateIds": ["srd-2024_tiny-hut"]}
+{"category": "spell", "kind": "heading", "heading": "Tongues", "page": 169, "match": "name", "candidateIds": ["srd-2024_tongues"]}
+{"category": "spell", "kind": "heading", "heading": "Transport via Plants", "page": 170, "match": "name", "candidateIds": ["srd-2024_transport-via-plants"]}
+{"category": "spell", "kind": "heading", "heading": "Tree Stride", "page": 170, "match": "name", "candidateIds": ["srd-2024_tree-stride"]}
+{"category": "spell", "kind": "heading", "heading": "True Polymorph", "page": 170, "match": "name", "candidateIds": ["srd-2024_true-polymorph"]}
+{"category": "spell", "kind": "heading", "heading": "True Resurrection", "page": 170, "match": "name", "candidateIds": ["srd-2024_true-resurrection"]}
+{"category": "spell", "kind": "heading", "heading": "True Seeing", "page": 171, "match": "name", "candidateIds": ["srd-2024_true-seeing"]}
+{"category": "spell", "kind": "heading", "heading": "True Strike", "page": 171, "match": "name", "candidateIds": ["srd-2024_true-strike"]}
+{"category": "spell", "kind": "heading", "heading": "Tsunami", "page": 171, "match": "name", "candidateIds": ["srd-2024_tsunami"]}
+{"category": "spell", "kind": "heading", "heading": "Unseen Servant", "page": 171, "match": "name", "candidateIds": ["srd-2024_unseen-servant"]}
+{"category": "spell", "kind": "heading", "heading": "Vampiric Touch", "page": 171, "match": "name", "candidateIds": ["srd-2024_vampiric-touch"]}
+{"category": "spell", "kind": "heading", "heading": "Vicious Mockery", "page": 171, "match": "name", "candidateIds": ["srd-2024_vicious-mockery"]}
+{"category": "spell", "kind": "heading", "heading": "Vitriolic Sphere", "page": 172, "match": "name", "candidateIds": ["srd-2024_vitriolic-sphere"]}
+{"category": "spell", "kind": "heading", "heading": "Wall of Fire", "page": 172, "match": "name", "candidateIds": ["srd-2024_wall-of-fire"]}
+{"category": "spell", "kind": "heading", "heading": "Wall of Force", "page": 172, "match": "name", "candidateIds": ["srd-2024_wall-of-force"]}
+{"category": "spell", "kind": "heading", "heading": "Wall of Ice", "page": 172, "match": "name", "candidateIds": ["srd-2024_wall-of-ice"]}
+{"category": "spell", "kind": "heading", "heading": "Wall of Stone", "page": 173, "match": "name", "candidateIds": ["srd-2024_wall-of-stone"]}
+{"category": "spell", "kind": "heading", "heading": "Wall of Thorns", "page": 173, "match": "name", "candidateIds": ["srd-2024_wall-of-thorns"]}
+{"category": "spell", "kind": "heading", "heading": "Warding Bond", "page": 173, "match": "name", "candidateIds": ["srd-2024_warding-bond"]}
+{"category": "spell", "kind": "heading", "heading": "Water Breathing", "page": 173, "match": "name", "candidateIds": ["srd-2024_water-breathing"]}
+{"category": "spell", "kind": "heading", "heading": "Water Walk", "page": 173, "match": "name", "candidateIds": ["srd-2024_water-walk"]}
+{"category": "spell", "kind": "heading", "heading": "Web", "page": 174, "match": "name", "candidateIds": ["srd-2024_web"]}
+{"category": "spell", "kind": "heading", "heading": "Weird", "page": 174, "match": "name", "candidateIds": ["srd-2024_weird"]}
+{"category": "spell", "kind": "heading", "heading": "Wind Walk", "page": 174, "match": "name", "candidateIds": ["srd-2024_wind-walk"]}
+{"category": "spell", "kind": "heading", "heading": "Wind Wall", "page": 174, "match": "name", "candidateIds": ["srd-2024_wind-wall"]}
+{"category": "spell", "kind": "heading", "heading": "Wish", "page": 175, "match": "name", "candidateIds": ["srd-2024_wish"]}
+{"category": "spell", "kind": "heading", "heading": "Word of Recall", "page": 175, "match": "name", "candidateIds": ["srd-2024_word-of-recall"]}
+{"category": "spell", "kind": "heading", "heading": "Zone of Truth", "page": 175, "match": "name", "candidateIds": ["srd-2024_zone-of-truth"]}
+{"category": "creature", "kind": "heading", "heading": "Aboleth", "page": 258, "match": "name", "candidateIds": ["srd-2024_aboleth"]}
+{"category": "creature", "kind": "heading", "heading": "Adult Black Dragon", "page": 264, "match": "name", "candidateIds": ["srd-2024_adult-black-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Adult Blue Dragon", "page": 266, "match": "name", "candidateIds": ["srd-2024_adult-blue-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Adult Brass Dragon", "page": 268, "match": "name", "candidateIds": ["srd-2024_adult-brass-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Adult Bronze Dragon", "page": 270, "match": "name", "candidateIds": ["srd-2024_adult-bronze-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Adult Copper Dragon", "page": 276, "match": "name", "candidateIds": ["srd-2024_adult-copper-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Adult Gold Dragon", "page": 291, "match": "name", "candidateIds": ["srd-2024_adult-gold-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Adult Green Dragon", "page": 294, "match": "name", "candidateIds": ["srd-2024_adult-green-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Adult Red Dragon", "page": 318, "match": "name", "candidateIds": ["srd-2024_adult-red-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Adult Silver Dragon", "page": 324, "match": "name", "candidateIds": ["srd-2024_adult-silver-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Adult White Dragon", "page": 340, "match": "name", "candidateIds": ["srd-2024_adult-white-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Air Elemental", "page": 258, "match": "name", "candidateIds": ["srd-2024_air-elemental"]}
+{"category": "creature", "kind": "heading", "heading": "Allosaurus", "page": 344, "match": "name", "candidateIds": ["srd-2024_allosaurus"]}
+{"category": "creature", "kind": "heading", "heading": "Ancient Black Dragon", "page": 265, "match": "name", "candidateIds": ["srd-2024_ancient-black-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Ancient Blue Dragon", "page": 267, "match": "name", "candidateIds": ["srd-2024_ancient-blue-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Ancient Brass Dragon", "page": 269, "match": "name", "candidateIds": ["srd-2024_ancient-brass-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Ancient Bronze Dragon", "page": 271, "match": "name", "candidateIds": ["srd-2024_ancient-bronze-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Ancient Copper Dragon", "page": 277, "match": "name", "candidateIds": ["srd-2024_ancient-copper-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Ancient Gold Dragon", "page": 292, "match": "name", "candidateIds": ["srd-2024_ancient-gold-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Ancient Green Dragon", "page": 294, "match": "name", "candidateIds": ["srd-2024_ancient-green-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Ancient Red Dragon", "page": 319, "match": "name", "candidateIds": ["srd-2024_ancient-red-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Ancient Silver Dragon", "page": 325, "match": "name", "candidateIds": ["srd-2024_ancient-silver-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Ancient White Dragon", "page": 341, "match": "name", "candidateIds": ["srd-2024_ancient-white-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Animated Armor", "page": 259, "match": "name", "candidateIds": ["srd-2024_animated-armor"]}
+{"category": "creature", "kind": "heading", "heading": "Animated Flying Sword", "page": 259, "match": "name", "candidateIds": ["srd-2024_animated-flying-sword"]}
+{"category": "creature", "kind": "heading", "heading": "Animated Rug of Smothering", "page": 259, "match": "name", "candidateIds": ["srd-2024_animated-rug-of-smothering"]}
+{"category": "creature", "kind": "heading", "heading": "Ankheg", "page": 259, "match": "name", "candidateIds": ["srd-2024_ankheg"]}
+{"category": "creature", "kind": "heading", "heading": "Ankylosaurus", "page": 344, "match": "name", "candidateIds": ["srd-2024_ankylosaurus"]}
+{"category": "creature", "kind": "heading", "heading": "Ape", "page": 344, "match": "name", "candidateIds": ["srd-2024_ape"]}
+{"category": "creature", "kind": "heading", "heading": "Archelon", "page": 344, "match": "name", "candidateIds": ["srd-2024_archelon"]}
+{"category": "creature", "kind": "heading", "heading": "Archmage", "page": 305, "match": "name", "candidateIds": ["srd-2024_archmage"]}
+{"category": "creature", "kind": "heading", "heading": "Assassin", "page": 260, "match": "name", "candidateIds": ["srd-2024_assassin"]}
+{"category": "creature", "kind": "heading", "heading": "Awakened Shrub", "page": 260, "match": "name", "candidateIds": ["srd-2024_awakened-shrub"]}
+{"category": "creature", "kind": "heading", "heading": "Awakened Tree", "page": 260, "match": "name", "candidateIds": ["srd-2024_awakened-tree"]}
+{"category": "creature", "kind": "heading", "heading": "Axe Beak", "page": 260, "match": "name", "candidateIds": ["srd-2024_axe-beak"]}
+{"category": "creature", "kind": "heading", "heading": "Azer Sentinel", "page": 261, "match": "name", "candidateIds": ["srd-2024_azer-sentinel"]}
+{"category": "creature", "kind": "heading", "heading": "Baboon", "page": 345, "match": "name", "candidateIds": ["srd-2024_baboon"]}
+{"category": "creature", "kind": "heading", "heading": "Badger", "page": 345, "match": "name", "candidateIds": ["srd-2024_badger"]}
+{"category": "creature", "kind": "heading", "heading": "Balor", "page": 261, "match": "name", "candidateIds": ["srd-2024_balor"]}
+{"category": "creature", "kind": "heading", "heading": "Bandit", "page": 261, "match": "name", "candidateIds": ["srd-2024_bandit"]}
+{"category": "creature", "kind": "heading", "heading": "Bandit Captain", "page": 261, "match": "name", "candidateIds": ["srd-2024_bandit-captain"]}
+{"category": "creature", "kind": "heading", "heading": "Barbed Devil", "page": 262, "match": "name", "candidateIds": ["srd-2024_barbed-devil"]}
+{"category": "creature", "kind": "heading", "heading": "Basilisk", "page": 262, "match": "name", "candidateIds": ["srd-2024_basilisk"]}
+{"category": "creature", "kind": "heading", "heading": "Bat", "page": 345, "match": "name", "candidateIds": ["srd-2024_bat"]}
+{"category": "creature", "kind": "heading", "heading": "Bearded Devil", "page": 262, "match": "name", "candidateIds": ["srd-2024_bearded-devil"]}
+{"category": "creature", "kind": "heading", "heading": "Behir", "page": 263, "match": "name", "candidateIds": ["srd-2024_behir"]}
+{"category": "creature", "kind": "heading", "heading": "Berserker", "page": 263, "match": "name", "candidateIds": ["srd-2024_berserker"]}
+{"category": "creature", "kind": "heading", "heading": "Black Bear", "page": 345, "match": "name", "candidateIds": ["srd-2024_black-bear"]}
+{"category": "creature", "kind": "heading", "heading": "Black Dragon Wyrmling", "page": 263, "match": "name", "candidateIds": ["srd-2024_black-dragon-wyrmling"]}
+{"category": "creature", "kind": "heading", "heading": "Black Pudding", "page": 265, "match": "name", "candidateIds": ["srd-2024_black-pudding"]}
+{"category": "creature", "kind": "heading", "heading": "Blink Dog", "page": 266, "match": "name", "candidateIds": ["srd-2024_blink-dog"]}
+{"category": "creature", "kind": "heading", "heading": "Blood Hawk", "page": 345, "match": "name", "candidateIds": ["srd-2024_blood-hawk"]}
+{"category": "creature", "kind": "heading", "heading": "Blue Dragon Wyrmling", "page": 266, "match": "name", "candidateIds": ["srd-2024_blue-dragon-wyrmling"]}
+{"category": "creature", "kind": "heading", "heading": "Boar", "page": 346, "match": "name", "candidateIds": ["srd-2024_boar"]}
+{"category": "creature", "kind": "heading", "heading": "Bone Devil", "page": 267, "match": "name", "candidateIds": ["srd-2024_bone-devil"]}
+{"category": "creature", "kind": "heading", "heading": "Brass Dragon Wyrmling", "page": 268, "match": "name", "candidateIds": ["srd-2024_brass-dragon-wyrmling"]}
+{"category": "creature", "kind": "heading", "heading": "Bronze Dragon Wyrmling", "page": 269, "match": "name", "candidateIds": ["srd-2024_bronze-dragon-wyrmling"]}
+{"category": "creature", "kind": "heading", "heading": "Brown Bear", "page": 346, "match": "name", "candidateIds": ["srd-2024_brown-bear"]}
+{"category": "creature", "kind": "heading", "heading": "Bugbear Stalker", "page": 271, "match": "name", "candidateIds": ["srd-2024_bugbear-stalker"]}
+{"category": "creature", "kind": "heading", "heading": "Bugbear Warrior", "page": 272, "match": "name", "candidateIds": ["srd-2024_bugbear-warrior"]}
+{"category": "creature", "kind": "heading", "heading": "Bulette", "page": 272, "match": "name", "candidateIds": ["srd-2024_bulette"]}
+{"category": "creature", "kind": "heading", "heading": "Camel", "page": 346, "match": "name", "candidateIds": ["srd-2024_camel"]}
+{"category": "creature", "kind": "heading", "heading": "Cat", "page": 346, "match": "name", "candidateIds": ["srd-2024_cat"]}
+{"category": "creature", "kind": "heading", "heading": "Centaur Trooper", "page": 272, "match": "name", "candidateIds": ["srd-2024_centaur-trooper"]}
+{"category": "creature", "kind": "heading", "heading": "Chain Devil", "page": 272, "match": "name", "candidateIds": ["srd-2024_chain-devil"]}
+{"category": "creature", "kind": "heading", "heading": "Chimera", "page": 273, "match": "name", "candidateIds": ["srd-2024_chimera"]}
+{"category": "creature", "kind": "heading", "heading": "Chuul", "page": 273, "match": "name", "candidateIds": ["srd-2024_chuul"]}
+{"category": "creature", "kind": "heading", "heading": "Clay Golem", "page": 274, "match": "name", "candidateIds": ["srd-2024_clay-golem"]}
+{"category": "creature", "kind": "heading", "heading": "Cloaker", "page": 274, "match": "name", "candidateIds": ["srd-2024_cloaker"]}
+{"category": "creature", "kind": "heading", "heading": "Cloud Giant", "page": 275, "match": "name", "candidateIds": ["srd-2024_cloud-giant"]}
+{"category": "creature", "kind": "heading", "heading": "Cockatrice", "page": 275, "match": "name", "candidateIds": ["srd-2024_cockatrice"]}
+{"category": "creature", "kind": "heading", "heading": "Commoner", "page": 275, "match": "name", "candidateIds": ["srd-2024_commoner"]}
+{"category": "creature", "kind": "heading", "heading": "Constrictor Snake", "page": 346, "match": "name", "candidateIds": ["srd-2024_constrictor-snake"]}
+{"category": "creature", "kind": "heading", "heading": "Copper Dragon Wyrmling", "page": 275, "match": "name", "candidateIds": ["srd-2024_copper-dragon-wyrmling"]}
+{"category": "creature", "kind": "heading", "heading": "Couatl", "page": 277, "match": "name", "candidateIds": ["srd-2024_couatl"]}
+{"category": "creature", "kind": "heading", "heading": "Crab", "page": 347, "match": "name", "candidateIds": ["srd-2024_crab"]}
+{"category": "creature", "kind": "heading", "heading": "Crocodile", "page": 347, "match": "name", "candidateIds": ["srd-2024_crocodile"]}
+{"category": "creature", "kind": "heading", "heading": "Cultist", "page": 278, "match": "name", "candidateIds": ["srd-2024_cultist"]}
+{"category": "creature", "kind": "heading", "heading": "Cultist Fanatic", "page": 278, "match": "name", "candidateIds": ["srd-2024_cultist-fanatic"]}
+{"category": "creature", "kind": "heading", "heading": "Darkmantle", "page": 278, "match": "name", "candidateIds": ["srd-2024_darkmantle"]}
+{"category": "creature", "kind": "heading", "heading": "Death Dog", "page": 279, "match": "name", "candidateIds": ["srd-2024_death-dog"]}
+{"category": "creature", "kind": "heading", "heading": "Deer", "page": 347, "match": "name", "candidateIds": ["srd-2024_deer"]}
+{"category": "creature", "kind": "heading", "heading": "Deva", "page": 279, "match": "name", "candidateIds": ["srd-2024_deva"]}
+{"category": "creature", "kind": "heading", "heading": "Dire Wolf", "page": 347, "match": "name", "candidateIds": ["srd-2024_dire-wolf"]}
+{"category": "creature", "kind": "heading", "heading": "Djinni", "page": 280, "match": "name", "candidateIds": ["srd-2024_djinni"]}
+{"category": "creature", "kind": "heading", "heading": "Doppelganger", "page": 280, "match": "name", "candidateIds": ["srd-2024_doppelganger"]}
+{"category": "creature", "kind": "heading", "heading": "Draft Horse", "page": 347, "match": "name", "candidateIds": ["srd-2024_draft-horse"]}
+{"category": "creature", "kind": "heading", "heading": "Dragon Tur t le", "page": 281, "match": "name", "candidateIds": ["srd-2024_dragon-turtle"]}
+{"category": "creature", "kind": "heading", "heading": "Dretch", "page": 281, "match": "name", "candidateIds": ["srd-2024_dretch"]}
+{"category": "creature", "kind": "heading", "heading": "Drider", "page": 281, "match": "name", "candidateIds": ["srd-2024_drider"]}
+{"category": "creature", "kind": "heading", "heading": "Druid", "page": 282, "match": "name", "candidateIds": ["srd-2024_druid"]}
+{"category": "creature", "kind": "heading", "heading": "Dryad", "page": 282, "match": "name", "candidateIds": ["srd-2024_dryad"]}
+{"category": "creature", "kind": "heading", "heading": "Dust Mephit", "page": 307, "match": "name", "candidateIds": ["srd-2024_dust-mephit"]}
+{"category": "creature", "kind": "heading", "heading": "Eagle", "page": 348, "match": "name", "candidateIds": ["srd-2024_eagle"]}
+{"category": "creature", "kind": "heading", "heading": "Earth Elemental", "page": 282, "match": "name", "candidateIds": ["srd-2024_earth-elemental"]}
+{"category": "creature", "kind": "heading", "heading": "Efreeti", "page": 283, "match": "name", "candidateIds": ["srd-2024_efreeti"]}
+{"category": "creature", "kind": "heading", "heading": "Elephant", "page": 348, "match": "name", "candidateIds": ["srd-2024_elephant"]}
+{"category": "creature", "kind": "heading", "heading": "Elk", "page": 348, "match": "name", "candidateIds": ["srd-2024_elk"]}
+{"category": "creature", "kind": "heading", "heading": "Erinyes", "page": 283, "match": "name", "candidateIds": ["srd-2024_erinyes"]}
+{"category": "creature", "kind": "heading", "heading": "Ettercap", "page": 284, "match": "name", "candidateIds": ["srd-2024_ettercap"]}
+{"category": "creature", "kind": "heading", "heading": "Ettin", "page": 284, "match": "name", "candidateIds": ["srd-2024_ettin"]}
+{"category": "creature", "kind": "heading", "heading": "Fire Elemental", "page": 284, "match": "name", "candidateIds": ["srd-2024_fire-elemental"]}
+{"category": "creature", "kind": "heading", "heading": "Fire Giant", "page": 285, "match": "name", "candidateIds": ["srd-2024_fire-giant"]}
+{"category": "creature", "kind": "heading", "heading": "Flesh Golem", "page": 285, "match": "name", "candidateIds": ["srd-2024_flesh-golem"]}
+{"category": "creature", "kind": "heading", "heading": "Flying Snake", "page": 348, "match": "name", "candidateIds": ["srd-2024_flying-snake"]}
+{"category": "creature", "kind": "heading", "heading": "Frog", "page": 348, "match": "name", "candidateIds": ["srd-2024_frog"]}
+{"category": "creature", "kind": "heading", "heading": "Frost Giant", "page": 285, "match": "name", "candidateIds": ["srd-2024_frost-giant"]}
+{"category": "creature", "kind": "heading", "heading": "Gargoyle", "page": 286, "match": "name", "candidateIds": ["srd-2024_gargoyle"]}
+{"category": "creature", "kind": "heading", "heading": "Gelatinous Cube", "page": 286, "match": "name", "candidateIds": ["srd-2024_gelatinous-cube"]}
+{"category": "creature", "kind": "heading", "heading": "Ghast", "page": 287, "match": "name", "candidateIds": ["srd-2024_ghast"]}
+{"category": "creature", "kind": "heading", "heading": "Ghost", "page": 287, "match": "name", "candidateIds": ["srd-2024_ghost"]}
+{"category": "creature", "kind": "heading", "heading": "Ghoul", "page": 288, "match": "name", "candidateIds": ["srd-2024_ghoul"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Ape", "page": 349, "match": "name", "candidateIds": ["srd-2024_giant-ape"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Badger", "page": 349, "match": "name", "candidateIds": ["srd-2024_giant-badger"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Bat", "page": 349, "match": "name", "candidateIds": ["srd-2024_giant-bat"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Boar", "page": 349, "match": "name", "candidateIds": ["srd-2024_giant-boar"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Centipede", "page": 349, "match": "name", "candidateIds": ["srd-2024_giant-centipede"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Constrictor Snake", "page": 350, "match": "name", "candidateIds": ["srd-2024_giant-constrictor-snake"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Crab", "page": 350, "match": "name", "candidateIds": ["srd-2024_giant-crab"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Crocodile", "page": 350, "match": "name", "candidateIds": ["srd-2024_giant-crocodile"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Eagle", "page": 350, "match": "name", "candidateIds": ["srd-2024_giant-eagle"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Elk", "page": 351, "match": "name", "candidateIds": ["srd-2024_giant-elk"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Fire Beetle", "page": 351, "match": "name", "candidateIds": ["srd-2024_giant-fire-beetle"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Frog", "page": 351, "match": "name", "candidateIds": ["srd-2024_giant-frog"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Goat", "page": 351, "match": "name", "candidateIds": ["srd-2024_giant-goat"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Hyena", "page": 352, "match": "name", "candidateIds": ["srd-2024_giant-hyena"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Lizard", "page": 352, "match": "name", "candidateIds": ["srd-2024_giant-lizard"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Octopus", "page": 352, "match": "name", "candidateIds": ["srd-2024_giant-octopus"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Owl", "page": 352, "match": "name", "candidateIds": ["srd-2024_giant-owl"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Rat", "page": 353, "match": "name", "candidateIds": ["srd-2024_giant-rat"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Scorpion", "page": 353, "match": "name", "candidateIds": ["srd-2024_giant-scorpion"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Seahorse", "page": 353, "match": "name", "candidateIds": ["srd-2024_giant-seahorse"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Shark", "page": 353, "match": "name", "candidateIds": ["srd-2024_giant-shark"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Spider", "page": 353, "match": "name", "candidateIds": ["srd-2024_giant-spider"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Toad", "page": 354, "match": "name", "candidateIds": ["srd-2024_giant-toad"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Venomous Snake", "page": 354, "match": "name", "candidateIds": ["srd-2024_giant-venomous-snake"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Vulture", "page": 354, "match": "name", "candidateIds": ["srd-2024_giant-vulture"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Wasp", "page": 354, "match": "name", "candidateIds": ["srd-2024_giant-wasp"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Weasel", "page": 355, "match": "name", "candidateIds": ["srd-2024_giant-weasel"]}
+{"category": "creature", "kind": "heading", "heading": "Giant Wolf Spider", "page": 355, "match": "name", "candidateIds": ["srd-2024_giant-wolf-spider"]}
+{"category": "creature", "kind": "heading", "heading": "Gibbering Mouther", "page": 288, "match": "name", "candidateIds": ["srd-2024_gibbering-mouther"]}
+{"category": "creature", "kind": "heading", "heading": "Glabrezu", "page": 289, "match": "name", "candidateIds": ["srd-2024_glabrezu"]}
+{"category": "creature", "kind": "heading", "heading": "Gladiator", "page": 289, "match": "name", "candidateIds": ["srd-2024_gladiator"]}
+{"category": "creature", "kind": "heading", "heading": "Gnoll Warrior", "page": 289, "match": "name", "candidateIds": ["srd-2024_gnoll-warrior"]}
+{"category": "creature", "kind": "heading", "heading": "Goat", "page": 355, "match": "name", "candidateIds": ["srd-2024_goat"]}
+{"category": "creature", "kind": "heading", "heading": "Goblin Boss", "page": 290, "match": "name", "candidateIds": ["srd-2024_goblin-boss"]}
+{"category": "creature", "kind": "heading", "heading": "Goblin Minion", "page": 290, "match": "name", "candidateIds": ["srd-2024_goblin-minion"]}
+{"category": "creature", "kind": "heading", "heading": "Goblin Warrior", "page": 290, "match": "name", "candidateIds": ["srd-2024_goblin-warrior"]}
+{"category": "creature", "kind": "heading", "heading": "Gold Dragon Wyrmling", "page": 290, "match": "name", "candidateIds": ["srd-2024_gold-dragon-wyrmling"]}
+{"category": "creature", "kind": "heading", "heading": "Gorgon", "page": 292, "match": "name", "candidateIds": ["srd-2024_gorgon"]}
+{"category": "creature", "kind": "heading", "heading": "Gray Ooze", "page": 293, "match": "name", "candidateIds": ["srd-2024_gray-ooze"]}
+{"category": "creature", "kind": "heading", "heading": "Green Dragon Wyrmling", "page": 293, "match": "name", "candidateIds": ["srd-2024_green-dragon-wyrmling"]}
+{"category": "creature", "kind": "heading", "heading": "Green Hag", "page": 295, "match": "name", "candidateIds": ["srd-2024_green-hag"]}
+{"category": "creature", "kind": "heading", "heading": "Grick", "page": 295, "match": "name", "candidateIds": ["srd-2024_grick"]}
+{"category": "creature", "kind": "heading", "heading": "Griffon", "page": 295, "match": "name", "candidateIds": ["srd-2024_griffon"]}
+{"category": "creature", "kind": "heading", "heading": "Grimlock", "page": 296, "match": "name", "candidateIds": ["srd-2024_grimlock"]}
+{"category": "creature", "kind": "heading", "heading": "Guard", "page": 296, "match": "name", "candidateIds": ["srd-2024_guard"]}
+{"category": "creature", "kind": "heading", "heading": "Guard Captain", "page": 296, "match": "name", "candidateIds": ["srd-2024_guard-captain"]}
+{"category": "creature", "kind": "heading", "heading": "Guardian Naga", "page": 296, "match": "name", "candidateIds": ["srd-2024_guardian-naga"]}
+{"category": "creature", "kind": "heading", "heading": "Half-Dragon", "page": 297, "match": "name", "candidateIds": ["srd-2024_half-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Harpy", "page": 297, "match": "name", "candidateIds": ["srd-2024_harpy"]}
+{"category": "creature", "kind": "heading", "heading": "Hawk", "page": 355, "match": "name", "candidateIds": ["srd-2024_hawk"]}
+{"category": "creature", "kind": "heading", "heading": "Hell Hound", "page": 297, "match": "name", "candidateIds": ["srd-2024_hell-hound"]}
+{"category": "creature", "kind": "heading", "heading": "Hezrou", "page": 298, "match": "name", "candidateIds": ["srd-2024_hezrou"]}
+{"category": "creature", "kind": "heading", "heading": "Hill Giant", "page": 298, "match": "name", "candidateIds": ["srd-2024_hill-giant"]}
+{"category": "creature", "kind": "heading", "heading": "Hippogriff", "page": 298, "match": "name", "candidateIds": ["srd-2024_hippogriff"]}
+{"category": "creature", "kind": "heading", "heading": "Hippopotamus", "page": 355, "match": "name", "candidateIds": ["srd-2024_hippopotamus"]}
+{"category": "creature", "kind": "heading", "heading": "Hobgoblin Captain", "page": 299, "match": "name", "candidateIds": ["srd-2024_hobgoblin-captain"]}
+{"category": "creature", "kind": "heading", "heading": "Hobgoblin Warrior", "page": 298, "match": "name", "candidateIds": ["srd-2024_hobgoblin-warrior"]}
+{"category": "creature", "kind": "heading", "heading": "Homunculus", "page": 299, "match": "name", "candidateIds": ["srd-2024_homunculus"]}
+{"category": "creature", "kind": "heading", "heading": "Horned Devil", "page": 299, "match": "name", "candidateIds": ["srd-2024_horned-devil"]}
+{"category": "creature", "kind": "heading", "heading": "Hunter Shark", "page": 356, "match": "name", "candidateIds": ["srd-2024_hunter-shark"]}
+{"category": "creature", "kind": "heading", "heading": "Hydra", "page": 300, "match": "name", "candidateIds": ["srd-2024_hydra"]}
+{"category": "creature", "kind": "heading", "heading": "Hyena", "page": 356, "match": "name", "candidateIds": ["srd-2024_hyena"]}
+{"category": "creature", "kind": "heading", "heading": "Ice Devil", "page": 300, "match": "name", "candidateIds": ["srd-2024_ice-devil"]}
+{"category": "creature", "kind": "heading", "heading": "Ice Mephit", "page": 307, "match": "name", "candidateIds": ["srd-2024_ice-mephit"]}
+{"category": "creature", "kind": "heading", "heading": "Imp", "page": 300, "match": "name", "candidateIds": ["srd-2024_imp"]}
+{"category": "creature", "kind": "heading", "heading": "Incubus", "page": 301, "match": "name", "candidateIds": ["srd-2024_incubus"]}
+{"category": "creature", "kind": "heading", "heading": "Invisible Stalker", "page": 301, "match": "name", "candidateIds": ["srd-2024_invisible-stalker"]}
+{"category": "creature", "kind": "heading", "heading": "Iron Golem", "page": 302, "match": "name", "candidateIds": ["srd-2024_iron-golem"]}
+{"category": "creature", "kind": "heading", "heading": "Jackal", "page": 356, "match": "name", "candidateIds": ["srd-2024_jackal"]}
+{"category": "creature", "kind": "heading", "heading": "Killer Whale", "page": 356, "match": "name", "candidateIds": ["srd-2024_killer-whale"]}
+{"category": "creature", "kind": "heading", "heading": "Knight", "page": 302, "match": "name", "candidateIds": ["srd-2024_knight"]}
+{"category": "creature", "kind": "heading", "heading": "Kobold Warrior", "page": 302, "match": "name", "candidateIds": ["srd-2024_kobold-warrior"]}
+{"category": "creature", "kind": "heading", "heading": "Kraken", "page": 303, "match": "name", "candidateIds": ["srd-2024_kraken"]}
+{"category": "creature", "kind": "heading", "heading": "Lamia", "page": 303, "match": "name", "candidateIds": ["srd-2024_lamia"]}
+{"category": "creature", "kind": "heading", "heading": "Lemure", "page": 304, "match": "name", "candidateIds": ["srd-2024_lemure"]}
+{"category": "creature", "kind": "heading", "heading": "Lich", "page": 304, "match": "name", "candidateIds": ["srd-2024_lich"]}
+{"category": "creature", "kind": "heading", "heading": "Lion", "page": 356, "match": "name", "candidateIds": ["srd-2024_lion"]}
+{"category": "creature", "kind": "heading", "heading": "Lizard", "page": 357, "match": "name", "candidateIds": ["srd-2024_lizard"]}
+{"category": "creature", "kind": "heading", "heading": "Mage", "page": 305, "match": "name", "candidateIds": ["srd-2024_mage"]}
+{"category": "creature", "kind": "heading", "heading": "Magma Mephit", "page": 307, "match": "name", "candidateIds": ["srd-2024_magma-mephit"]}
+{"category": "creature", "kind": "heading", "heading": "Magmin", "page": 305, "match": "name", "candidateIds": ["srd-2024_magmin"]}
+{"category": "creature", "kind": "heading", "heading": "Mammoth", "page": 357, "match": "name", "candidateIds": ["srd-2024_mammoth"]}
+{"category": "creature", "kind": "heading", "heading": "Manticore", "page": 306, "match": "name", "candidateIds": ["srd-2024_manticore"]}
+{"category": "creature", "kind": "heading", "heading": "Marilith", "page": 306, "match": "name", "candidateIds": ["srd-2024_marilith"]}
+{"category": "creature", "kind": "heading", "heading": "Mastiff", "page": 357, "match": "name", "candidateIds": ["srd-2024_mastiff"]}
+{"category": "creature", "kind": "heading", "heading": "Medusa", "page": 306, "match": "name", "candidateIds": ["srd-2024_medusa"]}
+{"category": "creature", "kind": "heading", "heading": "Merfolk Skirmisher", "page": 308, "match": "name", "candidateIds": ["srd-2024_merfolk-skirmisher"]}
+{"category": "creature", "kind": "heading", "heading": "Merrow", "page": 308, "match": "name", "candidateIds": ["srd-2024_merrow"]}
+{"category": "creature", "kind": "heading", "heading": "Mimic", "page": 308, "match": "name", "candidateIds": ["srd-2024_mimic"]}
+{"category": "creature", "kind": "heading", "heading": "Minotaur of Baphomet", "page": 309, "match": "name", "candidateIds": ["srd-2024_minotaur-of-baphomet"]}
+{"category": "creature", "kind": "heading", "heading": "Minotaur Skeleton", "page": 326, "match": "name", "candidateIds": ["srd-2024_minotaur-skeleton"]}
+{"category": "creature", "kind": "heading", "heading": "Mule", "page": 357, "match": "name", "candidateIds": ["srd-2024_mule"]}
+{"category": "creature", "kind": "heading", "heading": "Mummy", "page": 309, "match": "name", "candidateIds": ["srd-2024_mummy"]}
+{"category": "creature", "kind": "heading", "heading": "Mummy Lord", "page": 309, "match": "name", "candidateIds": ["srd-2024_mummy-lord"]}
+{"category": "creature", "kind": "heading", "heading": "Nalfeshnee", "page": 310, "match": "name", "candidateIds": ["srd-2024_nalfeshnee"]}
+{"category": "creature", "kind": "heading", "heading": "Night Hag", "page": 311, "match": "name", "candidateIds": ["srd-2024_night-hag"]}
+{"category": "creature", "kind": "heading", "heading": "Nightmare", "page": 311, "match": "name", "candidateIds": ["srd-2024_nightmare"]}
+{"category": "creature", "kind": "heading", "heading": "Noble", "page": 312, "match": "name", "candidateIds": ["srd-2024_noble"]}
+{"category": "creature", "kind": "heading", "heading": "Ochre Jelly", "page": 312, "match": "name", "candidateIds": ["srd-2024_ochre-jelly"]}
+{"category": "creature", "kind": "heading", "heading": "Octopus", "page": 357, "match": "name", "candidateIds": ["srd-2024_octopus"]}
+{"category": "creature", "kind": "heading", "heading": "Ogre", "page": 312, "match": "name", "candidateIds": ["srd-2024_ogre"]}
+{"category": "creature", "kind": "heading", "heading": "Ogre Zombie", "page": 344, "match": "name", "candidateIds": ["srd-2024_ogre-zombie"]}
+{"category": "creature", "kind": "heading", "heading": "Oni", "page": 312, "match": "name", "candidateIds": ["srd-2024_oni"]}
+{"category": "creature", "kind": "heading", "heading": "Otyugh", "page": 313, "match": "name", "candidateIds": ["srd-2024_otyugh"]}
+{"category": "creature", "kind": "heading", "heading": "Owl", "page": 358, "match": "name", "candidateIds": ["srd-2024_owl"]}
+{"category": "creature", "kind": "heading", "heading": "Owlbear", "page": 313, "match": "name", "candidateIds": ["srd-2024_owlbear"]}
+{"category": "creature", "kind": "heading", "heading": "Panther", "page": 358, "match": "name", "candidateIds": ["srd-2024_panther"]}
+{"category": "creature", "kind": "heading", "heading": "Pegasus", "page": 313, "match": "name", "candidateIds": ["srd-2024_pegasus"]}
+{"category": "creature", "kind": "heading", "heading": "Phase Spider", "page": 313, "match": "name", "candidateIds": ["srd-2024_phase-spider"]}
+{"category": "creature", "kind": "heading", "heading": "Piranha", "page": 358, "match": "name", "candidateIds": ["srd-2024_piranha"]}
+{"category": "creature", "kind": "heading", "heading": "Pirate", "page": 314, "match": "name", "candidateIds": ["srd-2024_pirate"]}
+{"category": "creature", "kind": "heading", "heading": "Pirate Captain", "page": 314, "match": "name", "candidateIds": ["srd-2024_pirate-captain"]}
+{"category": "creature", "kind": "heading", "heading": "Pit Fiend", "page": 314, "match": "name", "candidateIds": ["srd-2024_pit-fiend"]}
+{"category": "creature", "kind": "heading", "heading": "Planetar", "page": 315, "match": "name", "candidateIds": ["srd-2024_planetar"]}
+{"category": "creature", "kind": "heading", "heading": "Plesiosaurus", "page": 358, "match": "name", "candidateIds": ["srd-2024_plesiosaurus"]}
+{"category": "creature", "kind": "heading", "heading": "Polar Bear", "page": 359, "match": "name", "candidateIds": ["srd-2024_polar-bear"]}
+{"category": "creature", "kind": "heading", "heading": "Pony", "page": 359, "match": "name", "candidateIds": ["srd-2024_pony"]}
+{"category": "creature", "kind": "heading", "heading": "Priest", "page": 316, "match": "name", "candidateIds": ["srd-2024_priest"]}
+{"category": "creature", "kind": "heading", "heading": "Priest Acolyte", "page": 316, "match": "name", "candidateIds": ["srd-2024_priest-acolyte"]}
+{"category": "creature", "kind": "heading", "heading": "Pseudodragon", "page": 316, "match": "name", "candidateIds": ["srd-2024_pseudodragon"]}
+{"category": "creature", "kind": "heading", "heading": "Pteranodon", "page": 359, "match": "name", "candidateIds": ["srd-2024_pteranodon"]}
+{"category": "creature", "kind": "heading", "heading": "Purple Worm", "page": 316, "match": "name", "candidateIds": ["srd-2024_purple-worm"]}
+{"category": "creature", "kind": "heading", "heading": "Quasit", "page": 317, "match": "name", "candidateIds": ["srd-2024_quasit"]}
+{"category": "creature", "kind": "heading", "heading": "Rakshasa", "page": 317, "match": "name", "candidateIds": ["srd-2024_rakshasa"]}
+{"category": "creature", "kind": "heading", "heading": "Rat", "page": 359, "match": "name", "candidateIds": ["srd-2024_rat"]}
+{"category": "creature", "kind": "heading", "heading": "Raven", "page": 359, "match": "name", "candidateIds": ["srd-2024_raven"]}
+{"category": "creature", "kind": "heading", "heading": "Red Dragon Wyrmling", "page": 318, "match": "name", "candidateIds": ["srd-2024_red-dragon-wyrmling"]}
+{"category": "creature", "kind": "heading", "heading": "Reef Shark", "page": 360, "match": "name", "candidateIds": ["srd-2024_reef-shark"]}
+{"category": "creature", "kind": "heading", "heading": "Remorhaz", "page": 319, "match": "name", "candidateIds": ["srd-2024_remorhaz"]}
+{"category": "creature", "kind": "heading", "heading": "Rhinoceros", "page": 360, "match": "name", "candidateIds": ["srd-2024_rhinoceros"]}
+{"category": "creature", "kind": "heading", "heading": "Riding Horse", "page": 360, "match": "name", "candidateIds": ["srd-2024_riding-horse"]}
+{"category": "creature", "kind": "heading", "heading": "Roc", "page": 320, "match": "name", "candidateIds": ["srd-2024_roc"]}
+{"category": "creature", "kind": "heading", "heading": "Roper", "page": 320, "match": "name", "candidateIds": ["srd-2024_roper"]}
+{"category": "creature", "kind": "heading", "heading": "Rust Monster", "page": 320, "match": "name", "candidateIds": ["srd-2024_rust-monster"]}
+{"category": "creature", "kind": "heading", "heading": "Saber-Toothed Tiger", "page": 360, "match": "name", "candidateIds": ["srd-2024_saber-toothed-tiger"]}
+{"category": "creature", "kind": "heading", "heading": "Sahuagin Warrior", "page": 321, "match": "name", "candidateIds": ["srd-2024_sahuagin-warrior"]}
+{"category": "creature", "kind": "heading", "heading": "Salamander", "page": 321, "match": "name", "candidateIds": ["srd-2024_salamander"]}
+{"category": "creature", "kind": "heading", "heading": "Satyr", "page": 321, "match": "name", "candidateIds": ["srd-2024_satyr"]}
+{"category": "creature", "kind": "heading", "heading": "Scorpion", "page": 360, "match": "name", "candidateIds": ["srd-2024_scorpion"]}
+{"category": "creature", "kind": "heading", "heading": "Scout", "page": 322, "match": "name", "candidateIds": ["srd-2024_scout"]}
+{"category": "creature", "kind": "heading", "heading": "Sea Hag", "page": 322, "match": "name", "candidateIds": ["srd-2024_sea-hag"]}
+{"category": "creature", "kind": "heading", "heading": "Seahorse", "page": 361, "match": "name", "candidateIds": ["srd-2024_seahorse"]}
+{"category": "creature", "kind": "heading", "heading": "Shadow", "page": 322, "match": "name", "candidateIds": ["srd-2024_shadow"]}
+{"category": "creature", "kind": "heading", "heading": "Shambling Mound", "page": 323, "match": "name", "candidateIds": ["srd-2024_shambling-mound"]}
+{"category": "creature", "kind": "heading", "heading": "Shield Guardian", "page": 323, "match": "name", "candidateIds": ["srd-2024_shield-guardian"]}
+{"category": "creature", "kind": "heading", "heading": "Shrieker Fungus", "page": 286, "match": "name", "candidateIds": ["srd-2024_shrieker-fungus"]}
+{"category": "creature", "kind": "heading", "heading": "Silver Dragon Wyrmling", "page": 324, "match": "name", "candidateIds": ["srd-2024_silver-dragon-wyrmling"]}
+{"category": "creature", "kind": "heading", "heading": "Skeleton", "page": 325, "match": "name", "candidateIds": ["srd-2024_skeleton"]}
+{"category": "creature", "kind": "heading", "heading": "Solar", "page": 326, "match": "name", "candidateIds": ["srd-2024_solar"]}
+{"category": "creature", "kind": "heading", "heading": "Specter", "page": 327, "match": "name", "candidateIds": ["srd-2024_specter"]}
+{"category": "creature", "kind": "heading", "heading": "Sphinx of Lore", "page": 327, "match": "name", "candidateIds": ["srd-2024_sphinx-of-lore"]}
+{"category": "creature", "kind": "heading", "heading": "Sphinx of Valor", "page": 328, "match": "name", "candidateIds": ["srd-2024_sphinx-of-valor"]}
+{"category": "creature", "kind": "heading", "heading": "Sphinx of Wonder", "page": 327, "match": "name", "candidateIds": ["srd-2024_sphinx-of-wonder"]}
+{"category": "creature", "kind": "heading", "heading": "Spider", "page": 361, "match": "name", "candidateIds": ["srd-2024_spider"]}
+{"category": "creature", "kind": "heading", "heading": "Spirit Naga", "page": 329, "match": "name", "candidateIds": ["srd-2024_spirit-naga"]}
+{"category": "creature", "kind": "heading", "heading": "Sprite", "page": 329, "match": "name", "candidateIds": ["srd-2024_sprite"]}
+{"category": "creature", "kind": "heading", "heading": "Spy", "page": 329, "match": "name", "candidateIds": ["srd-2024_spy"]}
+{"category": "creature", "kind": "heading", "heading": "Steam Mephit", "page": 308, "match": "name", "candidateIds": ["srd-2024_steam-mephit"]}
+{"category": "creature", "kind": "heading", "heading": "Stirge", "page": 329, "match": "name", "candidateIds": ["srd-2024_stirge"]}
+{"category": "creature", "kind": "heading", "heading": "Stone Giant", "page": 330, "match": "name", "candidateIds": ["srd-2024_stone-giant"]}
+{"category": "creature", "kind": "heading", "heading": "Stone Golem", "page": 330, "match": "name", "candidateIds": ["srd-2024_stone-golem"]}
+{"category": "creature", "kind": "heading", "heading": "Storm Giant", "page": 330, "match": "name", "candidateIds": ["srd-2024_storm-giant"]}
+{"category": "creature", "kind": "heading", "heading": "Succubus", "page": 331, "match": "name", "candidateIds": ["srd-2024_succubus"]}
+{"category": "creature", "kind": "heading", "heading": "Swarm of Bats", "page": 361, "match": "name", "candidateIds": ["srd-2024_swarm-of-bats"]}
+{"category": "creature", "kind": "heading", "heading": "Swarm of Crawling Claws", "page": 278, "match": "name", "candidateIds": ["srd-2024_swarm-of-crawling-claws"]}
+{"category": "creature", "kind": "heading", "heading": "Swarm of Insects", "page": 361, "match": "name", "candidateIds": ["srd-2024_swarm-of-insects"]}
+{"category": "creature", "kind": "heading", "heading": "Swarm of Piranhas", "page": 362, "match": "name", "candidateIds": ["srd-2024_swarm-of-piranhas"]}
+{"category": "creature", "kind": "heading", "heading": "Swarm of Rats", "page": 362, "match": "name", "candidateIds": ["srd-2024_swarm-of-rats"]}
+{"category": "creature", "kind": "heading", "heading": "Swarm of Ravens", "page": 362, "match": "name", "candidateIds": ["srd-2024_swarm-of-ravens"]}
+{"category": "creature", "kind": "heading", "heading": "Swarm of Venomous Snakes", "page": 362, "match": "name", "candidateIds": ["srd-2024_swarm-of-venomous-snakes"]}
+{"category": "creature", "kind": "heading", "heading": "Tarrasque", "page": 331, "match": "name", "candidateIds": ["srd-2024_tarrasque"]}
+{"category": "creature", "kind": "heading", "heading": "Tiger", "page": 363, "match": "name", "candidateIds": ["srd-2024_tiger"]}
+{"category": "creature", "kind": "heading", "heading": "Tough", "page": 332, "match": "name", "candidateIds": ["srd-2024_tough"]}
+{"category": "creature", "kind": "heading", "heading": "Tough Boss", "page": 332, "match": "name", "candidateIds": ["srd-2024_tough-boss"]}
+{"category": "creature", "kind": "heading", "heading": "Treant", "page": 333, "match": "name", "candidateIds": ["srd-2024_treant"]}
+{"category": "creature", "kind": "heading", "heading": "Triceratops", "page": 363, "match": "name", "candidateIds": ["srd-2024_triceratops"]}
+{"category": "creature", "kind": "heading", "heading": "Troll", "page": 333, "match": "name", "candidateIds": ["srd-2024_troll"]}
+{"category": "creature", "kind": "heading", "heading": "Troll Limb", "page": 333, "match": "name", "candidateIds": ["srd-2024_troll-limb"]}
+{"category": "creature", "kind": "heading", "heading": "Tyrannosaurus Rex", "page": 363, "match": "name", "candidateIds": ["srd-2024_tyrannosaurus-rex"]}
+{"category": "creature", "kind": "heading", "heading": "Unicorn", "page": 334, "match": "name", "candidateIds": ["srd-2024_unicorn"]}
+{"category": "creature", "kind": "heading", "heading": "Vampire", "page": 335, "match": "name", "candidateIds": ["srd-2024_vampire"]}
+{"category": "creature", "kind": "heading", "heading": "Vampire Familiar", "page": 334, "match": "name", "candidateIds": ["srd-2024_vampire-familiar"]}
+{"category": "creature", "kind": "heading", "heading": "Vampire Spawn", "page": 334, "match": "name", "candidateIds": ["srd-2024_vampire-spawn"]}
+{"category": "creature", "kind": "heading", "heading": "Venomous Snake", "page": 363, "match": "name", "candidateIds": ["srd-2024_venomous-snake"]}
+{"category": "creature", "kind": "heading", "heading": "Violet Fungus", "page": 286, "match": "name", "candidateIds": ["srd-2024_violet-fungus"]}
+{"category": "creature", "kind": "heading", "heading": "Vrock", "page": 336, "match": "name", "candidateIds": ["srd-2024_vrock"]}
+{"category": "creature", "kind": "heading", "heading": "Vulture", "page": 363, "match": "name", "candidateIds": ["srd-2024_vulture"]}
+{"category": "creature", "kind": "heading", "heading": "Warhorse", "page": 364, "match": "name", "candidateIds": ["srd-2024_warhorse"]}
+{"category": "creature", "kind": "heading", "heading": "Warhorse Skeleton", "page": 326, "match": "name", "candidateIds": ["srd-2024_warhorse-skeleton"]}
+{"category": "creature", "kind": "heading", "heading": "Warrior Infantry", "page": 336, "match": "name", "candidateIds": ["srd-2024_warrior-infantry"]}
+{"category": "creature", "kind": "heading", "heading": "Warrior Veteran", "page": 337, "match": "name", "candidateIds": ["srd-2024_warrior-veteran"]}
+{"category": "creature", "kind": "heading", "heading": "Water Elemental", "page": 337, "match": "name", "candidateIds": ["srd-2024_water-elemental"]}
+{"category": "creature", "kind": "heading", "heading": "Weasel", "page": 364, "match": "name", "candidateIds": ["srd-2024_weasel"]}
+{"category": "creature", "kind": "heading", "heading": "Werebear", "page": 337, "match": "name", "candidateIds": ["srd-2024_werebear"]}
+{"category": "creature", "kind": "heading", "heading": "Wereboar", "page": 338, "match": "name", "candidateIds": ["srd-2024_wereboar"]}
+{"category": "creature", "kind": "heading", "heading": "Wererat", "page": 338, "match": "name", "candidateIds": ["srd-2024_wererat"]}
+{"category": "creature", "kind": "heading", "heading": "Weretiger", "page": 339, "match": "name", "candidateIds": ["srd-2024_weretiger"]}
+{"category": "creature", "kind": "heading", "heading": "Werewolf", "page": 339, "match": "name", "candidateIds": ["srd-2024_werewolf"]}
+{"category": "creature", "kind": "heading", "heading": "White Dragon Wyrmling", "page": 339, "match": "name", "candidateIds": ["srd-2024_white-dragon-wyrmling"]}
+{"category": "creature", "kind": "heading", "heading": "Wight", "page": 341, "match": "name", "candidateIds": ["srd-2024_wight"]}
+{"category": "creature", "kind": "heading", "heading": "Will-o’-Wisp", "page": 341, "match": "name", "candidateIds": ["srd-2024_will-o-wisp"]}
+{"category": "creature", "kind": "heading", "heading": "Winter Wolf", "page": 342, "match": "name", "candidateIds": ["srd-2024_winter-wolf"]}
+{"category": "creature", "kind": "heading", "heading": "Wolf", "page": 364, "match": "name", "candidateIds": ["srd-2024_wolf"]}
+{"category": "creature", "kind": "heading", "heading": "Worg", "page": 342, "match": "name", "candidateIds": ["srd-2024_worg"]}
+{"category": "creature", "kind": "heading", "heading": "Wraith", "page": 342, "match": "name", "candidateIds": ["srd-2024_wraith"]}
+{"category": "creature", "kind": "heading", "heading": "Wyvern", "page": 343, "match": "name", "candidateIds": ["srd-2024_wyvern"]}
+{"category": "creature", "kind": "heading", "heading": "Xorn", "page": 343, "match": "name", "candidateIds": ["srd-2024_xorn"]}
+{"category": "creature", "kind": "heading", "heading": "Young Black Dragon", "page": 264, "match": "name", "candidateIds": ["srd-2024_young-black-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Young Blue Dragon", "page": 266, "match": "name", "candidateIds": ["srd-2024_young-blue-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Young Brass Dragon", "page": 268, "match": "name", "candidateIds": ["srd-2024_young-brass-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Young Bronze Dragon", "page": 270, "match": "name", "candidateIds": ["srd-2024_young-bronze-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Young Copper Dragon", "page": 276, "match": "name", "candidateIds": ["srd-2024_young-copper-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Young Gold Dragon", "page": 291, "match": "name", "candidateIds": ["srd-2024_young-gold-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Young Green Dragon", "page": 293, "match": "name", "candidateIds": ["srd-2024_young-green-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Young Red Dragon", "page": 318, "match": "name", "candidateIds": ["srd-2024_young-red-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Young Silver Dragon", "page": 324, "match": "name", "candidateIds": ["srd-2024_young-silver-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Young White Dragon", "page": 340, "match": "name", "candidateIds": ["srd-2024_young-white-dragon"]}
+{"category": "creature", "kind": "heading", "heading": "Zombie", "page": 343, "match": "name", "candidateIds": ["srd-2024_zombie"]}
+{"category": "creature", "kind": "unused-source", "id": "srd-2024_giant-fly", "name": "Giant Fly"}
+{"category": "magic-item", "kind": "heading", "heading": "Adamantine Armor", "page": 209, "match": "variant-candidates", "candidateIds": ["srd-2024_adamantine-armor-breastplate", "srd-2024_adamantine-armor-chain-mail", "srd-2024_adamantine-armor-chain-shirt", "srd-2024_adamantine-armor-half-plate-armor", "srd-2024_adamantine-armor-plate", "srd-2024_adamantine-armor-ring-mail", "srd-2024_adamantine-armor-scale-mail", "srd-2024_adamantine-armor-splint"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ammunition, +1, +2, or +3", "page": 209, "match": "variant-candidates", "candidateIds": ["srd-2024_ammunition-plus-one", "srd-2024_ammunition-plus-three", "srd-2024_ammunition-plus-two"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ammunition of Slaying", "page": 209, "match": "variant-candidates", "candidateIds": ["srd-2024_ammunition-of-aberration-slaying", "srd-2024_ammunition-of-beast-slaying", "srd-2024_ammunition-of-celestial-slaying", "srd-2024_ammunition-of-construct-slaying", "srd-2024_ammunition-of-dragon-slaying", "srd-2024_ammunition-of-elemental-slaying", "srd-2024_ammunition-of-fey-slaying", "srd-2024_ammunition-of-fiend-slaying", "srd-2024_ammunition-of-giant-slaying", "srd-2024_ammunition-of-humanoid-slaying", "srd-2024_ammunition-of-monstrosity-slaying", "srd-2024_ammunition-of-ooze-slaying", "srd-2024_ammunition-of-plant-slaying", "srd-2024_ammunition-of-undead-slaying"]}
+{"category": "magic-item", "kind": "heading", "heading": "Amulet of Health", "page": 209, "match": "name", "candidateIds": ["srd-2024_amulet-of-health"]}
+{"category": "magic-item", "kind": "heading", "heading": "Amulet of Proof against Detection and Location", "page": 209, "match": "name", "candidateIds": ["srd-2024_amulet-of-proof-against-detection-and-location"]}
+{"category": "magic-item", "kind": "heading", "heading": "Amulet of the Planes", "page": 209, "match": "name", "candidateIds": ["srd-2024_amulet-of-the-planes"]}
+{"category": "magic-item", "kind": "heading", "heading": "Animated Shield", "page": 209, "match": "name", "candidateIds": ["srd-2024_animated-shield"]}
+{"category": "magic-item", "kind": "heading", "heading": "Apparatus of the Crab", "page": 210, "match": "name", "candidateIds": ["srd-2024_apparatus-of-the-crab"]}
+{"category": "magic-item", "kind": "heading", "heading": "Armor, +1, +2, or +3", "page": 210, "match": "variant-candidates", "candidateIds": ["srd-2024_breastplate-plus-1", "srd-2024_breastplate-plus-2", "srd-2024_breastplate-plus-3", "srd-2024_chain-mail-plus-1", "srd-2024_chain-mail-plus-2", "srd-2024_chain-mail-plus-3", "srd-2024_chain-shirt-plus-1", "srd-2024_chain-shirt-plus-2", "srd-2024_chain-shirt-plus-3", "srd-2024_half-plate-armor-plus-1", "srd-2024_half-plate-armor-plus-2", "srd-2024_half-plate-armor-plus-3", "srd-2024_hide-armor-plus-1", "srd-2024_hide-armor-plus-2", "srd-2024_hide-armor-plus-3", "srd-2024_leather-armor-plus-1", "srd-2024_leather-armor-plus-2", "srd-2024_leather-armor-plus-3", "srd-2024_padded-armor-plus-1", "srd-2024_padded-armor-plus-2", "srd-2024_padded-armor-plus-3", "srd-2024_plate-armor-plus-1", "srd-2024_plate-armor-plus-2", "srd-2024_plate-armor-plus-3", "srd-2024_ring-mail-plus-1", "srd-2024_ring-mail-plus-2", "srd-2024_ring-mail-plus-3", "srd-2024_scale-mail-plus-1", "srd-2024_scale-mail-plus-2", "srd-2024_scale-mail-plus-3", "srd-2024_splint-armor-plus-1", "srd-2024_splint-armor-plus-2", "srd-2024_splint-armor-plus-3", "srd-2024_studded-leather-armor-plus-1", "srd-2024_studded-leather-armor-plus-2", "srd-2024_studded-leather-armor-plus-3"]}
+{"category": "magic-item", "kind": "heading", "heading": "Armor of Invulnerability", "page": 210, "match": "name", "candidateIds": ["srd-2024_armor-of-invulnerability"]}
+{"category": "magic-item", "kind": "heading", "heading": "Armor of Resistance", "page": 210, "match": "variant-candidates", "candidateIds": ["srd-2024_armor-of-resistance-breastplate", "srd-2024_armor-of-resistance-chain-mail", "srd-2024_armor-of-resistance-chain-shirt", "srd-2024_armor-of-resistance-half-plate", "srd-2024_armor-of-resistance-hide-armor", "srd-2024_armor-of-resistance-leather", "srd-2024_armor-of-resistance-padded", "srd-2024_armor-of-resistance-plate", "srd-2024_armor-of-resistance-ring-mail", "srd-2024_armor-of-resistance-scale-mail", "srd-2024_armor-of-resistance-splint", "srd-2024_armor-of-resistance-studded-leather"]}
+{"category": "magic-item", "kind": "heading", "heading": "Armor of Vulnerability", "page": 211, "match": "variant-candidates", "candidateIds": ["srd-2024_armor-of-vulnerability-breastplate", "srd-2024_armor-of-vulnerability-chain-mail", "srd-2024_armor-of-vulnerability-chain-shirt", "srd-2024_armor-of-vulnerability-half-plate-armor", "srd-2024_armor-of-vulnerability-hide-armor", "srd-2024_armor-of-vulnerability-leather-armor", "srd-2024_armor-of-vulnerability-padded-armor", "srd-2024_armor-of-vulnerability-plate-armor", "srd-2024_armor-of-vulnerability-ring-mail", "srd-2024_armor-of-vulnerability-scale-mail", "srd-2024_armor-of-vulnerability-splint-armor", "srd-2024_armor-of-vulnerability-studded-leather-armor"]}
+{"category": "magic-item", "kind": "heading", "heading": "Arrow-Catching Shield", "page": 211, "match": "name", "candidateIds": ["srd-2024_arrow-catching-shield"]}
+{"category": "magic-item", "kind": "heading", "heading": "Bag of Beans", "page": 211, "match": "name", "candidateIds": ["srd-2024_bag-of-beans"]}
+{"category": "magic-item", "kind": "heading", "heading": "Bag of Devouring", "page": 212, "match": "name", "candidateIds": ["srd-2024_bag-of-devouring"]}
+{"category": "magic-item", "kind": "heading", "heading": "Bag of Holding", "page": 212, "match": "name", "candidateIds": ["srd-2024_bag-of-holding"]}
+{"category": "magic-item", "kind": "heading", "heading": "Bag of Tricks", "page": 212, "match": "name", "candidateIds": ["srd-2024_bag-of-tricks"]}
+{"category": "magic-item", "kind": "heading", "heading": "Bead of Force", "page": 212, "match": "name", "candidateIds": ["srd-2024_bead-of-force"]}
+{"category": "magic-item", "kind": "heading", "heading": "Bead of Nourishment", "page": 213, "match": "unmatched-heading", "candidateIds": []}
+{"category": "magic-item", "kind": "heading", "heading": "Belt of Dwarvenkind", "page": 213, "match": "name", "candidateIds": ["srd-2024_belt-of-dwarvenkind"]}
+{"category": "magic-item", "kind": "heading", "heading": "Belt of Giant Strength", "page": 213, "match": "variant-candidates", "candidateIds": ["srd-2024_belt-of-giant-strength-cloud", "srd-2024_belt-of-giant-strength-fire", "srd-2024_belt-of-giant-strength-frost-or-stone", "srd-2024_belt-of-giant-strength-hill", "srd-2024_belt-of-giant-strength-storm"]}
+{"category": "magic-item", "kind": "heading", "heading": "Berserker Axe", "page": 213, "match": "variant-candidates", "candidateIds": ["srd-2024_berserker-battleaxe", "srd-2024_berserker-greataxe", "srd-2024_berserker-halberd"]}
+{"category": "magic-item", "kind": "heading", "heading": "Boots of Elvenkind", "page": 213, "match": "name", "candidateIds": ["srd-2024_boots-of-elvenkind"]}
+{"category": "magic-item", "kind": "heading", "heading": "Boots of Levitation", "page": 213, "match": "name", "candidateIds": ["srd-2024_boots-of-levitation"]}
+{"category": "magic-item", "kind": "heading", "heading": "Boots of Speed", "page": 214, "match": "name", "candidateIds": ["srd-2024_boots-of-speed"]}
+{"category": "magic-item", "kind": "heading", "heading": "Boots of Striding and Springing", "page": 214, "match": "name", "candidateIds": ["srd-2024_boots-of-striding-and-springing"]}
+{"category": "magic-item", "kind": "heading", "heading": "Boots of the Winterlands", "page": 214, "match": "name", "candidateIds": ["srd-2024_boots-of-the-winterlands"]}
+{"category": "magic-item", "kind": "heading", "heading": "Bowl of Commanding Water Elementals", "page": 214, "match": "name", "candidateIds": ["srd-2024_bowl-of-commanding-water-elementals"]}
+{"category": "magic-item", "kind": "heading", "heading": "Bracers of Archery", "page": 214, "match": "name", "candidateIds": ["srd-2024_bracers-of-archery"]}
+{"category": "magic-item", "kind": "heading", "heading": "Bracers of Defense", "page": 214, "match": "name", "candidateIds": ["srd-2024_bracers-of-defense"]}
+{"category": "magic-item", "kind": "heading", "heading": "Brazier of Commanding Fire Elementals", "page": 214, "match": "name", "candidateIds": ["srd-2024_brazier-of-commanding-fire-elementals"]}
+{"category": "magic-item", "kind": "heading", "heading": "Brooch of Shielding", "page": 214, "match": "name", "candidateIds": ["srd-2024_brooch-of-shielding"]}
+{"category": "magic-item", "kind": "heading", "heading": "Broom of Flying", "page": 214, "match": "name", "candidateIds": ["srd-2024_broom-of-flying"]}
+{"category": "magic-item", "kind": "heading", "heading": "Candle of Invocation", "page": 214, "match": "name", "candidateIds": ["srd-2024_candle-of-invocation"]}
+{"category": "magic-item", "kind": "heading", "heading": "Cape of the Mountebank", "page": 215, "match": "name", "candidateIds": ["srd-2024_cape-of-the-mountebank"]}
+{"category": "magic-item", "kind": "heading", "heading": "Carpet of Flying", "page": 215, "match": "name", "candidateIds": ["srd-2024_carpet-of-flying"]}
+{"category": "magic-item", "kind": "heading", "heading": "Censer of Controlling Air Elementals", "page": 215, "match": "name", "candidateIds": ["srd-2024_censer-of-controlling-air-elementals"]}
+{"category": "magic-item", "kind": "heading", "heading": "Chime of Opening", "page": 215, "match": "name", "candidateIds": ["srd-2024_chime-of-opening"]}
+{"category": "magic-item", "kind": "heading", "heading": "Circlet of Blasting", "page": 215, "match": "name", "candidateIds": ["srd-2024_circlet-of-blasting"]}
+{"category": "magic-item", "kind": "heading", "heading": "Cloak of Arachnida", "page": 215, "match": "name", "candidateIds": ["srd-2024_cloak-of-arachnida"]}
+{"category": "magic-item", "kind": "heading", "heading": "Cloak of Displacement", "page": 215, "match": "name", "candidateIds": ["srd-2024_cloak-of-displacement"]}
+{"category": "magic-item", "kind": "heading", "heading": "Cloak of Elvenkind", "page": 215, "match": "name", "candidateIds": ["srd-2024_cloak-of-elvenkind"]}
+{"category": "magic-item", "kind": "heading", "heading": "Cloak of Invisibility", "page": 215, "match": "unmatched-heading", "candidateIds": []}
+{"category": "magic-item", "kind": "heading", "heading": "Cloak of Protection", "page": 216, "match": "name", "candidateIds": ["srd-2024_cloak-of-protection"]}
+{"category": "magic-item", "kind": "heading", "heading": "Cloak of the Bat", "page": 216, "match": "name", "candidateIds": ["srd-2024_cloak-of-the-bat"]}
+{"category": "magic-item", "kind": "heading", "heading": "Cloak of the Manta Ray", "page": 216, "match": "name", "candidateIds": ["srd-2024_cloak-of-the-manta-ray"]}
+{"category": "magic-item", "kind": "heading", "heading": "Crystal Ball", "page": 216, "match": "name", "candidateIds": ["srd-2024_crystal-ball"]}
+{"category": "magic-item", "kind": "heading", "heading": "Crystal Ball of Mind Reading", "page": 216, "match": "name", "candidateIds": ["srd-2024_crystal-ball-of-mind-reading"]}
+{"category": "magic-item", "kind": "heading", "heading": "Crystal Ball of Telepathy", "page": 216, "match": "name", "candidateIds": ["srd-2024_crystal-ball-of-telepathy"]}
+{"category": "magic-item", "kind": "heading", "heading": "Crystal Ball of True Seeing", "page": 216, "match": "name", "candidateIds": ["srd-2024_crystal-ball-of-true-seeing"]}
+{"category": "magic-item", "kind": "heading", "heading": "Cube of Force", "page": 216, "match": "name", "candidateIds": ["srd-2024_cube-of-force"]}
+{"category": "magic-item", "kind": "heading", "heading": "Cubic Gate", "page": 216, "match": "name", "candidateIds": ["srd-2024_cubic-gate"]}
+{"category": "magic-item", "kind": "heading", "heading": "Dagger of Venom", "page": 216, "match": "name", "candidateIds": ["srd-2024_dagger-of-venom"]}
+{"category": "magic-item", "kind": "heading", "heading": "Dancing Sword", "page": 217, "match": "variant-candidates", "candidateIds": ["srd-2024_dancing-greatsword", "srd-2024_dancing-longsword", "srd-2024_dancing-rapier", "srd-2024_dancing-scimitar", "srd-2024_dancing-shortsword"]}
+{"category": "magic-item", "kind": "heading", "heading": "Decanter of Endless Water", "page": 217, "match": "name", "candidateIds": ["srd-2024_decanter-of-endless-water"]}
+{"category": "magic-item", "kind": "heading", "heading": "Deck of Illusions", "page": 217, "match": "name", "candidateIds": ["srd-2024_deck-of-illusions"]}
+{"category": "magic-item", "kind": "heading", "heading": "Defender", "page": 218, "match": "variant-candidates", "candidateIds": ["srd-2024_defender", "srd-2024_defender-battleaxe", "srd-2024_defender-club", "srd-2024_defender-dagger", "srd-2024_defender-flail", "srd-2024_defender-glaive", "srd-2024_defender-greataxe", "srd-2024_defender-greatclub", "srd-2024_defender-greatsword", "srd-2024_defender-halberd", "srd-2024_defender-handaxe", "srd-2024_defender-javelin", "srd-2024_defender-lance", "srd-2024_defender-light-hammer", "srd-2024_defender-longsword", "srd-2024_defender-mace", "srd-2024_defender-maul", "srd-2024_defender-morningstar", "srd-2024_defender-pike", "srd-2024_defender-quarterstaff", "srd-2024_defender-rapier", "srd-2024_defender-scimitar", "srd-2024_defender-shortsword", "srd-2024_defender-sickle", "srd-2024_defender-spear", "srd-2024_defender-trident", "srd-2024_defender-war-pick", "srd-2024_defender-warhammer", "srd-2024_defender-whip"]}
+{"category": "magic-item", "kind": "heading", "heading": "Demon Armor", "page": 218, "match": "variant-candidates", "candidateIds": ["srd-2024_demon-breastplate", "srd-2024_demon-chain-mail", "srd-2024_demon-chain-shirt", "srd-2024_demon-half-plate-armor", "srd-2024_demon-hide-armor", "srd-2024_demon-leather-armor", "srd-2024_demon-padded-armor", "srd-2024_demon-plate-armor", "srd-2024_demon-ring-mail", "srd-2024_demon-scale-mail", "srd-2024_demon-splint-armor", "srd-2024_demon-studded-leather-armor"]}
+{"category": "magic-item", "kind": "heading", "heading": "Dimensional Shackles", "page": 218, "match": "name", "candidateIds": ["srd-2024_dimensional-shackles"]}
+{"category": "magic-item", "kind": "heading", "heading": "Dragon Orb", "page": 218, "match": "name", "candidateIds": ["srd-2024_dragon-orb"]}
+{"category": "magic-item", "kind": "heading", "heading": "Dragon Scale Mail", "page": 218, "match": "name", "candidateIds": ["srd-2024_dragon-scale-mail"]}
+{"category": "magic-item", "kind": "heading", "heading": "Dragon Slayer", "page": 219, "match": "name", "candidateIds": ["srd-2024_dragon-slayer"]}
+{"category": "magic-item", "kind": "heading", "heading": "Dust of Disappearance", "page": 219, "match": "name", "candidateIds": ["srd-2024_dust-of-disappearance"]}
+{"category": "magic-item", "kind": "heading", "heading": "Dust of Dryness", "page": 219, "match": "name", "candidateIds": ["srd-2024_dust-of-dryness"]}
+{"category": "magic-item", "kind": "heading", "heading": "Dust of Sneezing and Choking", "page": 219, "match": "name", "candidateIds": ["srd-2024_dust-of-sneezing-and-choking"]}
+{"category": "magic-item", "kind": "heading", "heading": "Dwarven Plate", "page": 219, "match": "variant-candidates", "candidateIds": ["srd-2024_dwarven-half-plate", "srd-2024_dwarven-plate"]}
+{"category": "magic-item", "kind": "heading", "heading": "Dwarven Thrower", "page": 219, "match": "name", "candidateIds": ["srd-2024_dwarven-thrower"]}
+{"category": "magic-item", "kind": "heading", "heading": "Efficient Quiver", "page": 219, "match": "name", "candidateIds": ["srd-2024_efficient-quiver"]}
+{"category": "magic-item", "kind": "heading", "heading": "Efreeti Bottle", "page": 220, "match": "name", "candidateIds": ["srd-2024_efreeti-bottle"]}
+{"category": "magic-item", "kind": "heading", "heading": "Elemental Gem", "page": 220, "match": "name", "candidateIds": ["srd-2024_elemental-gem"]}
+{"category": "magic-item", "kind": "heading", "heading": "Elixir of Health", "page": 220, "match": "unmatched-heading", "candidateIds": []}
+{"category": "magic-item", "kind": "heading", "heading": "Elven Chain", "page": 220, "match": "variant-candidates", "candidateIds": ["srd-2024_elven-chain-mail", "srd-2024_elven-chain-shirt"]}
+{"category": "magic-item", "kind": "heading", "heading": "Energy Bow", "page": 220, "match": "unmatched-heading", "candidateIds": []}
+{"category": "magic-item", "kind": "heading", "heading": "Eversmoking Bottle", "page": 220, "match": "name", "candidateIds": ["srd-2024_eversmoking-bottle"]}
+{"category": "magic-item", "kind": "heading", "heading": "Eyes of Charming", "page": 221, "match": "name", "candidateIds": ["srd-2024_eyes-of-charming"]}
+{"category": "magic-item", "kind": "heading", "heading": "Eyes of Minute Seeing", "page": 221, "match": "name", "candidateIds": ["srd-2024_eyes-of-minute-seeing"]}
+{"category": "magic-item", "kind": "heading", "heading": "Eyes of the Eagle", "page": 221, "match": "name", "candidateIds": ["srd-2024_eyes-of-the-eagle"]}
+{"category": "magic-item", "kind": "heading", "heading": "Feather Token", "page": 221, "match": "variant-candidates", "candidateIds": ["srd-2024_feather-token-anchor", "srd-2024_feather-token-bird", "srd-2024_feather-token-fan", "srd-2024_feather-token-swan-boat", "srd-2024_feather-token-tree", "srd-2024_feather-token-whip"]}
+{"category": "magic-item", "kind": "heading", "heading": "Figurine of Wondrous Power", "page": 221, "match": "variant-candidates", "candidateIds": ["srd-2024_figurine-of-wondrous-power-bronze-griffon", "srd-2024_figurine-of-wondrous-power-ebony-fly", "srd-2024_figurine-of-wondrous-power-golden-lions", "srd-2024_figurine-of-wondrous-power-ivory-goats", "srd-2024_figurine-of-wondrous-power-marble-elephant", "srd-2024_figurine-of-wondrous-power-obsidian-stead", "srd-2024_figurine-of-wondrous-power-onyx-dog", "srd-2024_figurine-of-wondrous-power-serpentine-owl", "srd-2024_figurine-of-wondrous-power-silver-raven"]}
+{"category": "magic-item", "kind": "heading", "heading": "Flame Tongue", "page": 223, "match": "variant-candidates", "candidateIds": ["srd-2024_flame-tongue-battleaxe", "srd-2024_flame-tongue-club", "srd-2024_flame-tongue-dagger", "srd-2024_flame-tongue-dart", "srd-2024_flame-tongue-flail", "srd-2024_flame-tongue-glaive", "srd-2024_flame-tongue-greataxe", "srd-2024_flame-tongue-greatclub", "srd-2024_flame-tongue-greatsword", "srd-2024_flame-tongue-halberd", "srd-2024_flame-tongue-handaxe", "srd-2024_flame-tongue-javelin", "srd-2024_flame-tongue-lance", "srd-2024_flame-tongue-light-hammer", "srd-2024_flame-tongue-longsword", "srd-2024_flame-tongue-mace", "srd-2024_flame-tongue-maul", "srd-2024_flame-tongue-morningstar", "srd-2024_flame-tongue-pike", "srd-2024_flame-tongue-quarterstaff", "srd-2024_flame-tongue-rapier", "srd-2024_flame-tongue-scimitar", "srd-2024_flame-tongue-shortsword", "srd-2024_flame-tongue-sickle", "srd-2024_flame-tongue-spear", "srd-2024_flame-tongue-trident", "srd-2024_flame-tongue-war-pick", "srd-2024_flame-tongue-warhammer", "srd-2024_flame-tongue-whip"]}
+{"category": "magic-item", "kind": "heading", "heading": "Folding Boat", "page": 223, "match": "name", "candidateIds": ["srd-2024_folding-boat"]}
+{"category": "magic-item", "kind": "heading", "heading": "Frost Brand", "page": 223, "match": "variant-candidates", "candidateIds": ["srd-2024_frost-brand-glaive", "srd-2024_frost-brand-greatsword", "srd-2024_frost-brand-longsword", "srd-2024_frost-brand-rapier", "srd-2024_frost-brand-scimitar", "srd-2024_frost-brand-shortsword"]}
+{"category": "magic-item", "kind": "heading", "heading": "Gauntlets of Ogre Power", "page": 223, "match": "name", "candidateIds": ["srd-2024_gauntlets-of-ogre-power"]}
+{"category": "magic-item", "kind": "heading", "heading": "Gem of Brightness", "page": 223, "match": "name", "candidateIds": ["srd-2024_gem-of-brightness"]}
+{"category": "magic-item", "kind": "heading", "heading": "Gem of Seeing", "page": 223, "match": "name", "candidateIds": ["srd-2024_gem-of-seeing"]}
+{"category": "magic-item", "kind": "heading", "heading": "Giant Slayer", "page": 223, "match": "variant-candidates", "candidateIds": ["srd-2024_giant-slayer-battleaxe", "srd-2024_giant-slayer-blowgun", "srd-2024_giant-slayer-club", "srd-2024_giant-slayer-dagger", "srd-2024_giant-slayer-dart", "srd-2024_giant-slayer-flail", "srd-2024_giant-slayer-glaive", "srd-2024_giant-slayer-greataxe", "srd-2024_giant-slayer-greatclub", "srd-2024_giant-slayer-greatsword", "srd-2024_giant-slayer-halberd", "srd-2024_giant-slayer-hand-crossbow", "srd-2024_giant-slayer-handaxe", "srd-2024_giant-slayer-heavy-crossbow", "srd-2024_giant-slayer-javelin", "srd-2024_giant-slayer-lance", "srd-2024_giant-slayer-light-crossbow", "srd-2024_giant-slayer-light-hammer", "srd-2024_giant-slayer-longbow", "srd-2024_giant-slayer-longsword", "srd-2024_giant-slayer-mace", "srd-2024_giant-slayer-maul", "srd-2024_giant-slayer-morningstar", "srd-2024_giant-slayer-musket", "srd-2024_giant-slayer-pike", "srd-2024_giant-slayer-pistol", "srd-2024_giant-slayer-quarterstaff", "srd-2024_giant-slayer-rapier", "srd-2024_giant-slayer-scimitar", "srd-2024_giant-slayer-shortbow", "srd-2024_giant-slayer-shortsword", "srd-2024_giant-slayer-sickle", "srd-2024_giant-slayer-sling", "srd-2024_giant-slayer-spear", "srd-2024_giant-slayer-trident", "srd-2024_giant-slayer-war-pick", "srd-2024_giant-slayer-warhammer", "srd-2024_giant-slayer-whip"]}
+{"category": "magic-item", "kind": "heading", "heading": "Glamoured Studded Leather", "page": 223, "match": "name", "candidateIds": ["srd-2024_glamoured-studded-leather"]}
+{"category": "magic-item", "kind": "heading", "heading": "Gloves of Missile Snaring", "page": 224, "match": "name", "candidateIds": ["srd-2024_gloves-of-missile-snaring"]}
+{"category": "magic-item", "kind": "heading", "heading": "Gloves of Swimming and Climbing", "page": 224, "match": "name", "candidateIds": ["srd-2024_gloves-of-swimming-and-climbing"]}
+{"category": "magic-item", "kind": "heading", "heading": "Gloves of Thievery", "page": 224, "match": "unmatched-heading", "candidateIds": []}
+{"category": "magic-item", "kind": "heading", "heading": "Goggles of Night", "page": 224, "match": "name", "candidateIds": ["srd-2024_goggles-of-night"]}
+{"category": "magic-item", "kind": "heading", "heading": "Hammer of Thunderbolts", "page": 224, "match": "variant-candidates", "candidateIds": ["srd-2024_hammer-of-thunderbolts-maul", "srd-2024_hammer-of-thunderbolts-warhammer"]}
+{"category": "magic-item", "kind": "heading", "heading": "Handy Haversack", "page": 224, "match": "name", "candidateIds": ["srd-2024_handy-haversack"]}
+{"category": "magic-item", "kind": "heading", "heading": "Hat of Disguise", "page": 224, "match": "name", "candidateIds": ["srd-2024_hat-of-disguise"]}
+{"category": "magic-item", "kind": "heading", "heading": "Hat of Many Spells", "page": 224, "match": "unmatched-heading", "candidateIds": []}
+{"category": "magic-item", "kind": "heading", "heading": "Headband of Intellect", "page": 225, "match": "name", "candidateIds": ["srd-2024_headband-of-intellect"]}
+{"category": "magic-item", "kind": "heading", "heading": "Helm of Brilliance", "page": 225, "match": "name", "candidateIds": ["srd-2024_helm-of-brilliance"]}
+{"category": "magic-item", "kind": "heading", "heading": "Helm of Comprehending Languages", "page": 226, "match": "name", "candidateIds": ["srd-2024_helm-of-comprehending-languages"]}
+{"category": "magic-item", "kind": "heading", "heading": "Helm of Telepathy", "page": 226, "match": "name", "candidateIds": ["srd-2024_helm-of-telepathy"]}
+{"category": "magic-item", "kind": "heading", "heading": "Helm of Teleportation", "page": 226, "match": "name", "candidateIds": ["srd-2024_helm-of-teleportation"]}
+{"category": "magic-item", "kind": "heading", "heading": "Holy Avenger", "page": 226, "match": "variant-candidates", "candidateIds": ["srd-2024_holy-avenger", "srd-2024_holy-avenger-battleaxe", "srd-2024_holy-avenger-blowgun", "srd-2024_holy-avenger-club", "srd-2024_holy-avenger-dagger", "srd-2024_holy-avenger-dart", "srd-2024_holy-avenger-flail", "srd-2024_holy-avenger-glaive", "srd-2024_holy-avenger-greataxe", "srd-2024_holy-avenger-greatclub", "srd-2024_holy-avenger-greatsword", "srd-2024_holy-avenger-halberd", "srd-2024_holy-avenger-hand-crossbow", "srd-2024_holy-avenger-handaxe", "srd-2024_holy-avenger-heavy-crossbow", "srd-2024_holy-avenger-javelin", "srd-2024_holy-avenger-lance", "srd-2024_holy-avenger-light-crossbow", "srd-2024_holy-avenger-light-hammer", "srd-2024_holy-avenger-longbow", "srd-2024_holy-avenger-longsword", "srd-2024_holy-avenger-mace", "srd-2024_holy-avenger-maul", "srd-2024_holy-avenger-morningstar", "srd-2024_holy-avenger-musket", "srd-2024_holy-avenger-pike", "srd-2024_holy-avenger-pistol", "srd-2024_holy-avenger-quarterstaff", "srd-2024_holy-avenger-rapier", "srd-2024_holy-avenger-scimitar", "srd-2024_holy-avenger-shortbow", "srd-2024_holy-avenger-shortsword", "srd-2024_holy-avenger-sickle", "srd-2024_holy-avenger-sling", "srd-2024_holy-avenger-spear", "srd-2024_holy-avenger-trident", "srd-2024_holy-avenger-war-pick", "srd-2024_holy-avenger-warhammer", "srd-2024_holy-avenger-whip"]}
+{"category": "magic-item", "kind": "heading", "heading": "Horn of Blasting", "page": 226, "match": "name", "candidateIds": ["srd-2024_horn-of-blasting"]}
+{"category": "magic-item", "kind": "heading", "heading": "Horn of Valhalla", "page": 226, "match": "name", "candidateIds": ["srd-2024_horn-of-valhalla"]}
+{"category": "magic-item", "kind": "heading", "heading": "Horseshoes of a Zephyr", "page": 226, "match": "name", "candidateIds": ["srd-2024_horseshoes-of-a-zephyr"]}
+{"category": "magic-item", "kind": "heading", "heading": "Horseshoes of Speed", "page": 227, "match": "name", "candidateIds": ["srd-2024_horseshoes-of-speed"]}
+{"category": "magic-item", "kind": "heading", "heading": "Immovable Rod", "page": 227, "match": "name", "candidateIds": ["srd-2024_immovable-rod"]}
+{"category": "magic-item", "kind": "heading", "heading": "Instant Fortress", "page": 227, "match": "name", "candidateIds": ["srd-2024_instant-fortress"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ioun Stone", "page": 227, "match": "name", "candidateIds": ["srd-2024_ioun-stone"]}
+{"category": "magic-item", "kind": "heading", "heading": "Iron Bands", "page": 228, "match": "name", "candidateIds": ["srd-2024_iron-bands"]}
+{"category": "magic-item", "kind": "heading", "heading": "Iron Flask", "page": 228, "match": "name", "candidateIds": ["srd-2024_iron-flask"]}
+{"category": "magic-item", "kind": "heading", "heading": "Javelin of Lightning", "page": 228, "match": "name", "candidateIds": ["srd-2024_javelin-of-lightning"]}
+{"category": "magic-item", "kind": "heading", "heading": "Lantern of Revealing", "page": 228, "match": "name", "candidateIds": ["srd-2024_lantern-of-revealing"]}
+{"category": "magic-item", "kind": "heading", "heading": "Luck Blade", "page": 229, "match": "variant-candidates", "candidateIds": ["srd-2024_luck-blade-glaive", "srd-2024_luck-blade-greatsword", "srd-2024_luck-blade-longsword", "srd-2024_luck-blade-rapier", "srd-2024_luck-blade-scimitar", "srd-2024_luck-blade-shortsword", "srd-2024_luck-blade-sickle"]}
+{"category": "magic-item", "kind": "heading", "heading": "Mace of Disruption", "page": 229, "match": "name", "candidateIds": ["srd-2024_mace-of-disruption"]}
+{"category": "magic-item", "kind": "heading", "heading": "Mace of Smiting", "page": 229, "match": "name", "candidateIds": ["srd-2024_mace-of-smiting"]}
+{"category": "magic-item", "kind": "heading", "heading": "Mace of Terror", "page": 229, "match": "name", "candidateIds": ["srd-2024_mace-of-terror"]}
+{"category": "magic-item", "kind": "heading", "heading": "Mantle of Spell Resistance", "page": 229, "match": "name", "candidateIds": ["srd-2024_mantle-of-spell-resistance"]}
+{"category": "magic-item", "kind": "heading", "heading": "Manual of Bodily Health", "page": 229, "match": "name", "candidateIds": ["srd-2024_manual-of-bodily-health"]}
+{"category": "magic-item", "kind": "heading", "heading": "Manual of Gainful Exercise", "page": 229, "match": "name", "candidateIds": ["srd-2024_manual-of-gainful-exercise"]}
+{"category": "magic-item", "kind": "heading", "heading": "Manual of Golems", "page": 229, "match": "name", "candidateIds": ["srd-2024_manual-of-golems"]}
+{"category": "magic-item", "kind": "heading", "heading": "Manual of Quickness of Action", "page": 230, "match": "name", "candidateIds": ["srd-2024_manual-of-quickness-of-action"]}
+{"category": "magic-item", "kind": "heading", "heading": "Marvelous Pigments", "page": 230, "match": "name", "candidateIds": ["srd-2024_marvelous-pigments"]}
+{"category": "magic-item", "kind": "heading", "heading": "Medallion of Thoughts", "page": 230, "match": "name", "candidateIds": ["srd-2024_medallion-of-thoughts"]}
+{"category": "magic-item", "kind": "heading", "heading": "Mirror of Life Trapping", "page": 230, "match": "name", "candidateIds": ["srd-2024_mirror-of-life-trapping"]}
+{"category": "magic-item", "kind": "heading", "heading": "Mithral Armor", "page": 231, "match": "variant-candidates", "candidateIds": ["srd-2024_mithral-armor-breastplate", "srd-2024_mithral-armor-chain-mail", "srd-2024_mithral-armor-chain-shirt", "srd-2024_mithral-armor-half-plate", "srd-2024_mithral-armor-plate", "srd-2024_mithral-armor-ring-mail", "srd-2024_mithral-armor-scale-mail", "srd-2024_mithral-armor-splint"]}
+{"category": "magic-item", "kind": "heading", "heading": "Mysterious Deck", "page": 231, "match": "name", "candidateIds": ["srd-2024_mysterious-deck"]}
+{"category": "magic-item", "kind": "heading", "heading": "Necklace of Adaptation", "page": 232, "match": "name", "candidateIds": ["srd-2024_necklace-of-adaptation"]}
+{"category": "magic-item", "kind": "heading", "heading": "Necklace of Fireballs", "page": 233, "match": "name", "candidateIds": ["srd-2024_necklace-of-fireballs"]}
+{"category": "magic-item", "kind": "heading", "heading": "Necklace of Prayer Beads", "page": 233, "match": "name", "candidateIds": ["srd-2024_necklace-of-prayer-beads"]}
+{"category": "magic-item", "kind": "heading", "heading": "Nine Lives Stealer", "page": 233, "match": "variant-candidates", "candidateIds": ["srd-2024_nine-lives-stealer-battleaxe", "srd-2024_nine-lives-stealer-blowgun", "srd-2024_nine-lives-stealer-club", "srd-2024_nine-lives-stealer-dagger", "srd-2024_nine-lives-stealer-dart", "srd-2024_nine-lives-stealer-flail", "srd-2024_nine-lives-stealer-glaive", "srd-2024_nine-lives-stealer-greataxe", "srd-2024_nine-lives-stealer-greatclub", "srd-2024_nine-lives-stealer-greatsword", "srd-2024_nine-lives-stealer-halberd", "srd-2024_nine-lives-stealer-hand-crossbow", "srd-2024_nine-lives-stealer-handaxe", "srd-2024_nine-lives-stealer-heavy-crossbow", "srd-2024_nine-lives-stealer-javelin", "srd-2024_nine-lives-stealer-lance", "srd-2024_nine-lives-stealer-light-crossbow", "srd-2024_nine-lives-stealer-light-hammer", "srd-2024_nine-lives-stealer-longbow", "srd-2024_nine-lives-stealer-longsword", "srd-2024_nine-lives-stealer-mace", "srd-2024_nine-lives-stealer-maul", "srd-2024_nine-lives-stealer-morningstar", "srd-2024_nine-lives-stealer-musket", "srd-2024_nine-lives-stealer-pike", "srd-2024_nine-lives-stealer-pistol", "srd-2024_nine-lives-stealer-quarterstaff", "srd-2024_nine-lives-stealer-rapier", "srd-2024_nine-lives-stealer-scimitar", "srd-2024_nine-lives-stealer-shortbow", "srd-2024_nine-lives-stealer-shortsword", "srd-2024_nine-lives-stealer-sickle", "srd-2024_nine-lives-stealer-sling", "srd-2024_nine-lives-stealer-spear", "srd-2024_nine-lives-stealer-trident", "srd-2024_nine-lives-stealer-war-pick", "srd-2024_nine-lives-stealer-warhammer", "srd-2024_nine-lives-stealer-whip"]}
+{"category": "magic-item", "kind": "heading", "heading": "Oathbow", "page": 233, "match": "variant-candidates", "candidateIds": ["srd-2024_oathbow-longbow", "srd-2024_oathbow-shortbow"]}
+{"category": "magic-item", "kind": "heading", "heading": "Oil of Etherealness", "page": 233, "match": "name", "candidateIds": ["srd-2024_oil-of-etherealness"]}
+{"category": "magic-item", "kind": "heading", "heading": "Oil of Sharpness", "page": 233, "match": "name", "candidateIds": ["srd-2024_oil-of-sharpness"]}
+{"category": "magic-item", "kind": "heading", "heading": "Oil of Slipperiness", "page": 233, "match": "name", "candidateIds": ["srd-2024_oil-of-slipperiness"]}
+{"category": "magic-item", "kind": "heading", "heading": "Pearl of Power", "page": 234, "match": "name", "candidateIds": ["srd-2024_pearl-of-power"]}
+{"category": "magic-item", "kind": "heading", "heading": "Periapt of Health", "page": 234, "match": "name", "candidateIds": ["srd-2024_periapt-of-health"]}
+{"category": "magic-item", "kind": "heading", "heading": "Periapt of Proof against Poison", "page": 234, "match": "name", "candidateIds": ["srd-2024_periapt-of-proof-against-poison"]}
+{"category": "magic-item", "kind": "heading", "heading": "Periapt of Wound Closure", "page": 234, "match": "name", "candidateIds": ["srd-2024_periapt-of-wound-closure"]}
+{"category": "magic-item", "kind": "heading", "heading": "Philter of Love", "page": 234, "match": "name", "candidateIds": ["srd-2024_philter-of-love"]}
+{"category": "magic-item", "kind": "heading", "heading": "Pipes of Haunting", "page": 234, "match": "name", "candidateIds": ["srd-2024_pipes-of-haunting"]}
+{"category": "magic-item", "kind": "heading", "heading": "Pipes of the Sewers", "page": 234, "match": "name", "candidateIds": ["srd-2024_pipes-of-the-sewers"]}
+{"category": "magic-item", "kind": "heading", "heading": "Plate Armor of Etherealness", "page": 234, "match": "variant-candidates", "candidateIds": ["srd-2024_half-plate-armor-of-etherealness", "srd-2024_plate-armor-of-etherealness"]}
+{"category": "magic-item", "kind": "heading", "heading": "Portable Hole", "page": 234, "match": "name", "candidateIds": ["srd-2024_portable-hole"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Animal Friendship", "page": 235, "match": "name", "candidateIds": ["srd-2024_potion-of-animal-friendship"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Clairvoyance", "page": 235, "match": "name", "candidateIds": ["srd-2024_potion-of-clairvoyance"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Climbing", "page": 235, "match": "name", "candidateIds": ["srd-2024_potion-of-climbing"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Diminution", "page": 235, "match": "name", "candidateIds": ["srd-2024_potion-of-diminution"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Flying", "page": 235, "match": "name", "candidateIds": ["srd-2024_potion-of-flying"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Gaseous Form", "page": 235, "match": "name", "candidateIds": ["srd-2024_potion-of-gaseous-form"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Giant Strength", "page": 235, "match": "name", "candidateIds": ["srd-2024_potion-of-giant-strength"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Growth", "page": 235, "match": "name", "candidateIds": ["srd-2024_potion-of-growth"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potions of Healing", "page": 236, "match": "variant-candidates", "candidateIds": ["srd-2024_potion-of-healing", "srd-2024_potions-of-healing"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Heroism", "page": 236, "match": "name", "candidateIds": ["srd-2024_potion-of-heroism"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Invisibility", "page": 236, "match": "name", "candidateIds": ["srd-2024_potion-of-invisibility"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Invulnerability", "page": 236, "match": "unmatched-heading", "candidateIds": []}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Longevity", "page": 236, "match": "unmatched-heading", "candidateIds": []}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Mind Reading", "page": 236, "match": "name", "candidateIds": ["srd-2024_potion-of-mind-reading"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Poison", "page": 236, "match": "name", "candidateIds": ["srd-2024_potion-of-poison"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Resistance", "page": 236, "match": "name", "candidateIds": ["srd-2024_potion-of-resistance"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Speed", "page": 236, "match": "name", "candidateIds": ["srd-2024_potion-of-speed"]}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Vitality", "page": 236, "match": "unmatched-heading", "candidateIds": []}
+{"category": "magic-item", "kind": "heading", "heading": "Potion of Water Breathing", "page": 236, "match": "name", "candidateIds": ["srd-2024_potion-of-water-breathing"]}
+{"category": "magic-item", "kind": "heading", "heading": "Quarterstaff of the Acrobat", "page": 237, "match": "unmatched-heading", "candidateIds": []}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Animal Influence", "page": 237, "match": "name", "candidateIds": ["srd-2024_ring-of-animal-influence"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Djinni Summoning", "page": 237, "match": "name", "candidateIds": ["srd-2024_ring-of-djinni-summoning"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Elemental Command", "page": 237, "match": "name", "candidateIds": ["srd-2024_ring-of-elemental-command"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Evasion", "page": 238, "match": "name", "candidateIds": ["srd-2024_ring-of-evasion"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Feather Falling", "page": 238, "match": "name", "candidateIds": ["srd-2024_ring-of-feather-falling"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Free Action", "page": 238, "match": "name", "candidateIds": ["srd-2024_ring-of-free-action"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Invisibility", "page": 238, "match": "name", "candidateIds": ["srd-2024_ring-of-invisibility"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Jumping", "page": 238, "match": "name", "candidateIds": ["srd-2024_ring-of-jumping"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Mind Shielding", "page": 238, "match": "name", "candidateIds": ["srd-2024_ring-of-mind-shielding"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Protection", "page": 238, "match": "name", "candidateIds": ["srd-2024_ring-of-protection"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Regeneration", "page": 238, "match": "name", "candidateIds": ["srd-2024_ring-of-regeneration"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Resistance", "page": 238, "match": "name", "candidateIds": ["srd-2024_ring-of-resistance"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Shooting Stars", "page": 238, "match": "name", "candidateIds": ["srd-2024_ring-of-shooting-stars"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Spell Storing", "page": 239, "match": "name", "candidateIds": ["srd-2024_ring-of-spell-storing"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Spell Turning", "page": 239, "match": "name", "candidateIds": ["srd-2024_ring-of-spell-turning"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Swimming", "page": 239, "match": "name", "candidateIds": ["srd-2024_ring-of-swimming"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Telekinesis", "page": 239, "match": "name", "candidateIds": ["srd-2024_ring-of-telekinesis"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of the Ram", "page": 239, "match": "name", "candidateIds": ["srd-2024_ring-of-the-ram"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Three Wishes", "page": 239, "match": "name", "candidateIds": ["srd-2024_ring-of-three-wishes"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Warmth", "page": 239, "match": "name", "candidateIds": ["srd-2024_ring-of-warmth"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of Water Walking", "page": 239, "match": "name", "candidateIds": ["srd-2024_ring-of-water-walking"]}
+{"category": "magic-item", "kind": "heading", "heading": "Ring of X-ray Vision", "page": 239, "match": "name", "candidateIds": ["srd-2024_ring-of-x-ray-vision"]}
+{"category": "magic-item", "kind": "heading", "heading": "Robe of Eyes", "page": 240, "match": "name", "candidateIds": ["srd-2024_robe-of-eyes"]}
+{"category": "magic-item", "kind": "heading", "heading": "Robe of Scintillating Colors", "page": 240, "match": "name", "candidateIds": ["srd-2024_robe-of-scintillating-colors"]}
+{"category": "magic-item", "kind": "heading", "heading": "Robe of Stars", "page": 240, "match": "name", "candidateIds": ["srd-2024_robe-of-stars"]}
+{"category": "magic-item", "kind": "heading", "heading": "Robe of the Archmagi", "page": 240, "match": "name", "candidateIds": ["srd-2024_robe-of-the-archmagi"]}
+{"category": "magic-item", "kind": "heading", "heading": "Robe of Useful Items", "page": 240, "match": "name", "candidateIds": ["srd-2024_robe-of-useful-items"]}
+{"category": "magic-item", "kind": "heading", "heading": "Rod of Absorption", "page": 241, "match": "name", "candidateIds": ["srd-2024_rod-of-absorption"]}
+{"category": "magic-item", "kind": "heading", "heading": "Rod of Alertness", "page": 241, "match": "name", "candidateIds": ["srd-2024_rod-of-alertness"]}
+{"category": "magic-item", "kind": "heading", "heading": "Rod of Lordly Might", "page": 241, "match": "name", "candidateIds": ["srd-2024_rod-of-lordly-might"]}
+{"category": "magic-item", "kind": "heading", "heading": "Rod of Resurrection", "page": 242, "match": "unmatched-heading", "candidateIds": []}
+{"category": "magic-item", "kind": "heading", "heading": "Rod of Rulership", "page": 242, "match": "name", "candidateIds": ["srd-2024_rod-of-rulership"]}
+{"category": "magic-item", "kind": "heading", "heading": "Rod of Security", "page": 242, "match": "name", "candidateIds": ["srd-2024_rod-of-security"]}
+{"category": "magic-item", "kind": "heading", "heading": "Rope of Climbing", "page": 242, "match": "name", "candidateIds": ["srd-2024_rope-of-climbing"]}
+{"category": "magic-item", "kind": "heading", "heading": "Rope of Entanglement", "page": 242, "match": "name", "candidateIds": ["srd-2024_rope-of-entanglement"]}
+{"category": "magic-item", "kind": "heading", "heading": "Scarab of Protection", "page": 243, "match": "name", "candidateIds": ["srd-2024_scarab-of-protection"]}
+{"category": "magic-item", "kind": "heading", "heading": "Scimitar of Speed", "page": 243, "match": "name", "candidateIds": ["srd-2024_scimitar-of-speed"]}
+{"category": "magic-item", "kind": "heading", "heading": "Sending Stones", "page": 243, "match": "unmatched-heading", "candidateIds": []}
+{"category": "magic-item", "kind": "heading", "heading": "Sentinel Shield", "page": 243, "match": "unmatched-heading", "candidateIds": []}
+{"category": "magic-item", "kind": "heading", "heading": "Shield, +1, +2, or +3", "page": 243, "match": "variant-candidates", "candidateIds": ["srd-2024_shield-plus-1", "srd-2024_shield-plus-2", "srd-2024_shield-plus-3"]}
+{"category": "magic-item", "kind": "heading", "heading": "Shield of Missile Attraction", "page": 243, "match": "name", "candidateIds": ["srd-2024_shield-of-missile-attraction"]}
+{"category": "magic-item", "kind": "heading", "heading": "Shield of the Cavalier", "page": 243, "match": "unmatched-heading", "candidateIds": []}
+{"category": "magic-item", "kind": "heading", "heading": "Slippers of Spider Climbing", "page": 244, "match": "name", "candidateIds": ["srd-2024_slippers-of-spider-climbing"]}
+{"category": "magic-item", "kind": "heading", "heading": "Sovereign Glue", "page": 244, "match": "name", "candidateIds": ["srd-2024_sovereign-glue"]}
+{"category": "magic-item", "kind": "heading", "heading": "Spellguard Shield", "page": 244, "match": "name", "candidateIds": ["srd-2024_spellguard-shield"]}
+{"category": "magic-item", "kind": "heading", "heading": "Spell Scroll", "page": 244, "match": "name", "candidateIds": ["srd-2024_spell-scroll"]}
+{"category": "magic-item", "kind": "heading", "heading": "Sphere of Annihilation", "page": 244, "match": "name", "candidateIds": ["srd-2024_sphere-of-annihilation"]}
+{"category": "magic-item", "kind": "heading", "heading": "Staff of Charming", "page": 245, "match": "name", "candidateIds": ["srd-2024_staff-of-charming"]}
+{"category": "magic-item", "kind": "heading", "heading": "Staff of Fire", "page": 245, "match": "name", "candidateIds": ["srd-2024_staff-of-fire"]}
+{"category": "magic-item", "kind": "heading", "heading": "Staff of Frost", "page": 245, "match": "name", "candidateIds": ["srd-2024_staff-of-frost"]}
+{"category": "magic-item", "kind": "heading", "heading": "Staff of Healing", "page": 245, "match": "name", "candidateIds": ["srd-2024_staff-of-healing"]}
+{"category": "magic-item", "kind": "heading", "heading": "Staff of Power", "page": 245, "match": "name", "candidateIds": ["srd-2024_staff-of-power"]}
+{"category": "magic-item", "kind": "heading", "heading": "Staff of Striking", "page": 246, "match": "name", "candidateIds": ["srd-2024_staff-of-striking"]}
+{"category": "magic-item", "kind": "heading", "heading": "Staff of Swarming Insects", "page": 246, "match": "name", "candidateIds": ["srd-2024_staff-of-swarming-insects"]}
+{"category": "magic-item", "kind": "heading", "heading": "Staff of the Magi", "page": 246, "match": "name", "candidateIds": ["srd-2024_staff-of-the-magi"]}
+{"category": "magic-item", "kind": "heading", "heading": "Staff of the Python", "page": 247, "match": "name", "candidateIds": ["srd-2024_staff-of-the-python"]}
+{"category": "magic-item", "kind": "heading", "heading": "Staff of the Woodlands", "page": 247, "match": "name", "candidateIds": ["srd-2024_staff-of-the-woodlands"]}
+{"category": "magic-item", "kind": "heading", "heading": "Staff of Thunder and Lightning", "page": 247, "match": "name", "candidateIds": ["srd-2024_staff-of-thunder-and-lightning"]}
+{"category": "magic-item", "kind": "heading", "heading": "Staff of Withering", "page": 248, "match": "name", "candidateIds": ["srd-2024_staff-of-withering"]}
+{"category": "magic-item", "kind": "heading", "heading": "Stone of Controlling Earth Elementals", "page": 248, "match": "name", "candidateIds": ["srd-2024_stone-of-controlling-earth-elementals"]}
+{"category": "magic-item", "kind": "heading", "heading": "Stone of Good Luck (Luckstone)", "page": 248, "match": "name", "candidateIds": ["srd-2024_stone-of-good-luck-luckstone"]}
+{"category": "magic-item", "kind": "heading", "heading": "Sun Blade", "page": 248, "match": "name", "candidateIds": ["srd-2024_sun-blade"]}
+{"category": "magic-item", "kind": "heading", "heading": "Sword of Life Stealing", "page": 248, "match": "variant-candidates", "candidateIds": ["srd-2024_glaive-of-life-stealing", "srd-2024_greatsword-of-life-stealing", "srd-2024_longsword-of-life-stealing", "srd-2024_rapier-of-life-stealing", "srd-2024_scimitar-of-life-stealing", "srd-2024_shortsword-of-life-stealing"]}
+{"category": "magic-item", "kind": "heading", "heading": "Sword of Sharpness", "page": 248, "match": "variant-candidates", "candidateIds": ["srd-2024_glaive-of-sharpness", "srd-2024_greatsword-of-sharpness", "srd-2024_longsword-of-sharpness", "srd-2024_scimitar-of-sharpness"]}
+{"category": "magic-item", "kind": "heading", "heading": "Sword of Wounding", "page": 248, "match": "variant-candidates", "candidateIds": ["srd-2024_glaive-of-wounding", "srd-2024_greatsword-of-wounding", "srd-2024_longsword-of-wounding", "srd-2024_rapier-of-wounding", "srd-2024_scimitar-of-wounding", "srd-2024_shortsword-of-wounding"]}
+{"category": "magic-item", "kind": "heading", "heading": "Talisman of Pure Good", "page": 248, "match": "name", "candidateIds": ["srd-2024_talisman-of-pure-good"]}
+{"category": "magic-item", "kind": "heading", "heading": "Talisman of the Sphere", "page": 249, "match": "name", "candidateIds": ["srd-2024_talisman-of-the-sphere"]}
+{"category": "magic-item", "kind": "heading", "heading": "Talisman of Ultimate Evil", "page": 249, "match": "name", "candidateIds": ["srd-2024_talisman-of-ultimate-evil"]}
+{"category": "magic-item", "kind": "heading", "heading": "Thunderous Greatclub", "page": 249, "match": "unmatched-heading", "candidateIds": []}
+{"category": "magic-item", "kind": "heading", "heading": "Tome of Clear Thought", "page": 249, "match": "name", "candidateIds": ["srd-2024_tome-of-clear-thought"]}
+{"category": "magic-item", "kind": "heading", "heading": "Tome of Leadership and Influence", "page": 249, "match": "name", "candidateIds": ["srd-2024_tome-of-leadership-and-influence"]}
+{"category": "magic-item", "kind": "heading", "heading": "Tome of Understanding", "page": 250, "match": "name", "candidateIds": ["srd-2024_tome-of-understanding"]}
+{"category": "magic-item", "kind": "heading", "heading": "Trident of Fish Command", "page": 250, "match": "name", "candidateIds": ["srd-2024_trident-of-fish-command"]}
+{"category": "magic-item", "kind": "heading", "heading": "Universal Solvent", "page": 250, "match": "name", "candidateIds": ["srd-2024_universal-solvent"]}
+{"category": "magic-item", "kind": "heading", "heading": "Vicious Weapon", "page": 250, "match": "variant-candidates", "candidateIds": ["srd-2024_vicious-battleaxe", "srd-2024_vicious-blowgun", "srd-2024_vicious-club", "srd-2024_vicious-dagger", "srd-2024_vicious-dart", "srd-2024_vicious-flail", "srd-2024_vicious-glaive", "srd-2024_vicious-greataxe", "srd-2024_vicious-greatclub", "srd-2024_vicious-greatsword", "srd-2024_vicious-halberd", "srd-2024_vicious-hand-crossbow", "srd-2024_vicious-handaxe", "srd-2024_vicious-heavy-crossbow", "srd-2024_vicious-javelin", "srd-2024_vicious-lance", "srd-2024_vicious-light-crossbow", "srd-2024_vicious-light-hammer", "srd-2024_vicious-longbow", "srd-2024_vicious-longsword", "srd-2024_vicious-mace", "srd-2024_vicious-maul", "srd-2024_vicious-morningstar", "srd-2024_vicious-musket", "srd-2024_vicious-pike", "srd-2024_vicious-pistol", "srd-2024_vicious-quarterstaff", "srd-2024_vicious-rapier", "srd-2024_vicious-scimitar", "srd-2024_vicious-shortbow", "srd-2024_vicious-shortsword", "srd-2024_vicious-sickle", "srd-2024_vicious-sling", "srd-2024_vicious-spear", "srd-2024_vicious-trident", "srd-2024_vicious-war-pick", "srd-2024_vicious-warhammer", "srd-2024_vicious-whip"]}
+{"category": "magic-item", "kind": "heading", "heading": "Vorpal Sword", "page": 250, "match": "variant-candidates", "candidateIds": ["srd-2024_vorpal-glaive", "srd-2024_vorpal-greatsword", "srd-2024_vorpal-longsword", "srd-2024_vorpal-scimitar"]}
+{"category": "magic-item", "kind": "heading", "heading": "Wand of Binding", "page": 250, "match": "name", "candidateIds": ["srd-2024_wand-of-binding"]}
+{"category": "magic-item", "kind": "heading", "heading": "Wand of Enemy Detection", "page": 250, "match": "name", "candidateIds": ["srd-2024_wand-of-enemy-detection"]}
+{"category": "magic-item", "kind": "heading", "heading": "Wand of Fear", "page": 250, "match": "name", "candidateIds": ["srd-2024_wand-of-fear"]}
+{"category": "magic-item", "kind": "heading", "heading": "Wand of Fireballs", "page": 250, "match": "name", "candidateIds": ["srd-2024_wand-of-fireballs"]}
+{"category": "magic-item", "kind": "heading", "heading": "Wand of Lightning Bolts", "page": 251, "match": "name", "candidateIds": ["srd-2024_wand-of-lightning-bolts"]}
+{"category": "magic-item", "kind": "heading", "heading": "Wand of Magic Detection", "page": 251, "match": "name", "candidateIds": ["srd-2024_wand-of-magic-detection"]}
+{"category": "magic-item", "kind": "heading", "heading": "Wand of Magic Missiles", "page": 251, "match": "name", "candidateIds": ["srd-2024_wand-of-magic-missiles"]}
+{"category": "magic-item", "kind": "heading", "heading": "Wand of Paralysis", "page": 251, "match": "name", "candidateIds": ["srd-2024_wand-of-paralysis"]}
+{"category": "magic-item", "kind": "heading", "heading": "Wand of Polymorph", "page": 251, "match": "name", "candidateIds": ["srd-2024_wand-of-polymorph"]}
+{"category": "magic-item", "kind": "heading", "heading": "Wand of Secrets", "page": 251, "match": "name", "candidateIds": ["srd-2024_wand-of-secrets"]}
+{"category": "magic-item", "kind": "heading", "heading": "Wand of the War Mage, +1, +2, or +3", "page": 251, "match": "variant-candidates", "candidateIds": ["srd-2024_wand-of-the-war-mage-plus-1", "srd-2024_wand-of-the-war-mage-plus-2", "srd-2024_wand-of-the-war-mage-plus-3"]}
+{"category": "magic-item", "kind": "heading", "heading": "Wand of Web", "page": 251, "match": "name", "candidateIds": ["srd-2024_wand-of-web"]}
+{"category": "magic-item", "kind": "heading", "heading": "Wand of Wonder", "page": 251, "match": "name", "candidateIds": ["srd-2024_wand-of-wonder"]}
+{"category": "magic-item", "kind": "heading", "heading": "Weapon, +1, +2, or +3", "page": 253, "match": "variant-candidates", "candidateIds": ["srd-2024_battleaxe-plus-1", "srd-2024_battleaxe-plus-2", "srd-2024_battleaxe-plus-3", "srd-2024_blowgun-plus-1", "srd-2024_blowgun-plus-2", "srd-2024_blowgun-plus-3", "srd-2024_club-plus-1", "srd-2024_club-plus-2", "srd-2024_club-plus-3", "srd-2024_dagger-plus-1", "srd-2024_dagger-plus-2", "srd-2024_dagger-plus-3", "srd-2024_dart-plus-1", "srd-2024_dart-plus-2", "srd-2024_dart-plus-3", "srd-2024_flail-plus-1", "srd-2024_flail-plus-2", "srd-2024_flail-plus-3", "srd-2024_glaive-plus-1", "srd-2024_glaive-plus-2", "srd-2024_glaive-plus-3", "srd-2024_greataxe-plus-1", "srd-2024_greataxe-plus-2", "srd-2024_greataxe-plus-3", "srd-2024_greatclub-plus-1", "srd-2024_greatclub-plus-2", "srd-2024_greatclub-plus-3", "srd-2024_greatsword-plus-1", "srd-2024_greatsword-plus-2", "srd-2024_greatsword-plus-3", "srd-2024_halberd-plus-1", "srd-2024_halberd-plus-2", "srd-2024_halberd-plus-3", "srd-2024_hand-crossbow-plus-1", "srd-2024_hand-crossbow-plus-2", "srd-2024_hand-crossbow-plus-3", "srd-2024_handaxe-plus-1", "srd-2024_handaxe-plus-2", "srd-2024_handaxe-plus-3", "srd-2024_heavy-crossbow-plus-1", "srd-2024_heavy-crossbow-plus-2", "srd-2024_heavy-crossbow-plus-3", "srd-2024_javelin-plus-1", "srd-2024_javelin-plus-2", "srd-2024_javelin-plus-3", "srd-2024_lance-plus-1", "srd-2024_lance-plus-2", "srd-2024_lance-plus-3", "srd-2024_light-crossbow-plus-1", "srd-2024_light-crossbow-plus-2", "srd-2024_light-crossbow-plus-3", "srd-2024_light-hammer-plus-1", "srd-2024_light-hammer-plus-2", "srd-2024_light-hammer-plus-3", "srd-2024_longbow-plus-1", "srd-2024_longbow-plus-2", "srd-2024_longbow-plus-3", "srd-2024_longsword-plus-1", "srd-2024_longsword-plus-2", "srd-2024_longsword-plus-3", "srd-2024_mace-plus-1", "srd-2024_mace-plus-2", "srd-2024_mace-plus-3", "srd-2024_maul-plus-1", "srd-2024_maul-plus-2", "srd-2024_maul-plus-3", "srd-2024_morningstar-plus-1", "srd-2024_morningstar-plus-2", "srd-2024_morningstar-plus-3", "srd-2024_musket-plus-1", "srd-2024_musket-plus-2", "srd-2024_musket-plus-3", "srd-2024_pike-plus-1", "srd-2024_pike-plus-2", "srd-2024_pike-plus-3", "srd-2024_pistol-plus-1", "srd-2024_pistol-plus-2", "srd-2024_pistol-plus-3", "srd-2024_quarterstaff-plus-1", "srd-2024_quarterstaff-plus-2", "srd-2024_quarterstaff-plus-3", "srd-2024_rapier-plus-1", "srd-2024_rapier-plus-2", "srd-2024_rapier-plus-3", "srd-2024_scimitar-plus-1", "srd-2024_scimitar-plus-2", "srd-2024_scimitar-plus-3", "srd-2024_shortbow-plus-1", "srd-2024_shortbow-plus-2", "srd-2024_shortbow-plus-3", "srd-2024_shortsword-plus-1", "srd-2024_shortsword-plus-2", "srd-2024_shortsword-plus-3", "srd-2024_sickle-plus-1", "srd-2024_sickle-plus-2", "srd-2024_sickle-plus-3", "srd-2024_sling-plus-1", "srd-2024_sling-plus-2", "srd-2024_sling-plus-3", "srd-2024_spear-plus-1", "srd-2024_spear-plus-2", "srd-2024_spear-plus-3", "srd-2024_trident-plus-1", "srd-2024_trident-plus-2", "srd-2024_trident-plus-3", "srd-2024_war-pick-plus-1", "srd-2024_war-pick-plus-2", "srd-2024_war-pick-plus-3", "srd-2024_warhammer-plus-1", "srd-2024_warhammer-plus-2", "srd-2024_warhammer-plus-3", "srd-2024_whip-plus-1", "srd-2024_whip-plus-2", "srd-2024_whip-plus-3"]}
+{"category": "magic-item", "kind": "heading", "heading": "Weapon of Warning", "page": 253, "match": "variant-candidates", "candidateIds": ["srd-2024_weapon-of-warning-battleaxe", "srd-2024_weapon-of-warning-blowgun", "srd-2024_weapon-of-warning-club", "srd-2024_weapon-of-warning-dagger", "srd-2024_weapon-of-warning-dart", "srd-2024_weapon-of-warning-flail", "srd-2024_weapon-of-warning-glaive", "srd-2024_weapon-of-warning-greataxe", "srd-2024_weapon-of-warning-greatclub", "srd-2024_weapon-of-warning-greatsword", "srd-2024_weapon-of-warning-halberd", "srd-2024_weapon-of-warning-hand-crossbow", "srd-2024_weapon-of-warning-handaxe", "srd-2024_weapon-of-warning-heavy-crossbow", "srd-2024_weapon-of-warning-javelin", "srd-2024_weapon-of-warning-lance", "srd-2024_weapon-of-warning-light-crossbow", "srd-2024_weapon-of-warning-light-hammer", "srd-2024_weapon-of-warning-longbow", "srd-2024_weapon-of-warning-longsword", "srd-2024_weapon-of-warning-mace", "srd-2024_weapon-of-warning-maul", "srd-2024_weapon-of-warning-morningstar", "srd-2024_weapon-of-warning-musket", "srd-2024_weapon-of-warning-pike", "srd-2024_weapon-of-warning-pistol", "srd-2024_weapon-of-warning-quarterstaff", "srd-2024_weapon-of-warning-rapier", "srd-2024_weapon-of-warning-scimitar", "srd-2024_weapon-of-warning-shortbow", "srd-2024_weapon-of-warning-shortsword", "srd-2024_weapon-of-warning-sickle", "srd-2024_weapon-of-warning-sling", "srd-2024_weapon-of-warning-spear", "srd-2024_weapon-of-warning-trident", "srd-2024_weapon-of-warning-war-pick", "srd-2024_weapon-of-warning-warhammer", "srd-2024_weapon-of-warning-whip"]}
+{"category": "magic-item", "kind": "heading", "heading": "Well of Many Worlds", "page": 253, "match": "name", "candidateIds": ["srd-2024_well-of-many-worlds"]}
+{"category": "magic-item", "kind": "heading", "heading": "Wind Fan", "page": 253, "match": "name", "candidateIds": ["srd-2024_wind-fan"]}
+{"category": "magic-item", "kind": "heading", "heading": "Winged Boots", "page": 253, "match": "name", "candidateIds": ["srd-2024_winged-boots"]}
+{"category": "magic-item", "kind": "heading", "heading": "Wings of Flying", "page": 253, "match": "name", "candidateIds": ["srd-2024_wings-of-flying"]}
+{"category": "magic-item", "kind": "unused-source", "id": "srd-2024_defender-blowgun", "name": "Defender (Blowgun)"}
+{"category": "magic-item", "kind": "unused-source", "id": "srd-2024_defender-dart", "name": "Defender (Dart)"}
+{"category": "magic-item", "kind": "unused-source", "id": "srd-2024_defender-hand-crossbow", "name": "Defender (Hand Crossbow)"}
+{"category": "magic-item", "kind": "unused-source", "id": "srd-2024_defender-heavy-crossbow", "name": "Defender (Heavy Crossbow)"}
+{"category": "magic-item", "kind": "unused-source", "id": "srd-2024_defender-light-crossbow", "name": "Defender (Light Crossbow)"}
+{"category": "magic-item", "kind": "unused-source", "id": "srd-2024_defender-longbow", "name": "Defender (Longbow)"}
+{"category": "magic-item", "kind": "unused-source", "id": "srd-2024_defender-musket", "name": "Defender (Musket)"}
+{"category": "magic-item", "kind": "unused-source", "id": "srd-2024_defender-pistol", "name": "Defender (Pistol)"}
+{"category": "magic-item", "kind": "unused-source", "id": "srd-2024_defender-shortbow", "name": "Defender (Shortbow)"}
+{"category": "magic-item", "kind": "unused-source", "id": "srd-2024_defender-sling", "name": "Defender (Sling)"}
+{"category": "glossary", "kind": "heading", "heading": "Ability Check", "page": 176, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Ability Score and Modifier", "page": 176, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Action", "page": 176, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Advantage", "page": 176, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Adventure", "page": 176, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Alignment", "page": 176, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Ally", "page": 176, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Area of Effect", "page": 177, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Armor Class", "page": 177, "match": "name", "candidateIds": ["srd-2024_multiclassing_armor-class"]}
+{"category": "glossary", "kind": "heading", "heading": "Armor Training", "page": 177, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Attack [Action]", "page": 177, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Attack Roll", "page": 177, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Attitude", "page": 177, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Attunement", "page": 177, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Blinded [Condition]", "page": 177, "match": "name", "candidateIds": ["srd-2024_blinded"]}
+{"category": "glossary", "kind": "heading", "heading": "Blindsight", "page": 177, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Bloodied", "page": 177, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Bonus Action", "page": 177, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Breaking Objects", "page": 177, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Bright Light", "page": 178, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Burning [Hazard]", "page": 178, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Burrow Speed", "page": 178, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Campaign", "page": 178, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Cantrip", "page": 178, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Carrying Capacity", "page": 178, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Challenge Rating", "page": 178, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Character Sheet", "page": 178, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Charmed [Condition]", "page": 178, "match": "name", "candidateIds": ["srd-2024_charmed"]}
+{"category": "glossary", "kind": "heading", "heading": "Climbing", "page": 178, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Climb Speed", "page": 179, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Concentration", "page": 179, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Condition", "page": 179, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Cone [Area of Effect]", "page": 179, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Cover", "page": 179, "match": "name", "candidateIds": ["srd-2024_combat_cover"]}
+{"category": "glossary", "kind": "heading", "heading": "Crawling", "page": 179, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Creature", "page": 179, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Creature Type", "page": 179, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Critical Hit", "page": 179, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Cube [Area of Effect]", "page": 179, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Curses", "page": 179, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Cylinder [Area of Effect]", "page": 180, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "D20 Test", "page": 180, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Damage", "page": 180, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Damage Roll", "page": 180, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Damage Threshold", "page": 180, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Damage Types", "page": 180, "match": "name", "candidateIds": ["srd-2024_damage-and-healing_damage-types"]}
+{"category": "glossary", "kind": "heading", "heading": "Darkness", "page": 180, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Darkvision", "page": 180, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Dash [Action]", "page": 180, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Dead", "page": 180, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Deafened [Condition]", "page": 181, "match": "name", "candidateIds": ["srd-2024_deafened"]}
+{"category": "glossary", "kind": "heading", "heading": "Death Saving Throw", "page": 181, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Dehydration [Hazard]", "page": 181, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Difficult Terrain", "page": 181, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Difficulty Class", "page": 181, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Dim Light", "page": 181, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Disadvantage", "page": 181, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Disengage [Action]", "page": 181, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Dodge [Action]", "page": 181, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Emanation [Area of Effect]", "page": 181, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Encounter", "page": 181, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Enemy", "page": 181, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Exhaustion [Condition]", "page": 181, "match": "name", "candidateIds": ["srd-2024_exhaustion"]}
+{"category": "glossary", "kind": "heading", "heading": "Experience Points", "page": 182, "match": "name", "candidateIds": ["srd-2024_multiclassing_experience-points"]}
+{"category": "glossary", "kind": "heading", "heading": "Expertise", "page": 182, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Falling [Hazard]", "page": 182, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Flying", "page": 182, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Fly Speed", "page": 182, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Friendly [Attitude]", "page": 182, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Frightened [Condition]", "page": 182, "match": "name", "candidateIds": ["srd-2024_frightened"]}
+{"category": "glossary", "kind": "heading", "heading": "Grappled [Condition]", "page": 182, "match": "name", "candidateIds": ["srd-2024_grappled"]}
+{"category": "glossary", "kind": "heading", "heading": "Grappling", "page": 182, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Hazard", "page": 182, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Healing", "page": 182, "match": "name", "candidateIds": ["srd-2024_damage-and-healing_healing"]}
+{"category": "glossary", "kind": "heading", "heading": "Heavily Obscured", "page": 182, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Help [Action]", "page": 182, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Heroic Inspiration", "page": 183, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Hide [Action]", "page": 183, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "High Jump", "page": 183, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Hit Point Dice", "page": 183, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Hit Points", "page": 183, "match": "name", "candidateIds": ["srd-2024_damage-and-healing_hit-points"]}
+{"category": "glossary", "kind": "heading", "heading": "Hostile [Attitude]", "page": 183, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Hover", "page": 183, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Illusions", "page": 183, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Immunity", "page": 183, "match": "name", "candidateIds": ["srd-2024_damage-and-healing_immunity"]}
+{"category": "glossary", "kind": "heading", "heading": "Improvised Weapons", "page": 183, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Incapacitated [Condition]", "page": 184, "match": "name", "candidateIds": ["srd-2024_incapacitated"]}
+{"category": "glossary", "kind": "heading", "heading": "Indifferent [Attitude]", "page": 184, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Influence [Action]", "page": 184, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Initiative", "page": 184, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Invisible [Condition]", "page": 184, "match": "name", "candidateIds": ["srd-2024_invisible"]}
+{"category": "glossary", "kind": "heading", "heading": "Jumping", "page": 184, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Knocking Out a Creature", "page": 184, "match": "name", "candidateIds": ["srd-2024_damage-and-healing_knocking-out-a-creature"]}
+{"category": "glossary", "kind": "heading", "heading": "Lightly Obscured", "page": 184, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Line [Area of Effect]", "page": 184, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Long Jump", "page": 184, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Long Rest", "page": 185, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Magic [Action]", "page": 185, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Magical Effect", "page": 185, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Malnutrition [Hazard]", "page": 185, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Monster", "page": 185, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Nonplayer Character", "page": 185, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Object", "page": 185, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Occupied Space", "page": 185, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Opportunity Attacks", "page": 185, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Paralyzed [Condition]", "page": 186, "match": "name", "candidateIds": ["srd-2024_paralyzed"]}
+{"category": "glossary", "kind": "heading", "heading": "Passive Perception", "page": 186, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Per Day", "page": 186, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Petrified [Condition]", "page": 186, "match": "name", "candidateIds": ["srd-2024_petrified"]}
+{"category": "glossary", "kind": "heading", "heading": "Player Character", "page": 186, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Poisoned [Condition]", "page": 186, "match": "name", "candidateIds": ["srd-2024_poisoned"]}
+{"category": "glossary", "kind": "heading", "heading": "Possession", "page": 186, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Proficiency", "page": 186, "match": "name", "candidateIds": ["srd-2024_proficiency"]}
+{"category": "glossary", "kind": "heading", "heading": "Prone [Condition]", "page": 186, "match": "name", "candidateIds": ["srd-2024_prone"]}
+{"category": "glossary", "kind": "heading", "heading": "Reach", "page": 186, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Reaction", "page": 186, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Ready [Action]", "page": 186, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Resistance", "page": 187, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Restrained [Condition]", "page": 187, "match": "name", "candidateIds": ["srd-2024_restrained"]}
+{"category": "glossary", "kind": "heading", "heading": "Ritual", "page": 187, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Round Down", "page": 187, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Save", "page": 187, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Saving Throw", "page": 187, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Search [Action]", "page": 187, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Shape-Shifting", "page": 187, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Short Rest", "page": 187, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Simultaneous Effects", "page": 187, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Size", "page": 188, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Skill", "page": 188, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Speed", "page": 188, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Spell", "page": 188, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Spell Attack", "page": 188, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Spellcasting Focus", "page": 188, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Sphere [Area of Effect]", "page": 188, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Stable", "page": 188, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Stat Block", "page": 188, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Study [Action]", "page": 189, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Stunned [Condition]", "page": 189, "match": "name", "candidateIds": ["srd-2024_stunned"]}
+{"category": "glossary", "kind": "heading", "heading": "Suffocation [Hazard]", "page": 189, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Surprise", "page": 189, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Swimming", "page": 189, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Swim Speed", "page": 189, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Target", "page": 190, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Telepathy", "page": 190, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Teleportation", "page": 190, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Temporary Hit Points", "page": 190, "match": "name", "candidateIds": ["srd-2024_damage-and-healing_temporary-hit-points"]}
+{"category": "glossary", "kind": "heading", "heading": "Tremorsense", "page": 190, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Truesight", "page": 190, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Unarmed Strike", "page": 190, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Unconscious [Condition]", "page": 191, "match": "name", "candidateIds": ["srd-2024_unconscious"]}
+{"category": "glossary", "kind": "heading", "heading": "Unoccupied Space", "page": 191, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Utilize [Action]", "page": 191, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Vulnerability", "page": 191, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Weapon", "page": 191, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "heading", "heading": "Weapon Attack", "page": 191, "match": "unmatched-heading", "candidateIds": []}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_the-six-abilities_ability-scores", "name": "Ability Scores"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_the-six-abilities_ability-modifiers", "name": "Ability Modifiers"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_d20-tests_ability-checks", "name": "Ability Checks"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_d20-tests_saving-throw", "name": "Saving Throws"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_d20-tests_attack-rolls", "name": "Attack Rolls"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_d20-tests_advantage-disadvantage", "name": "Advantage/Disadvantage"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_proficiency_bonus-dont-stack", "name": "The Bonus Doesn’t Stack"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_proficiency_skill-proficiencies", "name": "Skill Proficiencies"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_proficiency_saving-throw-proficiencies", "name": "Saving Throw Proficiencies"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_proficiency_equipment-proficiencies", "name": "Equipment Proficiencies"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_social-interaction_roleplaying", "name": "Roleplaying"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_social-interaction_ability-checks", "name": "Ability Checks"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_exploration_adventuring-equipment", "name": "Adventuring Equipment"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_exploration_vision-and-light", "name": "Vision and Light"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_exploration_hiding", "name": "Hiding"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_exploration_interacting-with-objects", "name": "Interacting with Objects"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_exploration_marching-order", "name": "Marching Order"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_exploration_hazards", "name": "Hazards"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_exploration_travel", "name": "Travel"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_combat_the-order-of-combat", "name": "The Order of Combat"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_combat_playing-on-a-grid", "name": "Playing on a Grid"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_combat_movement-and-position", "name": "Movement and Position"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_combat_making-an-attack", "name": "Making an Attack"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_combat_unseen-attackers-and-target", "name": "Unseen Attackers and Targets"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_combat_ranged-attacks", "name": "Ranged Attacks"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_combat_melee-attacks", "name": "Melee Attacks"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_combat_mounted-combat", "name": "Mounted Combat"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_combat_underwater-combat", "name": "Underwater Combat"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_damage-and-healing_resting", "name": "Resting"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_damage-and-healing_damage-rolls", "name": "Damage Rolls"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_damage-and-healing_critical-hits", "name": "Critical Hits"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_damage-and-healing_saving-throws-and-damage", "name": "Saving Throws and Damage"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_damage-and-healing_resistance-and-vulnerability", "name": "Resistance and Vulnerability"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_damage-and-healing_dropping-to-zero-hit-points", "name": "Dropping to 0 Hit Points"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_create-your-character_choose-class", "name": "Step 1: Choose Class"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_create-your-character_character-origin", "name": "Step 2: Character Origin"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_create-your-character_ability-scores", "name": "Step 3: Ability Scores"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_create-your-character_alignment", "name": "Step 4: Alignment"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_create-your-character_character-creation-details", "name": "Step 5: Character Creation Details"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_create-your-character_gaining-a-level", "name": "Gaining a Level"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_create-your-character_starting-at-higher-levels", "name": "Starting at Higher Levels"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_multiclassing_prerequisties", "name": "Prerequisites"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_multiclassing_hit-points", "name": "Hit Points and Hit Point Dice"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_multiclassing_proficiencies", "name": "Proficiencies"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_multiclassing_class-features", "name": "Class Features"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_multiclassing_extra-attack", "name": "Extra Attack"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_multiclassing_spellcasting", "name": "Spellcasting"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_rhythm-of-play", "name": "Rhythm of Play"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_the-six-abilities", "name": "The Six Abilities"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_d20-tests", "name": "D20 Tests"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_social-interaction", "name": "Social Interaction"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_exploration", "name": "Exploration"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_combat", "name": "Combat"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_damage-and-healing", "name": "Damage and Healing"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_create-your-character", "name": "Create Your Character"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_multiclassing", "name": "Multiclassing"}
+{"category": "glossary", "kind": "unused-source", "id": "srd-2024_trinkets", "name": "Trinkets"}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Cackle Fever", "page": 194, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Sewer Plague", "page": 194, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Sight Rot", "page": 194, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Deep Water", "page": 195, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Extreme Cold", "page": 195, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Extreme Heat", "page": 195, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Frigid Water", "page": 195, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Heavy Precipitation", "page": 195, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "High Altitude", "page": 195, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Slippery Ice", "page": 195, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Strong Wind", "page": 195, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Thin Ice", "page": 195, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Assassin’s Blood", "page": 197, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Burnt Othur Fumes", "page": 197, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Crawler Mucus", "page": 197, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Essence of Ether", "page": 197, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Malice", "page": 197, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Midnight Tears", "page": 197, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Oil of Taggit", "page": 198, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Pale Tincture", "page": 198, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Purple Worm Poison", "page": 198, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Serpent Venom", "page": 198, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Spider’s Sting", "page": 198, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Torpor", "page": 198, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Truth Serum", "page": 198, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Wyvern Poison", "page": 198, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Collapsing Roof", "page": 199, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Falling Net", "page": 199, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Fire-Casting Statue", "page": 199, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Hidden Pit", "page": 200, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Poisoned Darts", "page": 200, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Poisoned Needle", "page": 200, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Rolling Stone", "page": 201, "match": "unmatched-heading", "candidateIds": []}
+{"category": "toolbox-entry", "kind": "heading", "heading": "Spiked Pit", "page": 201, "match": "unmatched-heading", "candidateIds": []}
