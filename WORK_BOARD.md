@@ -32,7 +32,7 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 | P02 | Adopt Open5e source and define no-scrape ingestion plan | Complete | Planning chat | P01 | Planning |
 | P03 | Dependency/status board and agent handoff organization | Complete | Planning chat | P01, P02 | Planning |
 | A01 | Close product-state/ownership gaps and reconcile legacy notes | Complete | Codex — A01 product-contract chat (this chat) | — | Planning |
-| S01 | Pin/audit published Open5e snapshot and 5.2.1 parity | To Do | — | — | Acquisition |
+| S01 | Pin/audit published Open5e snapshot and 5.2.1 parity | Complete | Codex — S01 implementation chat | — | Acquisition |
 | A02 | Actual SRD inventory, exclusions and automation coverage fixtures | To Do | — | A01, S01 | Planning |
 | A03 | Stack review and packaged Windows compatibility proof | Complete | Architecture implementation chat | — | Build |
 | A04 | Continuous geometry feasibility and optimality/performance proof | To Do | — | A01, A03 | Build |
@@ -81,23 +81,23 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 
 ### To Do / Active / Complete snapshot
 
-- **To Do:** all A–G and S tasks except completed A01/A03/B01 and Active A05. Storage/history, recovery, gameplay, content and release work remain unfinished.
+- **To Do:** all A–G and S tasks except completed A01/A03/B01/S01 and Active A05.
 - **Active:** A05 — Codex — A01/A05 product-contract chat (this chat).
-- **Complete:** P01, P02, P03 (planning artifacts), A01 (approved product contract with explicit downstream exclusions), A03 (tested architecture foundation), B01 (validated domain/IPC boundary).
-- **Next:** A05 remains claimed for UI/editor specification and visual review. A04 must agree/prove routing and performance criteria. B02 becomes prerequisite-ready when this B01 branch is integrated. S01 still needs its acquisition claim/authorization and provenance audit; A02 waits for S01. B01 does not implement durable storage or gameplay commands.
+- **Complete:** P01, P02, P03 (planning artifacts), A01 (approved product contract), A03 (tested architecture foundation), B01 (validated domain/IPC boundary), S01 (pinned and audited source).
+- **Next:** Start A02 and B02 in parallel while A05 review and A04 geometry proof continue.
 
-### Ready parallel work — October 27 handoff
+### Ready parallel work — November 6 handoff
 
 The following lanes have completed task prerequisites. They are opportunities, not new claims. The assigned owner must record exact paths before writing and satisfy the task's own evidence/gate. A05 remains owned by this chat; no unapproved functional details are frozen merely to enable another task.
 
 | Lane | Ready work / scope boundary | Coordination and next unlock |
 | --- | --- | --- |
-| A04 | Geometry feasibility spike; proposed isolated writes `packages/geometry/**`, `tests/geometry/**`, `docs/geometry/**` | Agree numeric optimality/performance criteria and representative cases before claiming proof. Proposed geometry API reviewed with B01; cannot co-edit shared contracts or map-input code. Other E03 prerequisites still apply |
-| B01 | Complete on `codex/b01-domain-ipc-contracts`; strict contracts and desktop IPC boundary | Interface and evidence: `docs/contracts/B01.md`. Unblocks B02 after branch integration |
-| S01 | Pin/audit published Open5e snapshot/provenance/parity; isolated `data/upstream/**`, `docs/content/**` | Separate acquisition claim required; remains MVP after user's clarification. Record raw source evidence, not normalized/editor schemas. Unblocks A02; source JSON does not complete mechanics |
+| A02 | Catalog the pinned SRD, document exclusions, and define automation/progression fixtures | A01 and S01 are complete. Use `docs/content/CONTENT_INVENTORY.md` and the parity audit. Coordinate editor requirements with A05 |
+| B02 | Implement world/catalog storage, migrations, and writer repositories | B01 is integrated. Use `docs/contracts/B01.md`. Unblocks B03 |
+| A04 | Continue the geometry proof on `codex/a04-geometry-feasibility` | The spike has measured evidence. Weighted-route certification and performance validation remain open |
 | A05 | Finish final library/progression and broader functional-contract review, including remaining shop lifecycle decisions | This chat owns root planning documents and `docs/design/**`. New lanes send evidence/contract proposals to the coordinator instead of editing the board/root plans concurrently. B07 and downstream UI/content gates remain blocked until A05 Complete |
 
-The remaining lanes may progress with those boundaries. A02 is not yet ready (S01 incomplete); B02 can begin after integrating B01. Do not start B07/C05/D01 from the accepted visual baseline alone. Keep package manifests/lockfiles under one integrator; these lanes do not require independent dependency churn.
+A02, B02, A04 and A05 can progress concurrently within those boundaries. S02 still requires A02, A05 and B07. Keep package manifests and lockfiles under one integrator.
 
 ## 4. Sequential spine and parallel lanes
 
@@ -215,7 +215,8 @@ Partial-work handoff (if any):
 - **A03 | Architecture implementation chat | October 27, 2026:** exact files and evidence in `IMPLEMENTATION_STATUS.md`; pinned Electron 45/Forge 8/Vite 8/React 19/Pixi 8/native SQLite and sharp workspace; `npm run check`, `npm run package`, `npm run test:e2e` pass. Packaged native backups/tiles, WebGL and isolated windows verified. No product-state/geometry/editor approval inferred. A04 and B01 still require A01 before they are eligible; no dependent task claimed.
 
 - **P01:** ARCHITECTURE.md and IMPLEMENTATION_PLAN.md written as recommended technical baseline and acceptance-based build sequence; no package compatibility proof claimed.
-- **P02:** CONTENT_DATA_PLAN.md records selected Open5e files, pinning/provenance/5.2.1 audit, no-scrape/offline pipeline and separate mechanics gate. Raw dataset acquisition remains S01 To Do.
+- **P02:** CONTENT_DATA_PLAN.md records source selection and the offline ingestion plan. S01 records the acquired snapshot and audit.
+- **S01 | Codex — S01 implementation chat | November 6, 2026:** integrated source commit `78a9ce0` with 77 verified upstream files, 6,743 SRD fixture rows, attribution, and the 5.2.1 gap audit. Offline verification and six audit tests passed. [Completion evidence](docs/content/S01_HANDOFF.md).
 - **P03:** WORK_BOARD.md added; all implementation tasks assigned explicit dependencies, gate and initial status; no Active implementation claim or fabricated validation. Dependency consistency/cycle checks recorded by this planning update.
 
 Future completion entry: `Task | Owner | Date | Commit/files | Behavioral/test evidence | Remaining limitations/new task IDs`.
