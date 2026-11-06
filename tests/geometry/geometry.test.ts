@@ -64,6 +64,8 @@ describe('weighted continuous movement', () => {
     const physical = route(router.route(start, end, 'distance')), weighted = route(router.route(start, end, 'cost'));
     expect(physical.distance).toBe(40); expect(physical.cost).toBe(60);
     within(weighted.cost, 20 + 2 * Math.sqrt(200));
+    expect(weighted.lowerBound).toBeLessThanOrEqual(20 + 2 * Math.sqrt(200) + EPSILON);
+    expect(weighted.withinTolerance).toBe(true);
     expect(weighted.distance).toBeGreaterThan(physical.distance);
     expect(weighted.cost).toBeLessThan(physical.cost);
   });
@@ -78,10 +80,11 @@ describe('weighted continuous movement', () => {
     const result = route(router.route(start, end, 'cost'));
     within(result.cost, optimum);
     expect(Math.abs(result.points[1]!.x - 50)).toBeGreaterThan(10);
-    expect(result.withinTolerance).toBe(false); // Safe lower bound is too loose to certify this arrangement.
+    expect(result.lowerBound).toBeLessThanOrEqual(optimum + EPSILON);
+    expect(result.withinTolerance).toBe(true);
   });
-  it('handles two refracting interfaces against a conserved-angle analytic oracle', () => {
-    const router = new Router(scene({ bounds: box(0, 0, 120, 120), difficult: [box(30, -100, 90, 200)] }), { width: 0, height: 0 }, 8);
+  it('handles two refracting interfaces across overlapping terrain against a conserved-angle oracle', () => {
+    const router = new Router(scene({ bounds: box(0, 0, 120, 120), difficult: [box(30, -100, 70, 200), box(50, -100, 90, 200)] }), { width: 0, height: 0 }, 8);
     const start = { x: 10, y: 20 }, end = { x: 110, y: 100 };
     let low = 0, high = 1;
     const widths = [20, 60, 20], weights = [1, 2, 1];
@@ -92,7 +95,20 @@ describe('weighted continuous movement', () => {
     }
     const p = (low + high) / 2;
     const optimum = widths.reduce((sum, width, i) => sum + weights[i]! ** 2 * width / Math.sqrt(weights[i]! ** 2 - p * p), 0);
-    within(route(router.route(start, end, 'cost')).cost, optimum);
+    const result = route(router.route(start, end, 'cost'));
+    within(result.cost, optimum);
+    expect(result.lowerBound).toBeLessThanOrEqual(optimum + EPSILON);
+    expect(result.withinTolerance).toBe(true);
+  });
+  it('preserves the ordinary-cost seam between touching difficult rectangles', () => {
+    const router = new Router(scene({
+      bounds: box(0, 0, 100, 100),
+      difficult: [box(30, -10, 70, 50), box(30, 50, 70, 110)],
+    }), { width: 0, height: 0 });
+    const result = route(router.route({ x: 10, y: 30 }, { x: 90, y: 30 }, 'cost'));
+    const optimum = 40 + 2 * Math.hypot(20, 20);
+    within(result.cost, optimum);
+    expect(result.lowerBound).toBeLessThanOrEqual(optimum + EPSILON);
   });
   it('keeps terrain costs for explicit Through and ordered waypoint composition', () => {
     const terrain = [box(5, 0, 15, 20)];

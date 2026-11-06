@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-27T18:49:42.528Z",
+  "timestamp": "2026-11-06T14:30:38.453Z",
   "node": "v24.21.0",
   "hardware": {
     "cpu": "13th Gen Intel(R) Core(TM) i7-13700H",
@@ -17,14 +17,18 @@
     "samplesPerTerrainEdge": 4
   },
   "measurement": {
-    "prepareMs": 1822.1400999999998,
-    "p95Ms": 50.021999999999935,
-    "maxMs": 74.89959999999974,
+    "prepareMs": 1805.6032000000002,
+    "p95Ms": 54.73400000000038,
+    "maxMs": 122.79439999999977,
     "warmQueries": 100,
+    "weightedP95Ms": 97.27289999999994,
+    "certifiedWeighted": 19,
+    "weightedQueries": 50,
+    "maximumWeightedGap": 39.014000204654735,
     "graphNodes": 1004,
     "undirectedEdges": 82372,
-    "heapDeltaBytes": 43206688,
-    "rssDeltaBytes": 60452864,
+    "heapDeltaBytes": 40896144,
+    "rssDeltaBytes": 58617856,
     "exploredCells": 100,
     "costsChecksum": 48863.21555053985
   },
@@ -32,6 +36,8 @@
     "p95Ms": 100,
     "maxMs": 250
   },
-  "passes": true,
-  "limits": "Local warm CPU-query feasibility only; cold preparation must run off the UI thread. No GPU, packaged-worker, mixed-DPI or universal weighted optimality claim."
+  "latencyPasses": true,
+  "accuracyPasses": false,
+  "passes": false,
+  "limits": "Local warm CPU queries include weighted certification attempts. Accuracy passes when every weighted query meets the agreed bound."
 }

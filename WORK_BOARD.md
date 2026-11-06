@@ -147,6 +147,8 @@ Paths are intended boundaries, not evidence those modules exist. Exact claimed p
 
 ### Active claim / blocker log
 
+**A04 — November 6, 2026 continuation.** The branch adds geometric, sampling, strip and isolated-rectangle bounds. Typecheck and 23 tests pass. The recorded warm fixture meets latency at p95 54.73 ms and maximum 122.79 ms. It certifies 19 of 50 weighted queries, so A04 stays To Do and its dependent gates stay closed. The proof, unsuccessful experiments and sparse subdivision follow-up are recorded in `docs/geometry/A04.md` and `docs/geometry/benchmark.json`.
+
 **A04 — partial handoff by Codex — A04 geometry chat, October 27, 2026; remains To Do.** User requested its own branch; `codex/a04-geometry-feasibility` has an isolated managed worktree. Exact writes: `packages/geometry/**`, `tests/geometry/**`, `docs/geometry/**`, `vitest.config.ts` (geometry test discovery), and this A04-only handoff. A01/A03 prerequisites are Complete and build authorization exists. User agreed max(0.1 ft, 0.5%) optimality error, 1e-6-ft comparison tolerance, p95 <=100 ms / max <=250 ms on this PC for 5,280-ft extent, 100 tokens, 200 blocking edges and 50 terrain regions. Continuous footprint routing, weighted analytic cases, visibility and sparse storage are implemented; 22 checks pass and candidate-query benchmark records p95 50.02 ms / max 74.90 ms. **Global weighted optimality certification remains unproved**, so A04 is not Complete and E03/E06's A04 gate remains closed. Evidence, exact commands, measured limitations and remaining work: `docs/geometry/A04.md`, `docs/geometry/benchmark.json`. No shared runtime contracts, dependencies or other task states changed.
 
 **A05 — claimed by Codex — A01/A05 product-contract chat (this chat), October 27, 2026.**
