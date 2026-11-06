@@ -1,0 +1,48 @@
+{
+  "deferred": {
+    "lighting": {
+      "Spell": "conjure-celestial continual-flame dancing-lights darkness daylight faerie-fire fire-shield flame-blade flaming-sphere light moonbeam prismatic-wall produce-flame shining-smite starry-wisp sunbeam sunburst symbol",
+      "ClassFeature": "paladin_oath-of-devotion_holy-nimbus paladin_oath-of-devotion_sacred-weapon",
+      "FeatBenefit": "boon-of-the-night-spirit_2 boon-of-the-night-spirit_3"
+    },
+    "special-sense": {
+      "Spell": "arcane-eye blur clairvoyance darkvision faithful-hound illusory-script mirage-arcane mirror-image see-invisibility true-seeing",
+      "ClassFeature": "ranger_feral-senses",
+      "SpeciesTrait": "dragonborn_darkvision dwarf_darkvision dwarf_stonecunning elf_darkvision gnome_darkvision orc_darkvision tiefling_darkvision",
+      "FeatBenefit": "boon-of-truesight_2"
+    }
+  },
+  "deferredBranches": {
+    "srd-2024_warlock_eldritch-invocation-options": {
+      "One with Shadows": "lighting",
+      "Witch Sight": "special-sense",
+      "Devil's Sight": "special-sense",
+      "Gaze of Two Minds": "special-sense"
+    },
+    "srd-2024_elf_elven-lineage": {
+      "Drow extended Darkvision": "special-sense",
+      "Drow Dancing Lights grant": "lighting",
+      "Drow Faerie Fire grant": "lighting",
+      "Drow Darkness grant": "lighting"
+    },
+    "srd-2024_thaumaturgy": {
+      "Fire Play illumination changes": "lighting"
+    },
+    "srd-2024_private-sanctum": {
+      "Darkvision-specific interaction": "special-sense"
+    },
+    "srd-2024_hallow": {
+      "Darkness": "lighting",
+      "Daylight": "lighting"
+    },
+    "srd-2024_tiny-hut": {
+      "Interior illumination command": "lighting"
+    },
+    "srd-2024_find-familiar": {
+      "Familiar special-sense sharing": "special-sense"
+    },
+    "srd-2024_tiefling_fiendish-legacy": {
+      "Infernal Darkness grant": "lighting"
+    }
+  }
+}

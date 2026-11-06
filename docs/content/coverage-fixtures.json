@@ -1,0 +1,130 @@
+[
+  {
+    "id": "creation-score-methods",
+    "setup": "Create level-1 characters using standard array, point buy, and recorded 4d6-drop-lowest rolls.",
+    "act": "Allocate scores, choose class and origin, apply background boosts, and commit.",
+    "expect": "Use the selected method exactly once. Reject overspent point buy, duplicate array allocation, and invalid background scores. Apply the chosen +2/+1 or +1/+1/+1, derive modifiers, starting proficiencies and maximum HP. Incomplete choices stay draft."
+  },
+  {
+    "id": "all-class-tables",
+    "setup": "For each of the 12 class/subclass pairs, pin its reviewed SRD 5.2.1 progression table and legal choices.",
+    "act": "Create at level 1, advance one class level at a time through 20, then create directly at 20 with the same choices.",
+    "expect": "At each level assert feature and subclass grants, proficiency bonus, HP dice, class resources, feats and spells against the independent printed table. Direct and incremental builds produce the same derived state and preserve all choice provenance."
+  },
+  {
+    "id": "multiclass-slots",
+    "setup": "Wizard 3 with Intelligence 13 and Cleric 2 with Wisdom 13, no explicit overrides.",
+    "act": "Rebuild in first-class order and inspect slots and prepared choices. Repeat with Wisdom 12 before taking Cleric.",
+    "expect": "A fifth-level multiclass spellcaster has 4/3/2 slots. Wizard and Cleric spell selection still uses their own class levels and abilities. Reject the new Cleric level at Wisdom 12 unless a permitted override is recorded."
+  },
+  {
+    "id": "pact-magic",
+    "setup": "Wizard 3 and Warlock 2 meeting both prerequisites with two spent Pact Magic slots and one spent ordinary slot.",
+    "act": "Finish a short rest, then inspect slot pools and cast an eligible spell using a chosen pool.",
+    "expect": "Restore the two level-1 Pact slots only on this rest. Charge only the chosen eligible pool. Prepared spells remain governed by their granting class."
+  },
+  {
+    "id": "hp-ledger",
+    "setup": "Fighter 1 with Constitution 14, maximum HP 12. Use fixed advancement for level 2 and later raise Constitution to 16.",
+    "act": "Advance and apply the score change. Preview and undo the grouped rebuild.",
+    "expect": "Maximum HP becomes 20 after level 2, then 22 after the Constitution increase. Preserve authored overrides and provenance. Undo restores all grouped fields or reports a conflict without a partial write."
+  },
+  {
+    "id": "unavailable-grant",
+    "entries": [
+      "srd-2024_dwarf_darkvision",
+      "srd-2024_dwarf_stonecunning"
+    ],
+    "setup": "Create a dwarf, with an unacknowledged grant at the pinned version.",
+    "act": "Review the unavailable grants, acknowledge them and finalize. Attempt Stonecunning, then review after a definition version change.",
+    "expect": "Creation succeeds after acknowledgment, displays the dependency reason and retains unrelated traits. Stonecunning creates no sense and consumes no resources. A changed grant version requires a fresh acknowledgment."
+  },
+  {
+    "id": "deferred-choice",
+    "entries": [
+      "srd-2024_warlock_eldritch-invocation-options",
+      "srd-2024_darkness"
+    ],
+    "setup": "Open Warlock invocation choices and a spell-grant list containing Darkness.",
+    "act": "Select a supported invocation, inspect a lighting-dependent one, and grant Darkness through an automatic lineage grant.",
+    "expect": "Supported choices remain usable. Unavailable branches are labeled before committing and cannot execute. A mandatory deferred spell is still recorded and acknowledged. No replacement spell is silently granted."
+  },
+  {
+    "id": "acid-arrow-hit-miss-upcast",
+    "entries": [
+      "srd-2024_acid-arrow"
+    ],
+    "setup": "A Wizard with level-2 and level-3 slots, a target in range, scripted hit and miss rolls, and 4 on every d4.",
+    "act": "Resolve a level-2 hit, a level-2 miss and a level-3 hit in independent runs. Advance past the target's next turn.",
+    "expect": "Apply 16 then 8 Acid on the level-2 hit, 8 only on the miss, and 20 then 12 on the level-3 hit before defenses. Charge one selected slot. The delayed event fires once and whole-action correction accounts for its linked outcome."
+  },
+  {
+    "id": "fireball-geometry-and-defense",
+    "entries": [
+      "srd-2024_fireball"
+    ],
+    "setup": "A level-3 slot, a legal point, two in-area targets with success and failure on Dexterity saves, and an outside target. Set all d6 to 4.",
+    "act": "Confirm the sphere and apply. Give the successful target Fire resistance.",
+    "expect": "Failed save loses 32 HP and successful resistant target loses 8 HP. Outside target has no save or HP change. Spend one slot. An invalid center causes no mutation."
+  },
+  {
+    "id": "web-concentration-and-turn",
+    "entries": [
+      "srd-2024_web"
+    ],
+    "setup": "Two legal in-area creatures, scripted Dexterity save failure and success, and anchored Web.",
+    "act": "Start their turns, attempt an escape with a successful Strength check, then break caster concentration.",
+    "expect": "Web creates difficult terrain and light obscurement. Failed save restrains and success does not. Successful escape ends that creature's restraint. Concentration loss removes the area and any remaining dependent restraints exactly once."
+  },
+  {
+    "id": "counterspell-reaction",
+    "entries": [
+      "srd-2024_counterspell"
+    ],
+    "setup": "A caster visibly casting within range and a reactor with a level-3 slot and an eligible reaction. Script both Constitution save outcomes.",
+    "act": "Run both outcomes independently and decline the reaction in a third run.",
+    "expect": "On failure the triggering spell dissipates without spending its slot. On success it resolves normally. An accepted reaction consumes the reactor's slot and reaction in both cases. A declined prompt mutates neither reactor resource."
+  },
+  {
+    "id": "aid-expiry",
+    "entries": [
+      "srd-2024_aid"
+    ],
+    "setup": "Three valid in-range creatures and one outside range, no conflicting Aid effect.",
+    "act": "Apply a level-2 Aid and advance eight in-world hours.",
+    "expect": "Raise current and maximum HP of the chosen three by 5 for the duration. Apply the timed modifier once and remove it once at expiry. Outside target is unchanged."
+  },
+  {
+    "id": "summon-choice",
+    "entries": [
+      "srd-2024_summon-dragon"
+    ],
+    "setup": "Valid casting resources, legal space and a chosen stat-block option from the reviewed spell.",
+    "act": "Cast, advance summon initiative, then end concentration.",
+    "expect": "Apply the chosen form's level-dependent stat block, action set and initiative, with owner and duration links. Remove only this instance when concentration ends."
+  },
+  {
+    "id": "rage",
+    "entries": [
+      "srd-2024_barbarian_rage"
+    ],
+    "setup": "Barbarian with one available use, valid equipment, a damage source and scripted turns.",
+    "act": "Start Rage, exercise one supported extension trigger and let Rage expire.",
+    "expect": "Spend one use. Apply appropriate resistance, damage modifier and limits while active. Update duration on the extension and remove the derived effects once when it ends."
+  },
+  {
+    "id": "alert-and-initiative",
+    "entries": [
+      "srd-2024_alert_1_initative-proficiency"
+    ],
+    "setup": "Alert character with Dexterity modifier +2, proficiency bonus +3, fixed initiative die 10 and no other modifiers.",
+    "act": "Roll initiative and recalculate derived effects.",
+    "expect": "Initiative is 15. Proficiency applies once and does not become a permanent Dexterity modifier."
+  },
+  {
+    "id": "weapon-mastery",
+    "setup": "Character with access to Push for a valid weapon and targets at the eligible and ineligible size boundaries.",
+    "act": "Resolve a hit against each with valid and obstructed paths.",
+    "expect": "Present the choice only on qualifying hits, cap displacement at the printed distance, respect legal movement geometry and leave unrelated movement budgets untouched."
+  }
+]
