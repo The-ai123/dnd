@@ -1,6 +1,6 @@
 # Agent work board — task status and scheduling authority
 
-Updated: November 6, 2026. A01's user-approved state/ownership/behavior contract and downstream exclusions are complete; evidence below. The user authorized implementation, starting with architecture. A03 is complete with packaged Windows compatibility evidence in [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md). Remaining tasks and task-specific decisions are tracked below; fixture code does not complete dependent production tasks.
+Updated: November 9, 2026. A01's user-approved state/ownership/behavior contract and downstream exclusions are complete; evidence below. The user authorized implementation, starting with architecture. A03 is complete with packaged Windows compatibility evidence in [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md). Remaining tasks and task-specific decisions are tracked below; fixture code does not complete dependent production tasks.
 
 ## 1. Status rules
 
@@ -33,7 +33,9 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 | P03 | Dependency/status board and agent handoff organization | Complete | Planning chat | P01, P02 | Planning |
 | A01 | Close product-state/ownership gaps and reconcile legacy notes | Complete | Codex — A01 product-contract chat (this chat) | — | Planning |
 | S01 | Pin/audit published Open5e snapshot and 5.2.1 parity | Complete | Codex — S01 implementation chat | — | Acquisition |
-| A02 | Actual SRD inventory, exclusions and automation coverage fixtures | To Do | — | A01, S01 | Planning |
+| A02 | Full SRD coverage plan, tracked through A02A and A02B | To Do | — | A02A, A02B | Planning |
+| A02A | Working SRD catalog, proposed scope and seeded acceptance cases | Complete | Codex — A02 chat (`codex/a02`) | A01, S01 | Planning |
+| A02B | Full catalog reconciliation and remaining per-entry acceptance cases | To Do | — | A02A, A05 | Planning |
 | A03 | Stack review and packaged Windows compatibility proof | Complete | Architecture implementation chat | — | Build |
 | A04 | Continuous geometry feasibility and optimality/performance proof | To Do | — | A01, A03 | Build |
 | A05 | Approve exact UI/editor schemas and validation behavior | Complete | Codex — A05 completion chat (`codex/a05`) | A01 | Planning |
@@ -45,7 +47,7 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 | B06 | Session action groups, conflict-aware undo/redo, completion | To Do | — | B05 | Build |
 | B07 | Durable editor/draft versions and checkpoints | To Do | — | B04, A05 | Build |
 | B08 | In-flight job/action and filesystem-intent recovery | To Do | — | B06, B07 | Build |
-| S02 | Open5e adapter, corrections and normalized content schemas | To Do | — | S01, A02, A05, B01, B07 | Build |
+| S02 | Open5e adapter, corrections and normalized content schemas | To Do | — | S01, A02A, A05, B01, B07 | Build |
 | S03 | Reproducible offline bundle, attribution and data regression | To Do | — | S02 | Build |
 | C01 | Consistent snapshot/asset-manifest backups | To Do | — | B03, B04, B08 | Build |
 | C02 | Backup-gated New Session/Restore | To Do | — | C01, B05 | Build |
@@ -71,8 +73,8 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 | F01 | Initiative/rounds/actions/resources/movement budgets | To Do | — | B05, B06, B01 | Build |
 | F02 | Effects/modifiers/triggers/timers/defenses/concentration | To Do | — | A01, F01 | Build |
 | F03 | Persisted resolution stack and reaction/ruling prompts | To Do | — | B08, F02 | Build |
-| F04 | Guided leveling/multiclass choice ledger | To Do | — | A02, D01, F02 | Build |
-| F05 | All enabled bundled feature/spell mechanics and coverage | To Do | — | F03, F04, E07 | Build |
+| F04 | Guided leveling/multiclass choice ledger | To Do | — | A02A, D01, F02 | Build |
+| F05 | All enabled bundled feature/spell mechanics and coverage | To Do | — | A02B, F03, F04, E07 | Build |
 | F06 | Path interruption and whole-action correction integration | To Do | — | F03, F05, E06 | Build |
 | G01 | Session replay/seek/historical private-public views | To Do | — | B07, E08, F06 | Build |
 | G02 | Full offline world/game rehearsal and fault injection | To Do | — | C04, C06, C07, D05, D06, E05, E08, F06, G01 | Build |
@@ -82,20 +84,23 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 ### To Do / Active / Complete snapshot
 
 - **To Do:** remaining tasks in the table above.
-- **Complete:** P01, P02, P03, A01, A03, A05, B01 and S01.
-- **Next:** continue A02, B02 and A04 in parallel. B07 still requires B04.
+- **Complete on this integrated base:** P01, P02, P03, A01, A02A, A03, A05, B01 and S01.
+- **Next:** A02B can start. Integrate the completed B02 and A04 branches. B03 can start on a base containing B02. S02 still needs B07; F04 still needs D01 and F02.
 
-### Ready parallel work — November 6 handoff
+### Ready parallel work — November 9 handoff
 
 The following lanes have completed task prerequisites. They are opportunities, not new claims. The assigned owner must record exact paths before writing and satisfy the task's own evidence/gate.
 
 | Lane | Ready work / scope boundary | Coordination and next unlock |
 | --- | --- | --- |
-| A02 | Catalog the pinned SRD, document exclusions, and define automation/progression fixtures | A01 and S01 are complete. Use `docs/content/CONTENT_INVENTORY.md` and the parity audit. Use the approved editor contract in `UI_EDITOR_CONTRACT.md` |
-| B02 | Implement world/catalog storage, migrations, and writer repositories | B01 is integrated. Use `docs/contracts/B01.md`. Unblocks B03 |
-| A04 | Continue the geometry proof on `codex/a04-geometry-feasibility` | The spike has measured evidence. Weighted-route certification and performance validation remain open |
+| A02B | Finish printed category/variant reconciliation, mixed-effect availability review and independent cases for the remaining features/spells and branches | Ready from `codex/a02`. Claim `docs/content/**`; use the approved A05 contract. Keep S02 corrections/adapter files under their own owner |
+| B03 | Immutable original-asset ingestion and reference tracking | Ready on a base containing published B02 commit `b8c6507` (`codex/b02-world-storage`). Otherwise integrate B02 first. Claim `packages/assets/**` and specific asset-reference integration files |
+| B02 integration | Integrate completed storage branch `codex/b02-world-storage` at `b8c6507` | Implementation evidence is in that branch's `docs/contracts/B02.md` and work board. Preserve its completion record and verify integration before marking the shared-base row Complete |
+| A04 integration | Integrate completed geometry branch `codex/a04-geometry-feasibility` at `3045f32` | Evidence is in that branch's `docs/geometry/A04.md` and work board. E03/E06 retain their other dependencies |
 
-A02, B02 and A04 can progress concurrently within those boundaries. S02 still requires A02 and B07. Keep package manifests and lockfiles under one integrator.
+A02B and B03 are the available implementation lanes when each uses the base above. B02 and A04 implementation is already complete on the published branches; their To Do rows here represent pending integration into this base. Do not repeat their implementation. Integration of those branches can proceed beside A02B, with one coordinator owning root status files and shared manifests.
+
+A02A removes the content-planning blocker from S02, but S02 still requires B07. F04 still requires D01 and F02. F05 requires A02B. S03 retains its S02 dependency and baseline-completeness checks. After B03 is integrated, B04 and E02 become eligible in parallel. After B04, B05 and B07 become eligible in parallel. These later waves are conditional.
 
 ## 4. Sequential spine and parallel lanes
 
@@ -103,7 +108,7 @@ The required shared-foundation spine is:
 
 `A01 + A03 → B01 → B02 → B03 → B04 → B05 → B06`
 
-Separately `A01 → A05`, `S01 + A01 → A02`, and `A01 + A03 → A04`. These converge into content/UI/geometry work as listed in the board. B07 joins B08 after B06. Do not serialize everything by waiting for an entire lettered phase.
+Separately `A01 → A05`, `S01 + A01 → A02A → A02B`, and `A01 + A03 → A04`. These converge into content/UI/geometry work as listed in the board. B07 joins B08 after B06. Do not serialize everything by waiting for an entire lettered phase.
 
 | Opportunity | Can progress together once each task is eligible | Coordination requirement |
 | --- | --- | --- |
@@ -205,6 +210,8 @@ Partial-work handoff (if any):
 ```
 
 ### Completion evidence log
+
+- **A02A | Codex — A02 chat (`codex/a02`) | November 9, 2026:** user authorized splitting A02 into completed groundwork and remaining full coverage. Commits `387f035` and `35297f3` provide 6,743 SRD identities, an 814-entry coverage catalog, proposed lighting/sense exclusions and propagation, printed spell/creature/magic-item/glossary/toolbox heading reconciliation, and 202 concrete cases linked to 209 catalog entries. Every enabled spell through 3rd level, every weapon property and background grant has a case. Offline snapshot and catalog verification pass; the prior implementation checks include six passing snapshot tests and the hash-pinned PDF audit. See [coverage and child-task handoff](docs/content/CONTENT_COVERAGE.md). A02B owns the remaining full-catalog review, final scope interpretation and independent outcome vectors. S02/F04 now consume A02A, retaining every other prerequisite; F05 explicitly requires A02B; S03 retains its S02 dependency and baseline-completeness checks. Parent A02 stays To Do until both children and integration are complete.
 
 - **A05 | Codex — A05 completion chat (`codex/a05`) | November 6, 2026:** direct approval of the final functional draft and zero-gold rule, following the accepted Home, manager, Play/inspector and invalid-input visual baseline. `UI_EDITOR_CONTRACT.md` records approved fields, save/validation/status behavior, and the separation of durable raw drafts from valid gameplay values. Headless Edge preview checks passed, including invalid HP, commit gestures, failure/retry and layout checks. B07 still requires B04 and S02 still requires A02/B07. Catalog coverage, runtime persistence, public projection enforcement and native accessibility/scaling belong to their implementation tasks.
 

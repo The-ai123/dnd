@@ -17,7 +17,7 @@ Scheduling clarification, October 27: the user considered moving S01 after MVP, 
 ## Ingestion pipeline
 
 1. **S01 — pin and audit raw snapshot:** select commit; acquire only intended source/dependencies/licenses; preserve raw JSON unchanged; inventory IDs/counts; verify source provenance and 5.2.1 differences. Complete source audit before claiming patched-version coverage.
-2. **A02 — coverage catalog:** enumerate actual bundled content and references, enabled mechanics, approved lighting/senses exclusions, progression and acceptance cases. Raw inventory can be prepared while unrelated A01 product decisions are open; unresolved gameplay semantics cannot be silently filled in.
+2. **A02 — coverage catalog, split November 9:** A02A is the completed working inventory, proposed availability policy, printed-heading comparison and seeded acceptance cases in `docs/content/CONTENT_COVERAGE.md`. S02 and F04 consume this groundwork once their other prerequisites are complete. A02B finishes category/variant reconciliation, final mixed-effect scope review and all remaining independent per-entry/branch outcomes. F05 requires A02B. S03 retains its S02 dependency and baseline-completeness checks. Parent A02 completes after both children and integration.
 3. **S02 — normalize through a versioned adapter:** map upstream fixture-shaped JSON into our validated content schemas. Resolve cross-file references; preserve original IDs/source links/versions and rich text. Emit structured diagnostics for missing references, invalid values, duplicate IDs, ambiguous mechanics and unsupported behavior.
 4. **S03 — validate and package:** reproducibly generate an offline bundle plus manifest and attribution. Test counts/references against the pinned inventory, idempotence, representative samples in every category and explicit 5.2.1 corrections. Do not quietly discard upstream fields or unresolved records.
 5. **C07 / D01 — install into libraries/editors:** seed immutable built-in definitions and creature/item presets, not canonical live world NPCs. Existing canonical entities are created/referenced explicitly by the user. Custom definitions remain editable/versioned; source updates use the approved explicit update workflow.
@@ -39,6 +39,9 @@ Exact schema fields and output filenames follow A01/A05/B01; these paths establi
 A05 valuation boundary: product item/shop valuations use nonnegative integer gold and may explicitly price bundles. Preserve upstream price/unit metadata and provenance unchanged in raw data. A normalized source value that needs fractional gold cannot silently round or create an inferred bundle; record a diagnostic and obtain an explicit whole-gold single/bundle valuation for generator use. Keep source price metadata distinct from the authored stock valuation and per-campaign override. Source audit remains MVP work; this is a mapping requirement, not acquisition evidence.
 
 ## Completion evidence
+
+- A02A: reproducible working catalog and seeded acceptance plan, with exact counts and checks in `docs/content/CONTENT_COVERAGE.md`.
+- A02B: full printed category/variant reconciliation, reviewed scope/dependency propagation and independent expected outcomes for every enabled feature/spell and branch.
 
 - S01: exact SHA/hash manifest and 5.2-versus-5.2.1 audit, attribution, category inventory; acquisition uses published files with no scraping.
 - S02: repeatable adapter with runtime schemas, full reference resolution or explicit diagnosed failures, retained provenance and reviewed correction layer.

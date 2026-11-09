@@ -35,7 +35,7 @@ The [printed-heading reconciliation](printed-heading-reconciliation.jsonl) recor
 | Weapon property | Assert weapon applicability, whether mastery is known and enabled, the attack/weapon conditions and legal targets, exact resource/geometry/modifier effects, and failed conditions leaving other effects intact. |
 | Unavailable | Grant or reference remains visible with its dependency reason. Require acknowledgment for a granted feature, track it by character and definition revision, and prevent execution before spending a resource, creating an effect or queueing a prompt. |
 
-An executable F05 case must pin deterministic input state, rolls and expected results independently of the handler. Run each mechanically distinct route, including rejection, success and expiry where applicable. [Concrete acceptance examples](coverage-fixtures.json) cover progression, deferred grants, weapon properties, background grants and action resolution. The [cantrip](cantrip-fixtures.txt), [1st-level](level-one-spell-fixtures.txt) [2nd-level](level-two-spell-fixtures.txt) and [3rd-level](level-three-spell-fixtures.txt) case tables provide at least one concrete case per enabled spell in those slices. Each case links back to its catalog entry. The shared contracts specify additional required routes, and spells of levels 4–9 and most character features still need entry-specific outcome vectors. S02 must preserve printed cross-dependencies for that review.
+An executable F05 case must pin deterministic input state, rolls and expected results independently of the handler. Run each mechanically distinct route, including rejection, success and expiry where applicable. [Concrete acceptance examples](coverage-fixtures.json) cover progression, deferred grants, weapon properties, background grants and action resolution. The [cantrip](cantrip-fixtures.txt), [1st-level](level-one-spell-fixtures.txt), [2nd-level](level-two-spell-fixtures.txt) and [3rd-level](level-three-spell-fixtures.txt) case tables provide at least one concrete case per enabled spell in those slices. Each case links back to its catalog entry. The shared contracts specify additional required routes, and spells of levels 4–9 and most character features still need entry-specific outcome vectors. S02 must preserve printed cross-dependencies for that review.
 
 ## Scope and propagation
 
@@ -47,7 +47,16 @@ The scope decisions for mixed effects are interpretations of the A01 policy. Rev
 
 ## Handoff status
 
-The inventory, proposed exclusions and shared fixture contracts are available for downstream review. A02 still needs independent entry-by-entry expected outcomes and a full review of printed category and variant gaps. The coordinator can link this evidence from the shared board when integrating the branch.
+The user authorized splitting A02 on November 9, 2026. A02A is Complete on this branch. Its verified deliverables are the 6,743-row working inventory, 814-entry feature/spell matrix, proposed availability and dependency policy, printed-heading reconciliation and 202 concrete acceptance cases linked to 209 entries. Every enabled spell through 3rd level, every weapon property and every background grant has at least one case. This supplies source identities, known gaps and representative inputs for adapter and progression foundations.
+
+A02B is To Do and depends on A02A and the completed A05 contract. Its remaining acceptance scope includes the following.
+
+- Reconcile the printed categories, parent/variant eligibility, embedded definitions and missing records, carrying attributable correction requirements into S02 with S02/S03 retaining responsibility for resolving source gaps before baseline-complete packaging.
+- Review all proposed lighting/sense exclusions and mixed-effect branches against the approved policy, including grant/dependency propagation and acknowledgment.
+- Supply independent expected outcomes for spells of levels 4–9 and the remaining character features, plus the additional mechanically distinct routes for every enabled entry and selectable branch.
+- Record exact required handler behavior, prerequisites, progression levels/choices, inputs/rulings/targets, resources, persistent/recurring state, expiry, interactions and grouped undo cases, then cross-check the full catalog and corrected definitions.
+
+A02A's data is sufficient to remove the A02 prerequisite from S02 and F04. Their other prerequisites still apply. S02 still needs B07, and F04 still needs D01 and F02. F05 explicitly requires A02B. S03 retains its S02 dependency and baseline-completeness checks. Parent A02 remains open until both children and integration are complete. The availability policy remains provisional until A02B review, and the source snapshot still requires S02 normalization before becoming an application seed bundle.
 
 ## Reproduce and hand off
 
