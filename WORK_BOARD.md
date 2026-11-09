@@ -41,7 +41,7 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 | A05 | Approve exact UI/editor schemas and validation behavior | Complete | Codex — A05 completion chat (`codex/a05`) | A01 | Planning |
 | B01 | Strict domain/IPC contracts and role-scoped envelopes | Complete | Codex — B01 implementation chat | A01, A03 | Build |
 | B02 | World/catalog storage, migrations, writer repositories | Complete | Codex — B02 implementation chat (`codex/b02-world-storage`) | B01 | Build |
-| B03 | Immutable original-asset ingestion/references | Active | Codex — B03 chat (`codex/b03-assets`) | B02 | Build |
+| B03 | Immutable original-asset ingestion/references | Complete | Codex — B03 chat (`codex/b03-assets`) | B02 | Build |
 | B04 | Atomic commands, idempotency, revisions/projections | To Do | — | B02, B03 | Build |
 | B05 | Canonical identities, sessions, clocks, reservations | To Do | — | B04 | Build |
 | B06 | Session action groups, conflict-aware undo/redo, completion | To Do | — | B05 | Build |
@@ -85,7 +85,7 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 
 - **To Do:** remaining tasks in the table above.
 - **Complete on this integrated base:** P01, P02, P03, A01, A02A, A03, A04, A05, B01, B02 and S01.
-- **Active:** B03 is claimed by this chat on `codex/b03-assets`.
+- **Complete on its branch:** B03 (`20e99fd`, `codex/b03-assets`); integration into main remains pending.
 - **Next:** A02B can start. E03/E06 retain their other prerequisites. S02 still needs B07; F04 still needs D01 and F02.
 
 ### Ready parallel work — November 9 handoff
@@ -95,17 +95,17 @@ The following lanes have completed task prerequisites. They are opportunities, n
 | Lane | Ready work / scope boundary | Coordination and next unlock |
 | --- | --- | --- |
 | A02B | Finish printed category/variant reconciliation, mixed-effect availability review and independent cases for the remaining features/spells and branches | A02A is integrated. Claim `docs/content/**`; use the approved A05 contract. Keep S02 corrections/adapter files under their own owner |
-| B03 | Immutable original-asset ingestion and reference tracking | Claimed by this chat on `codex/b03-assets`; write paths below. Use [the B02 storage contract](docs/contracts/B02.md) and [B03 consumer contract](docs/contracts/B03.md) |
+| B03 | Implementation complete; integration handoff | Verified on `codex/b03-assets` (`20e99fd`); see [B03 consumer contract](docs/contracts/B03.md). B04/E02 become eligible after integration |
 
-A02B and B03 can progress concurrently within these boundaries. Keep root status files and shared manifests under one integrator.
+A02B can proceed while B03 awaits integration. Keep root status files and shared manifests under one integrator.
 
 A02A removes the content-planning blocker from S02, but S02 still requires B07. F04 still requires D01 and F02. F05 requires A02B. S03 retains its S02 dependency and baseline-completeness checks. After B03 is integrated, B04 and E02 become eligible in parallel. After B04, B05 and B07 become eligible in parallel. These later waves are conditional.
 
-### B03 active claim — November 9, 2026
+### B03 completed claim — November 9, 2026
 
 Codex — this B03 chat owns `codex/b03-assets`. B02 is integrated. Write scope: `packages/assets/**`, `packages/persistence/src/repositories.ts`, `packages/persistence/src/index.ts`, `packages/persistence/package.json`, `package-lock.json`, `tests/integration/assets.test.ts`, `tests/integration/persistence.test.ts`, `docs/contracts/B03.md`, `IMPLEMENTATION_STATUS.md`, and this board. Implement hash-addressed originals, publication before references, retained historical references and disposable derivatives. Existing deletions in the main checkout are outside this claim and remain untouched.
 
-Implementation and verification finished November 9: TypeScript and all 42 tests pass, including eight B03 integration cases; Windows packaging and the packaged two-window/native/privacy smoke test pass. [B03 contract and evidence](docs/contracts/B03.md), [implementation status](IMPLEMENTATION_STATUS.md). Status stays **Active** as requested while the completed branch awaits review/integration; downstream tasks remain conditional on integration.
+Implementation and verification finished November 9 in commit `20e99fd`: TypeScript and all 42 tests pass, including eight B03 integration cases; Windows packaging and the packaged two-window/native/privacy smoke test pass. [B03 contract and evidence](docs/contracts/B03.md), [implementation status](IMPLEMENTATION_STATUS.md). Final diff review passed. Status updated to **Complete** following the user's Git/to-do update request; downstream tasks remain conditional on branch integration.
 
 ## 4. Sequential spine and parallel lanes
 
@@ -223,6 +223,8 @@ Partial-work handoff (if any):
 ```
 
 ### Completion evidence log
+
+- **B03 | Codex — B03 chat | November 9, 2026.** Commit `20e99fd` on `codex/b03-assets` implements SHA-256 original publication before references, schema-3 immutable per-record-version asset sets and retained historical references. TypeScript, all 42 tests, Windows packaging and packaged smoke verification pass. [Consumer contract](docs/contracts/B03.md). Implementation is complete on its branch; main integration is pending and B04/E02 retain that integration gate.
 
 - **B02 | Codex — B02 implementation chat | November 6, 2026.** Commit `5257b25` on `codex/b02-world-storage` implements the SQLite catalog and world repositories, versioned folder manifest, transactional migrations, single-writer locking, foreign-key checks and storyteller-only local storage diagnostics. `npm run check` passed 16 tests covering two isolated worlds, migration rollback on process exit, upgrade and version rejection. Windows packaging and the packaged smoke test passed. The desktop uses a fixture scene. B03 is next after integration, and B04 owns durable command execution. [Storage contract](docs/contracts/B02.md)
 

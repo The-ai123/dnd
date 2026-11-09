@@ -44,7 +44,7 @@ Commit `5257b25` adds the application catalog, one SQLite writer per world, a ve
 
 ## B03 — immutable originals and retained asset references
 
-Implemented November 9, 2026 on `codex/b03-assets` in an isolated checkout; the main checkout's pre-existing package deletions are untouched. B03 remains Active on the board at the user's request, with implementation and verification finished for review/integration.
+Completed November 9, 2026 in commit `20e99fd` on `codex/b03-assets` in an isolated checkout; the main checkout's pre-existing package deletions are untouched. B03 is Complete on the board, with implementation, verification and final diff review finished. Main integration remains pending.
 
 `packages/assets/src/originals.ts` streams exact bytes into flushed, same-directory staging files and publishes immutable SHA-256 originals before metadata registration. Duplicate imports verify and reuse existing bytes; corrupt/missing originals cannot receive new references. World schema 3 retains immutable per-record-version asset sets and writes them atomically with current records and links. Historical references survive subsequent versions, and derived tiles are independently disposable. No original/history pruning API is introduced.
 
