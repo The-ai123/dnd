@@ -1,5 +1,7 @@
 # Architecture implementation handoff
 
+Integration verified November 9, 2026: `main` includes A02A, A04 and B02, with their completion records reconciled in `WORK_BOARD.md`. `npm run check` passes TypeScript and 34 tests; Windows packaging and the packaged desktop smoke test pass. Offline snapshot/catalog verification and all six snapshot audit tests pass. The work board has 52 unique task rows, valid statuses/dependencies and no cycles. A02B remains open.
+
 Updated November 6, 2026. The user authorized implementation in the architecture chat. Planning-only wording in older documents records prior scope; unresolved product decisions remain unresolved.
 
 ## A03 — desktop architecture and compatibility
