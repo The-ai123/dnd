@@ -1,6 +1,6 @@
 # Agent work board — task status and scheduling authority
 
-Updated: November 6, 2026. A01's user-approved state/ownership/behavior contract and downstream exclusions are complete; evidence below. The user authorized implementation, starting with architecture. A03 is complete with packaged Windows compatibility evidence in [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md). Remaining tasks and task-specific decisions are tracked below; fixture code does not complete dependent production tasks.
+Updated: November 9, 2026. A04 geometry feasibility is complete with proof and benchmark evidence in docs/geometry/A04.md. A01, A03, A05, B01 and S01 retain their completed status. Remaining production work follows the prerequisites below.
 
 ## 1. Status rules
 
@@ -35,7 +35,7 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 | S01 | Pin/audit published Open5e snapshot and 5.2.1 parity | Complete | Codex — S01 implementation chat | — | Acquisition |
 | A02 | Actual SRD inventory, exclusions and automation coverage fixtures | To Do | — | A01, S01 | Planning |
 | A03 | Stack review and packaged Windows compatibility proof | Complete | Architecture implementation chat | — | Build |
-| A04 | Continuous geometry feasibility and optimality/performance proof | To Do | — | A01, A03 | Build |
+| A04 | Continuous geometry feasibility and optimality/performance proof | Complete | Codex — A04 geometry chat | A01, A03 | Build |
 | A05 | Approve exact UI/editor schemas and validation behavior | Complete | Codex — A05 completion chat (`codex/a05`) | A01 | Planning |
 | B01 | Strict domain/IPC contracts and role-scoped envelopes | Complete | Codex — B01 implementation chat | A01, A03 | Build |
 | B02 | World/catalog storage, migrations, writer repositories | To Do | — | B01 | Build |
@@ -82,8 +82,8 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 ### To Do / Active / Complete snapshot
 
 - **To Do:** remaining tasks in the table above.
-- **Complete:** P01, P02, P03, A01, A03, A05, B01 and S01.
-- **Next:** continue A02, B02 and A04 in parallel. B07 still requires B04.
+- **Complete:** P01, P02, P03, A01, A03, A04, A05, B01 and S01.
+- **Next:** continue A02 and integrate the published B02 branch before starting B03. E03 and E06 retain their other prerequisites. B07 still requires B04.
 
 ### Ready parallel work — November 6 handoff
 
@@ -93,9 +93,8 @@ The following lanes have completed task prerequisites. They are opportunities, n
 | --- | --- | --- |
 | A02 | Catalog the pinned SRD, document exclusions, and define automation/progression fixtures | A01 and S01 are complete. Use `docs/content/CONTENT_INVENTORY.md` and the parity audit. Use the approved editor contract in `UI_EDITOR_CONTRACT.md` |
 | B02 | Implement world/catalog storage, migrations, and writer repositories | B01 is integrated. Use `docs/contracts/B01.md`. Unblocks B03 |
-| A04 | Continue the geometry proof on `codex/a04-geometry-feasibility` | The spike has measured evidence. Weighted-route certification and performance validation remain open |
 
-A02, B02 and A04 can progress concurrently within those boundaries. S02 still requires A02 and B07. Keep package manifests and lockfiles under one integrator.
+A02 and B02 can progress concurrently within those boundaries. S02 still requires A02 and B07. Keep package manifests and lockfiles under one integrator.
 
 ## 4. Sequential spine and parallel lanes
 
@@ -144,6 +143,14 @@ Paths are intended boundaries, not evidence those modules exist. Exact claimed p
 6. If abandoned/interrupted, write partial-work handoff and return To Do (or transfer owner explicitly). Preserve uncommitted files. Reopen a Complete task to To Do if a later change invalidates its evidence; audit descendants before proceeding.
 
 ### Active claim / blocker log
+
+**A04 — November 9, 2026 publication.** Reconciled this board with current main, preserving the completed A05, B01 and S01 work. A04 is Complete on `codex/a04-geometry-feasibility`. Typecheck and 30 functional tests pass after integration. The isolated hardware benchmark passes and certifies all 50 weighted routes. The combined concurrent run reached weighted p95 112.86 ms, above its target, before the isolated check. The published B02 branch has its own completion evidence and awaits integration into main.
+
+**A04 — November 6, 2026 completion.** On `codex/a04-geometry-feasibility`, adaptive rectangle transit bounds certify all 50 weighted queries on the agreed fixture. The 100 warm queries measure p95 39.33 ms and maximum 90.57 ms, with weighted p95 46.53 ms. Typecheck and 24 tests pass. [A04 proof and handoff](docs/geometry/A04.md) and [raw benchmark evidence](docs/geometry/benchmark.json) record the acceptance cases and production limits. E03 and E06 retain their other dependencies.
+
+**A04 — November 6, 2026 continuation.** The branch adds geometric, sampling, strip and isolated-rectangle bounds. Typecheck and 23 tests pass. The recorded warm fixture meets latency at p95 54.73 ms and maximum 122.79 ms. It certifies 19 of 50 weighted queries, so A04 stays To Do and its dependent gates stay closed. The proof, unsuccessful experiments and sparse subdivision follow-up are recorded in `docs/geometry/A04.md` and `docs/geometry/benchmark.json`.
+
+**A04 — partial handoff by Codex — A04 geometry chat, October 27, 2026; remains To Do.** User requested its own branch; `codex/a04-geometry-feasibility` has an isolated managed worktree. Exact writes: `packages/geometry/**`, `tests/geometry/**`, `docs/geometry/**`, `vitest.config.ts` (geometry test discovery), and this A04-only handoff. A01/A03 prerequisites are Complete and build authorization exists. User agreed max(0.1 ft, 0.5%) optimality error, 1e-6-ft comparison tolerance, p95 <=100 ms / max <=250 ms on this PC for 5,280-ft extent, 100 tokens, 200 blocking edges and 50 terrain regions. Continuous footprint routing, weighted analytic cases, visibility and sparse storage are implemented; 22 checks pass and candidate-query benchmark records p95 50.02 ms / max 74.90 ms. **Global weighted optimality certification remains unproved**, so A04 is not Complete and E03/E06's A04 gate remains closed. Evidence, exact commands, measured limitations and remaining work: `docs/geometry/A04.md`, `docs/geometry/benchmark.json`. No shared runtime contracts, dependencies or other task states changed.
 
 **B01 — completed by Codex — B01 implementation chat, October 27, 2026.**
 

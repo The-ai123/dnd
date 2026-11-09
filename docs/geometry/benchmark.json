@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-11-06T14:50:32.656Z",
+  "node": "v24.21.0",
+  "hardware": {
+    "cpu": "13th Gen Intel(R) Core(TM) i7-13700H",
+    "logicalProcessors": 20,
+    "memoryGiB": 15.700675964355469,
+    "platform": "win32",
+    "release": "10.0.26200",
+    "arch": "x64"
+  },
+  "fixture": {
+    "extentFeet": 5280,
+    "tokens": 100,
+    "blockingEdges": 200,
+    "terrainRegions": 50,
+    "samplesPerTerrainEdge": 4
+  },
+  "measurement": {
+    "prepareMs": 2037.7475999999997,
+    "p95Ms": 39.33210000000008,
+    "maxMs": 90.56600000000026,
+    "warmQueries": 100,
+    "weightedP95Ms": 46.533100000000104,
+    "certifiedWeighted": 50,
+    "weightedQueries": 50,
+    "maximumWeightedGap": 3.023410403258481,
+    "graphNodes": 1004,
+    "undirectedEdges": 82372,
+    "transitFeatures": 3604,
+    "transitMatrixBytes": 51955264,
+    "heapDeltaBytes": 21552600,
+    "rssDeltaBytes": 143437824,
+    "exploredCells": 100,
+    "costsChecksum": 48827.78722675138
+  },
+  "acceptedTargets": {
+    "p95Ms": 100,
+    "maxMs": 250
+  },
+  "latencyPasses": true,
+  "accuracyPasses": true,
+  "uncertifiedCases": [],
+  "passes": true,
+  "limits": "Local warm CPU queries include weighted certification attempts. Accuracy passes when every weighted query meets the agreed bound."
+}
