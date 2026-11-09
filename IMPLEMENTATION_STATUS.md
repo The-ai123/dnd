@@ -17,11 +17,12 @@ Packaged compatibility fixes: preserve external native dependencies through Vite
 - A01 is now Complete through subsequent user decisions in the product-contract chat: session/reservation, clock/transfer and recovery boundaries are recorded in WORLDS_AND_SESSIONS.md and DATA_AND_RECOVERY.md. They were specified after A03, not implemented by its scaffold.
 - A05 is Complete. UI_EDITOR_CONTRACT.md records the approved visual baseline, functional editor requirements and whole-gold valuation rules. The saved mock and portable preview checks are under docs/design. Product editor and persistence work remain implementation tasks.
 - B01 is integrated and defines strict domain and IPC envelopes, role and sender validation, world binding and record-version conflicts.
-- B02 is complete on `codex/b02-world-storage`. The engine opens the catalog at startup and the shell still displays the development scene. B03 follows B02 integration, and B04 owns durable command execution.
-- A04 remains open: no continuous pathfinding, fog, optimality claim or performance benchmark is implemented.
+- B02 is integrated. The engine opens the catalog at startup and the shell still displays the development scene. B03 is prerequisite-ready, and B04 owns durable command execution.
+- A04 is integrated with continuous geometry feasibility, accuracy certificates and benchmark evidence in `docs/geometry/A04.md`. Production routing, fog persistence and renderer integration remain later tasks.
+- A02A is integrated with the working SRD catalog and seeded acceptance cases. A02B retains full-catalog reconciliation and remaining per-entry coverage; see `docs/content/CONTENT_COVERAGE.md`.
 - SQLite probe backup is not the C01/C02 product backup/recovery gate. Fixture records are not production world entities or durable history.
 - The Home shell is a development screen, not A05-approved application/editor design.
-- No SRD dataset was downloaded or mechanics/editor implementation claimed.
+- S01's pinned SRD snapshot and audit are integrated. Application seed normalization and mechanics/editor implementation remain later tasks.
 
 The computer crash interrupted initial runtime verification; source files survived, and the packaged compatibility milestone was subsequently completed. This handoff is included with the architecture foundation commit. See `WORK_BOARD.md` for task ownership and dependencies.
 

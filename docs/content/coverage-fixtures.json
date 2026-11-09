@@ -1,0 +1,335 @@
+[
+  {
+    "id": "creation-score-methods",
+    "setup": "Create level-1 characters using standard array, point buy, and recorded 4d6-drop-lowest rolls.",
+    "act": "Allocate scores, choose class and origin, apply background boosts, and commit.",
+    "expect": "Use the selected method exactly once. Reject overspent point buy, duplicate array allocation, and invalid background scores. Apply the chosen +2/+1 or +1/+1/+1, derive modifiers, starting proficiencies and maximum HP. Incomplete choices stay draft."
+  },
+  {
+    "id": "all-class-tables",
+    "setup": "For each of the 12 class/subclass pairs, pin its reviewed SRD 5.2.1 progression table and legal choices.",
+    "act": "Create at level 1, advance one class level at a time through 20, then create directly at 20 with the same choices.",
+    "expect": "At each level assert feature and subclass grants, proficiency bonus, HP dice, class resources, feats and spells against the independent printed table. Direct and incremental builds produce the same derived state and preserve all choice provenance."
+  },
+  {
+    "id": "multiclass-slots",
+    "setup": "Wizard 3 with Intelligence 13 and Cleric 2 with Wisdom 13, no explicit overrides.",
+    "act": "Rebuild in first-class order and inspect slots and prepared choices. Repeat with Wisdom 12 before taking Cleric.",
+    "expect": "A fifth-level multiclass spellcaster has 4/3/2 slots. Wizard and Cleric spell selection still uses their own class levels and abilities. Reject the new Cleric level at Wisdom 12 unless a permitted override is recorded."
+  },
+  {
+    "id": "pact-magic",
+    "setup": "Wizard 3 and Warlock 2 meeting both prerequisites with two spent Pact Magic slots and one spent ordinary slot.",
+    "act": "Finish a short rest, then inspect slot pools and cast an eligible spell using a chosen pool.",
+    "expect": "Restore the two level-1 Pact slots only on this rest. Charge only the chosen eligible pool. Prepared spells remain governed by their granting class."
+  },
+  {
+    "id": "hp-ledger",
+    "setup": "Fighter 1 with Constitution 14, maximum HP 12. Use fixed advancement for level 2 and later raise Constitution to 16.",
+    "act": "Advance and apply the score change. Preview and undo the grouped rebuild.",
+    "expect": "Maximum HP becomes 20 after level 2, then 22 after the Constitution increase. Preserve authored overrides and provenance. Undo restores all grouped fields or reports a conflict without a partial write."
+  },
+  {
+    "id": "unavailable-grant",
+    "entries": [
+      "srd-2024_dwarf_darkvision",
+      "srd-2024_dwarf_stonecunning"
+    ],
+    "setup": "Create a dwarf, with an unacknowledged grant at the pinned version.",
+    "act": "Review the unavailable grants, acknowledge them and finalize. Attempt Stonecunning, then review after a definition version change.",
+    "expect": "Creation succeeds after acknowledgment, displays the dependency reason and retains unrelated traits. Stonecunning creates no sense and consumes no resources. A changed grant version requires a fresh acknowledgment."
+  },
+  {
+    "id": "deferred-choice",
+    "entries": [
+      "srd-2024_warlock_eldritch-invocation-options",
+      "srd-2024_darkness"
+    ],
+    "setup": "Open Warlock invocation choices and a spell-grant list containing Darkness.",
+    "act": "Select a supported invocation, inspect a lighting-dependent one, and grant Darkness through an automatic lineage grant.",
+    "expect": "Supported choices remain usable. Unavailable branches are labeled before committing and cannot execute. A mandatory deferred spell is still recorded and acknowledged. No replacement spell is silently granted."
+  },
+  {
+    "id": "acid-arrow-hit-miss-upcast",
+    "entries": [
+      "srd-2024_acid-arrow"
+    ],
+    "setup": "A Wizard with level-2 and level-3 slots, a target in range, scripted hit and miss rolls, and 4 on every d4.",
+    "act": "Resolve a level-2 hit, a level-2 miss and a level-3 hit in independent runs. Advance past the target's next turn.",
+    "expect": "Apply 16 then 8 Acid on the level-2 hit, 8 only on the miss, and 20 then 12 on the level-3 hit before defenses. Charge one selected slot. The delayed event fires once and whole-action correction accounts for its linked outcome."
+  },
+  {
+    "id": "fireball-geometry-and-defense",
+    "entries": [
+      "srd-2024_fireball"
+    ],
+    "setup": "A level-3 slot, a legal point, two in-area targets with success and failure on Dexterity saves, and an outside target. Set all d6 to 4.",
+    "act": "Confirm the sphere and apply. Give the successful target Fire resistance.",
+    "expect": "Failed save loses 32 HP and successful resistant target loses 8 HP. Outside target has no save or HP change. Spend one slot. An invalid center causes no mutation."
+  },
+  {
+    "id": "web-concentration-and-turn",
+    "entries": [
+      "srd-2024_web"
+    ],
+    "setup": "Two legal in-area creatures, scripted Dexterity save failure and success, and anchored Web.",
+    "act": "Start their turns, attempt an escape with a successful Strength check, then break caster concentration.",
+    "expect": "Web creates difficult terrain and light obscurement. Failed save restrains and success does not. Successful escape ends that creature's restraint. Concentration loss removes the area and any remaining dependent restraints exactly once."
+  },
+  {
+    "id": "counterspell-reaction",
+    "entries": [
+      "srd-2024_counterspell"
+    ],
+    "setup": "A caster visibly casting within range and a reactor with a level-3 slot and an eligible reaction. Script both Constitution save outcomes.",
+    "act": "Run both outcomes independently and decline the reaction in a third run.",
+    "expect": "On failure the triggering spell dissipates without spending its slot. On success it resolves normally. An accepted reaction consumes the reactor's slot and reaction in both cases. A declined prompt mutates neither reactor resource."
+  },
+  {
+    "id": "aid-expiry",
+    "entries": [
+      "srd-2024_aid"
+    ],
+    "setup": "Three valid in-range creatures and one outside range, no conflicting Aid effect.",
+    "act": "Apply a level-2 Aid and advance eight in-world hours.",
+    "expect": "Raise current and maximum HP of the chosen three by 5 for the duration. Apply the timed modifier once and remove it once at expiry. Outside target is unchanged."
+  },
+  {
+    "id": "summon-choice",
+    "entries": [
+      "srd-2024_summon-dragon"
+    ],
+    "setup": "Valid casting resources, legal space and a chosen stat-block option from the reviewed spell.",
+    "act": "Cast, advance summon initiative, then end concentration.",
+    "expect": "Apply the chosen form's level-dependent stat block, action set and initiative, with owner and duration links. Remove only this instance when concentration ends."
+  },
+  {
+    "id": "rage",
+    "entries": [
+      "srd-2024_barbarian_rage"
+    ],
+    "setup": "Barbarian with one available use, valid equipment, a damage source and scripted turns.",
+    "act": "Start Rage, exercise one supported extension trigger and let Rage expire.",
+    "expect": "Spend one use. Apply appropriate resistance, damage modifier and limits while active. Update duration on the extension and remove the derived effects once when it ends."
+  },
+  {
+    "id": "alert-and-initiative",
+    "entries": [
+      "srd-2024_alert_1_initative-proficiency"
+    ],
+    "setup": "Alert character with Dexterity modifier +2, proficiency bonus +3, fixed initiative die 10 and no other modifiers.",
+    "act": "Roll initiative and recalculate derived effects.",
+    "expect": "Initiative is 15. Proficiency applies once and does not become a permanent Dexterity modifier."
+  },
+  {
+    "id": "weapon-mastery",
+    "setup": "Character with access to Push for a valid weapon and targets at the eligible and ineligible size boundaries.",
+    "act": "Resolve a hit against each with valid and obstructed paths.",
+    "expect": "Present the choice only on qualifying hits, cap displacement at the printed distance, respect legal movement geometry and leave unrelated movement budgets untouched."
+  },
+  {
+    "id": "property-ammunition-wp",
+    "entries": [
+      "srd-2024_ammunition-wp"
+    ],
+    "setup": "Load a one-handed ammunition weapon with a free hand and 5 matching rounds.",
+    "act": "Make three shots including a miss, then recover after the fight. Retry separately with no free hand.",
+    "expect": "Three rounds are spent regardless of hits. Recover one of the spent rounds after one minute. The blocked reload spends no ammunition."
+  },
+  {
+    "id": "property-cleave-mastery",
+    "entries": [
+      "srd-2024_cleave-mastery"
+    ],
+    "setup": "A hit leaves a secondary target within reach and 5 ft of the first. Weapon die is 5 and ability +3.",
+    "act": "Accept Cleave, hit the secondary target, then try Cleave again on that turn.",
+    "expect": "Secondary takes 5 base damage before defenses. Second Cleave is unavailable. A negative ability modifier would still apply."
+  },
+  {
+    "id": "property-finesse-wp",
+    "entries": [
+      "srd-2024_finesse-wp"
+    ],
+    "setup": "Finesse user has Strength +1 and Dexterity +4. Weapon die 5.",
+    "act": "Choose Dexterity and resolve a scripted hit.",
+    "expect": "Both attack and damage use +4, for 9 base damage. Mixed ability choices are ineligible."
+  },
+  {
+    "id": "property-graze-mastery",
+    "entries": [
+      "srd-2024_graze-mastery"
+    ],
+    "setup": "A qualifying attack misses and uses Strength +4. Weapon deals Slashing.",
+    "act": "Accept Graze with a separate positive damage modifier present.",
+    "expect": "Apply 4 Slashing before defenses. Do not add the unrelated modifier or roll the weapon die."
+  },
+  {
+    "id": "property-heavy-wp",
+    "entries": [
+      "srd-2024_heavy-wp"
+    ],
+    "setup": "A character has Strength 12 and Dexterity 13.",
+    "act": "Attack with a Heavy melee weapon and a Heavy ranged weapon.",
+    "expect": "Apply Disadvantage for the melee weapon's Strength requirement only. The ranged Dexterity requirement is met."
+  },
+  {
+    "id": "property-light-wp",
+    "entries": [
+      "srd-2024_light-wp"
+    ],
+    "setup": "Two distinct Light weapons and a free Bonus Action. Ability +3 and secondary die 4.",
+    "act": "Use the Attack action and then take the extra attack with the other weapon.",
+    "expect": "Consume one Bonus Action. Secondary hit deals 4 base damage without the positive modifier. The original weapon is ineligible for the extra attack."
+  },
+  {
+    "id": "property-loading-wp",
+    "entries": [
+      "srd-2024_loading-wp"
+    ],
+    "setup": "A Loading weapon and Extra Attack, with multiple rounds available.",
+    "act": "Fire from the weapon during a single Attack action, then try to fire it again as part of that action.",
+    "expect": "Only one shot from the Loading weapon is available in that action. A second shot does not spend another round."
+  },
+  {
+    "id": "property-nick-mastery",
+    "entries": [
+      "srd-2024_nick-mastery"
+    ],
+    "setup": "A legal Light extra attack qualifies for Nick. Bonus Action remains available.",
+    "act": "Resolve the extra attack within the Attack action. Try another extra attack on the same turn.",
+    "expect": "No Bonus Action is spent. The repeat extra attack is unavailable."
+  },
+  {
+    "id": "property-push-mastery",
+    "entries": [
+      "srd-2024_push-mastery"
+    ],
+    "setup": "One Large and one Huge target are each hit. The Large target has a clear path straight away.",
+    "act": "Choose maximum Push on each hit.",
+    "expect": "The Large target moves 10 ft directly away. The Huge target does not qualify."
+  },
+  {
+    "id": "property-reach-wp",
+    "entries": [
+      "srd-2024_reach-wp"
+    ],
+    "setup": "Base reach 5 ft. One target is 10 ft away and another leaves that weapon reach.",
+    "act": "Attack and test Opportunity Attack eligibility with the Reach weapon.",
+    "expect": "Use 10-ft reach both for its attack and for its Opportunity Attack boundary."
+  },
+  {
+    "id": "property-sap-mastery",
+    "entries": [
+      "srd-2024_sap-mastery"
+    ],
+    "setup": "Hit a target with an eligible Sap attack.",
+    "act": "Resolve two attacks by that target before the sapper's next turn.",
+    "expect": "Only the first attack has Disadvantage from Sap. If unused, it expires at the start of the sapper's next turn."
+  },
+  {
+    "id": "property-slow-mastery",
+    "entries": [
+      "srd-2024_slow-mastery"
+    ],
+    "setup": "A creature with 30-ft Speed takes damage from two eligible Slow hits.",
+    "act": "Accept each rider and advance to the start of the applier's next turn.",
+    "expect": "Speed becomes 20 ft and never becomes 10 ft from stacking. The applied reduction expires at the stated boundary."
+  },
+  {
+    "id": "property-thrown-wp",
+    "entries": [
+      "srd-2024_thrown-wp"
+    ],
+    "setup": "A melee Thrown weapon is stowed and uses Strength +3 for melee. Dexterity is +1.",
+    "act": "Draw and throw it as a ranged attack.",
+    "expect": "Drawing is part of the attack. Use Strength +3 for the attack and damage."
+  },
+  {
+    "id": "property-topple-mastery",
+    "entries": [
+      "srd-2024_topple-mastery"
+    ],
+    "setup": "Eligible hit with attack ability +4 and proficiency +3.",
+    "act": "Offer Topple and test Constitution totals 14 and 15 separately.",
+    "expect": "DC is 15. Total 14 applies Prone and total 15 does not."
+  },
+  {
+    "id": "property-two-handed-wp",
+    "entries": [
+      "srd-2024_two-handed-wp"
+    ],
+    "setup": "A Two-Handed weapon is held with one hand and the other is occupied.",
+    "act": "Try to attack, free the other hand, and attack with both.",
+    "expect": "One-handed use is ineligible. Two-handed use meets the property requirement."
+  },
+  {
+    "id": "property-versatile-wp",
+    "entries": [
+      "srd-2024_versatile-wp"
+    ],
+    "setup": "Weapon damage is d8 with one hand and d10 with two.",
+    "act": "Make a melee hit in each grip.",
+    "expect": "Select the d8 for one hand and d10 for two hands without changing the weapon identity."
+  },
+  {
+    "id": "property-vex-mastery",
+    "entries": [
+      "srd-2024_vex-mastery"
+    ],
+    "setup": "Eligible attack damages target A. Target B is also within reach.",
+    "act": "Attack B, then attack A twice before the end of the applier's next turn.",
+    "expect": "B receives no modifier. First subsequent attack on A gains Advantage. The next attack on A has no bonus from the original Vex grant."
+  },
+  {
+    "id": "background-acolyte",
+    "entries": [
+      "srd-2024_acolyte_ability-scores",
+      "srd-2024_acolyte_skill-proficiencies",
+      "srd-2024_acolyte_tool-proficiencies",
+      "srd-2024_acolyte_equipment",
+      "srd-2024_acolyte_feat"
+    ],
+    "setup": "A level-1 character selects the acolyte background with no overlapping proficiencies.",
+    "act": "Apply +1 to each legal ability and choose kit A. Repeat independently with option B, and try choosing an ability outside the list.",
+    "expect": "Increase only Intelligence, Wisdom, Charisma. Grant Insight and Religion, proficiency with Calligrapher's Supplies, and Magic Initiate (Cleric). Kit A gives Calligrapher's Supplies, prayer book, Holy Symbol, 10 sheets of Parchment, Robe, 8 GP. Option B gives 50 GP with no kit. Reject a boost outside the listed abilities."
+  },
+  {
+    "id": "background-criminal",
+    "entries": [
+      "srd-2024_criminal_ability-scores",
+      "srd-2024_criminal_skill-proficiencies",
+      "srd-2024_criminal_tool-proficiencies",
+      "srd-2024_criminal_equipment",
+      "srd-2024_criminal_feat"
+    ],
+    "setup": "A level-1 character selects the criminal background with no overlapping proficiencies.",
+    "act": "Apply +1 to each legal ability and choose kit A. Repeat independently with option B, and try choosing an ability outside the list.",
+    "expect": "Increase only Dexterity, Constitution, Intelligence. Grant Sleight of Hand and Stealth, proficiency with Thieves' Tools, and Alert. Kit A gives 2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP. Option B gives 50 GP with no kit. Reject a boost outside the listed abilities."
+  },
+  {
+    "id": "background-sage",
+    "entries": [
+      "srd-2024_sage_ability-scores",
+      "srd-2024_sage_skill-proficiencies",
+      "srd-2024_sage_tool-proficiencies",
+      "srd-2024_sage_equipment",
+      "srd-2024_sage_feat"
+    ],
+    "setup": "A level-1 character selects the sage background with no overlapping proficiencies.",
+    "act": "Apply +1 to each legal ability and choose kit A. Repeat independently with option B, and try choosing an ability outside the list.",
+    "expect": "Increase only Constitution, Intelligence, Wisdom. Grant Arcana and History, proficiency with Calligrapher's Supplies, and Magic Initiate (Wizard). Kit A gives Quarterstaff, Calligrapher's Supplies, history book, 8 sheets of Parchment, Robe, 8 GP. Option B gives 50 GP with no kit. Reject a boost outside the listed abilities."
+  },
+  {
+    "id": "background-soldier",
+    "entries": [
+      "srd-2024_soldier_ability-scores",
+      "srd-2024_soldier_skill-proficiencies",
+      "srd-2024_soldier_tool-proficiencies",
+      "srd-2024_soldier_equipment",
+      "srd-2024_soldier_feat"
+    ],
+    "setup": "A level-1 character selects the soldier background with no overlapping proficiencies.",
+    "act": "Apply +1 to each legal ability and choose kit A. Repeat independently with option B, and try choosing an ability outside the list.",
+    "expect": "Increase only Strength, Dexterity, Constitution. Grant Athletics and Intimidation, proficiency with the chosen Gaming Set, and Savage Attacker. Kit A gives Spear, Shortbow, 20 Arrows, the same Gaming Set, Healer's Kit, Quiver, Traveler's Clothes, 14 GP. Option B gives 50 GP with no kit. Reject a boost outside the listed abilities."
+  }
+]

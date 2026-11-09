@@ -11,10 +11,14 @@ Each task below is a separate reviewable unit. Do not skip an unfinished depende
 | ID | Task | Depends on | Completion evidence |
 | --- | --- | --- | --- |
 | A01 | Resolve ARCHITECTURE.md section 14 product gaps; reconcile contradictory legacy review notes | None | One explicit state/ownership/behavior contract, with unresolved items clearly excluded from dependent work |
-| A02 | Enumerate pinned SRD catalog, exclusions, full automation/progression coverage fixtures | A01, S01 | Per-feature/spell matrix with enabling/deferral reason, dependencies, handlers and expected outcomes; source categories actually audited |
+| A02 | Complete the SRD coverage plan through A02A and A02B | A02A, A02B | Both child deliverables integrated and their acceptance evidence recorded |
+| A02A | Pin the working catalog and seed coverage/acceptance fixtures | A01, S01 | Reproducible 6,743-row inventory, 814-entry matrix, proposed availability/dependency policy, printed-heading reconciliation and 202 concrete cases linked to 209 entries; sufficient inputs for normalization and progression foundations |
+| A02B | Finish SRD reconciliation and all entry-specific automation/progression acceptance | A02A, A05 | Resolve every category/variant and mixed-effect scope question, document missing definitions/correction requirements, and give every enabled feature/spell and selectable branch independent expected outcomes, handler requirements, progression/dependency and lifecycle/undo cases |
 | A03 | Review stack and prove packaged Windows compatibility | User instruction to implement; architecture review | Minimal Electron/React app with two windows, packaged SQLite backup call, packaged sharp tile generation, Pixi WebGL initialization; versions/native ABI/build scripts pinned |
 | A04 | Prove geometry feasibility against agreed cases/optimality tolerance | A01, A03 | Continuous-coordinate paths, weighted versus geometric optimization, footprint clearance, fog geometry, 0.1-ft precision and max-extent sparse memory evidence |
 | A05 | Approve exact UI/editor schemas and validation/status behavior | A01, existing graphical decisions | Reviewed Home/manager/Play/inspector/editor layouts and a field contract; raw incomplete input separated from valid gameplay state |
+
+A02 was split at the user's request on November 9, 2026. A02A supplies a verified working catalog and representative acceptance cases. S02 and F04 consume A02A while retaining their other prerequisites. A02B carries the remaining full-catalog review and exhaustive expected outcomes, and is a prerequisite for F05. S03 retains its S02 dependency and full baseline validation requirements. Availability interpretations remain subject to A02B review.
 
 A03/A04 are implementation-time spikes. A03 is complete; A04 still depends on A01. If a spike fails, revise its architecture decision before building dependent systems; do not silently swap libraries or weaken product guarantees.
 
@@ -23,7 +27,7 @@ A03/A04 are implementation-time spikes. A03 is complete; A04 still depends on A0
 | ID | Task | Depends on | Completion evidence |
 | --- | --- | --- | --- |
 | S01 | Pin Open5e published 2024 JSON snapshot; audit license/provenance, category inventory and SRD 5.2.1 parity | None | Immutable source SHA/hash manifest; no scraping; actual counts/references; explicit patch-version corrections/gaps |
-| S02 | Versioned Open5e adapter and validated internal content mapping | S01, A02, A05, B01, B07 | Reproducible ID/provenance mapping, resolved dependencies, diagnostics, correction layer; mechanics not falsely marked complete |
+| S02 | Versioned Open5e adapter and validated internal content mapping | S01, A02A, A05, B01, B07 | Reproducible ID/provenance mapping, resolved dependencies, diagnostics, correction layer; mechanics not falsely marked complete |
 | S03 | Deterministic offline bundle, attribution and regression fixtures | S02 | Offline seed bundle, hashes/inventory checks, all-category samples, no runtime API use; source update diff workflow |
 
 S01 can be prepared alongside product/visual planning; acquisition is a separately claimed task, not work performed merely by adopting the source. Dataset adapter work can proceed alongside map/recovery/UI work once its schemas and dependencies are complete. F05 remains the separate executable-mechanics release gate.
@@ -88,8 +92,8 @@ Public filtering is designed in E01, not left until a final UI pass. Build only 
 | F01 | Initiative/rounds/actions/resources/movement budgets | B05, B06, B01 | Manual rolls/order, ties, zero-HP membership control, warning-only action/resource use, explicit clocks; use movement contracts/fixtures until F06 integrates paths |
 | F02 | Effects, modifiers, triggers, timers, defenses, concentration | A01, F01 | Approved origin-clock policy, trigger ordering, recurring saves/damage, undo and expiry cases |
 | F03 | Persisted resolution stack and reaction/ruling prompts | B08, F02 | Restart while choosing, nested reaction choices, phase grouping and no reroll/duplicate spending |
-| F04 | Guided creation/leveling and multiclass choice ledger | A02, D01, F02 | Levels 1–20, supported score/HP methods, derived sheets, override preservation, deferred-feature acknowledgment |
-| F05 | Complete enabled SRD feature/spell implementations in coverage slices | F03, F04, E07 | Per-entry fixtures, terrain/templates/targets, resources, saves/damage/conditions/progression; all enabled entries complete before MVP |
+| F04 | Guided creation/leveling and multiclass choice ledger | A02A, D01, F02 | Levels 1–20, supported score/HP methods, derived sheets, override preservation, deferred-feature acknowledgment |
+| F05 | Complete enabled SRD feature/spell implementations in coverage slices | A02B, F03, F04, E07 | Per-entry fixtures, terrain/templates/targets, resources, saves/damage/conditions/progression; all enabled entries complete before MVP |
 | F06 | Movement interruption integration and whole-action correction | F03, F05, E06 | Stop mid-path, keep traveled segment, resource/effect interactions; whole-group undo with conflict protection |
 
 Progress through rules by dependency (damage/conditions before spells depending on them). Track exact matrix status; no unchecked “generic automation complete” milestone.
