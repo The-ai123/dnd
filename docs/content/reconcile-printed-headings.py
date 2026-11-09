@@ -16,6 +16,8 @@ PAGES = {
     "glossary": (176, 191),
     "magic-item": (209, 253),
     "toolbox-entry": (194, 201),
+    "class-feature": (28, 82),
+    "equipment-description": (93, 100),
 }
 ITEM_CATEGORY = re.compile(r"^(Armor|Potion|Ring|Rod|Scroll|Staff|Wand|Weapon|Wondrous Item)\b")
 MAGIC_FAMILIES = {
@@ -58,6 +60,35 @@ RANGED_WEAPONS = {
     "blowgun", "dart", "hand-crossbow", "heavy-crossbow", "light-crossbow",
     "longbow", "musket", "pistol", "shortbow", "sling",
 }
+WEAPON_FAMILY_CHOICES = {
+    "Berserker Axe": {"battleaxe", "greataxe", "halberd"},
+    "Dancing Sword": {"greatsword", "longsword", "rapier", "scimitar", "shortsword"},
+    "Frost Brand": {"glaive", "greatsword", "longsword", "rapier", "scimitar", "shortsword"},
+    "Hammer of Thunderbolts": {"maul", "warhammer"},
+    "Luck Blade": {"glaive", "greatsword", "longsword", "rapier", "scimitar", "sickle", "shortsword"},
+    "Oathbow": {"longbow", "shortbow"},
+    "Sword of Life Stealing": {"glaive", "greatsword", "longsword", "rapier", "scimitar", "shortsword"},
+    "Sword of Sharpness": {"glaive", "greatsword", "longsword", "scimitar"},
+    "Sword of Wounding": {"glaive", "greatsword", "longsword", "rapier", "scimitar", "shortsword"},
+    "Vorpal Sword": {"glaive", "greatsword", "longsword", "scimitar"},
+}
+SLOT_SUFFIXES = ["slots-" + ordinal for ordinal in
+                 ("1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th")]
+CLASS_TABLES = {
+    "barbarian": (28, ["rages", "rage-damage", "weapon-mastery-count"]),
+    "bard": (31, ["bardic-die", "cantrips", "prepared-spells"] + SLOT_SUFFIXES),
+    "cleric": (36, ["channel-divinity-uses", "cantrips", "prepared-spells"] + SLOT_SUFFIXES),
+    "druid": (41, ["wild-shape-uses", "cantrips", "prepared-spells"] + SLOT_SUFFIXES),
+    "fighter": (47, ["second-wind-uses", "weapon-mastery-count"]),
+    "monk": (50, ["martial-arts-dice", "focus-points", "unarmored-movement"]),
+    "paladin": (53, ["channel-divinity-uses", "prepared-spells"] + SLOT_SUFFIXES[:5]),
+    "ranger": (58, ["favored-enemy-uses", "prepared-spells"] + SLOT_SUFFIXES[:5]),
+    "rogue": (62, ["sneak-attack-column-data"]),
+    "sorcerer": (65, ["sorcery-points", "cantrips", "prepared-spells"] + SLOT_SUFFIXES),
+    "warlock": (71, ["eldritch-invocation-count", "cantrips", "prepared-spells",
+                     "spell-slots", "slot-level"]),
+    "wizard": (77, ["cantrips", "prepared-spells"] + SLOT_SUFFIXES),
+}
 
 
 def normalized(name):
@@ -84,6 +115,9 @@ def printed_headings(book, category):
             for name, target in re.findall(r"(?m)^(.+?)\s*\.{4,}\s*(\d+)\s*$", text):
                 if int(target) >= 258 and name.strip() != "Animals" and not name.startswith("Monsters A"):
                     yield name.strip(), int(target)
+        if "\nGiant Fly\n" not in book.pages[221].extract_text():
+            raise ValueError("The embedded Giant Fly stat block could not be verified")
+        yield "Giant Fly", 222
         return
     start, end = PAGES[category]
     for number in range(start, end + 1):
@@ -91,6 +125,15 @@ def printed_headings(book, category):
         for i, (name, font, size, x, y) in enumerate(parts[:-1]):
             next_text, next_font, *_ = parts[i + 1]
             if "GillSans-SemiBold" not in font:
+                continue
+            if category == "class-feature":
+                if re.match(r"Level \d+: ", name):
+                    yield name, number
+                continue
+            if category == "equipment-description":
+                priced = re.fullmatch(r"(.+) \([\d,.]+ (?:CP|SP|EP|GP|PP)\)", name)
+                if priced:
+                    yield priced[1], number
                 continue
             if category == "toolbox-entry":
                 priced = re.fullmatch(r"(.+) \([\d,]+ GP\)", name)
@@ -124,8 +167,15 @@ def candidates(category, name, records):
     key = normalized(name)
     if category == "glossary":
         key = normalized(re.sub(r"\s*\[[^]]+\]$", "", name))
-    exact = [record["pk"] for record in records
-             if normalized(record["fields"].get("name") or record["fields"].get("describes", "")) == key]
+    if category == "class-feature":
+        key = normalized(re.sub(r"^Level \d+: ", "", name))
+    exact = []
+    for record in records:
+        source_name = record["fields"].get("name") or record["fields"].get("describes", "")
+        if category == "equipment-description":
+            source_name = re.sub(r" \([\d,.]+ (?:CP|SP|EP|GP|PP)\)$", "", source_name)
+        if normalized(source_name) == key:
+            exact.append(record["pk"])
     if category == "magic-item":
         pattern = MAGIC_FAMILIES.get(name)
         if name in PREFIX_FAMILIES:
@@ -144,11 +194,14 @@ def candidates(category, name, records):
 def matches_family(name, fields):
     if name == "Armor, +1, +2, or +3":
         return fields.get("armor") not in (None, "srd-2024_shield")
-    if name in {"Weapon, +1, +2, or +3", "Sword of Sharpness"}:
+    if name == "Weapon, +1, +2, or +3":
         return bool(fields.get("weapon"))
-    if name == "Defender":
+    if name in {"Defender", "Flame Tongue"}:
         weapon = fields.get("weapon")
         return bool(weapon and weapon.removeprefix("srd-2024_") not in RANGED_WEAPONS)
+    if name in WEAPON_FAMILY_CHOICES:
+        weapon = fields.get("weapon")
+        return bool(weapon and weapon.removeprefix("srd-2024_") in WEAPON_FAMILY_CHOICES[name])
     return True
 
 
@@ -158,6 +211,8 @@ def reconcile(book, snapshot):
         "spell": ["Spell"], "creature": ["Creature"], "magic-item": ["MagicItem", "Item"],
         "glossary": ["Rule", "RuleSet", "ConditionDescription"],
         "toolbox-entry": ["Rule", "RuleSet", "Item", "MagicItem"],
+        "class-feature": ["ClassFeature"],
+        "equipment-description": ["Item", "Armor", "Weapon", "Service"],
     }.items():
         records = [record for table in tables
                    for record in json.loads((snapshot / SOURCE / f"{table}.json").read_bytes())]
@@ -174,6 +229,47 @@ def reconcile(book, snapshot):
     return reports
 
 
+def class_progression_rows(book):
+    cases = [json.loads(line) for line in (HERE / "acceptance-cases.jsonl")
+             .read_text(encoding="utf-8").splitlines()]
+    expected = {case["entries"][0]: case["expectedByLevel"]
+                for case in cases if "expectedByLevel" in case}
+    output = []
+    for name, (page, suffixes) in CLASS_TABLES.items():
+        entries = ["srd-2024_" + name + "_" + suffix
+                   for suffix in ["proficiency-bonus"] + suffixes]
+        levels = set()
+        for line in book.pages[page - 1].extract_text(extraction_mode="layout").splitlines():
+            match = re.match(r"^\s*(\d{1,2})\s+(\+[2-6])\s+(.+)$", line)
+            if not match:
+                continue
+            level = int(match[1])
+            tokens = re.findall(r"(?<!\w)(?:\d+d\d+|D\d+|\+?\d+|[—–−])(?!\w)",
+                                match[3])
+            tail = tokens[-len(suffixes):]
+            observed = [int(match[2])]
+            for token in tail:
+                if token in "—–−":
+                    value = 0
+                elif "d" in token.lower():
+                    value = token.lower()
+                else:
+                    value = int(token)
+                observed.append(value)
+            required = [expected[entry][level - 1] for entry in entries]
+            if observed != required or level in levels:
+                raise ValueError(f"Printed class-table mismatch: {name} level {level}: "
+                                 f"{observed} != {required}")
+            levels.add(level)
+            output.append({
+                "category": "class-table", "kind": "level", "class": name,
+                "page": page, "level": level, "entries": entries, "values": observed,
+            })
+        if levels != set(range(1, 21)):
+            raise ValueError(f"Printed class table is incomplete: {name}")
+    return output
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("pdf", type=Path)
@@ -183,8 +279,9 @@ def main():
         parser.error("PDF does not match the S01 baseline hash")
     sha = json.loads((HERE / "coverage-summary.json").read_bytes())["sourceCommit"]
     snapshot = HERE.parents[1] / "data/upstream/open5e" / sha
-    reports = reconcile(PdfReader(args.pdf), snapshot)
-    rows = []
+    book = PdfReader(args.pdf)
+    reports = reconcile(book, snapshot)
+    rows = class_progression_rows(book)
     for category, report in reports.items():
         rows.extend({"category": category, "kind": "heading", **row} for row in report["headings"])
         rows.extend({"category": category, "kind": "unused-source", **row}

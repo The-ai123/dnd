@@ -1,0 +1,112 @@
+[
+  {
+    "id": "srd-2024_fighter_weapon-mastery-count-duplicate-level-1",
+    "entry": "srd-2024_fighter_weapon-mastery-count",
+    "level": 1,
+    "kind": "duplicate-table-level",
+    "children": [
+      "srd-2024_fighter_weapon-mastery-count_1",
+      "srd-2024_fighter_weapon-mastery_count-1"
+    ],
+    "owner": "S02"
+  },
+  {
+    "id": "cleric_core-traits-name",
+    "model": "api_v2.classfeature",
+    "entry": "srd-2024_cleric_core-traits",
+    "field": "name",
+    "observedSha256": "f4a6cad0c324d836c70f87fb3ad32ae4f9cb9efd635f6be0c1267cb973fb01e1",
+    "expected": "Core Cleric Traits",
+    "printedPage": 36,
+    "owner": "S02",
+    "status": "correction-required"
+  },
+  {
+    "id": "druid_wild-shape-uses-name",
+    "model": "api_v2.classfeature",
+    "entry": "srd-2024_druid_wild-shape-uses",
+    "field": "name",
+    "observedSha256": "f7d3e65cdbc96df09c8484028807a49a477c2db64d3d3d4ac669e2fe4f9eeefd",
+    "expected": "Wild Shape uses",
+    "printedPage": 41,
+    "owner": "S02",
+    "status": "correction-required"
+  },
+  {
+    "id": "fighter_studied-attacks-name",
+    "model": "api_v2.classfeature",
+    "entry": "srd-2024_fighter_studied-attacks",
+    "field": "name",
+    "observedSha256": "9e202826dedee494f89f8588681b1b8f89a84375070c96b33d97924d59cf6135",
+    "expected": "Studied Attacks",
+    "printedPage": 48,
+    "owner": "S02",
+    "status": "correction-required"
+  },
+  {
+    "id": "monk_unarmored-movement-name",
+    "model": "api_v2.classfeature",
+    "entry": "srd-2024_monk_unarmored-movement",
+    "field": "name",
+    "observedSha256": "50066cecc0de25c530def860c0118fc234aedbff2100084c8c9110a4a532b89b",
+    "expected": "Unarmored Movement",
+    "printedPage": 51,
+    "owner": "S02",
+    "status": "correction-required"
+  },
+  {
+    "id": "druid_circle-of-the-land_natures-ward-desc",
+    "model": "api_v2.classfeature",
+    "entry": "srd-2024_druid_circle-of-the-land_natures-ward",
+    "field": "desc",
+    "observedSha256": "b20c8aaf5126e3677f6884b9443fabd926e718e987c1f718a8199efd19be23d2",
+    "expected": "At level 10 grant Poisoned immunity and Resistance by current land: Arid Fire, Polar Cold, Temperate Lightning, Tropical Poison.",
+    "printedPage": 46,
+    "owner": "S02",
+    "status": "correction-required"
+  },
+  {
+    "id": "druid_circle-of-the-land_natures-sanctuary-desc",
+    "model": "api_v2.classfeature",
+    "entry": "srd-2024_druid_circle-of-the-land_natures-sanctuary",
+    "field": "desc",
+    "observedSha256": "956c6daeeafb1d405f3d052855bd9207e5a254d61e541283fce5b48c948e7e48",
+    "expected": "At level 14 spend Wild Shape as Magic action for a movable 15-ft Cube granting Half Cover and allied Nature Ward Resistance. One minute or Incapacitated/dead ends it.",
+    "printedPage": 46,
+    "owner": "S02",
+    "status": "correction-required"
+  },
+  {
+    "id": "sorcerer_metamagic-options-desc",
+    "model": "api_v2.classfeature",
+    "entry": "srd-2024_sorcerer_metamagic-options",
+    "field": "desc",
+    "observedSha256": "e8dc19d184f268f0180aacc2a48b96cb42db3db4523223cc01db271a4751ea61",
+    "expected": "Subtle Spell is a distinct Metamagic option on printed page 67. Preserve its independent option identity even though the snapshot omits the Markdown heading marker.",
+    "printedPage": 67,
+    "owner": "S02",
+    "status": "correction-required"
+  },
+  {
+    "id": "cleric_cleric-subclasses-name",
+    "model": "api_v2.classfeature",
+    "entry": "srd-2024_cleric_cleric-subclasses",
+    "field": "name",
+    "observedSha256": "f4a6cad0c324d836c70f87fb3ad32ae4f9cb9efd635f6be0c1267cb973fb01e1",
+    "expected": "Cleric Subclass",
+    "printedPage": 37,
+    "owner": "S02",
+    "status": "correction-required"
+  },
+  {
+    "id": "warlock_magical-cunning-name",
+    "model": "api_v2.classfeature",
+    "entry": "srd-2024_warlock_magical-cunning",
+    "field": "name",
+    "observedSha256": "8a15f185ff8b2f0990c1ce5ccc27f9de180a62f5cb87cd6e7778dcaea79e7ceb",
+    "expected": "Magical Cunning",
+    "printedPage": 72,
+    "owner": "S02",
+    "status": "correction-required"
+  }
+]

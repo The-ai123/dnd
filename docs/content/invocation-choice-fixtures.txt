@@ -1,0 +1,29 @@
+id|setup|act|expect
+Agonizing Blast|Level 2, Charisma +3, selected Eldritch Blast beam die 5.|Hit twice as legal beams.|Each selected cantrip damage roll gains +3, so each beam deals 8 Force. Repeated invocation must choose a different eligible cantrip.
+Armor of Shadows|Unarmored Warlock with no available slots.|Cast Mage Armor on self.|Spend no slot and apply Mage Armor normally. Another target cannot use this invocation's cast.
+Ascendant Step|Level-5 Warlock and legal self Levitate.|Cast through invocation.|No slot spent; ordinary spell concentration, action and self targeting remain.
+Devil's Sight|Eligible level and invocation selected.|Review grant and attempt execution.|Record unavailable special-sense reason and acknowledgment. Create no simulated Darkvision or lighting bypass.
+Devouring Blade|Level 12 with Thirsting Blade and pact weapon.|Take Attack action.|Three pact-weapon attacks replace the lower count. An ordinary nonpact weapon gains no extra attacks.
+Eldritch Mind|Warlock makes concentration Constitution save and unrelated Constitution save.|Roll both.|Only concentration save gains this invocation's Advantage.
+Eldritch Smite|Level 5 with Pact Blade, level-3 Pact slot and eligible hit; all d8s 4.|Spend slot and knock a Huge target Prone.|Add 16 Force and Prone without separate save. Once per turn. Ordinary Spellcasting slots cannot pay this invocation.
+Eldritch Spear|Level-4 Warlock chooses eligible cantrip range 120 ft.|Apply.|Range becomes 240 ft, adding 30 times Warlock level. Repeat choice must use different eligible cantrip.
+Fiendish Vigor|Level 2, self False Life and no slots.|Cast through invocation.|Gain maximum 12 temporary HP from 2d4+4 without rolling or stacking. No slot spent.
+Gaze of Two Minds|Eligible invocation and willing adjacent creature.|Attempt use.|Unavailable special-sense-dependent branch spends no Bonus Action/resources and creates no remote viewing/casting link.
+Gift of the Depths|Level 5 and Speed 30.|Apply and use free Water Breathing.|Grant underwater breathing and Swim Speed 30. One free spell cast per Long Rest, with ordinary slotted casts still possible.
+Gift of the Protectors|Level 9, Tome, Charisma +3 and three permitted names in book.|Two named creatures would drop to 0 without outright death before rest.|First instead drops to 1. Feature is then spent for every name until Long Rest. Fourth name exceeds capacity.
+Investment of the Chain Master|Level 5 Chain familiar and Warlock DC 15.|Choose Fly, command attack as Bonus Action, select Radiant, then react to 12 damage.|Familiar gains Fly 40, uses Warlock DC 15, can attack through command, changes chosen physical damage to Radiant and takes 6 from reaction Resistance.
+Lessons of the First Ones|Level 2 and Origin feat Alert available.|Select then take again with Skilled.|Both legal distinct Origin feats. Duplicate feat choice through repeated invocation is ineligible.
+Lifedrinker|Level 9 pact hit, rider d6 4, spent healing Hit Point Die 6 and Constitution +2.|Choose Psychic and spend own die.|Add 4 Psychic once on turn and heal 8 up to max. Consume chosen Hit Point Die.
+Mask of Many Faces|Level 2, Disguise Self.|Cast through invocation.|No slot spent. Normal spell duration and physical-inspection limits apply.
+Master of Myriad Forms|Level 5 and Alter Self legal.|Cast through invocation.|No slot spent; normal action, concentration and selectable effects apply.
+Misty Visions|Level 2, Silent Image legal.|Cast through invocation.|No slot spent; maintain its normal concentration and geometry.
+One with Shadows|Level 5 and chosen invocation.|Attempt free Invisible cast.|Unavailable lighting dependency is shown before execution. Spend no resources or action.
+Otherworldly Leap|Level 2, Jump on self legal.|Cast through invocation.|No slot spent; target is self and ordinary Jump duration/movement rules apply.
+Pact of the Blade|Charisma +4 vs Strength +1 and legal conjured melee weapon.|Use Bonus Action, hit with die 5 choosing Radiant, then keep weapon over 5 ft away for one minute.|Gain proficiency/focus, attack uses +4 and damage 9 Radiant. Bond ends after separation interval and conjured weapon vanishes.
+Pact of the Chain|Choose legal Imp form and required Material components available.|Cast Find Familiar as Magic action without slot, then forgo own Attack-action attack.|Create chosen familiar; sacrificed attack permits one familiar Reaction attack. Preserve normal component requirements unless another feature waives them.
+Pact of the Tome|Finish Short Rest and choose three new cantrips and two new level-1 Rituals.|Carry book, cast a chosen Ritual then conjure replacement book.|Spells count as Warlock preparations while book carried and focus is available. New book replaces prior one and updates chosen grants.
+Repelling Blast|Level 2 chosen cantrip attack hits Large target with unobstructed path.|Choose maximum push.|Move target 10 ft straight away without a save. Huge target is ineligible.
+Thirsting Blade|Level 5 with Pact Blade.|Attack using pact weapon then compare nonpact weapon.|Pact weapon permits two attacks. Nonpact weapon gains no extra count from this invocation.
+Visions of Distant Realms|Level 9 and Arcane Eye invocation path selected.|Attempt free cast.|Arcane Eye's special-sense dependency propagates to this path. Show unavailable reason and spend no resources.
+Whispers of the Grave|Level 7, eligible Speak with Dead target.|Cast through invocation.|No slot spent; normal action, components, corpse and question limits remain.
+Witch Sight|Level 15 with invocation selected.|Attempt use.|Truesight 30-ft grant remains visible unavailable with acknowledgment and no simulated sense.

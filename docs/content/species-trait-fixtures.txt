@@ -1,0 +1,45 @@
+id|setup|act|expect
+dragonborn_size|New Dragonborn has no explicit size override.|Apply species.|Size is Medium and its collision footprint uses the approved Medium footprint.
+dragonborn_speed|New Dragonborn has no speed overrides.|Apply species.|Walking Speed is 30 ft.
+dragonborn_draconic-ancestry|New Dragonborn chooses Silver.|Apply ancestry and inspect linked breath/resistance.|Cold is recorded for both breath damage and Resistance. Selecting Copper instead yields Acid for both.
+dragonborn_breath-weapon|Level 5, Constitution +3 and proficiency +3; choose Silver ancestry and all d10s roll 4.|Replace one Attack-action attack with a chosen cone and fail one target's Dexterity save.|Save DC 14 and damage 8 Cold before defenses. Consume one of three uses and one attack, with no extra action. Long Rest restores uses.
+dragonborn_damage-resistance|Silver Dragonborn faces 12 Cold and 12 Fire.|Apply both.|Cold becomes 6 through Resistance and Fire stays 12.
+dragonborn_draconic-flight|Level-5 Dragonborn has Speed 30 and unused trait.|Activate Bonus Action then become Incapacitated.|Gain Fly Speed 30 for up to ten minutes. Incapacitated ends wings early. Use returns after Long Rest.
+dwarf_size|New Dwarf has no size override.|Apply species.|Size is Medium.
+dwarf_speed|New Dwarf has no speed override.|Apply species.|Walking Speed is 30 ft.
+dwarf_dwarven-resilience|Dwarf faces a Poisoned save and 12 Poison damage.|Resolve both.|Save has Advantage and damage is 6 after Resistance.
+dwarf_dwarven-toughness|Dwarf advances from level 1 through 3 with HP ledger already calculated without species.|Apply grants incrementally and compare direct creation at level 3.|Maximum HP increases by 1 at level 1 and by 3 total at level 3, with identical direct and incremental totals.
+elf_size|New Elf has no size override.|Apply species.|Size is Medium.
+elf_speed|New Elf has not selected a Wood Elf speed grant.|Apply species.|Base walking Speed is 30 ft.
+elf_elven-lineage|Choose Wood Elf and Wisdom as trait spell ability.|Create at level 1, advance to 3 then 5, and use a free Longstrider cast.|Speed 35 and Druidcraft at 1; Longstrider at 3 and Pass without Trace at 5, always prepared. Their free casts have separate once-per-Long-Rest uses and use Wisdom. Drow's unavailable grants remain recorded and acknowledged.
+elf_fey-ancestry|Elf attempts a save to end Charmed and an unrelated Wisdom save.|Roll both.|Only the save to avoid or end Charmed receives this trait's Advantage.
+elf_keen-senses|Choose Survival, then independently try a nonlisted skill.|Apply the trait.|Grant Survival proficiency once. Nonlisted choice is invalid for this trait.
+elf_trance|Elf has no other rest blockers and is targeted by magical Sleep.|Resolve sleep attempt, then complete four conscious hours in Trance.|Magic cannot put the Elf to sleep. Four hours of Trance satisfies its Long Rest timing without Unconscious.
+gnome_size|New Gnome has no size override.|Apply species.|Size is Small.
+gnome_speed|New Gnome has no speed override.|Apply species.|Walking Speed is 30 ft.
+gnome_gnomish-cunning|Gnome makes Intelligence, Wisdom, Charisma and Dexterity saves.|Resolve all.|First three have Advantage; Dexterity gains none from this trait.
+gnome_gnomish-lineage|Forest Gnome, Intelligence chosen and proficiency +2.|Use Speak with Animals without a slot twice, then attempt a third free cast and finish Long Rest.|Grant Minor Illusion and always-prepared Speak with Animals. Two free uses exhaust, a third needs a slot/recorded override, and Long Rest restores two. Rock Gnome grants its alternative cantrips and independently tracks three devices with eight-hour expiry.
+goliath_size|New Goliath has no size override.|Apply species.|Size is Medium.
+goliath_speed|New Goliath has no speed override.|Apply species.|Walking Speed is 35 ft.
+goliath_giant-ancestry|Choose Stone's Endurance, Constitution +3, proficiency +2, incoming damage 12 and d12 result 5.|Use Reaction on the damage.|Reduce damage by 8 to 4 and spend one of two trait uses plus Reaction. Short Rest does not recharge; Long Rest does. Other ancestry choices are mutually exclusive.
+goliath_large-form|Level-5 Goliath stands in enough space and has Speed 35.|Activate and let ten minutes expire.|Become Large, gain Advantage on Strength checks and Speed 45. Expiry restores prior size and Speed. A second explicit use before Long Rest warns and records excess use under A01 instead of creating a recharge.
+goliath_powerful-build|Medium Goliath has Strength 16 and attempts an ability check to end Grappled.|Resolve check and carrying-capacity derivation.|Escape check has Advantage. Capacity is calculated as one size larger, without changing actual size or attack reach.
+halfling_size|New Halfling has no size override.|Apply species.|Size is Small.
+halfling_speed|New Halfling has no speed override.|Apply species.|Walking Speed is 30 ft.
+halfling_brave|Halfling makes a save to avoid Frightened and an unrelated Constitution save.|Resolve both.|Only Frightened save gains this trait's Advantage.
+halfling_halfling-nimbleness|Small Halfling's path crosses a Medium creature's space.|Move through and attempt to stop in the occupied space.|Transit is allowed, while stopping there remains ineligible.
+halfling_luck|Halfling rolls natural 1 on a D20 Test then reroll result 4.|Accept Lucky reroll.|Use 4 as the die result even if it fails. A damage die of 1 does not qualify.
+halfling_naturally-stealthy|Small Halfling is obscured only by a Medium creature.|Attempt Hide.|That cover meets this trait's special Hide eligibility. Resolve the normal Hide test rather than granting automatic success.
+human_size|New Human chooses Small, then rebuilds with Medium.|Commit each draft independently.|Persist the selected legal size. No random or height-derived size replaces the explicit choice.
+human_speed|New Human has no speed override.|Apply species.|Walking Speed is 30 ft.
+human_resourceful|Human has spent Heroic Inspiration.|Complete Long Rest.|Grant Heroic Inspiration once, without stacking duplicate inspiration charges.
+human_skillful|Human chooses Arcana not already proficient.|Apply species.|Grant one Arcana proficiency and record Human as source.
+human_versatile|Human chooses Alert as Origin feat.|Apply and separately try a General feat.|Grant Alert and its benefits. General feat is ineligible for this choice; Skilled is a recommendation rather than a forced selection.
+orc_size|New Orc has no size override.|Apply species.|Size is Medium.
+orc_speed|New Orc has no speed override.|Apply species.|Walking Speed is 30 ft.
+orc_adrenaline-rush|Orc has proficiency +3, Speed 30 and no temporary HP.|Use the Bonus Action then finish Short Rest after spending all uses.|Gain Dash's +30 movement budget and 3 temporary HP without stacking. Three uses exist, and Short Rest restores them.
+orc_relentless-endurance|Orc drops to 0 HP from damage without outright death and has unused trait.|Accept the trait, then repeat before Long Rest.|First drops to 1 instead. A second explicit use warns about spent allowance and records the excess under A01. Outright death does not trigger survival.
+tiefling_size|New Tiefling chooses Small.|Apply species and reload the draft.|Retain Small, with Medium also available as a separate legal choice.
+tiefling_speed|New Tiefling has no speed override.|Apply species.|Walking Speed is 30 ft.
+tiefling_fiendish-legacy|Choose Chthonic and Charisma.|Create at level 1 and advance to 3 and 5.|Grant Necrotic Resistance and Chill Touch, then False Life and Ray of Enfeeblement always prepared at the listed levels, with their independent free Long-Rest uses. Infernal Darkness is recorded unavailable.
+tiefling_otherworldly-presence|Tiefling selected Wisdom for Fiendish Legacy.|Cast Thaumaturgy through the species trait.|Grant the cantrip and use Wisdom for trait-derived spellcasting. Its unavailable lighting branch remains disabled.

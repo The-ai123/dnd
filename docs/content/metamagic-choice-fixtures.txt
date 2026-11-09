@@ -1,0 +1,11 @@
+id|setup|act|expect
+Careful Spell|Charisma +3, Fireball catches three protected allies; one point available.|Apply and resolve their saves.|Spend one point; selected allies automatically save and take zero rather than half. Unselected targets resolve normally.
+Distant Spell|Eligible range 60-ft spell and separate Touch spell.|Spend one point in each independent run.|Ranges become 120 ft and 30 ft respectively for those casts, preserving other eligibility.
+Empowered Spell|Charisma +3, damage dice 1/2/3/4, replacement dice 5/5/1.|Reroll first three for one point.|Use replacements even the worse 1. Final dice 5/5/1/4 total 15. Can combine under its express exception.
+Extended Spell|Concentration spell lasts 10 minutes.|Spend one point, then make concentration save.|Duration 20 minutes and concentration saves have Advantage. Cap extension at 24 hours.
+Heightened Spell|Spell has two targets and recurring saves.|Spend two points selecting one target.|Selected target's saves against that spell have Disadvantage throughout; other target's saves are unchanged.
+Quickened Spell|Action spell and no prior level-1+ spell cast this turn.|Spend two points then attempt another level-1+ spell.|Cast becomes Bonus Action. Another level-1+ cast this turn is barred by the option; a prior such cast would prevent Quickened.
+Seeking Spell|Spell attack misses and replacement d20 is lower.|Spend one point.|Use the new d20 even if worse and resolve once. It may combine under its express exception.
+Subtle Spell|Spell has Verbal, Somatic and ordinary Material components; compare a consumed-cost Material.|Spend one point.|Remove V/S/ordinary M requirements for that cast. Retain consumed or specified-cost components.
+Transmuted Spell|Spell deals Fire and a separate Necrotic component.|Spend one point choosing Cold.|Fire changes to Cold. Necrotic is outside eligible set and remains unchanged.
+Twinned Spell|Charm Person cast with level-1 slot can upcast for an extra target.|Spend one point.|Effective level becomes 2 for the spell's effect, including one added target. Spend the actual level-1 slot and one point; do not create a level-2 slot.

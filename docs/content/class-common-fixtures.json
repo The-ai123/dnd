@@ -1,0 +1,573 @@
+[
+  {
+    "id": "core-barbarian",
+    "entries": [
+      "srd-2024_barbarian_core-traits"
+    ],
+    "setup": "First-class level-1 barbarian, Constitution +2, no HP overrides or origin grants.",
+    "act": "Choose starting gold and legal class skills, then rebuild.",
+    "expect": "Maximum HP 14, Hit Point Die d12, Strength and Constitution save proficiencies, Light/Medium armor and Shields training, 75 GP and no equipment kit. Rebuild applies each grant once. Later multiclass entry grants neither first-class saves nor starting gold."
+  },
+  {
+    "id": "asi-barbarian",
+    "entries": [
+      "srd-2024_barbarian_ability-score-improvement"
+    ],
+    "setup": "Pinned barbarian progression and Strength 18.",
+    "act": "Advance through class levels [4, 8, 12, 16] and select eligible feats.",
+    "expect": "Grant one feat choice at each listed level. An ASI can raise Strength 18 to 20 within its cap. Rebuilding duplicates no choices."
+  },
+  {
+    "id": "epic-barbarian",
+    "entries": [
+      "srd-2024_barbarian_epic-boon"
+    ],
+    "setup": "barbarian just before class level 19 with eligible feat options.",
+    "act": "Advance to 19 and choose an eligible feat other than the recommendation.",
+    "expect": "Grant the selected feat exactly once. Recommendation does not force choice. Unavailable benefits stay recorded and acknowledged."
+  },
+  {
+    "id": "subclass-barbarian",
+    "entries": [
+      "srd-2024_barbarian_barbarian-subclass"
+    ],
+    "setup": "barbarian level 2 without a subclass.",
+    "act": "Advance to class level 3, select path-of-the-berserker and later rebuild.",
+    "expect": "Require one subclass choice at 3 and retain it. Grant its features only at their qualifying class levels and preserve their provenance."
+  },
+  {
+    "id": "core-bard",
+    "entries": [
+      "srd-2024_bard_core-traits"
+    ],
+    "setup": "First-class level-1 bard, Constitution +2, no HP overrides or origin grants.",
+    "act": "Choose starting gold and legal class skills, then rebuild.",
+    "expect": "Maximum HP 10, Hit Point Die d8, Dexterity and Charisma save proficiencies, Light armor training, 90 GP and no equipment kit. Rebuild applies each grant once. Later multiclass entry grants neither first-class saves nor starting gold."
+  },
+  {
+    "id": "asi-bard",
+    "entries": [
+      "srd-2024_bard_ability-score-improvement"
+    ],
+    "setup": "Pinned bard progression and Strength 18.",
+    "act": "Advance through class levels [4, 8, 12, 16] and select eligible feats.",
+    "expect": "Grant one feat choice at each listed level. An ASI can raise Strength 18 to 20 within its cap. Rebuilding duplicates no choices."
+  },
+  {
+    "id": "epic-bard",
+    "entries": [
+      "srd-2024_bard_epic-boon"
+    ],
+    "setup": "bard just before class level 19 with eligible feat options.",
+    "act": "Advance to 19 and choose an eligible feat other than the recommendation.",
+    "expect": "Grant the selected feat exactly once. Recommendation does not force choice. Unavailable benefits stay recorded and acknowledged."
+  },
+  {
+    "id": "subclass-bard",
+    "entries": [
+      "srd-2024_bard_bard-subclass"
+    ],
+    "setup": "bard level 2 without a subclass.",
+    "act": "Advance to class level 3, select college-of-lore and later rebuild.",
+    "expect": "Require one subclass choice at 3 and retain it. Grant its features only at their qualifying class levels and preserve their provenance."
+  },
+  {
+    "id": "core-cleric",
+    "entries": [
+      "srd-2024_cleric_core-traits"
+    ],
+    "setup": "First-class level-1 cleric, Constitution +2, no HP overrides or origin grants.",
+    "act": "Choose starting gold and legal class skills, then rebuild.",
+    "expect": "Maximum HP 10, Hit Point Die d8, Wisdom and Charisma save proficiencies, Light/Medium armor and Shields training, 110 GP and no equipment kit. Rebuild applies each grant once. Later multiclass entry grants neither first-class saves nor starting gold."
+  },
+  {
+    "id": "asi-cleric",
+    "entries": [
+      "srd-2024_cleric_ability-score-improvement"
+    ],
+    "setup": "Pinned cleric progression and Strength 18.",
+    "act": "Advance through class levels [4, 8, 12, 16] and select eligible feats.",
+    "expect": "Grant one feat choice at each listed level. An ASI can raise Strength 18 to 20 within its cap. Rebuilding duplicates no choices."
+  },
+  {
+    "id": "epic-cleric",
+    "entries": [
+      "srd-2024_cleric_epic-boon"
+    ],
+    "setup": "cleric just before class level 19 with eligible feat options.",
+    "act": "Advance to 19 and choose an eligible feat other than the recommendation.",
+    "expect": "Grant the selected feat exactly once. Recommendation does not force choice. Unavailable benefits stay recorded and acknowledged."
+  },
+  {
+    "id": "subclass-cleric",
+    "entries": [
+      "srd-2024_cleric_cleric-subclasses"
+    ],
+    "setup": "cleric level 2 without a subclass.",
+    "act": "Advance to class level 3, select life-domain and later rebuild.",
+    "expect": "Require one subclass choice at 3 and retain it. Grant its features only at their qualifying class levels and preserve their provenance."
+  },
+  {
+    "id": "core-druid",
+    "entries": [
+      "srd-2024_druid_core-traits"
+    ],
+    "setup": "First-class level-1 druid, Constitution +2, no HP overrides or origin grants.",
+    "act": "Choose starting gold and legal class skills, then rebuild.",
+    "expect": "Maximum HP 10, Hit Point Die d8, Intelligence and Wisdom save proficiencies, Light armor and Shields training, 50 GP and no equipment kit. Rebuild applies each grant once. Later multiclass entry grants neither first-class saves nor starting gold."
+  },
+  {
+    "id": "asi-druid",
+    "entries": [
+      "srd-2024_druid_ability-score-improvement"
+    ],
+    "setup": "Pinned druid progression and Strength 18.",
+    "act": "Advance through class levels [4, 8, 12, 16] and select eligible feats.",
+    "expect": "Grant one feat choice at each listed level. An ASI can raise Strength 18 to 20 within its cap. Rebuilding duplicates no choices."
+  },
+  {
+    "id": "epic-druid",
+    "entries": [
+      "srd-2024_druid_epic-boon"
+    ],
+    "setup": "druid just before class level 19 with eligible feat options.",
+    "act": "Advance to 19 and choose an eligible feat other than the recommendation.",
+    "expect": "Grant the selected feat exactly once. Recommendation does not force choice. Unavailable benefits stay recorded and acknowledged."
+  },
+  {
+    "id": "subclass-druid",
+    "entries": [
+      "srd-2024_druid_druid-subclass"
+    ],
+    "setup": "druid level 2 without a subclass.",
+    "act": "Advance to class level 3, select circle-of-the-land and later rebuild.",
+    "expect": "Require one subclass choice at 3 and retain it. Grant its features only at their qualifying class levels and preserve their provenance."
+  },
+  {
+    "id": "core-fighter",
+    "entries": [
+      "srd-2024_fighter_core-traits"
+    ],
+    "setup": "First-class level-1 fighter, Constitution +2, no HP overrides or origin grants.",
+    "act": "Choose starting gold and legal class skills, then rebuild.",
+    "expect": "Maximum HP 12, Hit Point Die d10, Strength and Constitution save proficiencies, all armor and Shields training, 155 GP and no equipment kit. Rebuild applies each grant once. Later multiclass entry grants neither first-class saves nor starting gold."
+  },
+  {
+    "id": "asi-fighter",
+    "entries": [
+      "srd-2024_fighter_ability-score-improvement"
+    ],
+    "setup": "Pinned fighter progression and Strength 18.",
+    "act": "Advance through class levels [4, 6, 8, 12, 14, 16] and select eligible feats.",
+    "expect": "Grant one feat choice at each listed level. An ASI can raise Strength 18 to 20 within its cap. Rebuilding duplicates no choices."
+  },
+  {
+    "id": "epic-fighter",
+    "entries": [
+      "srd-2024_fighter_epic-boon"
+    ],
+    "setup": "fighter just before class level 19 with eligible feat options.",
+    "act": "Advance to 19 and choose an eligible feat other than the recommendation.",
+    "expect": "Grant the selected feat exactly once. Recommendation does not force choice. Unavailable benefits stay recorded and acknowledged."
+  },
+  {
+    "id": "subclass-fighter",
+    "entries": [
+      "srd-2024_fighter_fighter-subclass"
+    ],
+    "setup": "fighter level 2 without a subclass.",
+    "act": "Advance to class level 3, select champion and later rebuild.",
+    "expect": "Require one subclass choice at 3 and retain it. Grant its features only at their qualifying class levels and preserve their provenance."
+  },
+  {
+    "id": "core-monk",
+    "entries": [
+      "srd-2024_monk_core-traits"
+    ],
+    "setup": "First-class level-1 monk, Constitution +2, no HP overrides or origin grants.",
+    "act": "Choose starting gold and legal class skills, then rebuild.",
+    "expect": "Maximum HP 10, Hit Point Die d8, Strength and Dexterity save proficiencies, no armor training, 50 GP and no equipment kit. Rebuild applies each grant once. Later multiclass entry grants neither first-class saves nor starting gold."
+  },
+  {
+    "id": "asi-monk",
+    "entries": [
+      "srd-2024_monk_ability-score-improvement"
+    ],
+    "setup": "Pinned monk progression and Strength 18.",
+    "act": "Advance through class levels [4, 8, 12, 16] and select eligible feats.",
+    "expect": "Grant one feat choice at each listed level. An ASI can raise Strength 18 to 20 within its cap. Rebuilding duplicates no choices."
+  },
+  {
+    "id": "epic-monk",
+    "entries": [
+      "srd-2024_monk_epic-boon"
+    ],
+    "setup": "monk just before class level 19 with eligible feat options.",
+    "act": "Advance to 19 and choose an eligible feat other than the recommendation.",
+    "expect": "Grant the selected feat exactly once. Recommendation does not force choice. Unavailable benefits stay recorded and acknowledged."
+  },
+  {
+    "id": "subclass-monk",
+    "entries": [
+      "srd-2024_monk_monk-subclass"
+    ],
+    "setup": "monk level 2 without a subclass.",
+    "act": "Advance to class level 3, select warrior-of-the-open-hand and later rebuild.",
+    "expect": "Require one subclass choice at 3 and retain it. Grant its features only at their qualifying class levels and preserve their provenance."
+  },
+  {
+    "id": "core-paladin",
+    "entries": [
+      "srd-2024_paladin_core-traits"
+    ],
+    "setup": "First-class level-1 paladin, Constitution +2, no HP overrides or origin grants.",
+    "act": "Choose starting gold and legal class skills, then rebuild.",
+    "expect": "Maximum HP 12, Hit Point Die d10, Wisdom and Charisma save proficiencies, all armor and Shields training, 150 GP and no equipment kit. Rebuild applies each grant once. Later multiclass entry grants neither first-class saves nor starting gold."
+  },
+  {
+    "id": "asi-paladin",
+    "entries": [
+      "srd-2024_paladin_ability-score-improvement"
+    ],
+    "setup": "Pinned paladin progression and Strength 18.",
+    "act": "Advance through class levels [4, 8, 12, 16] and select eligible feats.",
+    "expect": "Grant one feat choice at each listed level. An ASI can raise Strength 18 to 20 within its cap. Rebuilding duplicates no choices."
+  },
+  {
+    "id": "epic-paladin",
+    "entries": [
+      "srd-2024_paladin_epic-boon"
+    ],
+    "setup": "paladin just before class level 19 with eligible feat options.",
+    "act": "Advance to 19 and choose an eligible feat other than the recommendation.",
+    "expect": "Grant the selected feat exactly once. Recommendation does not force choice. Unavailable benefits stay recorded and acknowledged."
+  },
+  {
+    "id": "subclass-paladin",
+    "entries": [
+      "srd-2024_paladin_paladin-subclass"
+    ],
+    "setup": "paladin level 2 without a subclass.",
+    "act": "Advance to class level 3, select oath-of-devotion and later rebuild.",
+    "expect": "Require one subclass choice at 3 and retain it. Grant its features only at their qualifying class levels and preserve their provenance."
+  },
+  {
+    "id": "core-ranger",
+    "entries": [
+      "srd-2024_ranger_core-traits"
+    ],
+    "setup": "First-class level-1 ranger, Constitution +2, no HP overrides or origin grants.",
+    "act": "Choose starting gold and legal class skills, then rebuild.",
+    "expect": "Maximum HP 12, Hit Point Die d10, Strength and Dexterity save proficiencies, Light/Medium armor and Shields training, 150 GP and no equipment kit. Rebuild applies each grant once. Later multiclass entry grants neither first-class saves nor starting gold."
+  },
+  {
+    "id": "asi-ranger",
+    "entries": [
+      "srd-2024_ranger_ability-score-improvement"
+    ],
+    "setup": "Pinned ranger progression and Strength 18.",
+    "act": "Advance through class levels [4, 8, 12, 16] and select eligible feats.",
+    "expect": "Grant one feat choice at each listed level. An ASI can raise Strength 18 to 20 within its cap. Rebuilding duplicates no choices."
+  },
+  {
+    "id": "epic-ranger",
+    "entries": [
+      "srd-2024_ranger_epic-boon"
+    ],
+    "setup": "ranger just before class level 19 with eligible feat options.",
+    "act": "Advance to 19 and choose an eligible feat other than the recommendation.",
+    "expect": "Grant the selected feat exactly once. Recommendation does not force choice. Unavailable benefits stay recorded and acknowledged."
+  },
+  {
+    "id": "subclass-ranger",
+    "entries": [
+      "srd-2024_ranger_ranger-subclass"
+    ],
+    "setup": "ranger level 2 without a subclass.",
+    "act": "Advance to class level 3, select hunter and later rebuild.",
+    "expect": "Require one subclass choice at 3 and retain it. Grant its features only at their qualifying class levels and preserve their provenance."
+  },
+  {
+    "id": "core-rogue",
+    "entries": [
+      "srd-2024_rogue_core-traits"
+    ],
+    "setup": "First-class level-1 rogue, Constitution +2, no HP overrides or origin grants.",
+    "act": "Choose starting gold and legal class skills, then rebuild.",
+    "expect": "Maximum HP 10, Hit Point Die d8, Dexterity and Intelligence save proficiencies, Light armor training, 100 GP and no equipment kit. Rebuild applies each grant once. Later multiclass entry grants neither first-class saves nor starting gold."
+  },
+  {
+    "id": "asi-rogue",
+    "entries": [
+      "srd-2024_rogue_ability-score-improvement"
+    ],
+    "setup": "Pinned rogue progression and Strength 18.",
+    "act": "Advance through class levels [4, 8, 10, 12, 16] and select eligible feats.",
+    "expect": "Grant one feat choice at each listed level. An ASI can raise Strength 18 to 20 within its cap. Rebuilding duplicates no choices."
+  },
+  {
+    "id": "epic-rogue",
+    "entries": [
+      "srd-2024_rogue_epic-boon"
+    ],
+    "setup": "rogue just before class level 19 with eligible feat options.",
+    "act": "Advance to 19 and choose an eligible feat other than the recommendation.",
+    "expect": "Grant the selected feat exactly once. Recommendation does not force choice. Unavailable benefits stay recorded and acknowledged."
+  },
+  {
+    "id": "subclass-rogue",
+    "entries": [
+      "srd-2024_rogue_rogue-subclass"
+    ],
+    "setup": "rogue level 2 without a subclass.",
+    "act": "Advance to class level 3, select thief and later rebuild.",
+    "expect": "Require one subclass choice at 3 and retain it. Grant its features only at their qualifying class levels and preserve their provenance."
+  },
+  {
+    "id": "core-sorcerer",
+    "entries": [
+      "srd-2024_sorcerer_core-traits"
+    ],
+    "setup": "First-class level-1 sorcerer, Constitution +2, no HP overrides or origin grants.",
+    "act": "Choose starting gold and legal class skills, then rebuild.",
+    "expect": "Maximum HP 8, Hit Point Die d6, Constitution and Charisma save proficiencies, no armor training, 50 GP and no equipment kit. Rebuild applies each grant once. Later multiclass entry grants neither first-class saves nor starting gold."
+  },
+  {
+    "id": "asi-sorcerer",
+    "entries": [
+      "srd-2024_sorcerer_ability-score-improvement"
+    ],
+    "setup": "Pinned sorcerer progression and Strength 18.",
+    "act": "Advance through class levels [4, 8, 12, 16] and select eligible feats.",
+    "expect": "Grant one feat choice at each listed level. An ASI can raise Strength 18 to 20 within its cap. Rebuilding duplicates no choices."
+  },
+  {
+    "id": "epic-sorcerer",
+    "entries": [
+      "srd-2024_sorcerer_epic-boon"
+    ],
+    "setup": "sorcerer just before class level 19 with eligible feat options.",
+    "act": "Advance to 19 and choose an eligible feat other than the recommendation.",
+    "expect": "Grant the selected feat exactly once. Recommendation does not force choice. Unavailable benefits stay recorded and acknowledged."
+  },
+  {
+    "id": "subclass-sorcerer",
+    "entries": [
+      "srd-2024_sorcerer_sorcerer-subclass"
+    ],
+    "setup": "sorcerer level 2 without a subclass.",
+    "act": "Advance to class level 3, select draconic-sorcery and later rebuild.",
+    "expect": "Require one subclass choice at 3 and retain it. Grant its features only at their qualifying class levels and preserve their provenance."
+  },
+  {
+    "id": "core-warlock",
+    "entries": [
+      "srd-2024_warlock_core-traits"
+    ],
+    "setup": "First-class level-1 warlock, Constitution +2, no HP overrides or origin grants.",
+    "act": "Choose starting gold and legal class skills, then rebuild.",
+    "expect": "Maximum HP 10, Hit Point Die d8, Wisdom and Charisma save proficiencies, Light armor training, 100 GP and no equipment kit. Rebuild applies each grant once. Later multiclass entry grants neither first-class saves nor starting gold."
+  },
+  {
+    "id": "asi-warlock",
+    "entries": [
+      "srd-2024_warlock_ability-score-improvement"
+    ],
+    "setup": "Pinned warlock progression and Strength 18.",
+    "act": "Advance through class levels [4, 8, 12, 16] and select eligible feats.",
+    "expect": "Grant one feat choice at each listed level. An ASI can raise Strength 18 to 20 within its cap. Rebuilding duplicates no choices."
+  },
+  {
+    "id": "epic-warlock",
+    "entries": [
+      "srd-2024_warlock_epic-boon"
+    ],
+    "setup": "warlock just before class level 19 with eligible feat options.",
+    "act": "Advance to 19 and choose an eligible feat other than the recommendation.",
+    "expect": "Grant the selected feat exactly once. Recommendation does not force choice. Unavailable benefits stay recorded and acknowledged."
+  },
+  {
+    "id": "subclass-warlock",
+    "entries": [
+      "srd-2024_warlock_warlock-subclass"
+    ],
+    "setup": "warlock level 2 without a subclass.",
+    "act": "Advance to class level 3, select fiend-patron and later rebuild.",
+    "expect": "Require one subclass choice at 3 and retain it. Grant its features only at their qualifying class levels and preserve their provenance."
+  },
+  {
+    "id": "core-wizard",
+    "entries": [
+      "srd-2024_wizard_core-traits"
+    ],
+    "setup": "First-class level-1 wizard, Constitution +2, no HP overrides or origin grants.",
+    "act": "Choose starting gold and legal class skills, then rebuild.",
+    "expect": "Maximum HP 8, Hit Point Die d6, Intelligence and Wisdom save proficiencies, no armor training, 55 GP and no equipment kit. Rebuild applies each grant once. Later multiclass entry grants neither first-class saves nor starting gold."
+  },
+  {
+    "id": "asi-wizard",
+    "entries": [
+      "srd-2024_wizard_ability-score-improvement"
+    ],
+    "setup": "Pinned wizard progression and Strength 18.",
+    "act": "Advance through class levels [4, 8, 12, 16] and select eligible feats.",
+    "expect": "Grant one feat choice at each listed level. An ASI can raise Strength 18 to 20 within its cap. Rebuilding duplicates no choices."
+  },
+  {
+    "id": "epic-wizard",
+    "entries": [
+      "srd-2024_wizard_epic-boon"
+    ],
+    "setup": "wizard just before class level 19 with eligible feat options.",
+    "act": "Advance to 19 and choose an eligible feat other than the recommendation.",
+    "expect": "Grant the selected feat exactly once. Recommendation does not force choice. Unavailable benefits stay recorded and acknowledged."
+  },
+  {
+    "id": "subclass-wizard",
+    "entries": [
+      "srd-2024_wizard_wizard-subclass"
+    ],
+    "setup": "wizard level 2 without a subclass.",
+    "act": "Advance to class level 3, select evoker and later rebuild.",
+    "expect": "Require one subclass choice at 3 and retain it. Grant its features only at their qualifying class levels and preserve their provenance."
+  },
+  {
+    "id": "casting-bard",
+    "entries": [
+      "srd-2024_bard_spellcasting"
+    ],
+    "setup": "Level-1 bard, Charisma +3, proficiency +2 and a legal level-1 spell.",
+    "act": "Prepare and cast, spend a slot, finish Long Rest and rebuild.",
+    "expect": "DC 13 and spell attack +5 use Charisma. Spend one slot per accepted nonfree cast and restore on Long Rest. Prepared/known counts match the independent class table. Higher slots do not unlock higher-class-level preparations."
+  },
+  {
+    "id": "list-bard",
+    "entries": [
+      "srd-2024_bard_bard-spell-list"
+    ],
+    "setup": "Normal bard spell choice with no extra-list grant.",
+    "act": "Select Healing Word and try an exclusively other-class spell separately.",
+    "expect": "Healing Word is eligible at its listed level. Other-class choice needs an explicit granting feature. Deferred spells retain list membership with visible availability."
+  },
+  {
+    "id": "casting-cleric",
+    "entries": [
+      "srd-2024_cleric_spellcasting"
+    ],
+    "setup": "Level-1 cleric, Wisdom +3, proficiency +2 and a legal level-1 spell.",
+    "act": "Prepare and cast, spend a slot, finish Long Rest and rebuild.",
+    "expect": "DC 13 and spell attack +5 use Wisdom. Spend one slot per accepted nonfree cast and restore on Long Rest. Prepared/known counts match the independent class table. Higher slots do not unlock higher-class-level preparations."
+  },
+  {
+    "id": "list-cleric",
+    "entries": [
+      "srd-2024_cleric_cleric-spell-list"
+    ],
+    "setup": "Normal cleric spell choice with no extra-list grant.",
+    "act": "Select Cure Wounds and try an exclusively other-class spell separately.",
+    "expect": "Cure Wounds is eligible at its listed level. Other-class choice needs an explicit granting feature. Deferred spells retain list membership with visible availability."
+  },
+  {
+    "id": "casting-druid",
+    "entries": [
+      "srd-2024_druid_spellcasting"
+    ],
+    "setup": "Level-1 druid, Wisdom +3, proficiency +2 and a legal level-1 spell.",
+    "act": "Prepare and cast, spend a slot, finish Long Rest and rebuild.",
+    "expect": "DC 13 and spell attack +5 use Wisdom. Spend one slot per accepted nonfree cast and restore on Long Rest. Prepared/known counts match the independent class table. Higher slots do not unlock higher-class-level preparations."
+  },
+  {
+    "id": "list-druid",
+    "entries": [
+      "srd-2024_druid_druid-spell-list"
+    ],
+    "setup": "Normal druid spell choice with no extra-list grant.",
+    "act": "Select Cure Wounds and try an exclusively other-class spell separately.",
+    "expect": "Cure Wounds is eligible at its listed level. Other-class choice needs an explicit granting feature. Deferred spells retain list membership with visible availability."
+  },
+  {
+    "id": "casting-sorcerer",
+    "entries": [
+      "srd-2024_sorcerer_spellcasting"
+    ],
+    "setup": "Level-1 sorcerer, Charisma +3, proficiency +2 and a legal level-1 spell.",
+    "act": "Prepare and cast, spend a slot, finish Long Rest and rebuild.",
+    "expect": "DC 13 and spell attack +5 use Charisma. Spend one slot per accepted nonfree cast and restore on Long Rest. Prepared/known counts match the independent class table. Higher slots do not unlock higher-class-level preparations."
+  },
+  {
+    "id": "list-sorcerer",
+    "entries": [
+      "srd-2024_sorcerer_sorcerer-spell-list"
+    ],
+    "setup": "Normal sorcerer spell choice with no extra-list grant.",
+    "act": "Select Magic Missile and try an exclusively other-class spell separately.",
+    "expect": "Magic Missile is eligible at its listed level. Other-class choice needs an explicit granting feature. Deferred spells retain list membership with visible availability."
+  },
+  {
+    "id": "casting-wizard",
+    "entries": [
+      "srd-2024_wizard_spellcasting"
+    ],
+    "setup": "Level-1 wizard, Intelligence +3, proficiency +2 and a legal level-1 spell.",
+    "act": "Prepare and cast, spend a slot, finish Long Rest and rebuild.",
+    "expect": "DC 13 and spell attack +5 use Intelligence. Spend one slot per accepted nonfree cast and restore on Long Rest. Prepared/known counts match the independent class table. Higher slots do not unlock higher-class-level preparations."
+  },
+  {
+    "id": "list-wizard",
+    "entries": [
+      "srd-2024_wizard_wizard-spell-list"
+    ],
+    "setup": "Normal wizard spell choice with no extra-list grant.",
+    "act": "Select Magic Missile and try an exclusively other-class spell separately.",
+    "expect": "Magic Missile is eligible at its listed level. Other-class choice needs an explicit granting feature. Deferred spells retain list membership with visible availability."
+  },
+  {
+    "id": "casting-paladin",
+    "entries": [
+      "srd-2024_paladin_spellcasting"
+    ],
+    "setup": "Level-1 paladin, Charisma +3, proficiency +2 and a legal level-1 spell.",
+    "act": "Prepare and cast, spend a slot, finish Long Rest and rebuild.",
+    "expect": "DC 13 and spell attack +5 use Charisma. Spend one slot per accepted nonfree cast and restore on Long Rest. Prepared/known counts match the independent class table. Higher slots do not unlock higher-class-level preparations."
+  },
+  {
+    "id": "list-paladin",
+    "entries": [
+      "srd-2024_paladin_spell-list"
+    ],
+    "setup": "Normal paladin spell choice with no extra-list grant.",
+    "act": "Select Divine Smite and try an exclusively other-class spell separately.",
+    "expect": "Divine Smite is eligible at its listed level. Other-class choice needs an explicit granting feature. Deferred spells retain list membership with visible availability."
+  },
+  {
+    "id": "casting-ranger",
+    "entries": [
+      "srd-2024_ranger_spellcasting"
+    ],
+    "setup": "Level-1 ranger, Wisdom +3, proficiency +2 and a legal level-1 spell.",
+    "act": "Prepare and cast, spend a slot, finish Long Rest and rebuild.",
+    "expect": "DC 13 and spell attack +5 use Wisdom. Spend one slot per accepted nonfree cast and restore on Long Rest. Prepared/known counts match the independent class table. Higher slots do not unlock higher-class-level preparations."
+  },
+  {
+    "id": "list-ranger",
+    "entries": [
+      "srd-2024_ranger_spell-list"
+    ],
+    "setup": "Normal ranger spell choice with no extra-list grant.",
+    "act": "Select Hunter's Mark and try an exclusively other-class spell separately.",
+    "expect": "Hunter's Mark is eligible at its listed level. Other-class choice needs an explicit granting feature. Deferred spells retain list membership with visible availability."
+  },
+  {
+    "id": "extra-attack-five",
+    "entries": [
+      "srd-2024_barbarian_extra-attack",
+      "srd-2024_fighter_extra-attack",
+      "srd-2024_monk_extra-attack",
+      "srd-2024_paladin_extra-attack",
+      "srd-2024_ranger_extra-attack"
+    ],
+    "setup": "Separate level-5 characters in these classes, plus a multiclass with two ordinary Extra Attack grants.",
+    "act": "Take the Attack action.",
+    "expect": "Each permits two attacks. Ordinary Extra Attack grants do not add together. Separate higher-level Fighter features control its later attack counts."
+  }
+]

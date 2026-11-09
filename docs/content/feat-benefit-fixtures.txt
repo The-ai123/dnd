@@ -1,0 +1,33 @@
+id|setup|act|expect
+alert_1_initative-proficiency|Dexterity +2, proficiency +3, fixed initiative d20 10.|Roll initiative.|Total 15, with proficiency added once.
+alert_2_initative-proficiency|Alert user initiative 8 and willing ally 17, neither Incapacitated.|Swap immediately after roll and repeat with an Incapacitated participant.|First swap gives 17 and 8. Incapacitated replay disallows the swap.
+magic-initiate_1|Choose Cleric list and Charisma.|Select Guidance and Sacred Flame.|Learn both with Charisma as this feat's casting ability. A Wizard-only cantrip is not a valid replacement in this selection.
+magic-initiate_2|Same Cleric list, choose Cure Wounds.|Cast once free, then again using a level-1 slot, and finish Long Rest.|Spell is always prepared. First spends its free use, second spends slot without a second free use. Rest restores the free use.
+magic-initiate_3|Character gains a new level after choosing two cantrips and one level-1 spell.|Replace Cure Wounds with Bless and try replacing it with a level-2 spell.|Bless is a legal same-level same-list replacement. Level-2 selection is rejected.
+magic-initiate_4|Character already has Magic Initiate Cleric.|Take Magic Initiate Wizard and try another Cleric instance.|Wizard instance is legal and tracked separately. Duplicate Cleric list is ineligible.
+savage-attacker_1|Weapon hit, damage-die set A totals 4 and set B totals 9.|Choose B then try to use again on a second hit that turn.|Use 9 for the first weapon dice and consume the once-per-turn use. No second benefit that turn.
+skilled_1|Character chooses Arcana, Stealth and Thieves' Tools without duplicates.|Apply feat.|Grant exactly those three proficiencies with feat provenance.
+skilled_2|Character already has Skilled and chooses three additional distinct proficiencies.|Take again.|Both grants persist and the repeat is permitted.
+ability-score-improvement_1|Strength 19 and Dexterity 18.|Choose +1 to each and separately try +2 Strength.|First gives 20/19. Second cannot raise Strength to 21 under this feat.
+ability-score-improvement_2|Character already has one ASI and reaches another eligible feat choice.|Take ASI again within its score cap.|Record another grant and apply its distinct legal increases once.
+grappler_1|Strength 19 and Dexterity 20.|Choose Strength increase.|Strength becomes 20, Dexterity stays 20 and the feat cannot increase either above 20.
+grappler_2|Eligible Attack-action Unarmed Strike hits and target fails its required Grapple save.|Choose Damage plus Grapple then try again on a second hit in the same turn.|Apply both effects on first, once per turn. A second hit cannot combine both via this benefit.
+grappler_3|One creature is Grappled by this character, another by an ally.|Attack each.|Only attack against own Grappled target gains this feat's Advantage.
+grappler_4|Medium grappler moves with a Medium Grappled creature, then a Large one.|Move 10 ft in independent runs.|Same-size target adds no carrying movement cost. Larger target retains normal extra movement.
+archery_1|Ranged weapon attack baseline +5 and melee weapon attack baseline +5.|Apply fighting style.|Ranged weapon attack is +7, melee remains +5. Ranged spell attacks gain no bonus.
+defense_1|Base AC 14 while wearing Light armor, then remove armor.|Apply style and inspect both.|Armored AC is 15; unarmored gains no style bonus.
+great-weapon-fighting_1|Eligible two-handed melee damage dice roll 1 and 2 with ability +4.|Apply style then compare an ineligible one-handed strike.|Eligible dice become 3 and 3 for total 10. One-handed strike uses its actual dice.
+two-weapon-fighting_1|Legal Light extra attack deals die 4 and ability +3.|Apply style.|Damage is 7, with ability added once even if another source already grants its addition.
+boon-of-combat-prowess_1|Chosen ability is 29.|Apply +1 then test an attempted increase from 30.|29 becomes 30; 30 cannot become 31.
+boon-of-combat-prowess_2|Attack roll misses with benefit unused.|Turn miss into hit, try again, then start next turn.|First becomes a hit. Second is unavailable until start of next turn resets the benefit.
+boon-of-dimensional-travel_1|Chosen ability is 29.|Apply feat.|Ability becomes 30, capped there.
+boon-of-dimensional-travel_2|After Attack action a visible empty space is 25 ft away.|Choose teleport then compare after Dash.|Attack permits up-to-30-ft teleport. Dash alone does not trigger this benefit.
+boon-of-fate_1|Chosen ability 29.|Apply feat.|Ability becomes 30, capped there.
+boon-of-fate_2|An ally 30 ft away fails DC 15 with total 12. Both d4s roll 2.|Add the 4-point bonus and finish Short Rest later.|Total becomes 16, changing outcome to success. Use is spent until initiative or an eligible rest recharges it.
+boon-of-irresistible-offense_1|Chosen ability 29.|Apply feat.|Ability becomes 30, capped there.
+boon-of-irresistible-offense_2|Target has Slashing Resistance and takes 12 Slashing from this character.|Apply damage then compare immunity.|Resistance is ignored so 12 applies. Immunity remains effective.
+boon-of-irresistible-offense_3|Feat increased Strength to 22; qualifying attack rolls natural 20 and deals Slashing.|Accept extra damage.|Add 22 Slashing before defenses, separately from critical dice.
+boon-of-spell-recall_1|Chosen ability 29.|Apply feat.|Ability becomes 30, capped there.
+boon-of-spell-recall_2|Cast with level-3 slot and d4 result 3, then level-2 slot with d4 result 3.|Resolve both.|First slot is retained. Second slot is spent normally. Level-5 or higher slots cannot use this benefit.
+boon-of-the-night-spirit_1|Chosen ability 29.|Apply feat despite its unavailable lighting benefits.|Ability becomes 30. Label remaining unavailable benefits and require the existing grant acknowledgment.
+boon-of-truesight_1|Chosen ability 29.|Apply feat despite its unavailable sense benefit.|Ability becomes 30. Truesight stays unavailable and its acknowledgment remains recorded.

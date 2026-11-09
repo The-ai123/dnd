@@ -33,9 +33,9 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 | P03 | Dependency/status board and agent handoff organization | Complete | Planning chat | P01, P02 | Planning |
 | A01 | Close product-state/ownership gaps and reconcile legacy notes | Complete | Codex — A01 product-contract chat (this chat) | — | Planning |
 | S01 | Pin/audit published Open5e snapshot and 5.2.1 parity | Complete | Codex — S01 implementation chat | — | Acquisition |
-| A02 | Full SRD coverage plan, tracked through A02A and A02B | To Do | — | A02A, A02B | Planning |
+| A02 | Full SRD coverage plan, tracked through A02A and A02B | Complete | Codex — A02 chat (`codex/a02`) | A02A, A02B | Planning |
 | A02A | Working SRD catalog, proposed scope and seeded acceptance cases | Complete | Codex — A02 chat (`codex/a02`) | A01, S01 | Planning |
-| A02B | Full catalog reconciliation and remaining per-entry acceptance cases | To Do | — | A02A, A05 | Planning |
+| A02B | Full catalog reconciliation and remaining per-entry acceptance cases | Complete | Codex — A02 chat (`codex/a02`) | A02A, A05 | Planning |
 | A03 | Stack review and packaged Windows compatibility proof | Complete | Architecture implementation chat | — | Build |
 | A04 | Continuous geometry feasibility and optimality/performance proof | To Do | — | A01, A03 | Build |
 | A05 | Approve exact UI/editor schemas and validation behavior | Complete | Codex — A05 completion chat (`codex/a05`) | A01 | Planning |
@@ -84,8 +84,8 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 ### To Do / Active / Complete snapshot
 
 - **To Do:** remaining tasks in the table above.
-- **Complete on this integrated base:** P01, P02, P03, A01, A02A, A03, A05, B01 and S01.
-- **Next:** A02B can start. Integrate the completed B02 and A04 branches. B03 can start on a base containing B02. S02 still needs B07; F04 still needs D01 and F02.
+- **Complete on this task branch:** P01, P02, P03, A01, A02, A02A, A02B, A03, A05, B01 and S01.
+- **Next:** integrate the completed A02, B02 and A04 branches. B03 can start on a base containing B02. S02 still needs B07; F04 still needs D01 and F02.
 
 ### Ready parallel work — November 9 handoff
 
@@ -93,12 +93,12 @@ The following lanes have completed task prerequisites. They are opportunities, n
 
 | Lane | Ready work / scope boundary | Coordination and next unlock |
 | --- | --- | --- |
-| A02B | Finish printed category/variant reconciliation, mixed-effect availability review and independent cases for the remaining features/spells and branches | Ready from `codex/a02`. Claim `docs/content/**`; use the approved A05 contract. Keep S02 corrections/adapter files under their own owner |
+| A02 integration | Integrate completed planning branch `codex/a02` | Preserve A02A/A02B completion and acceptance evidence; S02 and F04 consume A02A, while F05 requires A02B |
 | B03 | Immutable original-asset ingestion and reference tracking | Ready on a base containing published B02 commit `b8c6507` (`codex/b02-world-storage`). Otherwise integrate B02 first. Claim `packages/assets/**` and specific asset-reference integration files |
 | B02 integration | Integrate completed storage branch `codex/b02-world-storage` at `b8c6507` | Implementation evidence is in that branch's `docs/contracts/B02.md` and work board. Preserve its completion record and verify integration before marking the shared-base row Complete |
 | A04 integration | Integrate completed geometry branch `codex/a04-geometry-feasibility` at `3045f32` | Evidence is in that branch's `docs/geometry/A04.md` and work board. E03/E06 retain their other dependencies |
 
-A02B and B03 are the available implementation lanes when each uses the base above. B02 and A04 implementation is already complete on the published branches; their To Do rows here represent pending integration into this base. Do not repeat their implementation. Integration of those branches can proceed beside A02B, with one coordinator owning root status files and shared manifests.
+B03 is the next implementation task on a base containing B02. A02 planning and B02/A04 implementation are complete on their published branches. B02/A04 To Do rows here represent pending integration into this base. Do not repeat their implementation. Integrations can proceed with one coordinator owning root status files and shared manifests.
 
 A02A removes the content-planning blocker from S02, but S02 still requires B07. F04 still requires D01 and F02. F05 requires A02B. S03 retains its S02 dependency and baseline-completeness checks. After B03 is integrated, B04 and E02 become eligible in parallel. After B04, B05 and B07 become eligible in parallel. These later waves are conditional.
 
@@ -149,6 +149,12 @@ Paths are intended boundaries, not evidence those modules exist. Exact claimed p
 6. If abandoned/interrupted, write partial-work handoff and return To Do (or transfer owner explicitly). Preserve uncommitted files. Reopen a Complete task to To Do if a later change invalidates its evidence; audit descendants before proceeding.
 
 ### Active claim / blocker log
+
+**A02B — completed by Codex — A02 chat, November 9, 2026.**
+
+- Prerequisites A02A and A05 Complete; user requested continuation.
+- Exact write paths: `docs/content/**`, plus `WORK_BOARD.md` and the A02 handoff/dependency descriptions in `IMPLEMENTATION_PLAN.md`, `CONTENT_DATA_PLAN.md` and `PLANNING_INDEX.md` when completion changes them.
+- Scope completed: catalog/category and variant reconciliation, scope review, full-definition acceptance contracts and per-entry concrete cases. Exact source correction requirements are assigned to S02. The original A02A completion remains recorded independently.
 
 **B01 — completed by Codex — B01 implementation chat, October 27, 2026.**
 
@@ -210,6 +216,9 @@ Partial-work handoff (if any):
 ```
 
 ### Completion evidence log
+
+- **A02B and parent A02 | Codex — A02 chat (`codex/a02`) | November 9, 2026:** `docs/content/CONTENT_COVERAGE.md` and `SCOPE_REVIEW.md` record the completed planning contract. The consolidated `acceptance-cases.jsonl` has 870 cases linked to all 814 catalog entries, including 774 enabled and 40 fully deferred entries. Every spell, character feature, species trait, feat benefit, background grant and weapon property has concrete acceptance evidence. All 10 Metamagic and 28 invocation options have explicit cases; unavailable branches have disclosure/non-execution cases. Twelve class tables, covering 240 class-level rows, match the hash-pinned PDF. Printed reconciliation covers spells, creatures including embedded Giant Fly, item variants, glossary/toolbox, 232 class-feature headings and 99 equipment descriptions. Ten class-source diagnostics and eleven invalid magic-weapon variants carry S02 follow-up requirements, alongside S01's existing gaps. Scope review enables Clairvoyance consistently with Scrying, retains physical fire-state effects, propagates Arcane Eye unavailability to its invocation, and isolates familiar remote perception and Private Sanctum's sight property. A01 warning/overspend execution is explicit. Offline snapshot/catalog audits, malformed/stale/missing-coverage rejection checks, six snapshot tests and PDF reconciliation pass. These are specified acceptance requirements and source-audit evidence; runtime handlers and executed mechanics coverage remain F05. Both A02 children are complete on this branch. S02 still needs B07; F04 still needs D01/F02.
+
 
 - **A02A | Codex — A02 chat (`codex/a02`) | November 9, 2026:** user authorized splitting A02 into completed groundwork and remaining full coverage. Commits `387f035` and `35297f3` provide 6,743 SRD identities, an 814-entry coverage catalog, proposed lighting/sense exclusions and propagation, printed spell/creature/magic-item/glossary/toolbox heading reconciliation, and 202 concrete cases linked to 209 catalog entries. Every enabled spell through 3rd level, every weapon property and background grant has a case. Offline snapshot and catalog verification pass; the prior implementation checks include six passing snapshot tests and the hash-pinned PDF audit. See [coverage and child-task handoff](docs/content/CONTENT_COVERAGE.md). A02B owns the remaining full-catalog review, final scope interpretation and independent outcome vectors. S02/F04 now consume A02A, retaining every other prerequisite; F05 explicitly requires A02B; S03 retains its S02 dependency and baseline-completeness checks. Parent A02 stays To Do until both children and integration are complete.
 

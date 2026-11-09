@@ -40,10 +40,12 @@
   "coverageRows": 814,
   "sharedLookupRows": 144,
   "scopeCounts": {
-    "deferred": 41,
-    "enabled": 773
+    "deferred": 40,
+    "enabled": 774
   },
   "upstreamManifestVersion": 1,
-  "concreteFixtures": 202,
-  "entriesWithConcreteFixtures": 209
+  "concreteFixtures": 870,
+  "entriesWithConcreteFixtures": 814,
+  "enabledEntriesWithConcreteFixtures": 774,
+  "sourceCorrectionDiagnostics": 10
 }

@@ -6,7 +6,7 @@
       "FeatBenefit": "boon-of-the-night-spirit_2 boon-of-the-night-spirit_3"
     },
     "special-sense": {
-      "Spell": "arcane-eye blur clairvoyance darkvision faithful-hound illusory-script mirage-arcane mirror-image see-invisibility true-seeing",
+      "Spell": "arcane-eye blur darkvision faithful-hound illusory-script mirage-arcane mirror-image see-invisibility true-seeing",
       "ClassFeature": "ranger_feral-senses",
       "SpeciesTrait": "dragonborn_darkvision dwarf_darkvision dwarf_stonecunning elf_darkvision gnome_darkvision orc_darkvision tiefling_darkvision",
       "FeatBenefit": "boon-of-truesight_2"
@@ -17,7 +17,8 @@
       "One with Shadows": "lighting",
       "Witch Sight": "special-sense",
       "Devil's Sight": "special-sense",
-      "Gaze of Two Minds": "special-sense"
+      "Gaze of Two Minds": "special-sense",
+      "Visions of Distant Realms": "special-sense"
     },
     "srd-2024_elf_elven-lineage": {
       "Drow extended Darkvision": "special-sense",
@@ -29,7 +30,7 @@
       "Fire Play illumination changes": "lighting"
     },
     "srd-2024_private-sanctum": {
-      "Darkvision-specific interaction": "special-sense"
+      "Vision-blocking security property": "special-sense"
     },
     "srd-2024_hallow": {
       "Darkness": "lighting",
@@ -39,22 +40,10 @@
       "Interior illumination command": "lighting"
     },
     "srd-2024_find-familiar": {
-      "Familiar special-sense sharing": "special-sense"
+      "Telepathic Connection remote perception": "special-sense"
     },
     "srd-2024_tiefling_fiendish-legacy": {
       "Infernal Darkness grant": "lighting"
-    },
-    "srd-2024_druidcraft": {
-      "Fire Play illumination changes": "lighting"
-    },
-    "srd-2024_elementalism": {
-      "Beckon Fire illumination changes": "lighting"
-    },
-    "srd-2024_prestidigitation": {
-      "Fire Play illumination changes": "lighting"
-    },
-    "srd-2024_create-or-destroy-water": {
-      "Rain illumination changes": "lighting"
     }
   }
 }

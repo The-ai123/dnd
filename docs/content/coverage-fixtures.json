@@ -331,5 +331,69 @@
     "setup": "A level-1 character selects the soldier background with no overlapping proficiencies.",
     "act": "Apply +1 to each legal ability and choose kit A. Repeat independently with option B, and try choosing an ability outside the list.",
     "expect": "Increase only Strength, Dexterity, Constitution. Grant Athletics and Intimidation, proficiency with the chosen Gaming Set, and Savage Attacker. Kit A gives Spear, Shortbow, 20 Arrows, the same Gaming Set, Healer's Kit, Quiver, Traveler's Clothes, 14 GP. Option B gives 50 GP with no kit. Reject a boost outside the listed abilities."
+  },
+  {
+    "id": "tracked-resource-overspend",
+    "entries": [
+      "srd-2024_monk_superior-defense"
+    ],
+    "setup": "Eligible Monk has one usable Focus Point, no excess spending and all required activation inputs.",
+    "act": "Explicitly activate Superior Defense, costing three Focus Points, after the allowance warning.",
+    "expect": "Permit activation, apply its normal effect, set usable Focus to zero and record two excess Focus spent. Do not manufacture two points or treat the allowance warning as a hard failure."
+  },
+  {
+    "id": "exhausted-rage-and-action",
+    "entries": [
+      "srd-2024_barbarian_rage"
+    ],
+    "setup": "Barbarian has zero Rage uses and has already used the turn Bonus Action, with no other Rage blocker.",
+    "act": "Explicitly enter Rage after warnings, then undo and redo the grouped action.",
+    "expect": "Permit Rage and record one excess Rage use plus the exceeded Bonus Action allowance. Undo reverses resource/excess and effect changes together, returning the original zero usable uses. Redo restores the same recorded resolution without another charge."
+  },
+  {
+    "id": "exhausted-slot-casting",
+    "entries": [
+      "srd-2024_magic-missile"
+    ],
+    "setup": "Wizard selects exhausted level-1 slot pool, supplies components and three valid darts to a target. Fixed d4 is 3.",
+    "act": "Explicitly cast after the slot warning.",
+    "expect": "Resolve 12 Force before defenses and record one excess level-1 slot while usable slots remain zero. A missing target is still a required-input failure, and no extra slot is silently created."
+  },
+  {
+    "id": "repeated-action-allowance",
+    "entries": [
+      "srd-2024_fighter_action-surge"
+    ],
+    "setup": "Level-17 Fighter has one use left but already used Action Surge this turn.",
+    "act": "Explicitly invoke again after the per-turn allowance warning.",
+    "expect": "Permit execution with an invalid-use record and spend the remaining use. Grant the additional non-Magic action. Do not silently reset the once-per-turn record or require an extra user permission flow."
+  },
+  {
+    "id": "linked-tick-whole-action-correction",
+    "entries": [
+      "srd-2024_acid-arrow"
+    ],
+    "setup": "Acid Arrow initial hit and linked end-of-next-turn damage are committed, with no conflicting newer record changes.",
+    "act": "Undo the whole originating action and redo it.",
+    "expect": "Reverse both linked HP changes and resource costs as the complete action group. Redo uses the prior attack and damage results and queues or marks linked events consistently, without duplicate ticks."
+  },
+  {
+    "id": "reaction-choice-recovery",
+    "entries": [
+      "srd-2024_counterspell"
+    ],
+    "setup": "Persisted reaction prompt is waiting on Counterspell choice before any reaction cost is committed.",
+    "act": "Restart authority process, accept the same choice, and replay the acceptance request.",
+    "expect": "Resume the same prompt, consume one reaction/slot and commit one outcome. Replayed acceptance returns that outcome without rerolling or duplicate resource spending."
+  },
+  {
+    "id": "deferred-through-proxy",
+    "entries": [
+      "srd-2024_wish",
+      "srd-2024_warlock_eldritch-invocation-options"
+    ],
+    "setup": "Wish duplicate menu and invocation spell menu reference a lighting/sense-deferred spell.",
+    "act": "Inspect and try the deferred path, then choose a supported alternative.",
+    "expect": "Show unavailable dependency before spending resources and never bypass it through a proxy. Other eligible choices remain usable and execute under their ordinary resource rules."
   }
 ]
