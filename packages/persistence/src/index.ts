@@ -1,6 +1,8 @@
 import Database from 'better-sqlite3';
 
-/** A03 compatibility database only. Product schemas/migrations belong to B02. */
+export { CatalogRepository, WorldRepository, type RegisteredWorld, type StoredRecord } from './repositories';
+
+/** A03 compatibility database kept separate from catalog and world storage. */
 export async function proveSqliteBackup(databasePath: string, backupPath: string): Promise<string> {
   const db = new Database(databasePath);
   try {

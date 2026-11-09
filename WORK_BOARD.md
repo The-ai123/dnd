@@ -38,7 +38,7 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 | A04 | Continuous geometry feasibility and optimality/performance proof | Complete | Codex — A04 geometry chat | A01, A03 | Build |
 | A05 | Approve exact UI/editor schemas and validation behavior | Complete | Codex — A05 completion chat (`codex/a05`) | A01 | Planning |
 | B01 | Strict domain/IPC contracts and role-scoped envelopes | Complete | Codex — B01 implementation chat | A01, A03 | Build |
-| B02 | World/catalog storage, migrations, writer repositories | To Do | — | B01 | Build |
+| B02 | World/catalog storage, migrations, writer repositories | Complete | Codex — B02 implementation chat (`codex/b02-world-storage`) | B01 | Build |
 | B03 | Immutable original-asset ingestion/references | To Do | — | B02 | Build |
 | B04 | Atomic commands, idempotency, revisions/projections | To Do | — | B02, B03 | Build |
 | B05 | Canonical identities, sessions, clocks, reservations | To Do | — | B04 | Build |
@@ -82,8 +82,8 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 ### To Do / Active / Complete snapshot
 
 - **To Do:** remaining tasks in the table above.
-- **Complete:** P01, P02, P03, A01, A03, A04, A05, B01 and S01.
-- **Next:** continue A02 and integrate the published B02 branch before starting B03. E03 and E06 retain their other prerequisites. B07 still requires B04.
+- **Complete:** P01, P02, P03, A01, A03, A04, A05, B01, B02 and S01.
+- **Next:** continue A02 and start B03. E03 and E06 retain their other prerequisites. B07 still requires B04.
 
 ### Ready parallel work — November 6 handoff
 
@@ -92,9 +92,9 @@ The following lanes have completed task prerequisites. They are opportunities, n
 | Lane | Ready work / scope boundary | Coordination and next unlock |
 | --- | --- | --- |
 | A02 | Catalog the pinned SRD, document exclusions, and define automation/progression fixtures | A01 and S01 are complete. Use `docs/content/CONTENT_INVENTORY.md` and the parity audit. Use the approved editor contract in `UI_EDITOR_CONTRACT.md` |
-| B02 | Implement world/catalog storage, migrations, and writer repositories | B01 is integrated. Use `docs/contracts/B01.md`. Unblocks B03 |
+| B03 | Implement immutable original-asset ingestion and reference tracking | B02 is integrated. Use [the B02 storage contract](docs/contracts/B02.md) |
 
-A02 and B02 can progress concurrently within those boundaries. S02 still requires A02 and B07. Keep package manifests and lockfiles under one integrator.
+A02 and B03 can progress concurrently within those boundaries. S02 still requires A02 and B07. Keep package manifests and lockfiles under one integrator.
 
 ## 4. Sequential spine and parallel lanes
 
@@ -212,6 +212,8 @@ Partial-work handoff (if any):
 ```
 
 ### Completion evidence log
+
+- **B02 | Codex — B02 implementation chat | November 6, 2026.** Commit `5257b25` on `codex/b02-world-storage` implements the SQLite catalog and world repositories, versioned folder manifest, transactional migrations, single-writer locking, foreign-key checks and storyteller-only local storage diagnostics. `npm run check` passed 16 tests covering two isolated worlds, migration rollback on process exit, upgrade and version rejection. Windows packaging and the packaged smoke test passed. The desktop uses a fixture scene. B03 is next after integration, and B04 owns durable command execution. [Storage contract](docs/contracts/B02.md)
 
 - **A05 | Codex — A05 completion chat (`codex/a05`) | November 6, 2026:** direct approval of the final functional draft and zero-gold rule, following the accepted Home, manager, Play/inspector and invalid-input visual baseline. `UI_EDITOR_CONTRACT.md` records approved fields, save/validation/status behavior, and the separation of durable raw drafts from valid gameplay values. Headless Edge preview checks passed, including invalid HP, commit gestures, failure/retry and layout checks. B07 still requires B04 and S02 still requires A02/B07. Catalog coverage, runtime persistence, public projection enforcement and native accessibility/scaling belong to their implementation tasks.
 
