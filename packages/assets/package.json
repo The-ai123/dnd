@@ -5,6 +5,9 @@
   "dependencies": {
     "sharp": "0.35.5"
   },
-  "exports": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./originals": "./src/originals.ts"
+  },
   "type": "module"
 }

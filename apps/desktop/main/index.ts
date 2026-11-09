@@ -48,9 +48,9 @@ async function openPlayer(): Promise<void> {
 void app.whenReady().then(async () => {
   engine = new WorkerClient(join(__dirname, 'engine-process.cjs'), 'World authority');
   assets = new WorkerClient(join(__dirname, 'asset-process.cjs'), 'Asset jobs');
-  const probePath = join(process.env['DND_SMOKE_DATA'] ?? app.getPath('userData'), 'compatibility');
-  await engine.call('initialize', probePath);
-  imageTilesVerified = await assets.call('probe', join(probePath, 'tiles')) === true;
+  const dataPath = process.env['DND_SMOKE_DATA'] ?? app.getPath('userData');
+  await engine.call('initialize', dataPath);
+  imageTilesVerified = await assets.call('probe', join(dataPath, 'compatibility', 'tiles')) === true;
   for (const role of ['storyteller', 'player'] as const) {
     ipcMain.handle(role === 'storyteller' ? channels.storytellerRequest : channels.playerRequest, async (event, input: unknown) =>
       handleIpcRequest({ registeredRole: roles.get(event.sender.id), isMainFrame: event.senderFrame !== null && event.senderFrame === event.sender.mainFrame }, role, input, async request => {

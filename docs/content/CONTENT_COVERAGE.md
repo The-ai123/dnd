@@ -61,7 +61,7 @@ A02B completes the planning catalog with a concrete case for every one of the 81
 
 The required F05 behavior remains the entire reviewed definition and shared acceptance contract, including all selected branches and interactions. A02B specifies acceptance requirements and examples. Production handler implementation and executed mechanics coverage remain F05 deliverables.
 
-A02A's data is sufficient to remove the A02 prerequisite from S02 and F04. Their other prerequisites still apply. S02 still needs B07, and F04 still needs D01 and F02. F05 explicitly requires A02B. S03 retains its S02 dependency and baseline-completeness checks. Both child planning deliverables are complete on `codex/a02`; integrate this branch before consuming their completion from the shared base. The availability review is recorded in SCOPE_REVIEW.md. The source snapshot still requires S02 normalization before becoming an application seed bundle.
+A02A's data is sufficient to remove the A02 prerequisite from S02 and F04. Their other prerequisites still apply. S02 still needs B07, and F04 still needs D01 and F02. F05 explicitly requires A02B. S03 retains its S02 dependency and baseline-completeness checks. Both child planning deliverables are complete and integrated into main. The availability review is recorded in SCOPE_REVIEW.md. The source snapshot still requires S02 normalization before becoming an application seed bundle.
 
 ## Reproduce and hand off
 

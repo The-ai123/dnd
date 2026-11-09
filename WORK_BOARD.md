@@ -1,6 +1,6 @@
 # Agent work board — task status and scheduling authority
 
-Updated: November 9, 2026. A01's user-approved state/ownership/behavior contract and downstream exclusions are complete; evidence below. The user authorized implementation, starting with architecture. A03 is complete with packaged Windows compatibility evidence in [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md). Remaining tasks and task-specific decisions are tracked below; fixture code does not complete dependent production tasks.
+Updated: November 9, 2026. A02A groundwork, A04 geometry feasibility and B02 storage are integrated. A02B retains the remaining full-catalog coverage work. Completion evidence and downstream prerequisites are recorded below.
 
 ## 1. Status rules
 
@@ -37,11 +37,11 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 | A02A | Working SRD catalog, proposed scope and seeded acceptance cases | Complete | Codex — A02 chat (`codex/a02`) | A01, S01 | Planning |
 | A02B | Full catalog reconciliation and remaining per-entry acceptance cases | Complete | Codex — A02 chat (`codex/a02`) | A02A, A05 | Planning |
 | A03 | Stack review and packaged Windows compatibility proof | Complete | Architecture implementation chat | — | Build |
-| A04 | Continuous geometry feasibility and optimality/performance proof | To Do | — | A01, A03 | Build |
+| A04 | Continuous geometry feasibility and optimality/performance proof | Complete | Codex — A04 geometry chat | A01, A03 | Build |
 | A05 | Approve exact UI/editor schemas and validation behavior | Complete | Codex — A05 completion chat (`codex/a05`) | A01 | Planning |
 | B01 | Strict domain/IPC contracts and role-scoped envelopes | Complete | Codex — B01 implementation chat | A01, A03 | Build |
-| B02 | World/catalog storage, migrations, writer repositories | To Do | — | B01 | Build |
-| B03 | Immutable original-asset ingestion/references | To Do | — | B02 | Build |
+| B02 | World/catalog storage, migrations, writer repositories | Complete | Codex — B02 implementation chat (`codex/b02-world-storage`) | B01 | Build |
+| B03 | Immutable original-asset ingestion/references | Complete | Codex — B03 chat (`codex/b03-assets`) | B02 | Build |
 | B04 | Atomic commands, idempotency, revisions/projections | To Do | — | B02, B03 | Build |
 | B05 | Canonical identities, sessions, clocks, reservations | To Do | — | B04 | Build |
 | B06 | Session action groups, conflict-aware undo/redo, completion | To Do | — | B05 | Build |
@@ -84,8 +84,8 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 ### To Do / Active / Complete snapshot
 
 - **To Do:** remaining tasks in the table above.
-- **Complete on this task branch:** P01, P02, P03, A01, A02, A02A, A02B, A03, A05, B01 and S01.
-- **Next:** integrate the completed A02, B02 and A04 branches. B03 can start on a base containing B02. S02 still needs B07; F04 still needs D01 and F02.
+- **Complete on this integrated base:** P01, P02, P03, A01, A02, A02A, A02B, A03, A04, A05, B01, B02, B03 and S01.
+- **Next:** B04 and E02 can start in parallel. E03/E06 retain their other prerequisites. S02 still needs B07; F04 still needs D01 and F02.
 
 ### Ready parallel work — November 9 handoff
 
@@ -93,14 +93,18 @@ The following lanes have completed task prerequisites. They are opportunities, n
 
 | Lane | Ready work / scope boundary | Coordination and next unlock |
 | --- | --- | --- |
-| A02 integration | Integrate completed planning branch `codex/a02` | Preserve A02A/A02B completion and acceptance evidence; S02 and F04 consume A02A, while F05 requires A02B |
-| B03 | Immutable original-asset ingestion and reference tracking | Ready on a base containing published B02 commit `b8c6507` (`codex/b02-world-storage`). Otherwise integrate B02 first. Claim `packages/assets/**` and specific asset-reference integration files |
-| B02 integration | Integrate completed storage branch `codex/b02-world-storage` at `b8c6507` | Implementation evidence is in that branch's `docs/contracts/B02.md` and work board. Preserve its completion record and verify integration before marking the shared-base row Complete |
-| A04 integration | Integrate completed geometry branch `codex/a04-geometry-feasibility` at `3045f32` | Evidence is in that branch's `docs/geometry/A04.md` and work board. E03/E06 retain their other dependencies |
+| B04 | Atomic commands, idempotency, record revisions and query projections | Ready from main after B02/B03. Claim command execution/history modules in `packages/engine/**`, specific `packages/persistence/**` integration files and command tests. Use [B03 consumer contract](docs/contracts/B03.md) |
+| E02 | Production image tile jobs, GPU cache and viewport rendering | Ready from main after A03/B03. Claim `packages/map-view/**`, specific background image/tile worker files and rendering tests. Coordinate asset/persistence access through the B03 contract; renderer code receives safe projections |
 
-B03 is the next implementation task on a base containing B02. A02 planning and B02/A04 implementation are complete on their published branches. B02/A04 To Do rows here represent pending integration into this base. Do not repeat their implementation. Integrations can proceed with one coordinator owning root status files and shared manifests.
+B04 and E02 are the two currently prerequisite-ready To Do tasks. Keep native dependency changes, root status files and shared manifests under one integrator. Split shared asset/persistence files explicitly before either lane edits them.
 
-A02A removes the content-planning blocker from S02, but S02 still requires B07. F04 still requires D01 and F02. F05 requires A02B. S03 retains its S02 dependency and baseline-completeness checks. After B03 is integrated, B04 and E02 become eligible in parallel. After B04, B05 and B07 become eligible in parallel. These later waves are conditional.
+A02A removes the content-planning blocker from S02, but S02 still requires B07. F04 still requires D01 and F02. F05 requires A02B. S03 retains its S02 dependency and baseline-completeness checks. B03 is integrated, so B04 and E02 are eligible in parallel. After B04, B05 and B07 become eligible in parallel. These later waves are conditional.
+
+### B03 completed claim — November 9, 2026
+
+Codex — this B03 chat owns `codex/b03-assets`. B02 is integrated. Write scope: `packages/assets/**`, `packages/persistence/src/repositories.ts`, `packages/persistence/src/index.ts`, `packages/persistence/package.json`, `package-lock.json`, `tests/integration/assets.test.ts`, `tests/integration/persistence.test.ts`, `docs/contracts/B03.md`, `IMPLEMENTATION_STATUS.md`, and this board. Implement hash-addressed originals, publication before references, retained historical references and disposable derivatives. Existing deletions in the main checkout are outside this claim and remain untouched.
+
+Implementation and verification finished November 9 in commit `20e99fd`: TypeScript and all 42 tests pass, including eight B03 integration cases; Windows packaging and the packaged two-window/native/privacy smoke test pass. [B03 contract and evidence](docs/contracts/B03.md), [implementation status](IMPLEMENTATION_STATUS.md). Final diff review passed. Status is **Complete**; user-authorized main integration unlocks B04/E02. Existing local deletions in the main checkout are preserved separately from committed implementation.
 
 ## 4. Sequential spine and parallel lanes
 
@@ -155,6 +159,14 @@ Paths are intended boundaries, not evidence those modules exist. Exact claimed p
 - Prerequisites A02A and A05 Complete; user requested continuation.
 - Exact write paths: `docs/content/**`, plus `WORK_BOARD.md` and the A02 handoff/dependency descriptions in `IMPLEMENTATION_PLAN.md`, `CONTENT_DATA_PLAN.md` and `PLANNING_INDEX.md` when completion changes them.
 - Scope completed: catalog/category and variant reconciliation, scope review, full-definition acceptance contracts and per-entry concrete cases. Exact source correction requirements are assigned to S02. The original A02A completion remains recorded independently.
+
+**A04 — November 9, 2026 publication.** Reconciled this board with current main, preserving the completed A05, B01 and S01 work. A04 is Complete on `codex/a04-geometry-feasibility`. Typecheck and 30 functional tests pass after integration. The isolated hardware benchmark passes and certifies all 50 weighted routes. The combined concurrent run reached weighted p95 112.86 ms, above its target, before the isolated check. The published B02 branch has its own completion evidence and awaits integration into main.
+
+**A04 — November 6, 2026 completion.** On `codex/a04-geometry-feasibility`, adaptive rectangle transit bounds certify all 50 weighted queries on the agreed fixture. The 100 warm queries measure p95 39.33 ms and maximum 90.57 ms, with weighted p95 46.53 ms. Typecheck and 24 tests pass. [A04 proof and handoff](docs/geometry/A04.md) and [raw benchmark evidence](docs/geometry/benchmark.json) record the acceptance cases and production limits. E03 and E06 retain their other dependencies.
+
+**A04 — November 6, 2026 continuation.** The branch adds geometric, sampling, strip and isolated-rectangle bounds. Typecheck and 23 tests pass. The recorded warm fixture meets latency at p95 54.73 ms and maximum 122.79 ms. It certifies 19 of 50 weighted queries, so A04 stays To Do and its dependent gates stay closed. The proof, unsuccessful experiments and sparse subdivision follow-up are recorded in `docs/geometry/A04.md` and `docs/geometry/benchmark.json`.
+
+**A04 — partial handoff by Codex — A04 geometry chat, October 27, 2026; remains To Do.** User requested its own branch; `codex/a04-geometry-feasibility` has an isolated managed worktree. Exact writes: `packages/geometry/**`, `tests/geometry/**`, `docs/geometry/**`, `vitest.config.ts` (geometry test discovery), and this A04-only handoff. A01/A03 prerequisites are Complete and build authorization exists. User agreed max(0.1 ft, 0.5%) optimality error, 1e-6-ft comparison tolerance, p95 <=100 ms / max <=250 ms on this PC for 5,280-ft extent, 100 tokens, 200 blocking edges and 50 terrain regions. Continuous footprint routing, weighted analytic cases, visibility and sparse storage are implemented; 22 checks pass and candidate-query benchmark records p95 50.02 ms / max 74.90 ms. **Global weighted optimality certification remains unproved**, so A04 is not Complete and E03/E06's A04 gate remains closed. Evidence, exact commands, measured limitations and remaining work: `docs/geometry/A04.md`, `docs/geometry/benchmark.json`. No shared runtime contracts, dependencies or other task states changed.
 
 **B01 — completed by Codex — B01 implementation chat, October 27, 2026.**
 
@@ -219,6 +231,11 @@ Partial-work handoff (if any):
 
 - **A02B and parent A02 | Codex — A02 chat (`codex/a02`) | November 9, 2026:** `docs/content/CONTENT_COVERAGE.md` and `SCOPE_REVIEW.md` record the completed planning contract. The consolidated `acceptance-cases.jsonl` has 870 cases linked to all 814 catalog entries, including 774 enabled and 40 fully deferred entries. Every spell, character feature, species trait, feat benefit, background grant and weapon property has concrete acceptance evidence. All 10 Metamagic and 28 invocation options have explicit cases; unavailable branches have disclosure/non-execution cases. Twelve class tables, covering 240 class-level rows, match the hash-pinned PDF. Printed reconciliation covers spells, creatures including embedded Giant Fly, item variants, glossary/toolbox, 232 class-feature headings and 99 equipment descriptions. Ten class-source diagnostics and eleven invalid magic-weapon variants carry S02 follow-up requirements, alongside S01's existing gaps. Scope review enables Clairvoyance consistently with Scrying, retains physical fire-state effects, propagates Arcane Eye unavailability to its invocation, and isolates familiar remote perception and Private Sanctum's sight property. A01 warning/overspend execution is explicit. Offline snapshot/catalog audits, malformed/stale/missing-coverage rejection checks, six snapshot tests and PDF reconciliation pass. These are specified acceptance requirements and source-audit evidence; runtime handlers and executed mechanics coverage remain F05. Both A02 children are complete on this branch. S02 still needs B07; F04 still needs D01/F02.
 
+- **A02B main integration | Codex — A02 chat | November 9, 2026:** user requested Git integration and refreshed scheduling. A02B commit `b930a57` is combined with main through `e0f62f2`, preserving completed A04/B02/B03 evidence. Board/plan dependencies are reconciled. B04 and E02 are the ready implementation lanes; S02 still needs B07. Verification passes TypeScript and all 42 integration/geometry tests, plus offline source/catalog audits and the 52-task dependency check. The existing package-file deletions in the separate main checkout belong to prior local work and are preserved.
+
+- **B03 | Codex — B03 chat | November 9, 2026.** Commit `20e99fd` on `codex/b03-assets` implements SHA-256 original publication before references, schema-3 immutable per-record-version asset sets and retained historical references. TypeScript, all 42 tests, Windows packaging and packaged smoke verification pass. [Consumer contract](docs/contracts/B03.md). Integrated into main at the user's request; B04/E02 are prerequisite-ready.
+
+- **B02 | Codex — B02 implementation chat | November 6, 2026.** Commit `5257b25` on `codex/b02-world-storage` implements the SQLite catalog and world repositories, versioned folder manifest, transactional migrations, single-writer locking, foreign-key checks and storyteller-only local storage diagnostics. `npm run check` passed 16 tests covering two isolated worlds, migration rollback on process exit, upgrade and version rejection. Windows packaging and the packaged smoke test passed. The desktop uses a fixture scene. B03 is next after integration, and B04 owns durable command execution. [Storage contract](docs/contracts/B02.md)
 
 - **A02A | Codex — A02 chat (`codex/a02`) | November 9, 2026:** user authorized splitting A02 into completed groundwork and remaining full coverage. Commits `387f035` and `35297f3` provide 6,743 SRD identities, an 814-entry coverage catalog, proposed lighting/sense exclusions and propagation, printed spell/creature/magic-item/glossary/toolbox heading reconciliation, and 202 concrete cases linked to 209 catalog entries. Every enabled spell through 3rd level, every weapon property and background grant has a case. Offline snapshot and catalog verification pass; the prior implementation checks include six passing snapshot tests and the hash-pinned PDF audit. See [coverage and child-task handoff](docs/content/CONTENT_COVERAGE.md). A02B owns the remaining full-catalog review, final scope interpretation and independent outcome vectors. S02/F04 now consume A02A, retaining every other prerequisite; F05 explicitly requires A02B; S03 retains its S02 dependency and baseline-completeness checks. Parent A02 stays To Do until both children and integration are complete.
 
