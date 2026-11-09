@@ -71,11 +71,11 @@ it('upgrades a version-one world in place and refuses a future schema', () => {
   world.close();
   const path = join(root, 'world.sqlite');
   const legacy = new Database(path);
-  legacy.exec('DROP TABLE record_links; PRAGMA user_version = 1');
+  legacy.exec('DROP TABLE record_asset_references; DROP TABLE record_asset_versions; DROP TABLE original_assets; DROP TABLE record_links; PRAGMA user_version = 1');
   legacy.close();
   const upgraded = WorldRepository.open(root, id);
   try {
-    expect(upgraded.schemaVersion).toBe(2);
+    expect(upgraded.schemaVersion).toBe(3);
     expect(upgraded.get({ kind: record.kind, recordId: record.recordId })).toEqual(record);
   } finally { upgraded.close(); }
   const future = new Database(path);

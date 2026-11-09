@@ -2,6 +2,8 @@ import sharp from 'sharp';
 import { join } from 'node:path';
 import { readdir } from 'node:fs/promises';
 
+export { OriginalAssetStore, assetHash, type OriginalAsset } from './originals';
+
 /** Synthetic image: proves packaged sharp/libvips and tile output, without importing user assets. */
 export async function proveImageTiles(directory: string): Promise<void> {
   await sharp({ create: { width: 512, height: 512, channels: 4, background: '#283b40' } })

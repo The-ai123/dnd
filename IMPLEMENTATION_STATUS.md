@@ -19,7 +19,7 @@ Packaged compatibility fixes: preserve external native dependencies through Vite
 - A01 is now Complete through subsequent user decisions in the product-contract chat: session/reservation, clock/transfer and recovery boundaries are recorded in WORLDS_AND_SESSIONS.md and DATA_AND_RECOVERY.md. They were specified after A03, not implemented by its scaffold.
 - A05 is Complete. UI_EDITOR_CONTRACT.md records the approved visual baseline, functional editor requirements and whole-gold valuation rules. The saved mock and portable preview checks are under docs/design. Product editor and persistence work remain implementation tasks.
 - B01 is integrated and defines strict domain and IPC envelopes, role and sender validation, world binding and record-version conflicts.
-- B02 is integrated. The engine opens the catalog at startup and the shell still displays the development scene. B03 is prerequisite-ready, and B04 owns durable command execution.
+- B02 is integrated. The engine opens the catalog at startup and the shell still displays the development scene. B03's asset implementation is on `codex/b03-assets`; B04 owns durable command execution and becomes eligible after B03 integration.
 - A04 is integrated with continuous geometry feasibility, accuracy certificates and benchmark evidence in `docs/geometry/A04.md`. Production routing, fog persistence and renderer integration remain later tasks.
 - A02A is integrated with the working SRD catalog and seeded acceptance cases. A02B retains full-catalog reconciliation and remaining per-entry coverage; see `docs/content/CONTENT_COVERAGE.md`.
 - SQLite probe backup is not the C01/C02 product backup/recovery gate. Fixture records are not production world entities or durable history.
@@ -41,3 +41,13 @@ Consumer contract and exact scope: [docs/contracts/B01.md](docs/contracts/B01.md
 Commit `5257b25` adds the application catalog, one SQLite writer per world, a versioned world identity manifest, transactional migrations and local storage diagnostics in the storyteller window. The repositories validate database identity, schema versions and foreign keys before returning a writer.
 
 `npm run check` passed TypeScript and 16 tests, including two isolated worlds with matching internal record IDs, writer contention and abrupt process exit during migration. `npm run package` and `npm run test:e2e` passed for the Windows x64 package. The smoke test verified catalog startup and storyteller-only diagnostics. [Storage contract](docs/contracts/B02.md)
+
+## B03 — immutable originals and retained asset references
+
+Implemented November 9, 2026 on `codex/b03-assets` in an isolated checkout; the main checkout's pre-existing package deletions are untouched. B03 remains Active on the board at the user's request, with implementation and verification finished for review/integration.
+
+`packages/assets/src/originals.ts` streams exact bytes into flushed, same-directory staging files and publishes immutable SHA-256 originals before metadata registration. Duplicate imports verify and reuse existing bytes; corrupt/missing originals cannot receive new references. World schema 3 retains immutable per-record-version asset sets and writes them atomically with current records and links. Historical references survive subsequent versions, and derived tiles are independently disposable. No original/history pruning API is introduced.
+
+Verification: `npm run check` passed TypeScript and all 42 tests, including eight B03 integration tests. Coverage includes pre/post-publication process exits, failed transaction rollback, historical references after reopen, world isolation, corrupt/missing files, duplicate/empty/multi-chunk originals, linked-directory rejection, disposable/rebuilt tiles and schema upgrades from B02. `npm run package` and `npm run test:e2e` both passed for the isolated Windows x64 package. Dependency versions are unchanged; persistence adds the local assets workspace dependency. [Consumer contract and scope](docs/contracts/B03.md)
+
+B04 still owns durable command/version/revision-journal semantics, B07 owns historical document payloads, B08 owns orphan recovery and E02 owns image decoding/preflight and production tile jobs. B04/E02 become eligible after B03 integration. Product import UI and public asset transport are later work.

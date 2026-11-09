@@ -3,6 +3,7 @@ import { mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node
 import { join } from 'node:path';
 import { idSchema, recordReferenceSchema, revisionSchema } from '@dnd/contracts';
 import type Database from 'better-sqlite3';
+import { OriginalAssetStore, assetHash, type OriginalAsset } from '@dnd/assets/originals';
 import { openWriter, type Migration } from './database';
 import { checkStorageEntry, localDirectory } from './layout';
 
@@ -48,6 +49,28 @@ const worldMigrations: readonly Migration[] = [
       FOREIGN KEY (targetKind, targetId) REFERENCES records
     ) STRICT;
     CREATE INDEX record_links_target ON record_links (targetKind, targetId);
+  `),
+  db => db.exec(`
+    CREATE TABLE original_assets (
+      hash TEXT PRIMARY KEY CHECK (length(hash) = 64 AND hash NOT GLOB '*[^a-f0-9]*'),
+      byteLength INTEGER NOT NULL CHECK (byteLength BETWEEN 0 AND 9007199254740991)
+    ) STRICT;
+    CREATE TABLE record_asset_versions (
+      kind TEXT NOT NULL,
+      recordId TEXT NOT NULL,
+      version INTEGER NOT NULL CHECK (version BETWEEN 0 AND 9007199254740991),
+      PRIMARY KEY (kind, recordId, version)
+    ) STRICT;
+    CREATE TABLE record_asset_references (
+      kind TEXT NOT NULL,
+      recordId TEXT NOT NULL,
+      version INTEGER NOT NULL,
+      hash TEXT NOT NULL REFERENCES original_assets,
+      PRIMARY KEY (kind, recordId, version, hash),
+      FOREIGN KEY (kind, recordId, version) REFERENCES record_asset_versions
+    ) STRICT;
+    CREATE INDEX record_asset_references_hash ON record_asset_references (hash);
+    INSERT INTO record_asset_versions SELECT kind, recordId, version FROM records;
   `),
 ];
 
@@ -107,6 +130,33 @@ export class WorldRepository {
 
   get schemaVersion(): number { return Number(this.db.pragma('user_version', { simple: true })); }
 
+  /** Publish bytes before registering metadata; an interrupted registration leaves only an orphan. */
+  importAsset(source: string): OriginalAsset {
+    const asset = new OriginalAssetStore(this.folder).ingest(source);
+    this.db.prepare('INSERT INTO original_assets VALUES (@hash, @byteLength) ON CONFLICT DO NOTHING').run(asset);
+    return asset;
+  }
+
+  originalAsset(hash: string): OriginalAsset | undefined {
+    return this.db.prepare('SELECT * FROM original_assets WHERE hash = ?').get(assetHash(hash)) as OriginalAsset | undefined;
+  }
+
+  /** Includes every retained version, suitable for a future consistent backup manifest. */
+  referencedAssets(): OriginalAsset[] {
+    return this.db.prepare(`SELECT * FROM original_assets WHERE hash IN
+      (SELECT hash FROM record_asset_references) ORDER BY hash`).all() as OriginalAsset[];
+  }
+
+  assetsFor(reference: RecordReference, version?: number): string[] {
+    const parsed = recordReferenceSchema.parse(reference);
+    const selected = version ?? this.get(parsed)?.version;
+    if (selected === undefined) return [];
+    revisionSchema.parse(selected);
+    return this.db.prepare(`SELECT hash FROM record_asset_references
+      WHERE kind = ? AND recordId = ? AND version = ? ORDER BY hash`)
+      .pluck().all(parsed.kind, parsed.recordId, selected) as string[];
+  }
+
   get(reference: RecordReference): StoredRecord | undefined {
     return this.db.prepare('SELECT * FROM records WHERE kind = @kind AND recordId = @recordId')
       .get(recordReferenceSchema.parse(reference)) as StoredRecord | undefined;
@@ -119,12 +169,30 @@ export class WorldRepository {
     `).all(recordReferenceSchema.parse(reference)) as RecordReference[];
   }
 
-  write(record: StoredRecord, links: readonly RecordReference[] = []): void {
+  write(record: StoredRecord, links: readonly RecordReference[] = [], assets: readonly string[] = []): void {
     recordReferenceSchema.parse({ kind: record.kind, recordId: record.recordId });
     revisionSchema.parse(record.version);
     revisionSchema.min(1).parse(record.documentVersion);
     const targets = links.map(link => recordReferenceSchema.parse(link));
+    const hashes = [...new Set(assets.map(assetHash))].sort();
+    const store = new OriginalAssetStore(this.folder);
+    for (const hash of hashes) {
+      const registered = this.originalAsset(hash);
+      if (!registered) throw new Error(`Original asset is not registered in this world: ${hash}`);
+      if (store.verify(hash).byteLength !== registered.byteLength) throw new Error('Original asset size mismatch');
+    }
     this.db.transaction(() => {
+      const seen = this.db.prepare('SELECT 1 FROM record_asset_versions WHERE kind = ? AND recordId = ? AND version = ?')
+        .get(record.kind, record.recordId, record.version);
+      if (seen) {
+        if (JSON.stringify(this.assetsFor({ kind: record.kind, recordId: record.recordId }, record.version)) !== JSON.stringify(hashes)) {
+          throw new Error('Asset references for an existing record version are immutable');
+        }
+      } else {
+        this.db.prepare('INSERT INTO record_asset_versions VALUES (?, ?, ?)').run(record.kind, record.recordId, record.version);
+        const reference = this.db.prepare('INSERT INTO record_asset_references VALUES (?, ?, ?, ?)');
+        for (const hash of hashes) reference.run(record.kind, record.recordId, record.version, hash);
+      }
       this.db.prepare(`
         INSERT INTO records (kind, recordId, version, documentVersion, json)
         VALUES (@kind, @recordId, @version, @documentVersion, @json)

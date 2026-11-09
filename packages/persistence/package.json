@@ -3,6 +3,7 @@
   "private": true,
   "name": "@dnd/persistence",
   "dependencies": {
+    "@dnd/assets": "0.1.0",
     "@dnd/contracts": "0.1.0",
     "better-sqlite3": "13.0.3"
   },
