@@ -1,0 +1,2 @@
+# Raw published bytes and their hash manifests must survive Git checkout unchanged.
+* -text

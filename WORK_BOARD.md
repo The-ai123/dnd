@@ -1,6 +1,6 @@
 # Agent work board — task status and scheduling authority
 
-Updated: November 6, 2026. A01's user-approved state, ownership and behavior contract is complete. A03 has packaged Windows compatibility evidence in [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md). A04 has completed the agreed [geometry feasibility cases](docs/geometry/A04.md) on its task branch. Remaining production work and its prerequisites are tracked below.
+Updated: November 9, 2026. A04 geometry feasibility is complete with proof and benchmark evidence in docs/geometry/A04.md. A01, A03, A05, B01 and S01 retain their completed status. Remaining production work follows the prerequisites below.
 
 ## 1. Status rules
 
@@ -32,12 +32,12 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 | P02 | Adopt Open5e source and define no-scrape ingestion plan | Complete | Planning chat | P01 | Planning |
 | P03 | Dependency/status board and agent handoff organization | Complete | Planning chat | P01, P02 | Planning |
 | A01 | Close product-state/ownership gaps and reconcile legacy notes | Complete | Codex — A01 product-contract chat (this chat) | — | Planning |
-| S01 | Pin/audit published Open5e snapshot and 5.2.1 parity | To Do | — | — | Acquisition |
+| S01 | Pin/audit published Open5e snapshot and 5.2.1 parity | Complete | Codex — S01 implementation chat | — | Acquisition |
 | A02 | Actual SRD inventory, exclusions and automation coverage fixtures | To Do | — | A01, S01 | Planning |
 | A03 | Stack review and packaged Windows compatibility proof | Complete | Architecture implementation chat | — | Build |
 | A04 | Continuous geometry feasibility and optimality/performance proof | Complete | Codex — A04 geometry chat | A01, A03 | Build |
-| A05 | Approve exact UI/editor schemas and validation behavior | Active | Codex — A01/A05 product-contract chat (this chat) | A01 | Planning |
-| B01 | Strict domain/IPC contracts and role-scoped envelopes | To Do | — | A01, A03 | Build |
+| A05 | Approve exact UI/editor schemas and validation behavior | Complete | Codex — A05 completion chat (`codex/a05`) | A01 | Planning |
+| B01 | Strict domain/IPC contracts and role-scoped envelopes | Complete | Codex — B01 implementation chat | A01, A03 | Build |
 | B02 | World/catalog storage, migrations, writer repositories | To Do | — | B01 | Build |
 | B03 | Immutable original-asset ingestion/references | To Do | — | B02 | Build |
 | B04 | Atomic commands, idempotency, revisions/projections | To Do | — | B02, B03 | Build |
@@ -81,22 +81,20 @@ P tasks are completed planning deliverables. A–G/S tasks use completion criter
 
 ### To Do / Active / Complete snapshot
 
-- **To Do:** all A–G and S tasks except completed A01/A03/A04 and Active A05. Production IPC, storage/history, recovery, gameplay, content and release work remain unfinished.
-- **Active:** A05 — Codex — A01/A05 product-contract chat (this chat).
-- **Complete:** P01, P02, P03 (planning artifacts), A01 (approved product contract with explicit downstream exclusions), A03 (tested architecture foundation), A04 (geometry feasibility against the agreed cases).
-- **Next:** A05 is claimed for UI/editor specification and visual review. B01 has completed task prerequisites and an open build gate. E03 and E06 still have other prerequisites. S01 remains prerequisite-free but needs its acquisition claim/authorization and provenance audit. A02 still waits for S01.
+- **To Do:** remaining tasks in the table above.
+- **Complete:** P01, P02, P03, A01, A03, A04, A05, B01 and S01.
+- **Next:** continue A02 and integrate the published B02 branch before starting B03. E03 and E06 retain their other prerequisites. B07 still requires B04.
 
-### Ready parallel work — October 27 handoff
+### Ready parallel work — November 6 handoff
 
-The following lanes have completed task prerequisites. They are opportunities, not new claims. The assigned owner must record exact paths before writing and satisfy the task's own evidence/gate. A05 remains owned by this chat; no unapproved functional details are frozen merely to enable another task.
+The following lanes have completed task prerequisites. They are opportunities, not new claims. The assigned owner must record exact paths before writing and satisfy the task's own evidence/gate.
 
 | Lane | Ready work / scope boundary | Coordination and next unlock |
 | --- | --- | --- |
-| B01 | Strict domain/IPC envelopes, identities, roles, binding and validation; claim exact `packages/contracts/**`, `packages/domain/**` and required desktop IPC/test files | One owner for shared runtime contracts; use approved A01/A05 decisions and keep pending editor details explicit. Unblocks B02 |
-| S01 | Pin/audit published Open5e snapshot/provenance/parity; isolated `data/upstream/**`, `docs/content/**` | Separate acquisition claim required; remains MVP after user's clarification. Record raw source evidence, not normalized/editor schemas. Unblocks A02; source JSON does not complete mechanics |
-| A05 | Finish final library/progression and broader functional-contract review, including remaining shop lifecycle decisions | This chat owns root planning documents and `docs/design/**`. New lanes send evidence/contract proposals to the coordinator instead of editing the board/root plans concurrently. B07 and downstream UI/content gates remain blocked until A05 Complete |
+| A02 | Catalog the pinned SRD, document exclusions, and define automation/progression fixtures | A01 and S01 are complete. Use `docs/content/CONTENT_INVENTORY.md` and the parity audit. Use the approved editor contract in `UI_EDITOR_CONTRACT.md` |
+| B02 | Implement world/catalog storage, migrations, and writer repositories | B01 is integrated. Use `docs/contracts/B01.md`. Unblocks B03 |
 
-The remaining lanes may progress concurrently within those boundaries. A02 waits for S01, and B02 waits for B01. B07, C05 and D01 retain their listed prerequisites. Keep package manifests and lockfiles under one integrator.
+A02 and B02 can progress concurrently within those boundaries. S02 still requires A02 and B07. Keep package manifests and lockfiles under one integrator.
 
 ## 4. Sequential spine and parallel lanes
 
@@ -146,11 +144,21 @@ Paths are intended boundaries, not evidence those modules exist. Exact claimed p
 
 ### Active claim / blocker log
 
+**A04 — November 9, 2026 publication.** Reconciled this board with current main, preserving the completed A05, B01 and S01 work. A04 is Complete on `codex/a04-geometry-feasibility`. Typecheck and 30 functional tests pass after integration. The isolated hardware benchmark passes and certifies all 50 weighted routes. The combined concurrent run reached weighted p95 112.86 ms, above its target, before the isolated check. The published B02 branch has its own completion evidence and awaits integration into main.
+
 **A04 — November 6, 2026 completion.** On `codex/a04-geometry-feasibility`, adaptive rectangle transit bounds certify all 50 weighted queries on the agreed fixture. The 100 warm queries measure p95 39.33 ms and maximum 90.57 ms, with weighted p95 46.53 ms. Typecheck and 24 tests pass. [A04 proof and handoff](docs/geometry/A04.md) and [raw benchmark evidence](docs/geometry/benchmark.json) record the acceptance cases and production limits. E03 and E06 retain their other dependencies.
 
 **A04 — November 6, 2026 continuation.** The branch adds geometric, sampling, strip and isolated-rectangle bounds. Typecheck and 23 tests pass. The recorded warm fixture meets latency at p95 54.73 ms and maximum 122.79 ms. It certifies 19 of 50 weighted queries, so A04 stays To Do and its dependent gates stay closed. The proof, unsuccessful experiments and sparse subdivision follow-up are recorded in `docs/geometry/A04.md` and `docs/geometry/benchmark.json`.
 
 **A04 — partial handoff by Codex — A04 geometry chat, October 27, 2026; remains To Do.** User requested its own branch; `codex/a04-geometry-feasibility` has an isolated managed worktree. Exact writes: `packages/geometry/**`, `tests/geometry/**`, `docs/geometry/**`, `vitest.config.ts` (geometry test discovery), and this A04-only handoff. A01/A03 prerequisites are Complete and build authorization exists. User agreed max(0.1 ft, 0.5%) optimality error, 1e-6-ft comparison tolerance, p95 <=100 ms / max <=250 ms on this PC for 5,280-ft extent, 100 tokens, 200 blocking edges and 50 terrain regions. Continuous footprint routing, weighted analytic cases, visibility and sparse storage are implemented; 22 checks pass and candidate-query benchmark records p95 50.02 ms / max 74.90 ms. **Global weighted optimality certification remains unproved**, so A04 is not Complete and E03/E06's A04 gate remains closed. Evidence, exact commands, measured limitations and remaining work: `docs/geometry/A04.md`, `docs/geometry/benchmark.json`. No shared runtime contracts, dependencies or other task states changed.
+
+**B01 — completed by Codex — B01 implementation chat, October 27, 2026.**
+
+- Branch: `codex/b01-domain-ipc-contracts`. Prerequisites A01/A03 Complete; user explicitly requested B01 on its own branch.
+- Isolated managed worktree: `C:/Users/adafo/.codex/worktrees/b01-domain-ipc/dnd`. Moved verified task files out of the shared checkout after another chat switched its branch; preserved unrelated acquisition/geometry work.
+- Exact write paths: `packages/contracts/src/**`, `packages/domain/src/**`, `apps/desktop/main/{index,ipc-boundary,engine-process}.ts`, `apps/desktop/preload/{storyteller,player}.ts`, `tests/integration/{contracts,ipc-boundary}.test.ts`, `tests/e2e/desktop.spec.ts`, `docs/contracts/B01.md`, `WORK_BOARD.md`, `IMPLEMENTATION_STATUS.md`.
+- Evidence: strict domain and role-scoped request/result schemas; registered top-frame sender checks; authoritative world binding; structured version conflicts; negative boundary tests and packaged two-window smoke test.
+- Boundary: B02–B06 own storage, durable execution/idempotency, reservations and lifecycle handlers. A05 editor/content details remain pending; no competing editor or planning paths are claimed beyond this task's board/status evidence.
 
 **A05 — claimed by Codex — A01/A05 product-contract chat (this chat), October 27, 2026.**
 
@@ -205,12 +213,17 @@ Partial-work handoff (if any):
 
 ### Completion evidence log
 
+- **A05 | Codex — A05 completion chat (`codex/a05`) | November 6, 2026:** direct approval of the final functional draft and zero-gold rule, following the accepted Home, manager, Play/inspector and invalid-input visual baseline. `UI_EDITOR_CONTRACT.md` records approved fields, save/validation/status behavior, and the separation of durable raw drafts from valid gameplay values. Headless Edge preview checks passed, including invalid HP, commit gestures, failure/retry and layout checks. B07 still requires B04 and S02 still requires A02/B07. Catalog coverage, runtime persistence, public projection enforcement and native accessibility/scaling belong to their implementation tasks.
+
+- **B01 | Codex — B01 implementation chat | October 27, 2026:** strict versioned request/result unions, UUID/record/session/reservation/placement/formula schemas, role-specific preloads, registered top-frame host checks, serialized engine world binding and structured record-version conflict validation. Exact implementation/consumer contract in `docs/contracts/B01.md`. `npm run check` passes TypeScript and 12 tests; `npm run package` and the expanded packaged `npm run test:e2e` pass from the isolated worktree. Invalid schema/sender/role/world input is rejected, result correlation/binding checked, public privacy and window reopen retained. No dependency/lockfile changes. Session commands are defined but return `UNSUPPORTED_OPERATION` until B04–B06 install durable handlers; B02 storage, transactional idempotency, lifecycle/reservation policies, full content schemas and rules remain later tasks. B02 is prerequisite-ready upon integration; no dependent task claimed.
+
 - **A01 | Codex — A01 product-contract chat (this chat) | October 27, 2026:** direct user approvals recorded in this chat; consolidated state/action table, ownership/timer/rules/preset contract and acceptance cases in `WORLDS_AND_SESSIONS.md`; exact recovery prefix/status/reservations in `DATA_AND_RECOVERY.md`; downstream exclusions and consumers in `ARCHITECTURE.md` section 14. Reconciled `PROJECT_PLAN.md`, `APP_NAVIGATION.md`, `PROPOSED_DETAILS.md`, `PLANNING_INDEX.md` and this board. Manual consistency review and `git diff --check` pass. No runtime tests needed for documentation-only changes; acceptance examples specify future behavioral tests, not executed production evidence. A04/A05/B01 become prerequisite-ready, A02 still needs S01. A04 numeric/hardware criteria, A05 fields/UI, B03/E02 format limits, C03/C04 recovery presentation/archive checks and actual catalog/mechanics coverage remain explicitly excluded and must be resolved/validated by their task owners.
 
 - **A03 | Architecture implementation chat | October 27, 2026:** exact files and evidence in `IMPLEMENTATION_STATUS.md`; pinned Electron 45/Forge 8/Vite 8/React 19/Pixi 8/native SQLite and sharp workspace; `npm run check`, `npm run package`, `npm run test:e2e` pass. Packaged native backups/tiles, WebGL and isolated windows verified. No product-state/geometry/editor approval inferred. A04 and B01 still require A01 before they are eligible; no dependent task claimed.
 
 - **P01:** ARCHITECTURE.md and IMPLEMENTATION_PLAN.md written as recommended technical baseline and acceptance-based build sequence; no package compatibility proof claimed.
-- **P02:** CONTENT_DATA_PLAN.md records selected Open5e files, pinning/provenance/5.2.1 audit, no-scrape/offline pipeline and separate mechanics gate. Raw dataset acquisition remains S01 To Do.
+- **P02:** CONTENT_DATA_PLAN.md records source selection and the offline ingestion plan. S01 records the acquired snapshot and audit.
+- **S01 | Codex — S01 implementation chat | November 6, 2026:** integrated source commit `78a9ce0` with 77 verified upstream files, 6,743 SRD fixture rows, attribution, and the 5.2.1 gap audit. Offline verification and six audit tests passed. [Completion evidence](docs/content/S01_HANDOFF.md).
 - **P03:** WORK_BOARD.md added; all implementation tasks assigned explicit dependencies, gate and initial status; no Active implementation claim or fabricated validation. Dependency consistency/cycle checks recorded by this planning update.
 
 Future completion entry: `Task | Owner | Date | Commit/files | Behavioral/test evidence | Remaining limitations/new task IDs`.

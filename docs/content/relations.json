@@ -1,0 +1,572 @@
+{
+  "api_v2.ability": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.abilitydescription": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "describes": {
+      "model": "api_v2.ability",
+      "many": false
+    }
+  },
+  "api_v2.alignment": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.alignmentdescription": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "describes": {
+      "model": "api_v2.alignment",
+      "many": false
+    }
+  },
+  "api_v2.armor": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.background": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.backgroundbenefit": {
+    "parent": {
+      "model": "api_v2.background",
+      "many": false
+    }
+  },
+  "api_v2.benefit": {},
+  "api_v2.characterclass": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "subclass_of": {
+      "model": "api_v2.characterclass",
+      "many": false
+    },
+    "saving_throws": {
+      "model": "api_v2.ability",
+      "many": true
+    },
+    "primary_abilities": {
+      "model": "api_v2.ability",
+      "many": true
+    }
+  },
+  "api_v2.classfeature": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "parent": {
+      "model": "api_v2.characterclass",
+      "many": false
+    }
+  },
+  "api_v2.classfeatureitem": {
+    "parent": {
+      "model": "api_v2.classfeature",
+      "many": false
+    }
+  },
+  "api_v2.condition": {
+    "icon": {
+      "model": "api_v2.image",
+      "many": false
+    },
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.conditiondescription": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "describes": {
+      "model": "api_v2.condition",
+      "many": false
+    }
+  },
+  "api_v2.creature": {
+    "size": {
+      "model": "api_v2.size",
+      "many": false
+    },
+    "damage_vulnerabilities": {
+      "model": "api_v2.damagetype",
+      "many": true
+    },
+    "damage_resistances": {
+      "model": "api_v2.damagetype",
+      "many": true
+    },
+    "damage_immunities": {
+      "model": "api_v2.damagetype",
+      "many": true
+    },
+    "languages": {
+      "model": "api_v2.language",
+      "many": true
+    },
+    "illustration": {
+      "model": "api_v2.image",
+      "many": false
+    },
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "type": {
+      "model": "api_v2.creaturetype",
+      "many": false
+    },
+    "condition_immunities": {
+      "model": "api_v2.condition",
+      "many": true
+    },
+    "environments": {
+      "model": "api_v2.environment",
+      "many": true
+    }
+  },
+  "api_v2.creatureaction": {
+    "parent": {
+      "model": "api_v2.creature",
+      "many": false
+    }
+  },
+  "api_v2.creatureactionattack": {
+    "parent": {
+      "model": "api_v2.creatureaction",
+      "many": false
+    },
+    "damage_type": {
+      "model": "api_v2.damagetype",
+      "many": false
+    },
+    "extra_damage_type": {
+      "model": "api_v2.damagetype",
+      "many": false
+    }
+  },
+  "api_v2.creatureset": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "creatures": {
+      "model": "api_v2.creature",
+      "many": true
+    }
+  },
+  "api_v2.creaturetrait": {
+    "parent": {
+      "model": "api_v2.creature",
+      "many": false
+    }
+  },
+  "api_v2.creaturetype": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.creaturetypedescription": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "describes": {
+      "model": "api_v2.creaturetype",
+      "many": false
+    }
+  },
+  "api_v2.crossreference": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "source_content_type": {
+      "model": "api_v2.contenttype",
+      "many": false
+    },
+    "reference_content_type": {
+      "model": "api_v2.contenttype",
+      "many": false
+    }
+  },
+  "api_v2.damagetype": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.damagetypedescription": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "describes": {
+      "model": "api_v2.damagetype",
+      "many": false
+    }
+  },
+  "api_v2.document": {
+    "licenses": {
+      "model": "api_v2.license",
+      "many": true
+    },
+    "publisher": {
+      "model": "api_v2.publisher",
+      "many": false
+    },
+    "gamesystem": {
+      "model": "api_v2.gamesystem",
+      "many": false
+    }
+  },
+  "api_v2.environment": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.feat": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.featbenefit": {
+    "parent": {
+      "model": "api_v2.feat",
+      "many": false
+    }
+  },
+  "api_v2.fromdocument": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.gamesystem": {},
+  "api_v2.hasabilities": {},
+  "api_v2.hasdescription": {},
+  "api_v2.hasicon": {
+    "icon": {
+      "model": "api_v2.image",
+      "many": false
+    }
+  },
+  "api_v2.hasillustration": {
+    "illustration": {
+      "model": "api_v2.image",
+      "many": false
+    }
+  },
+  "api_v2.haslanguage": {
+    "languages": {
+      "model": "api_v2.language",
+      "many": true
+    }
+  },
+  "api_v2.hasname": {},
+  "api_v2.hasprerequisite": {},
+  "api_v2.hasprice": {},
+  "api_v2.hassenses": {},
+  "api_v2.hasspeed": {},
+  "api_v2.image": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.item": {
+    "weapon": {
+      "model": "api_v2.weapon",
+      "many": false
+    },
+    "armor": {
+      "model": "api_v2.armor",
+      "many": false
+    },
+    "category": {
+      "model": "api_v2.itemcategory",
+      "many": false
+    },
+    "damage_vulnerabilities": {
+      "model": "api_v2.damagetype",
+      "many": true
+    },
+    "damage_immunities": {
+      "model": "api_v2.damagetype",
+      "many": true
+    },
+    "damage_resistances": {
+      "model": "api_v2.damagetype",
+      "many": true
+    },
+    "size": {
+      "model": "api_v2.size",
+      "many": false
+    },
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.itembase": {
+    "weapon": {
+      "model": "api_v2.weapon",
+      "many": false
+    },
+    "armor": {
+      "model": "api_v2.armor",
+      "many": false
+    },
+    "category": {
+      "model": "api_v2.itemcategory",
+      "many": false
+    },
+    "damage_vulnerabilities": {
+      "model": "api_v2.damagetype",
+      "many": true
+    },
+    "damage_immunities": {
+      "model": "api_v2.damagetype",
+      "many": true
+    },
+    "damage_resistances": {
+      "model": "api_v2.damagetype",
+      "many": true
+    }
+  },
+  "api_v2.itemcategory": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.itemrarity": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.itemset": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "items": {
+      "model": "api_v2.item",
+      "many": true
+    }
+  },
+  "api_v2.language": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "script_language": {
+      "model": "api_v2.language",
+      "many": false
+    }
+  },
+  "api_v2.license": {},
+  "api_v2.magicitem": {
+    "weapon": {
+      "model": "api_v2.weapon",
+      "many": false
+    },
+    "armor": {
+      "model": "api_v2.armor",
+      "many": false
+    },
+    "category": {
+      "model": "api_v2.itemcategory",
+      "many": false
+    },
+    "damage_vulnerabilities": {
+      "model": "api_v2.damagetype",
+      "many": true
+    },
+    "damage_immunities": {
+      "model": "api_v2.damagetype",
+      "many": true
+    },
+    "damage_resistances": {
+      "model": "api_v2.damagetype",
+      "many": true
+    },
+    "size": {
+      "model": "api_v2.size",
+      "many": false
+    },
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "rarity": {
+      "model": "api_v2.itemrarity",
+      "many": false
+    }
+  },
+  "api_v2.modification": {},
+  "api_v2.object": {
+    "size": {
+      "model": "api_v2.size",
+      "many": false
+    },
+    "damage_vulnerabilities": {
+      "model": "api_v2.damagetype",
+      "many": true
+    },
+    "damage_resistances": {
+      "model": "api_v2.damagetype",
+      "many": true
+    },
+    "damage_immunities": {
+      "model": "api_v2.damagetype",
+      "many": true
+    }
+  },
+  "api_v2.publisher": {},
+  "api_v2.rule": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "ruleset": {
+      "model": "api_v2.ruleset",
+      "many": false
+    }
+  },
+  "api_v2.ruleset": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.service": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.size": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.skill": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "ability": {
+      "model": "api_v2.ability",
+      "many": false
+    }
+  },
+  "api_v2.skilldescription": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "describes": {
+      "model": "api_v2.skill",
+      "many": false
+    }
+  },
+  "api_v2.species": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "subspecies_of": {
+      "model": "api_v2.species",
+      "many": false
+    }
+  },
+  "api_v2.speciestrait": {
+    "parent": {
+      "model": "api_v2.species",
+      "many": false
+    }
+  },
+  "api_v2.spell": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "school": {
+      "model": "api_v2.spellschool",
+      "many": false
+    },
+    "classes": {
+      "model": "api_v2.characterclass",
+      "many": true
+    }
+  },
+  "api_v2.spellcastingoption": {
+    "parent": {
+      "model": "api_v2.spell",
+      "many": false
+    }
+  },
+  "api_v2.spellschool": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.weapon": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "damage_type": {
+      "model": "api_v2.damagetype",
+      "many": false
+    }
+  },
+  "api_v2.weaponproperty": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    }
+  },
+  "api_v2.weaponpropertyassignment": {
+    "document": {
+      "model": "api_v2.document",
+      "many": false
+    },
+    "weapon": {
+      "model": "api_v2.weapon",
+      "many": false
+    },
+    "property": {
+      "model": "api_v2.weaponproperty",
+      "many": false
+    }
+  }
+}

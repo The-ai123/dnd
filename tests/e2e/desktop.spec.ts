@@ -28,6 +28,26 @@ test('packaged offline windows, native probes and public authority boundary', as
     expect(security.staleRejected).toBe(true);
     expect(JSON.stringify(security.scene)).not.toMatch(/Hidden creature|Secret tactics|privateNotes|maxHp/);
     expect(security.scene.tokens).toHaveLength(2);
+    const contracts = await storyteller.evaluate(async () => {
+      const snapshot = await window.storyteller.snapshot();
+      const base = { protocolVersion: 1 as const, requestId: crypto.randomUUID(), actorWindowRole: 'storyteller' as const };
+      const foreign = await window.storyteller.request({ ...base, operation: 'world.snapshot', worldInstanceId: crypto.randomUUID() });
+      const current = await window.storyteller.request({ ...base, operation: 'world.snapshot', worldInstanceId: snapshot.publicScene.identity.worldInstanceId });
+      const sessionId = crypto.randomUUID();
+      const unavailable = await window.storyteller.request({ ...base, operation: 'session.complete', worldInstanceId: snapshot.publicScene.identity.worldInstanceId, commandId: crypto.randomUUID(), sessionId, expectedRecordVersions: [{ kind: 'session', recordId: sessionId, version: 0 }], payload: {} });
+      let invalidRejected = false;
+      try { await window.storyteller.request({ ...base, operation: 'host.open-player', extra: true } as Parameters<typeof window.storyteller.request>[0]); }
+      catch { invalidRejected = true; }
+      return { foreign, currentOk: current.ok, unavailable, invalidRejected };
+    });
+    expect(contracts.foreign).toMatchObject({ ok: false, error: { code: 'WORLD_MISMATCH' } });
+    expect(contracts.currentOk).toBe(true);
+    expect(contracts.unavailable).toMatchObject({ ok: false, error: { code: 'UNSUPPORTED_OPERATION' } });
+    expect(contracts.invalidRejected).toBe(true);
+    await player.evaluate(async () => {
+      const scene = await window.player.snapshot();
+      await window.player.select({ identity: scene.identity, tokenId: scene.tokens[0]!.id });
+    });
     const processIds = await application.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows().map(window => window.webContents.getOSProcessId()));
     expect(new Set(processIds).size).toBe(2);
     const unregisteredRejected = await application.evaluate(async ({ app, BrowserWindow }) => {
@@ -37,7 +57,7 @@ test('packaged offline windows, native probes and public authority boundary', as
       } });
       try {
         await unregistered.loadURL('data:text/html,<title>Unregistered sender test</title>');
-        return await unregistered.webContents.executeJavaScript('window.storyteller.snapshot().then(() => false, error => error.message.includes("Unauthorized IPC sender"))') as boolean;
+        return await unregistered.webContents.executeJavaScript(`window.storyteller.request({ protocolVersion: 1, requestId: '11111111-1111-4111-8111-111111111111', actorWindowRole: 'storyteller', operation: 'host.snapshot' }).then(response => !response.ok && response.error.code === 'UNAUTHORIZED')`) as boolean;
       } finally { unregistered.destroy(); }
     });
     expect(unregisteredRejected).toBe(true);

@@ -1,6 +1,6 @@
 # A05 review baseline
 
-`a05-interface-review.html` preserves the interactive review source accepted as the visual baseline on October 27, 2026. It is an HTML fragment for the conversation preview, not a production page or implementation of game rules, persistence or security boundaries. The authoritative approval state and pending functional choices are in `UI_EDITOR_CONTRACT.md` and `WORK_BOARD.md` at the repository root.
+`a05-interface-review.html` preserves the interactive review source accepted as the visual baseline on October 27, 2026. It is an HTML fragment for the conversation preview, not a production page or implementation of game rules, persistence or security boundaries. The approved functional requirements and completion evidence are in `UI_EDITOR_CONTRACT.md` and `WORK_BOARD.md` at the repository root.
 
 The baseline includes the bottom inspector dock, independent active-creature sheet, HP beside sheet/inspector names, top horizontal player turn queue with arrow-tab collapse, unknown public identities, and commit-on-field-departure/Enter (Ctrl+Enter for multiline text). The synthetic fixture contains both storyteller and public presentations in one review document; production requires separate role-filtered processes and payloads.
 

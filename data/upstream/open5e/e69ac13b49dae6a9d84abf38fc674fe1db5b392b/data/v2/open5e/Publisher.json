@@ -1,0 +1,9 @@
+[
+{
+  "fields": {
+    "name": "Open5e"
+  },
+  "model": "api_v2.publisher",
+  "pk": "open5e"
+}
+]

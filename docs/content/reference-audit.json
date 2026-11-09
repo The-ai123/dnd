@@ -1,0 +1,946 @@
+{
+  "duplicates": [],
+  "unresolved_references": [],
+  "excluded_image_references": [
+    {
+      "file": "data/v2/open5e/core/Condition.json",
+      "model": "api_v2.condition",
+      "pk": "blinded",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "target_pk": "elderberry_blinded"
+    },
+    {
+      "file": "data/v2/open5e/core/Condition.json",
+      "model": "api_v2.condition",
+      "pk": "charmed",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "target_pk": "elderberry_charmed"
+    },
+    {
+      "file": "data/v2/open5e/core/Condition.json",
+      "model": "api_v2.condition",
+      "pk": "deafened",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "target_pk": "elderberry_deaftened"
+    },
+    {
+      "file": "data/v2/open5e/core/Condition.json",
+      "model": "api_v2.condition",
+      "pk": "exhaustion",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "target_pk": "elderberry_exhaustion1"
+    },
+    {
+      "file": "data/v2/open5e/core/Condition.json",
+      "model": "api_v2.condition",
+      "pk": "frightened",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "target_pk": "elderberry_frightened"
+    },
+    {
+      "file": "data/v2/open5e/core/Condition.json",
+      "model": "api_v2.condition",
+      "pk": "grappled",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "target_pk": "elderberry_grappled"
+    },
+    {
+      "file": "data/v2/open5e/core/Condition.json",
+      "model": "api_v2.condition",
+      "pk": "incapacitated",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "target_pk": "elderberry_incapacitated"
+    },
+    {
+      "file": "data/v2/open5e/core/Condition.json",
+      "model": "api_v2.condition",
+      "pk": "invisible",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "target_pk": "elderberry_invisible"
+    },
+    {
+      "file": "data/v2/open5e/core/Condition.json",
+      "model": "api_v2.condition",
+      "pk": "paralyzed",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "target_pk": "elderberry_paralyzed"
+    },
+    {
+      "file": "data/v2/open5e/core/Condition.json",
+      "model": "api_v2.condition",
+      "pk": "petrified",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "target_pk": "elderberry_petrified"
+    },
+    {
+      "file": "data/v2/open5e/core/Condition.json",
+      "model": "api_v2.condition",
+      "pk": "poisoned",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "target_pk": "elderberry_poisoned"
+    },
+    {
+      "file": "data/v2/open5e/core/Condition.json",
+      "model": "api_v2.condition",
+      "pk": "prone",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "target_pk": "elderberry_prone"
+    },
+    {
+      "file": "data/v2/open5e/core/Condition.json",
+      "model": "api_v2.condition",
+      "pk": "restrained",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "target_pk": "elderberry_restrained"
+    },
+    {
+      "file": "data/v2/open5e/core/Condition.json",
+      "model": "api_v2.condition",
+      "pk": "stunned",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "target_pk": "elderberry_stunned"
+    },
+    {
+      "file": "data/v2/open5e/core/Condition.json",
+      "model": "api_v2.condition",
+      "pk": "unconscious",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "target_pk": "elderberry_inconscious"
+    }
+  ],
+  "content_type_natural_keys": 90,
+  "reference_counts": [
+    {
+      "model": "api_v2.ability",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 6
+    },
+    {
+      "model": "api_v2.abilitydescription",
+      "field": "describes",
+      "target_model": "api_v2.ability",
+      "count": 6
+    },
+    {
+      "model": "api_v2.abilitydescription",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 6
+    },
+    {
+      "model": "api_v2.alignment",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 9
+    },
+    {
+      "model": "api_v2.alignmentdescription",
+      "field": "describes",
+      "target_model": "api_v2.alignment",
+      "count": 9
+    },
+    {
+      "model": "api_v2.alignmentdescription",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 9
+    },
+    {
+      "model": "api_v2.armor",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 13
+    },
+    {
+      "model": "api_v2.background",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 4
+    },
+    {
+      "model": "api_v2.backgroundbenefit",
+      "field": "parent",
+      "target_model": "api_v2.background",
+      "count": 20
+    },
+    {
+      "model": "api_v2.characterclass",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 24
+    },
+    {
+      "model": "api_v2.characterclass",
+      "field": "saving_throws",
+      "target_model": "api_v2.ability",
+      "count": 24
+    },
+    {
+      "model": "api_v2.characterclass",
+      "field": "subclass_of",
+      "target_model": "api_v2.characterclass",
+      "count": 12
+    },
+    {
+      "model": "api_v2.classfeature",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 352
+    },
+    {
+      "model": "api_v2.classfeature",
+      "field": "parent",
+      "target_model": "api_v2.characterclass",
+      "count": 352
+    },
+    {
+      "model": "api_v2.classfeatureitem",
+      "field": "parent",
+      "target_model": "api_v2.classfeature",
+      "count": 1812
+    },
+    {
+      "model": "api_v2.condition",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 15
+    },
+    {
+      "model": "api_v2.condition",
+      "field": "icon",
+      "target_model": "api_v2.image",
+      "count": 15
+    },
+    {
+      "model": "api_v2.conditiondescription",
+      "field": "describes",
+      "target_model": "api_v2.condition",
+      "count": 15
+    },
+    {
+      "model": "api_v2.conditiondescription",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 15
+    },
+    {
+      "model": "api_v2.creature",
+      "field": "condition_immunities",
+      "target_model": "api_v2.condition",
+      "count": 272
+    },
+    {
+      "model": "api_v2.creature",
+      "field": "damage_immunities",
+      "target_model": "api_v2.damagetype",
+      "count": 169
+    },
+    {
+      "model": "api_v2.creature",
+      "field": "damage_resistances",
+      "target_model": "api_v2.damagetype",
+      "count": 105
+    },
+    {
+      "model": "api_v2.creature",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 331
+    },
+    {
+      "model": "api_v2.creature",
+      "field": "languages",
+      "target_model": "api_v2.language",
+      "count": 293
+    },
+    {
+      "model": "api_v2.creature",
+      "field": "size",
+      "target_model": "api_v2.size",
+      "count": 331
+    },
+    {
+      "model": "api_v2.creature",
+      "field": "type",
+      "target_model": "api_v2.creaturetype",
+      "count": 331
+    },
+    {
+      "model": "api_v2.creatureaction",
+      "field": "parent",
+      "target_model": "api_v2.creature",
+      "count": 989
+    },
+    {
+      "model": "api_v2.creatureactionattack",
+      "field": "damage_type",
+      "target_model": "api_v2.damagetype",
+      "count": 390
+    },
+    {
+      "model": "api_v2.creatureactionattack",
+      "field": "extra_damage_type",
+      "target_model": "api_v2.damagetype",
+      "count": 123
+    },
+    {
+      "model": "api_v2.creatureactionattack",
+      "field": "parent",
+      "target_model": "api_v2.creatureaction",
+      "count": 390
+    },
+    {
+      "model": "api_v2.creaturetrait",
+      "field": "parent",
+      "target_model": "api_v2.creature",
+      "count": 329
+    },
+    {
+      "model": "api_v2.creaturetype",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 14
+    },
+    {
+      "model": "api_v2.creaturetypedescription",
+      "field": "describes",
+      "target_model": "api_v2.creaturetype",
+      "count": 14
+    },
+    {
+      "model": "api_v2.creaturetypedescription",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 14
+    },
+    {
+      "model": "api_v2.crossreference",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 45
+    },
+    {
+      "model": "api_v2.crossreference",
+      "field": "reference_object_key",
+      "target_model": "api_v2.conditiondescription",
+      "count": 2
+    },
+    {
+      "model": "api_v2.crossreference",
+      "field": "reference_object_key",
+      "target_model": "api_v2.creature",
+      "count": 8
+    },
+    {
+      "model": "api_v2.crossreference",
+      "field": "reference_object_key",
+      "target_model": "api_v2.feat",
+      "count": 3
+    },
+    {
+      "model": "api_v2.crossreference",
+      "field": "reference_object_key",
+      "target_model": "api_v2.rule",
+      "count": 1
+    },
+    {
+      "model": "api_v2.crossreference",
+      "field": "reference_object_key",
+      "target_model": "api_v2.spell",
+      "count": 30
+    },
+    {
+      "model": "api_v2.crossreference",
+      "field": "reference_object_key",
+      "target_model": "api_v2.weaponproperty",
+      "count": 1
+    },
+    {
+      "model": "api_v2.crossreference",
+      "field": "source_object_key",
+      "target_model": "api_v2.backgroundbenefit",
+      "count": 1
+    },
+    {
+      "model": "api_v2.crossreference",
+      "field": "source_object_key",
+      "target_model": "api_v2.classfeature",
+      "count": 2
+    },
+    {
+      "model": "api_v2.crossreference",
+      "field": "source_object_key",
+      "target_model": "api_v2.creatureaction",
+      "count": 17
+    },
+    {
+      "model": "api_v2.crossreference",
+      "field": "source_object_key",
+      "target_model": "api_v2.magicitem",
+      "count": 6
+    },
+    {
+      "model": "api_v2.crossreference",
+      "field": "source_object_key",
+      "target_model": "api_v2.speciestrait",
+      "count": 9
+    },
+    {
+      "model": "api_v2.crossreference",
+      "field": "source_object_key",
+      "target_model": "api_v2.spell",
+      "count": 8
+    },
+    {
+      "model": "api_v2.crossreference",
+      "field": "source_object_key",
+      "target_model": "api_v2.weaponproperty",
+      "count": 2
+    },
+    {
+      "model": "api_v2.damagetype",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 13
+    },
+    {
+      "model": "api_v2.damagetypedescription",
+      "field": "describes",
+      "target_model": "api_v2.damagetype",
+      "count": 13
+    },
+    {
+      "model": "api_v2.damagetypedescription",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 13
+    },
+    {
+      "model": "api_v2.document",
+      "field": "gamesystem",
+      "target_model": "api_v2.gamesystem",
+      "count": 2
+    },
+    {
+      "model": "api_v2.document",
+      "field": "licenses",
+      "target_model": "api_v2.license",
+      "count": 3
+    },
+    {
+      "model": "api_v2.document",
+      "field": "publisher",
+      "target_model": "api_v2.publisher",
+      "count": 2
+    },
+    {
+      "model": "api_v2.feat",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 17
+    },
+    {
+      "model": "api_v2.featbenefit",
+      "field": "parent",
+      "target_model": "api_v2.feat",
+      "count": 35
+    },
+    {
+      "model": "api_v2.item",
+      "field": "armor",
+      "target_model": "api_v2.armor",
+      "count": 13
+    },
+    {
+      "model": "api_v2.item",
+      "field": "category",
+      "target_model": "api_v2.itemcategory",
+      "count": 203
+    },
+    {
+      "model": "api_v2.item",
+      "field": "damage_immunities",
+      "target_model": "api_v2.damagetype",
+      "count": 400
+    },
+    {
+      "model": "api_v2.item",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 203
+    },
+    {
+      "model": "api_v2.item",
+      "field": "size",
+      "target_model": "api_v2.size",
+      "count": 203
+    },
+    {
+      "model": "api_v2.item",
+      "field": "weapon",
+      "target_model": "api_v2.weapon",
+      "count": 38
+    },
+    {
+      "model": "api_v2.itemcategory",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 24
+    },
+    {
+      "model": "api_v2.itemrarity",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 6
+    },
+    {
+      "model": "api_v2.language",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 18
+    },
+    {
+      "model": "api_v2.language",
+      "field": "script_language",
+      "target_model": "api_v2.language",
+      "count": 15
+    },
+    {
+      "model": "api_v2.magicitem",
+      "field": "armor",
+      "target_model": "api_v2.armor",
+      "count": 97
+    },
+    {
+      "model": "api_v2.magicitem",
+      "field": "category",
+      "target_model": "api_v2.itemcategory",
+      "count": 760
+    },
+    {
+      "model": "api_v2.magicitem",
+      "field": "damage_immunities",
+      "target_model": "api_v2.damagetype",
+      "count": 964
+    },
+    {
+      "model": "api_v2.magicitem",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 760
+    },
+    {
+      "model": "api_v2.magicitem",
+      "field": "rarity",
+      "target_model": "api_v2.itemrarity",
+      "count": 760
+    },
+    {
+      "model": "api_v2.magicitem",
+      "field": "size",
+      "target_model": "api_v2.size",
+      "count": 760
+    },
+    {
+      "model": "api_v2.magicitem",
+      "field": "weapon",
+      "target_model": "api_v2.weapon",
+      "count": 416
+    },
+    {
+      "model": "api_v2.rule",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 56
+    },
+    {
+      "model": "api_v2.rule",
+      "field": "ruleset",
+      "target_model": "api_v2.ruleset",
+      "count": 56
+    },
+    {
+      "model": "api_v2.ruleset",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 11
+    },
+    {
+      "model": "api_v2.service",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 30
+    },
+    {
+      "model": "api_v2.size",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 6
+    },
+    {
+      "model": "api_v2.skill",
+      "field": "ability",
+      "target_model": "api_v2.ability",
+      "count": 18
+    },
+    {
+      "model": "api_v2.skill",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 18
+    },
+    {
+      "model": "api_v2.skilldescription",
+      "field": "describes",
+      "target_model": "api_v2.skill",
+      "count": 18
+    },
+    {
+      "model": "api_v2.skilldescription",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 18
+    },
+    {
+      "model": "api_v2.species",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 9
+    },
+    {
+      "model": "api_v2.speciestrait",
+      "field": "parent",
+      "target_model": "api_v2.species",
+      "count": 51
+    },
+    {
+      "model": "api_v2.spell",
+      "field": "classes",
+      "target_model": "api_v2.characterclass",
+      "count": 879
+    },
+    {
+      "model": "api_v2.spell",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 339
+    },
+    {
+      "model": "api_v2.spell",
+      "field": "school",
+      "target_model": "api_v2.spellschool",
+      "count": 339
+    },
+    {
+      "model": "api_v2.spellcastingoption",
+      "field": "parent",
+      "target_model": "api_v2.spell",
+      "count": 682
+    },
+    {
+      "model": "api_v2.spellschool",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 8
+    },
+    {
+      "model": "api_v2.weapon",
+      "field": "damage_type",
+      "target_model": "api_v2.damagetype",
+      "count": 38
+    },
+    {
+      "model": "api_v2.weapon",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 38
+    },
+    {
+      "model": "api_v2.weaponproperty",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 17
+    },
+    {
+      "model": "api_v2.weaponpropertyassignment",
+      "field": "document",
+      "target_model": "api_v2.document",
+      "count": 108
+    },
+    {
+      "model": "api_v2.weaponpropertyassignment",
+      "field": "property",
+      "target_model": "api_v2.weaponproperty",
+      "count": 108
+    },
+    {
+      "model": "api_v2.weaponpropertyassignment",
+      "field": "weapon",
+      "target_model": "api_v2.weapon",
+      "count": 108
+    }
+  ],
+  "replacement_character_fields": [],
+  "fractional_source_prices": [
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_basket",
+      "cost": "0.40"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_blanket",
+      "cost": "0.50"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_bucket",
+      "cost": "0.05"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_bullets-sling-20",
+      "cost": "0.04"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_candle",
+      "cost": "0.01"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_club",
+      "cost": "0.10"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_dart",
+      "cost": "0.05"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_feed-per-day",
+      "cost": "0.05"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_flask",
+      "cost": "0.02"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_gaming-set-dice",
+      "cost": "0.10"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_gaming-set-playing-cards",
+      "cost": "0.50"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_greatclub",
+      "cost": "0.20"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_ink-pen",
+      "cost": "0.02"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_javelin",
+      "cost": "0.50"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_jug",
+      "cost": "0.02"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_ladder",
+      "cost": "0.10"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_lamp",
+      "cost": "0.50"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_oil",
+      "cost": "0.10"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_paper",
+      "cost": "0.20"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_parchment",
+      "cost": "0.10"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_pole",
+      "cost": "0.05"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_pouch",
+      "cost": "0.50"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_quarterstaff",
+      "cost": "0.20"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_rations",
+      "cost": "0.50"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_sack",
+      "cost": "0.01"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_signal-whistle",
+      "cost": "0.05"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_sling",
+      "cost": "0.10"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_string",
+      "cost": "0.10"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_tinderbox",
+      "cost": "0.50"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_torch",
+      "cost": "0.01"
+    },
+    {
+      "model": "api_v2.item",
+      "pk": "srd-2024_waterskin",
+      "cost": "0.20"
+    },
+    {
+      "model": "api_v2.service",
+      "pk": "srd-2024_lifestyle-poor",
+      "cost": "0.20"
+    },
+    {
+      "model": "api_v2.service",
+      "pk": "srd-2024_lifestyle-squalid",
+      "cost": "0.10"
+    },
+    {
+      "model": "api_v2.service",
+      "pk": "srd-2024_lodging-comfortable",
+      "cost": "0.80"
+    },
+    {
+      "model": "api_v2.service",
+      "pk": "srd-2024_lodging-modest",
+      "cost": "0.50"
+    },
+    {
+      "model": "api_v2.service",
+      "pk": "srd-2024_lodging-poor",
+      "cost": "0.10"
+    },
+    {
+      "model": "api_v2.service",
+      "pk": "srd-2024_lodging-squalid",
+      "cost": "0.07"
+    },
+    {
+      "model": "api_v2.service",
+      "pk": "srd-2024_meal-aristocratic",
+      "cost": "0.60"
+    },
+    {
+      "model": "api_v2.service",
+      "pk": "srd-2024_meal-comfortable",
+      "cost": "0.20"
+    },
+    {
+      "model": "api_v2.service",
+      "pk": "srd-2024_meal-modest",
+      "cost": "0.10"
+    },
+    {
+      "model": "api_v2.service",
+      "pk": "srd-2024_meal-poor",
+      "cost": "0.02"
+    },
+    {
+      "model": "api_v2.service",
+      "pk": "srd-2024_meal-squalid",
+      "cost": "0.01"
+    },
+    {
+      "model": "api_v2.service",
+      "pk": "srd-2024_meal-wealthy",
+      "cost": "0.30"
+    },
+    {
+      "model": "api_v2.service",
+      "pk": "srd-2024_messenger",
+      "cost": "0.02"
+    },
+    {
+      "model": "api_v2.service",
+      "pk": "srd-2024_stabling-per-day",
+      "cost": "0.50"
+    },
+    {
+      "model": "api_v2.service",
+      "pk": "srd-2024_untrained-hireling",
+      "cost": "0.20"
+    }
+  ],
+  "out_of_range_ability_scores": [
+    {
+      "model": "api_v2.creature",
+      "pk": "srd-2024_octopus",
+      "field": "ability_score_charisma",
+      "value": -3
+    },
+    {
+      "model": "api_v2.creature",
+      "pk": "srd-2024_octopus",
+      "field": "ability_score_constitution",
+      "value": 0
+    }
+  ]
+}

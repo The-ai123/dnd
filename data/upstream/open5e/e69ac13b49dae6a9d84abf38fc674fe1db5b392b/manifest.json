@@ -1,0 +1,827 @@
+{
+  "format": 1,
+  "repository": "https://github.com/open5e/open5e-api",
+  "commit": "e69ac13b49dae6a9d84abf38fc674fe1db5b392b",
+  "selection_ref": "refs/heads/staging (resolved before acquisition)",
+  "retrieved_date": "2026-10-27",
+  "acquisition": "Published GitHub repository ZIP; selected files copied byte-for-byte; no webpage scraping",
+  "raw_transform_revision": 0,
+  "audit_revision": 1,
+  "source_document": "srd-2024",
+  "source_declared_version": "5.2",
+  "target_baseline": "5.2.1 (see docs/content/SRD_5.2.1_AUDIT.md; parity not claimed)",
+  "files": [
+    {
+      "path": "LICENSE.md",
+      "role": "repository-license-or-readme",
+      "bytes": 2314,
+      "sha256": "c6e984d4409db4472b29fedf1afe712f91d2ba3693fc3f2fcddccab1f95631f0",
+      "git_blob_sha1": "dfd06dccf5d8bad8f2d4525d0a18b4abab0d186b",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/LICENSE.md"
+    },
+    {
+      "path": "README.md",
+      "role": "repository-license-or-readme",
+      "bytes": 7631,
+      "sha256": "50f5a19061e01b6e21a405fed86d988582682f5c1b8caa1c0fea13db0c24bb33",
+      "git_blob_sha1": "376738a52497f95f8f671c1a027b93f67712763f",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/README.md"
+    },
+    {
+      "path": "api_v2/models/__init__.py",
+      "role": "schema-evidence",
+      "bytes": 1837,
+      "sha256": "70344ca8984ab508145176ee1522fe126fca43a3a1ab53b32d53326601c63607",
+      "git_blob_sha1": "6d08348a653ccee7d478bb4221b00a40c3af420c",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/__init__.py"
+    },
+    {
+      "path": "api_v2/models/abilities.py",
+      "role": "schema-evidence",
+      "bytes": 1752,
+      "sha256": "94fc776226b11cb917d17b01fa5cc18975c48bfb876e097f28575af06dfcb6fe",
+      "git_blob_sha1": "86fdc54419c23add8a0299b2a9778db2f007c85e",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/abilities.py"
+    },
+    {
+      "path": "api_v2/models/abstracts.py",
+      "role": "schema-evidence",
+      "bytes": 16495,
+      "sha256": "63355137f50d45435cae88866e64c6a13c80c60ca9e2fb118c36fd2cd0a2bd0e",
+      "git_blob_sha1": "c1870ee4ad2e6a2a83eccdfdd0d16e12e4a755c2",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/abstracts.py"
+    },
+    {
+      "path": "api_v2/models/alignment.py",
+      "role": "schema-evidence",
+      "bytes": 1251,
+      "sha256": "2c99589d24bfa535845540bcd6205d0b3eea67be6223ee1f32828955c00c2ca5",
+      "git_blob_sha1": "ed262ae70f0ebe6842de5463cc5d63ce3ea86d1f",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/alignment.py"
+    },
+    {
+      "path": "api_v2/models/armor.py",
+      "role": "schema-evidence",
+      "bytes": 2050,
+      "sha256": "d2c4841fc220c4cd03214bee1efcc8dc034b8e63656dbb9ebd4a324ffd6a5639",
+      "git_blob_sha1": "d3b8e3efbab41a2958c029c798b1dc2b4a651911",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/armor.py"
+    },
+    {
+      "path": "api_v2/models/background.py",
+      "role": "schema-evidence",
+      "bytes": 902,
+      "sha256": "5d5b3dc47177c08be21ef011b0dc6d3f7f84712250493812e51e4436a30c5977",
+      "git_blob_sha1": "a21645be64afa20cc799156b3ea455c677179217",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/background.py"
+    },
+    {
+      "path": "api_v2/models/characterclass.py",
+      "role": "schema-evidence",
+      "bytes": 7646,
+      "sha256": "cd801345448fb9e2e8c9f2ce2f3a4777b0cee085ca435b92d1f818a59398c63d",
+      "git_blob_sha1": "873cca3b3b6b5096daeb14919e80b52079cd4dc6",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/characterclass.py"
+    },
+    {
+      "path": "api_v2/models/condition.py",
+      "role": "schema-evidence",
+      "bytes": 775,
+      "sha256": "c65561190bc0a62994c603ede2c19c784a57a1c2e4f28f6a76896fb31bd65bda",
+      "git_blob_sha1": "7d37865bcdeadca33920eca01cd57d353b1917ff",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/condition.py"
+    },
+    {
+      "path": "api_v2/models/creature.py",
+      "role": "schema-evidence",
+      "bytes": 10413,
+      "sha256": "b8552166da2b9d93e2c442356c89b06f411dbc4a8f2a277d14eb46d1e76a6900",
+      "git_blob_sha1": "9bb64ef1ec8caf34870718b7901465aad1bccf2c",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/creature.py"
+    },
+    {
+      "path": "api_v2/models/crossreference.py",
+      "role": "schema-evidence",
+      "bytes": 3468,
+      "sha256": "8e818da2c8fe3c5d557fb650a796f654acf90b3c34d56a58a0f99e88d42d07a2",
+      "git_blob_sha1": "4ed0d41527c37abc7f340143d5e763b825c489b2",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/crossreference.py"
+    },
+    {
+      "path": "api_v2/models/damagetype.py",
+      "role": "schema-evidence",
+      "bytes": 920,
+      "sha256": "6529cc1408f80f9bc8e7da2567fae28e694c7870dbaa136da95886adda34fc75",
+      "git_blob_sha1": "8b3cdba2389e36e1bb8387e30d64d92c909abdb1",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/damagetype.py"
+    },
+    {
+      "path": "api_v2/models/document.py",
+      "role": "schema-evidence",
+      "bytes": 4344,
+      "sha256": "e8e7c4ef3fb710421146fe51eb7a90063168ffedd698d262f036740beec13c00",
+      "git_blob_sha1": "d765b6ef950a14660d59e9f7f0a0583e809a008b",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/document.py"
+    },
+    {
+      "path": "api_v2/models/enums.py",
+      "role": "schema-evidence",
+      "bytes": 7264,
+      "sha256": "5ed282aec65b6bcb5dad5cda71266c0028356277e02e62455a90cf25b1917229",
+      "git_blob_sha1": "fa324d14e17b4c85933d13815fcf4e472ed1e9ae",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/enums.py"
+    },
+    {
+      "path": "api_v2/models/environment.py",
+      "role": "schema-evidence",
+      "bytes": 882,
+      "sha256": "c6a5e39a356ae9740cce021a62704c7a8e0c3e6f0300d126565106c5fac51960",
+      "git_blob_sha1": "5449b950eb225f1fc662a3f0f61005d9c4c43373",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/environment.py"
+    },
+    {
+      "path": "api_v2/models/feat.py",
+      "role": "schema-evidence",
+      "bytes": 1558,
+      "sha256": "63bf4f22662d7b7ad7f8451da2fdbe651f59aaa1a0509bdf0084a4b9fa660d91",
+      "git_blob_sha1": "c744a65277793f58536585544c75df682b32e2a0",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/feat.py"
+    },
+    {
+      "path": "api_v2/models/image.py",
+      "role": "schema-evidence",
+      "bytes": 1869,
+      "sha256": "88b1462279ba8b6ad26000b65522e29c214694c9a9574e5a0c61175ad7066720",
+      "git_blob_sha1": "1fb3d616b788c4190e464f15932111e1a336c861",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/image.py"
+    },
+    {
+      "path": "api_v2/models/item.py",
+      "role": "schema-evidence",
+      "bytes": 2575,
+      "sha256": "5e1309b35c567520ff9ce4501aa1aa37d874d52e7a027416209f9d7fffe6a5da",
+      "git_blob_sha1": "f92267eead63af0739d473c6dd9d26327ad57e3e",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/item.py"
+    },
+    {
+      "path": "api_v2/models/language.py",
+      "role": "schema-evidence",
+      "bytes": 1249,
+      "sha256": "ac68052ad8a5e8ed5908da361504296a4b3bca486c5162847bef544583efd057",
+      "git_blob_sha1": "852d63837c09d1b3696eacc4b636b46f388e29ad",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/language.py"
+    },
+    {
+      "path": "api_v2/models/object.py",
+      "role": "schema-evidence",
+      "bytes": 2910,
+      "sha256": "8aaaec0031cb89d674d05c7aa5c263841f8d22927140c51cb9e6575ca598e76a",
+      "git_blob_sha1": "d3bf3714bcad156fba6f075593fb77ab62a79bc1",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/object.py"
+    },
+    {
+      "path": "api_v2/models/rule.py",
+      "role": "schema-evidence",
+      "bytes": 1085,
+      "sha256": "46eef136c7d2bbab7f85ae802daea5817b67ba34096b439ecc6722a792eb5bb6",
+      "git_blob_sha1": "9c156a88000933f47d92329bb6f2da7edf724022",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/rule.py"
+    },
+    {
+      "path": "api_v2/models/service.py",
+      "role": "schema-evidence",
+      "bytes": 638,
+      "sha256": "08e57ca4806a1f1faef29240b99c596b16f208a69800356bbebbf85c38a1bc1f",
+      "git_blob_sha1": "7decd7ed11c7d34cc58ae6aeb10ebc964c75aee8",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/service.py"
+    },
+    {
+      "path": "api_v2/models/size.py",
+      "role": "schema-evidence",
+      "bytes": 812,
+      "sha256": "9363506c93a03e4599212d4eac9874b1ea7614ee140d06dc409666d9adb77ab9",
+      "git_blob_sha1": "ffbb5a8e79850fca519a0d2a711886ea2823c20a",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/size.py"
+    },
+    {
+      "path": "api_v2/models/species.py",
+      "role": "schema-evidence",
+      "bytes": 2292,
+      "sha256": "9ed1d599980c14d8a2ca498d274f52f991b50f24a890749e9b274372b3f8d7ea",
+      "git_blob_sha1": "643882d4aa9c54544369132bd477e1400e54880c",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/species.py"
+    },
+    {
+      "path": "api_v2/models/speed.py",
+      "role": "schema-evidence",
+      "bytes": 3523,
+      "sha256": "0bf5b5f5d7fad4f680e4ffff7ec88632117bb492b0b848501348eb084d1641b0",
+      "git_blob_sha1": "ffd387ab62f0082b70732c36376a63bac9e50923",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/speed.py"
+    },
+    {
+      "path": "api_v2/models/spell.py",
+      "role": "schema-evidence",
+      "bytes": 6883,
+      "sha256": "ef32af5a7b06959e201aed343ca39a883cc58dde84faf2a030e373100a73e6bb",
+      "git_blob_sha1": "2f605b9d1ec3536d927339673743345e4d0b8b16",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/spell.py"
+    },
+    {
+      "path": "api_v2/models/weapon.py",
+      "role": "schema-evidence",
+      "bytes": 2629,
+      "sha256": "3b63f86c90f393874611bb7a6294e7c0c63aa9a6f660866321a743a229d9194b",
+      "git_blob_sha1": "1316cb403dfcbab85f9f43c8b1096e3adffe2b9d",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/api_v2/models/weapon.py"
+    },
+    {
+      "path": "data/v2/GameSystem.json",
+      "role": "shared-dependency",
+      "bytes": 547,
+      "sha256": "137bc7c5bdda4ce91227217fe369fed2024e175d866e11dd2ba4cc8a97b9f680",
+      "git_blob_sha1": "f0fa53c4e555c8de01f0ca086c66f24d85fe418b",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/GameSystem.json",
+      "record_count": 3,
+      "models": [
+        "api_v2.gamesystem"
+      ]
+    },
+    {
+      "path": "data/v2/License.json",
+      "role": "shared-dependency",
+      "bytes": 21576,
+      "sha256": "b2c44797dcf2978bf75a35cafbc89d0b5d920dec45a89a43136a8ac8f7ff9f4e",
+      "git_blob_sha1": "38a15a15e842e6d68637b788177e8ed4866f229a",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/License.json",
+      "record_count": 3,
+      "models": [
+        "api_v2.license"
+      ]
+    },
+    {
+      "path": "data/v2/open5e/Publisher.json",
+      "role": "shared-dependency",
+      "bytes": 96,
+      "sha256": "2052334dc1ccf31296022ac3f25cb17f05acfa07abb2ef0029cf1df419fb20b4",
+      "git_blob_sha1": "4b61175a0ca08312331bb7aeddfa40f499067169",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/open5e/Publisher.json",
+      "record_count": 1,
+      "models": [
+        "api_v2.publisher"
+      ]
+    },
+    {
+      "path": "data/v2/open5e/core/Ability.json",
+      "role": "shared-dependency",
+      "bytes": 978,
+      "sha256": "f8341b6538fdbd227fc757aafb7d99ec25f87661226f454b5f63daa57776af6f",
+      "git_blob_sha1": "406e7b1a9286aa92f0cd77809e835608c9b710c6",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/open5e/core/Ability.json",
+      "record_count": 6,
+      "models": [
+        "api_v2.ability"
+      ]
+    },
+    {
+      "path": "data/v2/open5e/core/Alignment.json",
+      "role": "shared-dependency",
+      "bytes": 1160,
+      "sha256": "0baabe4b41032c1d5aae75da1c324920fa2999c0d5c84f61574685baa3053bbc",
+      "git_blob_sha1": "6385dbb84cfdb4d8e14c66ee54935eebede1d0a5",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/open5e/core/Alignment.json",
+      "record_count": 9,
+      "models": [
+        "api_v2.alignment"
+      ]
+    },
+    {
+      "path": "data/v2/open5e/core/Condition.json",
+      "role": "shared-dependency",
+      "bytes": 2378,
+      "sha256": "d828cc0d10ad1dbf240ea19ef0b2a7ea17f1043da4d205173a54c8800cfc8e69",
+      "git_blob_sha1": "16156371518b7a527eedd06e1bc22ce945e9ae7e",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/open5e/core/Condition.json",
+      "record_count": 15,
+      "models": [
+        "api_v2.condition"
+      ]
+    },
+    {
+      "path": "data/v2/open5e/core/CreatureType.json",
+      "role": "shared-dependency",
+      "bytes": 1705,
+      "sha256": "de094a26515cd9d410d0d3d3e3f768a5c5f8b74515f0e6838e422cf2cd1c51f5",
+      "git_blob_sha1": "8c8dad0494c03648192e81e31ca716046ae7c380",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/open5e/core/CreatureType.json",
+      "record_count": 14,
+      "models": [
+        "api_v2.creaturetype"
+      ]
+    },
+    {
+      "path": "data/v2/open5e/core/DamageType.json",
+      "role": "shared-dependency",
+      "bytes": 1557,
+      "sha256": "242f3bd0cd06caa1e31baba47b0baad08f00fe91a728a92feda51bbbcd2ff796",
+      "git_blob_sha1": "3d62470de4c1561ac10be7944ba2d37871e8f03e",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/open5e/core/DamageType.json",
+      "record_count": 13,
+      "models": [
+        "api_v2.damagetype"
+      ]
+    },
+    {
+      "path": "data/v2/open5e/core/Document.json",
+      "role": "shared-dependency",
+      "bytes": 995,
+      "sha256": "f3982a4400d72797def4b8f0052c49b8fd67d40da96a1a105164c3d860692188",
+      "git_blob_sha1": "8dca684681233b4c85c6154944fe7afcedd876a7",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/open5e/core/Document.json",
+      "record_count": 1,
+      "models": [
+        "api_v2.document"
+      ]
+    },
+    {
+      "path": "data/v2/open5e/core/ItemCategory.json",
+      "role": "shared-dependency",
+      "bytes": 2699,
+      "sha256": "9f60ae16b74599b51d8bf376de286aa3d58f7ff43e98e899af3f541637760966",
+      "git_blob_sha1": "083f478a6e5ab49664a8716c60ffc2506f39aa14",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/open5e/core/ItemCategory.json",
+      "record_count": 22,
+      "models": [
+        "api_v2.itemcategory"
+      ]
+    },
+    {
+      "path": "data/v2/open5e/core/ItemRarity.json",
+      "role": "shared-dependency",
+      "bytes": 817,
+      "sha256": "a34ba40fce1cf348695a098cd6fc45028c7569e99d1fd737da92957aa56130fd",
+      "git_blob_sha1": "2e6651e602b5760457a27cde4b6f2682f9dd8ccd",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/open5e/core/ItemRarity.json",
+      "record_count": 6,
+      "models": [
+        "api_v2.itemrarity"
+      ]
+    },
+    {
+      "path": "data/v2/open5e/core/Language.json",
+      "role": "shared-dependency",
+      "bytes": 5035,
+      "sha256": "021e3a59ada5426ccd4eee9d4f2153e78ef51c15ad4441421acdb1ca5114c5f5",
+      "git_blob_sha1": "a305b99791ac0691a0e141d6f978c045bc9d2cc7",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/open5e/core/Language.json",
+      "record_count": 18,
+      "models": [
+        "api_v2.language"
+      ]
+    },
+    {
+      "path": "data/v2/open5e/core/Size.json",
+      "role": "shared-dependency",
+      "bytes": 1283,
+      "sha256": "351c103c356ea246282e4688f326e7a09e3d5cf2f1933bd73a71c566e82a0510",
+      "git_blob_sha1": "b78144ac8f5f71b9ecbd2644e7db14bd500910fd",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/open5e/core/Size.json",
+      "record_count": 6,
+      "models": [
+        "api_v2.size"
+      ]
+    },
+    {
+      "path": "data/v2/open5e/core/Skill.json",
+      "role": "shared-dependency",
+      "bytes": 2559,
+      "sha256": "2ca22c98d0ff6ed4e8e160255ed89b84bb224fe8457b763254a9b65620a52b1d",
+      "git_blob_sha1": "68c79e96372b5ee2666b1925080c914823abad32",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/open5e/core/Skill.json",
+      "record_count": 18,
+      "models": [
+        "api_v2.skill"
+      ]
+    },
+    {
+      "path": "data/v2/open5e/core/SpellSchool.json",
+      "role": "shared-dependency",
+      "bytes": 3297,
+      "sha256": "6d3d5bd2c2384106a2d05bd581607a9df4a8286628dd26703b453f25e8f4f1c6",
+      "git_blob_sha1": "bdd4d0151d823d41a477354f565703ff0d8781ef",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/open5e/core/SpellSchool.json",
+      "record_count": 8,
+      "models": [
+        "api_v2.spellschool"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/Publisher.json",
+      "role": "shared-dependency",
+      "bytes": 124,
+      "sha256": "5d8feeba6ac06759878194e63f943cc2390438c9c07211cf0042bdc8fffa752c",
+      "git_blob_sha1": "4e3e998f9a4519dfcac301f69691cd0978c12ab4",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/Publisher.json",
+      "record_count": 1,
+      "models": [
+        "api_v2.publisher"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/AbilityDescription.json",
+      "role": "srd-2024",
+      "bytes": 1072,
+      "sha256": "d0d9d0b322cfbfede0ddbad8a9e6f014adeedc859072b5597a26a0a3e4803456",
+      "git_blob_sha1": "5d57bf8bc628153bcafd6068bb992a850ee67eed",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/AbilityDescription.json",
+      "record_count": 6,
+      "models": [
+        "api_v2.abilitydescription"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/AlignmentDescription.json",
+      "role": "srd-2024",
+      "bytes": 3287,
+      "sha256": "458b51211c076daf11c63747cec260c939e63b5be241c067a2e126e9ea936b00",
+      "git_blob_sha1": "84430fe9e30fa8ff2b5772220298c80a2a495e87",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/AlignmentDescription.json",
+      "record_count": 9,
+      "models": [
+        "api_v2.alignmentdescription"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/Armor.json",
+      "role": "srd-2024",
+      "bytes": 3741,
+      "sha256": "b1978065995aa5d44fd0f28a84d9537fe85f1a9c0a6f43baecf14ea1043d626b",
+      "git_blob_sha1": "e45c019c413ad2c93c7b2783ecac2fec62850899",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/Armor.json",
+      "record_count": 13,
+      "models": [
+        "api_v2.armor"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/Background.json",
+      "role": "srd-2024",
+      "bytes": 594,
+      "sha256": "2e55d2f849487104f597a24b35db2a11d6f9ed04e50c3fe213775ba32bf8bcac",
+      "git_blob_sha1": "adc05460a18975212d1839dcd5469575c00f940b",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/Background.json",
+      "record_count": 4,
+      "models": [
+        "api_v2.background"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/BackgroundBenefit.json",
+      "role": "srd-2024",
+      "bytes": 5031,
+      "sha256": "43d84260fd436d481bc317b37fe7e826930bae3eb6b772959701da0381108d23",
+      "git_blob_sha1": "496be6195e18125cb38d4cc6d880d54ee9f4681d",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/BackgroundBenefit.json",
+      "record_count": 20,
+      "models": [
+        "api_v2.backgroundbenefit"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/CharacterClass.json",
+      "role": "srd-2024",
+      "bytes": 11719,
+      "sha256": "17a6be1d4bd783dce17b2f6fb5646562fa90a4590b7dd9d254b7ef8e1c56b4e1",
+      "git_blob_sha1": "f81bf0725b504c79b4d2c7eb74d895a6e47947ca",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/CharacterClass.json",
+      "record_count": 24,
+      "models": [
+        "api_v2.characterclass"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/ClassFeature.json",
+      "role": "srd-2024",
+      "bytes": 225361,
+      "sha256": "2625dbc81d37dc9514913067d59015d9e4e7fcdeecb536f61878c6e8671cb772",
+      "git_blob_sha1": "acbb016f20faf8d70db05496bf7b6e54dca88cfa",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/ClassFeature.json",
+      "record_count": 352,
+      "models": [
+        "api_v2.classfeature"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/ClassFeatureItem.json",
+      "role": "srd-2024",
+      "bytes": 393513,
+      "sha256": "4796aebbf67ef5ce478461bcc395ef9bf4388ee06a3020807d4210001fdfdc64",
+      "git_blob_sha1": "bcf4cdd272a9b052289c97874c187870db91eba2",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/ClassFeatureItem.json",
+      "record_count": 1812,
+      "models": [
+        "api_v2.classfeatureitem"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/ConditionDescription.json",
+      "role": "srd-2024",
+      "bytes": 8445,
+      "sha256": "38830f22a58f2eae8d02f4344d6a9538e7de257d98764c220f843b1f1357204e",
+      "git_blob_sha1": "404ccce82478c2a8b40d7f4bdecb9c940420ed31",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/ConditionDescription.json",
+      "record_count": 15,
+      "models": [
+        "api_v2.conditiondescription"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/Creature.json",
+      "role": "srd-2024",
+      "bytes": 866836,
+      "sha256": "1d0a4980f816390865b93894813bed9fd22a8104b579946c20fb9664510b9009",
+      "git_blob_sha1": "92b941f2814f50809f4c23c8c9e90287b2f640ad",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/Creature.json",
+      "record_count": 331,
+      "models": [
+        "api_v2.creature"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/CreatureAction.json",
+      "role": "srd-2024",
+      "bytes": 527384,
+      "sha256": "f58c0e31c9117676c2b370ab348b74ff0056ee62ca9977865dd6715a6e7cbf1c",
+      "git_blob_sha1": "847e995df035e5293b82d70e3b62c1f8b9af2e96",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/CreatureAction.json",
+      "record_count": 989,
+      "models": [
+        "api_v2.creatureaction"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/CreatureActionAttack.json",
+      "role": "srd-2024",
+      "bytes": 255685,
+      "sha256": "973c53ab8c19826949f8ba9c23d181d76439a310361842132f35e3b938a2da75",
+      "git_blob_sha1": "face0328993107333d2a88a5a585e6d4f4371eaa",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/CreatureActionAttack.json",
+      "record_count": 390,
+      "models": [
+        "api_v2.creatureactionattack"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/CreatureTrait.json",
+      "role": "srd-2024",
+      "bytes": 112894,
+      "sha256": "35340a72a0da75d53da6f4e0c401e473b266838e78f5026685fb1cb23c30c3b5",
+      "git_blob_sha1": "97f69a27bfa403a173f02d6b0db792f7ffdd3e67",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/CreatureTrait.json",
+      "record_count": 329,
+      "models": [
+        "api_v2.creaturetrait"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/CreatureTypeDescription.json",
+      "role": "srd-2024",
+      "bytes": 3562,
+      "sha256": "5d4fe2d830b5c2695b4a7c7881abb5e1209ee212018dd47da482166d34dfea4e",
+      "git_blob_sha1": "c310bce37f013dc3c9ff8b44ef2e14dd3a73f7af",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/CreatureTypeDescription.json",
+      "record_count": 14,
+      "models": [
+        "api_v2.creaturetypedescription"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/CrossReference.json",
+      "role": "srd-2024",
+      "bytes": 18640,
+      "sha256": "b1fff5816a0147974744253760500f47751f961b88f1c6630d59fe698453e6a7",
+      "git_blob_sha1": "a578186cbc4dcbcc6ce9a273793fceb76122e253",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/CrossReference.json",
+      "record_count": 45,
+      "models": [
+        "api_v2.crossreference"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/DamageTypeDescription.json",
+      "role": "srd-2024",
+      "bytes": 2441,
+      "sha256": "dad4b1108206edbbe123fded63410a1ad604987960ded7c0a9687c8638630895",
+      "git_blob_sha1": "1682bda621e37252004646be5ef638cb9cd00d85",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/DamageTypeDescription.json",
+      "record_count": 13,
+      "models": [
+        "api_v2.damagetypedescription"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/Document.json",
+      "role": "srd-2024",
+      "bytes": 607,
+      "sha256": "c9a85da12a2a90cf272f35f061f7ec60adf52f501312c45ee59fb17890611b1a",
+      "git_blob_sha1": "56ddb1fd03aba4e0268f909229c74cc8c04268bd",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/Document.json",
+      "record_count": 1,
+      "models": [
+        "api_v2.document"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/Feat.json",
+      "role": "srd-2024",
+      "bytes": 4125,
+      "sha256": "aabbd7864a90051c2298bfdda8e58675efe9f0944de9fb2cf5c4ac3113d3ebea",
+      "git_blob_sha1": "0171604cfaeace21a1136be59293c6c32c3cb0f6",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/Feat.json",
+      "record_count": 17,
+      "models": [
+        "api_v2.feat"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/FeatBenefit.json",
+      "role": "srd-2024",
+      "bytes": 11399,
+      "sha256": "e294da40babae3c00683a8a0c43a2d04f51ba836bc3de18e2f74a297324915d1",
+      "git_blob_sha1": "17bb0efff8a1ca2be86641bd7175dfdb3557e3d9",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/FeatBenefit.json",
+      "record_count": 35,
+      "models": [
+        "api_v2.featbenefit"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/Item.json",
+      "role": "srd-2024",
+      "bytes": 147705,
+      "sha256": "83df3417f0b88f8ea67cd6ecb9356d73eb308f87f5fb0df58d61bf571cf134d1",
+      "git_blob_sha1": "0644015e2a818ac4ce3823369da20ef2074ea0bb",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/Item.json",
+      "record_count": 203,
+      "models": [
+        "api_v2.item"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/ItemCategory.json",
+      "role": "srd-2024",
+      "bytes": 291,
+      "sha256": "ae72b38eccae8f98a0719cfd8a70ae781e8eea0bab8506f5610b3e7106aa5bc3",
+      "git_blob_sha1": "0eca5037d0dab58bddb5b0e349496d65b87e7e8b",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/ItemCategory.json",
+      "record_count": 2,
+      "models": [
+        "api_v2.itemcategory"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/MagicItem.json",
+      "role": "srd-2024",
+      "bytes": 869701,
+      "sha256": "d6a5e028d2999849d1c5df3f4fa85be7e9b77194487dd06a661578910bd5c284",
+      "git_blob_sha1": "47d41b1c2fa8f2a76542fcc0eb747a4692c38c7d",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/MagicItem.json",
+      "record_count": 760,
+      "models": [
+        "api_v2.magicitem"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/Rule.json",
+      "role": "srd-2024",
+      "bytes": 89731,
+      "sha256": "1ed3e33b629f9b22a8ff4a906ca5c5f5f5e59353a8de72e0b91de48fec9c8f1c",
+      "git_blob_sha1": "2ac25f95432bb16d5467eaf64d0833624c1ea001",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/Rule.json",
+      "record_count": 56,
+      "models": [
+        "api_v2.rule"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/RuleSet.json",
+      "role": "srd-2024",
+      "bytes": 14347,
+      "sha256": "3882f9f0aa777ad6f8b08fdb27d31bc7b8b574d11fed0fd13cc421af6199e601",
+      "git_blob_sha1": "5bed34249b48c05b68e30cecd2688fb82ce25c05",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/RuleSet.json",
+      "record_count": 11,
+      "models": [
+        "api_v2.ruleset"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/Service.json",
+      "role": "srd-2024",
+      "bytes": 7813,
+      "sha256": "b68ffb57af6b6557e8c59cdde99fc9d83830e3f857f56fd0c8ea5968eb01e75c",
+      "git_blob_sha1": "a3eccd72c32759d5f4e3cbd072e7fb472fde8cb5",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/Service.json",
+      "record_count": 30,
+      "models": [
+        "api_v2.service"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/SkillDescription.json",
+      "role": "srd-2024",
+      "bytes": 4058,
+      "sha256": "2d96dcf43218f49a82ecb0fda0f3b91722af11ca49a1385f7020d484bec415f0",
+      "git_blob_sha1": "69a4fe084aff479f06b4d5bf3d632fd490ac68c3",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/SkillDescription.json",
+      "record_count": 18,
+      "models": [
+        "api_v2.skilldescription"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/Species.json",
+      "role": "srd-2024",
+      "bytes": 1541,
+      "sha256": "1330e8f5220f41773dadb231adcb109f223b79e25fd5be26952300364a0d90ca",
+      "git_blob_sha1": "c52f899906e311879c3fe3639805f9dde3400bdc",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/Species.json",
+      "record_count": 9,
+      "models": [
+        "api_v2.species"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/SpeciesTrait.json",
+      "role": "srd-2024",
+      "bytes": 20632,
+      "sha256": "8e27011b56c2bacd2cf8cf4d707afd9d083ca9895d4ca043762c38702cf0d0c0",
+      "git_blob_sha1": "dd20cb9ddeba5b695d25f28f4848ae04e813cbf1",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/SpeciesTrait.json",
+      "record_count": 51,
+      "models": [
+        "api_v2.speciestrait"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/Spell.json",
+      "role": "srd-2024",
+      "bytes": 578281,
+      "sha256": "2f29b1f88d4dfb2fc8e350e96043302c1a10ee70995d4d3382553805bdf4954f",
+      "git_blob_sha1": "f59eaa7273a7ed6d02d7a1dc88e60181ae6e6432",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/Spell.json",
+      "record_count": 339,
+      "models": [
+        "api_v2.spell"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/SpellCastingOption.json",
+      "role": "srd-2024",
+      "bytes": 235012,
+      "sha256": "6bf4dc46ebdf89a5e50e5d137d2fa371f77b315152b2ac9fe5cb96f0fed7bd30",
+      "git_blob_sha1": "717ef7d15839dcf9af325792d34af2ce1b90fbad",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/SpellCastingOption.json",
+      "record_count": 682,
+      "models": [
+        "api_v2.spellcastingoption"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/Weapon.json",
+      "role": "srd-2024",
+      "bytes": 12720,
+      "sha256": "0582eb569c47f04593045d12eb8c39a2e20bd1caad8472de6d7604b1eabfb2ad",
+      "git_blob_sha1": "0415bf1b9866f9a12ede7f4f5f0bd0cfd3a8d54e",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/Weapon.json",
+      "record_count": 38,
+      "models": [
+        "api_v2.weapon"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/WeaponProperty.json",
+      "role": "srd-2024",
+      "bytes": 6785,
+      "sha256": "77b6a718fc6a2f7a92da63c85b5921635600ac72acc4ecc8861963e75755ce8e",
+      "git_blob_sha1": "469ae8fdaa5ffff1206f9aeee8f6a297ea9e038b",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/WeaponProperty.json",
+      "record_count": 17,
+      "models": [
+        "api_v2.weaponproperty"
+      ]
+    },
+    {
+      "path": "data/v2/wizards-of-the-coast/srd-2024/WeaponPropertyAssignment.json",
+      "role": "srd-2024",
+      "bytes": 24718,
+      "sha256": "6a646a5dd8d32cd45dcf576940faa323b2b0d54cf1bd8992a4252f92a9dc09d0",
+      "git_blob_sha1": "d4a797e8d4a9d8976c1b29359c4cf150f0211c36",
+      "url": "https://raw.githubusercontent.com/open5e/open5e-api/e69ac13b49dae6a9d84abf38fc674fe1db5b392b/data/v2/wizards-of-the-coast/srd-2024/WeaponPropertyAssignment.json",
+      "record_count": 108,
+      "models": [
+        "api_v2.weaponpropertyassignment"
+      ]
+    }
+  ]
+}
